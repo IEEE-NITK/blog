@@ -9,7 +9,7 @@ before_script:
     - bundle exec jekyll build 
     - bundle exec htmlproofer ./_site --disable-external
     - rm -r ./_site
-script: bundle exec jekyll build
+script: bundle exec jekyll build --destination blog/
 deploy: 
     provider: pages 
     skip_cleanup: true
