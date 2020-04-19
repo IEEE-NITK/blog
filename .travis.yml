@@ -1,0 +1,18 @@
+sudo: false
+language: ruby
+cache: bundler
+install: 
+    - gem install bundler -v "$(grep -A 1 "BUNDLED WITH" Gemfile.lock | tail -n 1)" 
+    - gem update --system
+    - bundle install
+before_script: 
+    - bundle exec jekyll build 
+    - bundle exec htmlproofer ./_site --disable-external
+    - rm -r ./_site
+script: bundle exec jekyll build
+deploy: 
+    provider: pages 
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN
+    on:
+        branch: dev
