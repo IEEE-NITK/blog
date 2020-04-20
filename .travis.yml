@@ -5,11 +5,11 @@ install:
     - gem install bundler -v "$(grep -A 1 "BUNDLED WITH" Gemfile.lock | tail -n 1)" 
     - gem update --system
     - bundle install
-before_script: 
-    - bundle exec jekyll build 
+script: 
+    - bundle exec jekyll build
+    - bundle exec jekyll build --destination blog/
     - bundle exec htmlproofer ./_site --disable-external
-    - rm -r ./_site
-script: bundle exec jekyll build --destination blog/
+    - rm -r ./blog
 deploy: 
     provider: pages 
     skip_cleanup: true
