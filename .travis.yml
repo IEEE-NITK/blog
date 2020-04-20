@@ -1,19 +1,21 @@
 sudo: false
 language: ruby
 cache: bundler
-install: 
-    - gem install bundler -v "$(grep -A 1 "BUNDLED WITH" Gemfile.lock | tail -n 1)" 
-    - gem update --system
-    - bundle install
-script: 
-    - bundle exec jekyll build --destination blog/
-    - bundle exec jekyll build 
-    - bundle exec htmlproofer ./_site --disable-external
-    - rm -r ./blog
-deploy: 
-    provider: pages 
-    skip_cleanup: true
-    github_token: $GH_TOKEN
-    on:
-        branch: master
-
+install:
+- gem install bundler -v "$(grep -A 1 "BUNDLED WITH" Gemfile.lock | tail -n 1)"
+- gem update --system
+- bundle install
+script:
+- bundle exec jekyll build --destination blog/
+- bundle exec jekyll build
+- bundle exec htmlproofer ./_site --disable-external
+- rm -r ./blog
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: "$GH_TOKEN"
+  on:
+    branch: master
+env:
+  global:
+    secure: rKNXxrRJNs1FjVosyClQ1FML3d5AIX15RI4BYDVcU4M+tDedDjvsrF24MbzJzFJZrsrO8hHwRlsQhex6d0yTqkSMTSiy4umRCR9kHFu4XVMII+EbDMNrvKuGm+6Ae8BxUe3wI0hHknyRcgExf/oOug9AjRKGnL4CwD2m9CuPK+D0aY/W/nlegtUDqdKe6FthBP5ZuCS+/Ki9gCpx9ATy+y9y8Dn88nrMEf0jxv0csVsMYJ7T5M84Kq3AGKk8STgq0vEEqkxqLYerofbJVtWQvzZDvtuV+Xt2ZCAYXCjxM51vSwpsWjP07aBbwOJFfWwQJSHo+W6DQSn9cT+oWv315o+yADnRwFzgRCi4RcRPvJx59c0Njf8NQq7a8j+7I5kcSN4oofDuIRy3OkLrOwITx9XNcVy5c9iZhskUXVkfq8NaALXX7YkCkeLy+nysq2HgdjKzoEvxOcQ5FGGLvGKgnVQdsmIdYGOw7twVo7rfMeEW8ts30fpM82YVUBrdE1/anZbMtXo+EqI3jKsmn/kEeGQMpqR8lNefCgwjwUe7xCkhPFHIp2pUSL8H8XH25jQVPvp9smPrIyCIF8tJqqD+KP0M39Wji6X8oVGzTvi6F73kw3bMW/wka/gw0du0kMbmXFXAmxP9n43ykzZ1hVZppQuWRvc4AiQwsqIbE6wfZVU=
