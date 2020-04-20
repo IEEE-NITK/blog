@@ -6,8 +6,8 @@ install:
     - gem update --system
     - bundle install
 script: 
-    - bundle exec jekyll build
     - bundle exec jekyll build --destination blog/
+    - bundle exec jekyll build 
     - bundle exec htmlproofer ./_site --disable-external
     - rm -r ./blog
 deploy: 
