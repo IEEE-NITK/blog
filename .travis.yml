@@ -1,8 +1,7 @@
 sudo: false
 language: ruby
 install:
-- gem install jekyll
-- gem install html-proofer
+- gem install jekyll html-proofer jekyll-paginate jemoji
 script:
 - jekyll build --destination blog/
 - jekyll build
