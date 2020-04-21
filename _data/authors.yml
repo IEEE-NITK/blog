@@ -916,7 +916,7 @@ raghunathabhishek:
 test1:
   name: t1
   github: t1
-  author_image: test.jpeg
+  author_image: test1.jpeg
   user_description: 't1'
   email: t@test.com
   
