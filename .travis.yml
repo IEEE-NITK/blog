@@ -13,6 +13,7 @@ script:
 deploy:
   provider: pages
   skip_cleanup: true
+  target_branch: gh-pages
   github_token: "$GH_TOKEN"
   on:
     branch: master
