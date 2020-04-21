@@ -1,14 +1,12 @@
 sudo: false
 language: ruby
-cache: bundler
 install:
-- gem install bundler -v "$(grep -A 1 "BUNDLED WITH" Gemfile.lock | tail -n 1)"
-- gem update --system
-- bundle install
+- gem install jekyll
+- gem install html-proofer
 script:
-- bundle exec jekyll build --destination blog/
-- bundle exec jekyll build
-- bundle exec htmlproofer ./_site --disable-external
+- jekyll build --destination blog/
+- jekyll build
+- htmlproofer ./_site --disable-external
 - rm -r ./blog
 deploy:
   provider: pages
