@@ -919,4 +919,8 @@ test1:
   author_image: test1.jpeg
   user_description: 't1'
   email: t@test.com
-  
+adharshkamath:
+  name: Adharsh 
+  github: adharshkamath
+  author_image: blog-author.jpg
+  email: adharshkamathr@gmail.com
