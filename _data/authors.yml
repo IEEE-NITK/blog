@@ -913,6 +913,12 @@ raghunathabhishek:
   author_image: raghunathabhishek.png
   user_description: 'I guess humanity isn’t awful, they did make vodka, chocolate and biryani.'
   email: raghunathabhishek@gmail.com
+test1:
+  name: t1
+  github: t1
+  author_image: test1.jpeg
+  user_description: 't1'
+  email: t@test.com
 adharshkamath:
   name: Adharsh 
   github: adharshkamath
