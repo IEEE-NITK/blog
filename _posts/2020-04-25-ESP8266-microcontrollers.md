@@ -1,7 +1,7 @@
-
 ---
 layout: post
 title: "ESP8266 microcontrollers"
+author_github: ShashankHollaS
 date: 2020-04-24 23:06:00
 image: '/assets/img/'
 description: 'This article is about how to achieve wireless communication between two ESP8266 microcontrollers '
@@ -10,6 +10,7 @@ tags:
 - Microcontrollers
 categories:
 - Diode
+github_username: 'ShashankHollaS'
 ---
 **[WIRELESS COMMUNICATION BETWEEN TWO ESP8266
 MICROCONTROLLERS]{.underline}**

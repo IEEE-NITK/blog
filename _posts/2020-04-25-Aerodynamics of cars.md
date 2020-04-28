@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Aerodynamics of Car"
+author_github: impna
 date: 2020-04-15 12:11:44
 image: '/assets/img/'
 description: 'Ever wondered why are most of the cars similar? Why do they have a specific shape instead of having a boxy shape?  What makes it stick to the road even in their high speeds of drive?Check out this article on ‘Aerodynamics of Car’'
@@ -8,7 +9,7 @@ tags:
 - Aerodynamics
 categories:
 - Piston
-
+github_username: 'impna'
 comments: true
 # Aerodynamics of car
 
