@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "ESP8266 microcontrollers"
-author_github: ShashankHollaS
 date: 2020-04-24 23:06:00
 image: '/assets/img/'
 description: 'This article is about how to achieve wireless communication between two ESP8266 microcontrollers '
@@ -10,7 +9,6 @@ tags:
 - Microcontrollers
 categories:
 - Diode
-github_username: 'ShashankHollaS'
 ---
 **[WIRELESS COMMUNICATION BETWEEN TWO ESP8266
 MICROCONTROLLERS]{.underline}**
@@ -83,7 +81,7 @@ networks.
 
 **[NodeMCU as an AP:]{.underline}**
 
-:![](media/image1.jpeg){width="5.364583333333333in"
+:![The following code shows setting up of ssid and password](/blog/assets/img/esp8266-microcontrollers/image1.jpg){width="5.364583333333333in"
 height="1.4583333333333333in"}
 
 Set the SSID and password of your Access point. They can be anything but
@@ -91,26 +89,26 @@ Set the SSID and password of your Access point. They can be anything but
 password for a secured communication but it can be done without password
 as well.
 
-![](media/image2.jpeg){width="4.739583333333333in"
+![Starting the server and getting the IP address](/blog/assets/img/esp8266-microcontrollers/image2.jpg){width="4.739583333333333in"
 height="2.8854166666666665in"}
 
 Start the access point. Here myIP is the IP address of the AP. LED is
 connected to pin 13 or D7.
 
-![](media/image3.jpeg){width="6.447916666666667in"
+![](/blog/assets/img/esp8266-microcontrollers/image3.jpg){width="6.447916666666667in"
 height="1.2708333333333333in"}
 
 Here the first print statement prints the number of stations connected
 to our access point. Then read the request sent by the client.
 
-![](media/image4.jpeg){width="4.385416666666667in"
+![](/blog/assets/img/esp8266-microcontrollers/image4.jpg){width="4.385416666666667in"
 height="2.2291666666666665in"}
 
 Based on the request either turn on the LED or turn it off.
 
 **[NODEMCU as a Station:]{.underline}**
 
-![](media/image5.jpeg){width="5.083333333333333in" height="1.65625in"}
+![](/blog/assets/img/esp8266-microcontrollers/image5.jpg){width="5.083333333333333in" height="1.65625in"}
 
 Host contains the IP address of the AP(Access point).
 
@@ -118,13 +116,13 @@ Here the ssid and password should be same as the AP because we have to
 connect this Station to the WiFi of the AP.(Here these names appear to
 be contradicting. But it is OK as they are just identifiers.
 
-![](media/image6.jpeg){width="3.6666666666666665in"
+![Connecting to the WiFi](/blog/assets/img/esp8266-microcontrollers/image6.jpg){width="3.6666666666666665in"
 height="3.6666666666666665in"}
 
 Connect the Station to the WiFi of the AP. The program won't proceed
 further until the wifi is connected.
 
-![](media/image7.jpeg){width="5.875in" height="3.2916666666666665in"}
+![](/blog/assets/img/esp8266-microcontrollers/image7.jpg){width="5.875in" height="3.2916666666666665in"}
 
 Connect to the host and send the request. Here we follow the standard
 HTTP GET request format. We are continuously sending requests with a
@@ -132,12 +130,12 @@ delay of 3 seconds.
 
 **[OUTPUTS:]{.underline}**
 
-. ![](media/image8.jpeg){width="2.4583333333333335in"
+. ![Image shows the output obtained on the Serial monitor](/blog/assets/img/esp8266-microcontrollers/image8.jpg){width="2.4583333333333335in"
 height="1.0416666666666667in"}
 
 This is the output ( from the Serial monitor) of the Access Point.
 
-![](media/image9.png){width="4.40625in" height="1.9166666666666667in"}
+![](/blog/assets/img/esp8266-microcontrollers/image9.jpg){width="4.40625in" height="1.9166666666666667in"}
 
 This is from the Serial monitor of the station.
 
