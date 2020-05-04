@@ -95,20 +95,20 @@ height="2.8854166666666665in"}
 Start the access point. Here myIP is the IP address of the AP. LED is
 connected to pin 13 or D7.
 
-![](/blog/assets/img/esp8266-microcontrollers/image3.jpg){width="6.447916666666667in"
+![access point](/blog/assets/img/esp8266-microcontrollers/image3.jpg){width="6.447916666666667in"
 height="1.2708333333333333in"}
 
 Here the first print statement prints the number of stations connected
 to our access point. Then read the request sent by the client.
 
-![](/blog/assets/img/esp8266-microcontrollers/image4.jpg){width="4.385416666666667in"
+![prints the number of stations connected](/blog/assets/img/esp8266-microcontrollers/image4.jpg){width="4.385416666666667in"
 height="2.2291666666666665in"}
 
 Based on the request either turn on the LED or turn it off.
 
 **[NODEMCU as a Station:]{.underline}**
 
-![](/blog/assets/img/esp8266-microcontrollers/image5.jpg){width="5.083333333333333in" height="1.65625in"}
+![LED](/blog/assets/img/esp8266-microcontrollers/image5.jpg){width="5.083333333333333in" height="1.65625in"}
 
 Host contains the IP address of the AP(Access point).
 
@@ -122,7 +122,7 @@ height="3.6666666666666665in"}
 Connect the Station to the WiFi of the AP. The program won't proceed
 further until the wifi is connected.
 
-![](/blog/assets/img/esp8266-microcontrollers/image7.jpg){width="5.875in" height="3.2916666666666665in"}
+![Station to the WiFi](/blog/assets/img/esp8266-microcontrollers/image7.jpg){width="5.875in" height="3.2916666666666665in"}
 
 Connect to the host and send the request. Here we follow the standard
 HTTP GET request format. We are continuously sending requests with a
@@ -135,7 +135,7 @@ height="1.0416666666666667in"}
 
 This is the output ( from the Serial monitor) of the Access Point.
 
-![](/blog/assets/img/esp8266-microcontrollers/image9.jpg){width="4.40625in" height="1.9166666666666667in"}
+![output](/blog/assets/img/esp8266-microcontrollers/image9.jpg){width="4.40625in" height="1.9166666666666667in"}
 
 This is from the Serial monitor of the station.
 
