@@ -31,7 +31,7 @@ Trees are a Subset of Graphs, like graphs they  are  represented by nodes and ed
 
 
 
-![alt_text](/blog_src/assets/img/DP_on_Trees/1.png)
+![alt_text](/blog/assets/img/DP_on_Trees/1.png)
 
 
  In the above example we have 4 nodes and 3 edges , yet it is not a tree.
@@ -46,7 +46,7 @@ A Tree is a connected graph without any cycle, such graphs can be thought of sus
 
 
 
-![alt_text](/blog_src/assets/img/DP_on_Trees/2.png)
+![alt_text](/blog/assets/img/DP_on_Trees/2.png)
 
 
 but any graph which satisfies the above criteria can be converted into a tree, for example 
@@ -56,7 +56,7 @@ The following diagram does not looks like a conventional tree
 
 
 
-![alt_text](/blog_src/assets/img/DP_on_Trees/3.png)
+![alt_text](/blog/assets/img/DP_on_Trees/3.png)
    
 
 But it can easily be converted into a tree by pivoting it at any node let’s pivot it along node 2 
@@ -66,7 +66,7 @@ But it can easily be converted into a tree by pivoting it at any node let’s pi
 
 
 
-![alt_text](/blog_src/assets/img/DP_on_Trees/4.png)
+![alt_text](/blog/assets/img/DP_on_Trees/4.png)
 
 
  **Adjacency list**
@@ -194,7 +194,7 @@ We will only discuss DFS because it is required for understanding DP on Trees.
 
 
 
-![alt_text](/blog_src/assets/img/DP_on_Trees/6.png)
+![alt_text](/blog/assets/img/DP_on_Trees/6.png)
 
 In the above example node, 1 is the root node, node 2 and 3 are children of root 1, node 4 and 5 are children of root 2 and grandchildren of root 1, and similarly, 6 is the child of root 3 and grandchild of root 1.   
 It is often misunderstood that a node cannot have more than 2 children.  
@@ -205,7 +205,7 @@ Only in a Binary Tree, we can have at most 2 children, but in general, it’s ok
 
 
 
-![alt_text](/blog_src/assets/img/DP_on_Trees/7.png)
+![alt_text](/blog/assets/img/DP_on_Trees/7.png)
 
 
 So in the above figure , if we do dfs of root node 1, the order will be 
@@ -215,55 +215,55 @@ So in the above figure , if we do dfs of root node 1, the order will be
 So overall in DFS we finish all the children before moving to the next child, and this is true for every node we visit. 
 
 
-![alt_text](/blog_src/assets/img/DP_on_Trees/8.png)
+![alt_text](/blog/assets/img/DP_on_Trees/8.png)
  
 
 
 First, 1 is Parent Node and node 2 is its child, so before visiting 3 we have to complete 2. 
 
 
-![alt_text](/blog_src/assets/img/DP_on_Trees/9.png)
+![alt_text](/blog/assets/img/DP_on_Trees/9.png)
 
 
 Similarly, now node 2 is its parent node and root 4 and its children have to be completed before we visit 5. 
 Let’s take an example:  
 
-![alt_text](/blog_src/assets/img/DP_on_Trees/10.png)
+![alt_text](/blog/assets/img/DP_on_Trees/10.png)
       First we visit the root node.
 
 
-![alt_text](/blog_src/assets/img/DP_on_Trees/11.png)
+![alt_text](/blog/assets/img/DP_on_Trees/11.png)
   Then we move on to its first child.
 
 
 
-![alt_text](/blog_src/assets/img/DP_on_Trees/12.png)
+![alt_text](/blog/assets/img/DP_on_Trees/12.png)
   Then we visit the child of node 2.
 
 
 
-![alt_text](/blog_src/assets/img/DP_on_Trees/13.png)
+![alt_text](/blog/assets/img/DP_on_Trees/13.png)
  after we are done with all the children of node 2 we move onto node 3.
                                                     
 
 
 
-![alt_text](/blog_src/assets/img/DP_on_Trees/14.png)
+![alt_text](/blog/assets/img/DP_on_Trees/14.png)
   Since there are no children of 3 we move to the next child which is 4.
 
 						       
 
  
 
-![alt_text](/blog_src/assets/img/DP_on_Trees/15.png)
+![alt_text](/blog/assets/img/DP_on_Trees/15.png)
   then we move to first child of 4   That is node 6.
 
 
-![alt_text](/blog_src/assets/img/DP_on_Trees/16.png)
+![alt_text](/blog/assets/img/DP_on_Trees/16.png)
 Then we complete the node 7.
 
 
-![alt_text](/blog_src/assets/img/DP_on_Trees/17.png)
+![alt_text](/blog/assets/img/DP_on_Trees/17.png)
    and we finish it with node 8.  
 
 Now let’s write code for it, in which we have the edges(using the adjacency list program ) and print the order in which the nodes are visited.  
@@ -434,11 +434,11 @@ We have an array of n integers and we have to find the maximum subarray(continuo
 For example, consider the following array 
 
 
-![alt_text](/blog_src/assets/img/DP_on_Trees/18.png)
+![alt_text](/blog/assets/img/DP_on_Trees/18.png)
  
 If we check manually the greatest sum is from index 1 to index index 5 which is 
 
-![alt_text](/blog_src/assets/img/DP_on_Trees/19.png)
+![alt_text](/blog/assets/img/DP_on_Trees/19.png)
  
 
 2 + 4 + (-3) +5 +2 = 10.  But it is impossible to check it manually for larger array, so how do we  go about it?
@@ -451,7 +451,7 @@ Understanding it with diagrams
 
 Let’s fix “a” at index 0 and then lets shift “b” first b will start with index “0”, this is the case when the maximum subarray is the first element itself
 
-![alt_text](/blog_src/assets/img/DP_on_Trees/20.png)
+![alt_text](/blog/assets/img/DP_on_Trees/20.png)
  
 
 The sum is -1
@@ -459,7 +459,7 @@ The sum is -1
 Then let’s shift b to index 1 
 
 
-![alt_text](/blog_src/assets/img/DP_on_Trees/21.png)
+![alt_text](/blog/assets/img/DP_on_Trees/21.png)
  
 
 the sum will be a to b that is -1 +2 = 1. 
@@ -467,7 +467,7 @@ the sum will be a to b that is -1 +2 = 1.
 Now shift b to right once more 
 
 
-![alt_text](/blog_src/assets/img/DP_on_Trees/22.png)
+![alt_text](/blog/assets/img/DP_on_Trees/22.png)
 
 
 Sum is 1+ 4 = 5.
@@ -475,14 +475,14 @@ Sum is 1+ 4 = 5.
 Keep shifting it, till you reach the end 
 
 
-![alt_text](/blog_src/assets/img/DP_on_Trees/23.png)
+![alt_text](/blog/assets/img/DP_on_Trees/23.png)
  
 
 Sum is 5 +(-3) = 2
 
 
 
-![alt_text](/blog_src/assets/img/DP_on_Trees/24.png)
+![alt_text](/blog/assets/img/DP_on_Trees/24.png)
  
 
 Sum is 2+ 5 = 7.  
@@ -490,19 +490,19 @@ Sum is 2+ 5 = 7.
 
 
 
-![alt_text](/blog_src/assets/img/DP_on_Trees/25.png)
+![alt_text](/blog/assets/img/DP_on_Trees/25.png)
  
 
 Sum is 7 +2 = 9.
 
 
-![alt_text](/blog_src/assets/img/DP_on_Trees/26.png)
+![alt_text](/blog/assets/img/DP_on_Trees/26.png)
  
 
 Sum is  9 +(-5) = 4
 
 
-![alt_text](/blog_src/assets/img/DP_on_Trees/27.png)
+![alt_text](/blog/assets/img/DP_on_Trees/27.png)
 
 
 Sum is 4 +2 = 6.
@@ -514,19 +514,19 @@ Now b has reached the end, note the maximum sum = 9
 Now when b reaches the last index shift a to right by 1 index 
 
 
-![alt_text](/blog_src/assets/img/DP_on_Trees/28.png)
+![alt_text](/blog/assets/img/DP_on_Trees/28.png)
 
 
-![alt_text](/blog_src/assets/img/DP_on_Trees/29.png)
+![alt_text](/blog/assets/img/DP_on_Trees/29.png)
 
 
-![alt_text](/blog_src/assets/img/DP_on_Trees/30.png)
+![alt_text](/blog/assets/img/DP_on_Trees/30.png)
 
 
 Keep going till the b reaches its end then again shift a by 1 index to the right, finally stop when we have reached the following stage: 
 
 
-![alt_text](/blog_src/assets/img/DP_on_Trees/31.png)
+![alt_text](/blog/assets/img/DP_on_Trees/31.png)
  
 
 And note the maximum value noted throughout the process, its code is very straight forward 
@@ -582,7 +582,7 @@ Initially we assign sum =0 and best =0 (which will store our answer) and conside
 
 
 
-![alt_text](/blog_src/assets/img/DP_on_Trees/32.png)
+![alt_text](/blog/assets/img/DP_on_Trees/32.png)
 
 
 Let's write the code first and then we will discuss more,  
@@ -628,7 +628,7 @@ We are at the root node, we need to go to any leaf node, to which the sum of nod
 
 
 
-![alt_text](/blog_src/assets/img/DP_on_Trees/33.png)
+![alt_text](/blog/assets/img/DP_on_Trees/33.png)
 
 
  
@@ -788,7 +788,7 @@ Because we can suspend a tree from any node in the tree, here is an example of s
 
 
 
-![alt_text](/blog_src/assets/img/DP_on_Trees/34.png)
+![alt_text](/blog/assets/img/DP_on_Trees/34.png)
  
 
 We can still calculate the maximum sum ,all we need to do is to call dfs(5,adj,0,a) instead of dfs(1,adj,0,a) from the main function !!!
