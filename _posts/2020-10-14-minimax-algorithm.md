@@ -35,7 +35,7 @@ To start with, let us first look at some of the commonly used terminology used f
 The main idea is to **maximize the chances of winning for MAX**. How do we do it? For that we assign a value (or weights) to every node of the game tree such that higher its value, the higher the chances of winning for MAX. Now we need to assign the values to the node in such a way that assures this mechanism. So in order for MAX to win, he/she needs to choose the maximum value out of the possible ones. And MIN has to make a move such that MAX is forced to choose the minimum value out of the possible.
 Let’s apply this to an example. Suppose we have a game tree like the one shown. Suppose the weights of the last layer be given to us before-hand (as shown).The rule of the game says that the final value in the red triangle is the points achieved by MAX. So in order to win, MAX has to somehow make red triangle has the maximum value as possible. Also, the weights of the nodes in a layer can take any one of the values from the immediate nodes diverged from it.
 
-![image for Game tree 1](/assets/img/Minimax-algorithm/tree1.png)
+![image for Game tree 1](/blog/assets/img/Minimax-algorithm/tree1.png)
 
 Eg: Leftmost green triangle can take only 55 or 13, rightmost green triangle can only take 13 or 38 and the middle green triangle can take  43 or 62. The red triangle can take value from any of the green triangle.
 
@@ -47,7 +47,7 @@ Since MAX get to choose the value in the red triangle, MIN has to select values 
 
 > minimum(13,38) = 13
 
-![image for Game tree 2](/assets/img/Minimax-algorithm/tree2.png)
+![image for Game tree 2](/blog/assets/img/Minimax-algorithm/tree2.png)
 
 The move of MAX is now restricted by the values in green triangles. In order to win the game, MAX must choose the maximum value possible from the 2nd layer and hence choose 43. The whole process can be simply written as:
 
@@ -55,11 +55,11 @@ The move of MAX is now restricted by the values in green triangles. In order to 
 
 The final game tree looks like this
 
-![image for Game tree 3](/assets/img/Minimax-algorithm/tree3.png)
+![image for Game tree 3](/blog/assets/img/Minimax-algorithm/tree3.png)
 
 Now let's apply this to Tic-Tac-Toe game. This is how a basic game tree of a Tic-Tac-Toe game.
 
-![Image for Tic-Tac-Toe 1](/assets/img/Minimax-algorithm/tic_tac_toe1.png)
+![Image for Tic-Tac-Toe 1](/blog/assets/img/Minimax-algorithm/tic_tac_toe1.png)
 
 The initial state at the start of the game is the first layer that defines that the board is blank and it’s MAX’s turn to play. So we must try to maximise the value at this layer. The immediate successor layer is played by MIN, and hence must be minimized since we are assuming that both players play optimally. The next layer is again to be played by MAX and hence maximised and the process continues till the terminal states. So we begin by applying the utilities to all the terminal states. But **how do we determine the values at the nodes**? We just know only at the end of the game that a player has won or lost. Also observe that the terminal state (nodes from whom no more nodes branch off) are those where no more move is possible or in simple terms - where the game has ended. Giving weights to these nodes is easy. We need a way to keep the value high if MAX wins and low if MAX loses. These can be done by using the utilities as shown below.
 
@@ -70,7 +70,7 @@ Utilities used are as follows.
 
 > -1 : MAX loses
 
-![Image for Tic-Tac-Toe 2](/assets/img/Minimax-algorithm/tic_tac_toe2.png)
+![Image for Tic-Tac-Toe 2](/blog/assets/img/Minimax-algorithm/tic_tac_toe2.png)
 
 Then we start determining the utilities of the higher nodes by maximising/minimising the values obtained from the immediate previous layer, starting from terminal states similar to the way we did for the above example. With the help of this game tree, we can decide the layer to be chosen at the 1st layer to maximize the winning chances of MAX and continue to choose the best branch in order to win.
 
