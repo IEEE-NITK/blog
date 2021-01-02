@@ -40,8 +40,7 @@ Python is an interpreted language, and therefore runs much slower than a languag
 
 ### Parallel Processing is not supported
 
-CPython, which is the standard implementation of Python, has a feature known as the Global Interpreter Lock (GIL), which essentially locks one flow of execution to hold control of the Python interpreter. This means that two separate flows of execution, more commonly known as threads, cannot be run on the same CPU. Since Python programs run as a single process with a single thread of execution, only one CPU core is used, regardless of the number of cores the CPU contains. This increases the runtime of programs that require heavy CPU computation, when compared to languages which support multithreading
-
+CPython, which is the standard implementation of Python, has a feature known as the Global Interpreter Lock (GIL), which essentially locks one flow of execution to hold control of the Python interpreter. This means that two separate flows of execution, more commonly known as threads, cannot be run on the same CPU. Since Python programs run as a single process with a single thread of execution, only one CPU core is used, regardless of the number of cores the CPU contains. This increases the runtime of programs that require heavy CPU computation, when compared to languages which support multithreading.
 
 
 In conclusion, we can all agree that Python has found good use in many fields of computer science, and it is definitely an asset to learn the language in today’s day and age. Nonetheless, a beginner in programming should consider learning a different Object Oriented Programming language like C++ or Java to gain a better grasp on the core concepts of OOPs. Although this is advice from a programming perspective, if the user’s goal is to learn Python only for a specific application like Machine Learning or Data Science, they can go ahead and learn the language to start off.
