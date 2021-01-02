@@ -24,7 +24,7 @@ All the hype around Python is what attracts a lot of beginners to pick up the la
 
 ### Variables don’t require a type
 
-In Python, variables can simply be declared by assigning some value to an arbitrary variable name. This makes the syntax simpler, but it abstracts the way the data is stored in memory. For example, C programming language gives you the option to define the datatype of the variable you are storing, which allows the user to understand how many bytes of data that specific variable is taking up. This allows programs to be more memory efficient and enables users to understand how the data is stored at the bit level. For beginners, understanding how memory allocation works for specific data types can help in building good coding habits.
+In Python, variables can simply be declared by assigning any value to a variable name of the user's choice. Under the hood, Python stores all variables, irrespective of its datatype, in the form of objects. The Python interpreter then binds names to these objects. This makes the syntax of declaring variables simpler, but it abstracts the way the data is stored in memory. For example, C programming language gives you the option to define the datatype of the variable you are storing, which allows the user to understand how many bytes of data that specific variable is taking up. This enables users to understand how the data is stored at the bit level. For beginners, understanding how memory allocation works for specific data types can help in building good coding habits.
 
 ### Pointers do not exist
 
