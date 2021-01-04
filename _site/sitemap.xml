@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	
+	<url>
+		<loc>http://localhost:4000/blog/researchers-and-rating-their-research/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/minimax-algorithm/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/updatedekranoplan/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/communication-protocols-part1/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/a-dive-into-git-directory/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/Genome-Editing/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/Applications-of-Neural-Networks-in-Power-Systems/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/What-is-Machine-Learning/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/TarjansAlgo/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/SLAM/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/Solving-a-traffic-problem-using-graph-decomposition/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/web-vulnerabilities/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/pslv-to-mars/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/piezoelectricity-and-piezoelectric-sensors/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/A-Comprehensive-Guide-To-LiFi/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/ds1-a-demonstration-spacecraft-and-its-communication-aspects/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/autopilot/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/stem_cells/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/Bluetooth-Low-Energy/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/An-Intro-to-WebSockets/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/why-do-GANs-matter/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/colonization-of-mars/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/bionics/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/generate-text-with-gpt2/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/future-of-drones/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/concorde/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/forward-swept-wings/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/space-based-solar-power/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/password-security-techniques-and-challenges/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/Requirements-and-Importance-of-Research/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/Long-Short-Term-Neural-Networks/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/Radar-Imaging/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/ELF-Files-in-Linux/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/Solving-Switch-Riddle-using-RL/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/machine-translation/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/machine-learning-magic/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/innovations-in-drone-industry/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/social-engineering/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/the-missing-circuit-element/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/smart-contracts/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/self-healing-material/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/photocatalytic-decomposition/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/an-intro-to-the-map-reduce-programming-paradigm/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/thermal-imaging/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/nano-medicine/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/how-computers-learn-to-play-games/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/GaN/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/why-you-should-learn-flutter/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/nanosheets-decorated-with-dna/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/electronic-skin/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/nanomachines/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/gesture-controlled-robot/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/cloud-gaming/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/zero-knowledge-proof/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/microled/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/ballistics/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/organic-photovoltaics/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/mems/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/deconv/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/supercap/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/kmp-algorithm/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/by-wire/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/coronary-stents/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/electronic-aspirin/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/web-3-0/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/vortices/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/light-backscatter-application/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/why-you-need-gpu/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/varistor/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/automate-the-industries/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/why-machine-learning-matters/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/phase-change-material/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/avionics/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/segment-tree/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/nanoparticle-wonder-liquid/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/cloud-computing/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/biomicry-creating-a-truly-sustainable-environment/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/bionics/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/the-new-biometric-brainprint/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/pow-consensus-blockchain/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/quantum-supremacy/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/string-genetic/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/nanomotors/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/earthing-systems/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/chain-of-things/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/heap_exploitation/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/computational-approaches-of-shock-waves/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/charge-crowding/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/why-50hz/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/market-basket/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/alterego/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/regenerative-braking/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/washable-electronics/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/qemu-virtualization/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/amazon-go/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/smart-lighting-systems/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/prof-matching-envision/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/evolution-of-bicycle/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/electric-cars/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/tSNE/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/bit-manipulation/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/fluids-and-satellites/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/how-is-technology-helping-the-differently-abled-people/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/public-key-cryptography/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/war-of-the-currents/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/speed-printing/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/space-ml/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/e-Ink/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/rocker-bogie/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/future-of-computing-quantum-computing/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/the-airbag-system-for-two-wheeler-vehicle/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/bot/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/a-step-ahead-in-reverse-engineering/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/rfid/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/machine-learning-for-stock-market-investment/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/evacuated-tube-collector/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/the-halting-problem/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/design-of-aircraft-windows/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/how-qr-code-was-invented/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/smart-grid/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/magnetically-repelling-ice/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/the-beginning-of-the-end-have-the-machines-won/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/introduction-to-docker/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/the-ligo-experiment/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/wireless-power-transmission/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/using-mdns-in-iot/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/the-honeycomb-conjecture/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/charge-your-phone/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/augmented-reality/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/the-brain-behind-a-formula-one-car/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/robots-can-see-in-3d/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/generative-adversarial-networks/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/search-engine-optimisation/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/rpi-tutorial/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/aircraft-engines/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/fingerprint-recognition/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/chatbot/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/biohacking/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/quantum-computers/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/getting-started-with-gui/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/challenger-disaster/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/bit-torrent-explained/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/storing-energy-in-salt/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/what-makes-a-smart-home-smart/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/you-dont-really-know-arduino/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/water-memory-what-a-memory/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/rock-paper-scissors/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/airbus-e-fan/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/safety-issues-in-ai-systems/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/technology-in-sports/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/hashing-in-competitive-programming/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/six-stroke-engine/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/opencv/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/random-number-generator/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/smartphones-and-health/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/raspberry-pi-bluetooth/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/high-lift-devices/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/3d-printing/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/reinforcement-learning/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/number-theory/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/log-file-parsing-and-report-generation/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/cuba-and-candela-thin-shell-structures-and-their-strength-through-curvature/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/multitenancy/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/cvt/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/finfets/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/compliant-mechanisms/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/big-data/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/dealing-with-underdetermined-systems/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/hyperloop/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/graphene/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/promises-closures-and-potatoes/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/fluid-mechanics-in-everyday-life/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/the-fourth-industrial-revolution/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/through-the-eyes-of-a-computer/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/introduction-to-reverse-engineering/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/google-image-search-grid/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/lighting-up-your-room/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/the-class-of-np/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/why-not-chemical-engineering/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/introduction-to-gpu-computing/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/how-to-get-started-with-bots/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/hello-world/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/getting-to-love-the-terminal/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/installing-ubuntu/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://localhost:4000/blog/introduction-to-ieee/</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+</urlset>

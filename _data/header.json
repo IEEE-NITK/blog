@@ -1,0 +1,59 @@
+[
+	{
+		"name": "Home",
+		"link": "/"
+    },
+    {
+		"name": "Team",
+		"link": "team"
+    },
+    {
+		"name": "SIGs",
+		"sigs": [
+            {
+                "name": "Computer Society",
+                "link": "compsoc"
+            },
+            {
+                "name": "Diode",
+                "link": "diode"
+            },
+            {
+                "name": "Piston",
+                "link": "piston"
+            },
+            {
+                "name": "Women in Engineering",
+                "link": "wie"
+            },
+            {
+                "name": "SIGHT",
+                "link": "sight"
+            }                                           
+        ]
+    },
+    {
+		"name": "Blog",
+		"link": "blog/"
+    },
+    {
+		"name": "Gyan",
+		"link": "gyan/"
+    },
+    {
+		"name": "Achievements",
+		"link": "achieve"
+    },
+    {
+		"name": "Publications",
+		"link": "publications"
+    },
+    {
+		"name": "Join Us",
+		"link": "joinus"
+    },
+    {
+      "name": "Virtual Project Expo",
+      "link": "virtual-expo/"
+      }
+]    

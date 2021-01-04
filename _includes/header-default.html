@@ -1,19 +1,59 @@
 
 <header class="header-site" role="banner">
-    <div class="content">
-        <h2>
-            <span class="site-title">{{site.username}}</span>
-            <span class="site-description">{{ site.description }}</span>
-        </h2>
-        <div class="icons-home">
-            <a aria-label="My Facebook" target="_blank" href="https://facebook.com/{{site.facebook_username}}"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a>
-            <a aria-label="Send email" href="mailto:{{site.email}}"><svg class="icon icon-email"><use xlink:href="#icon-email"></use></svg></a>
-            <a aria-label="My Twitter" target="_blank" href="https://twitter.com/{{site.twitter_username}}"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a>
-            <!-- <a aria-label="My Google Plus" target="_blank" href="https://plus.google.com/{{site.gplus_username}}/posts"><svg class="icon icon-google-plus"><use xlink:href="#icon-google-plus"></use></svg></a> -->
-            <a aria-label="My Github" target="_blank" href="https://github.com/{{site.github_username}}"><svg class="icon icon-github-alt"><use xlink:href="#icon-github-alt"></use></svg></a>
-            <a aria-label="Use the RSS to get updated" target="_blank" href="{{ "/feed.xml" | prepend: site.baseurl }}"><svg class="icon icon-rss"><use xlink:href="#icon-rss"></use></svg></a>
+    <nav class="colorlib-nav" role="navigation">
+        <div class="top-menu">
+            <div class="container">
+                <div class="row" id="header">
+                    <div class="col-md-2">
+                        <div id="colorlib-logo">
+                            <a href="/" title="home">
+                                <img src="{{ site.baseurl}}/assets/img/ieee_nitk.png" alt="IEEE Logo" class="navbar-logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-10 text-right menu-1">
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/team">Team</a></li>
+                            <li>
+                                <a class="nav-link dropdown-toggle has-dropdown" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    SIGs
+                                </a>
+                                <ul class="dropdown dropdown-menu">
+                                    <li class="dropdown-item"><a href="/compsoc">Compsoc</a></li>
+                                    <li class="dropdown-item"><a href="/diode">Diode</a></li>
+                                    <li class="dropdown-item"><a href="/piston">Piston</a></li>
+                                    <li class="dropdown-item"><a href="/wie">Women in Engineering</a></li>
+                                    <li class="dropdown-item"><a href="/sight">SIGHT</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/blog/">Blog</a></li>
+                            <li><a href="/gyan/">Gyan</a></li>
+                            <li><a href="/achieve">Achievements</a></li>
+                            <li><a href="/publications">Publications</a></li>
+                            <li><a href="/joinus">Join Us</a></li>
+                            <li><a href="/expo">Virtual Project Expo</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <a role="button" class="down" data-scroll href="#scroll"><svg class="icon icon-angle-down"><use xlink:href="#icon-angle-down"></use></svg></a>
-    {% include menu-search.html %}
+    </nav>
+
+    <!-- Landing -->
+    <section class="video-hero" style="height: 500px; background-size:cover; background-position: center center;background-attachment:fixed;" data-section="home">
+        <div id="particles-js"></div>
+        <div class="display-t display-t2 text-center">
+            <div class="display-tc display-tc2">
+                <div class="container">
+                    <div class="row row-title">
+                        <div class="col-md-12 animate-box">
+                            <h2 class="page-title">Blog</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </header>
