@@ -16,10 +16,6 @@ github_username: 'tim-nitk'
 
 ---
 
-What a discouraging way to start off isn't it ? But stick around and I promise you that you will leave this blog with zeal for Javascript .
-
-So go grab a 🍺, give this post a **HUGE** ❤️ and let's dive right into it.
-
 # Here are 5 ways you can ninjafy your console logging skills
 
 ## **1. console.log( 'COLORED_TEXT' )**
