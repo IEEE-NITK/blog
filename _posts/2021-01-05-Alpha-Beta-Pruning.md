@@ -10,7 +10,7 @@ tags:
 - CompSoc
 - Artificial Intelligence
 - Algorithms
-- 
+- Game Theory
 categories:
 - Compsoc
 github_username: 'pranavdv'
@@ -108,6 +108,9 @@ As you can see, even with this optimization, the algorithm isn’t quite perfect
 
 ## References
 [Alpha Beta Pruning - Wikipedia](https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning)
+
 [More code - Javapoint](https://www.javatpoint.com/ai-alpha-beta-pruning)
+
 [Some theory and exercises - UCLA Recitation](http://web.cs.ucla.edu/~rosen/161/notes/alphabeta.html)
+
 [More examples - Cornell Recitation](https://www.cs.cornell.edu/courses/cs312/2002sp/lectures/rec21.htm)
