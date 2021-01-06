@@ -19,7 +19,7 @@ github_username: 'DeltaCube23'
 
 A trie is a rooted tree that maintains a set of strings. Each string in the set is stored as a chain of characters that starts at the root. If two strings have a common prefix, they also have a common chain in the tree. Consider the following set of strings {canal, candy, there, the} and let us make an example trie from these.
 
-![Example Trie](/blog/assets/img/Trying-to-understand-Trie/image.png)
+![Example Trie](/blog/assets/img/Trying-to-understand-Trie/image1.png)
 
 The * character in the node means that a string in the set ends at that node. Such a distinction is needed because a string may be a prefix of another string like “the” is of “there”.
 
