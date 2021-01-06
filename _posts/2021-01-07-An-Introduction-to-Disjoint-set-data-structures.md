@@ -1,25 +1,10 @@
----
- layout: post
- title: "An Introduction to Disjoint-set data structures"
- author_github: ZerothKing
- date: 2021-01-07 00:34:44
- image: '/assets/img/'
- description: 'A practical introduction to disjoint-set data structures.'
- tags:
- - IEEE NITK
- - CompSoc
- - Disjoint-set
- - Data Structures and Algorithms
- categories:
- - Compsoc
- github_username: 'ZerothKing'
----
+
 # **An Introduction to Disjoint-set data structures**
 
 
 # <span style="text-decoration:underline;">Introduction</span>
 
-A **disjoint-set data structure**, also called a **union–find data structure** or **merge–find set**, is a data structure that stores a collection of **[disjoint](https://en.wikipedia.org/wiki/Disjoint_sets) **(non-overlapping) sets. Equivalently, it stores a **[partition of a set](https://en.wikipedia.org/wiki/Partition_of_a_set)** into disjoint subsets.
+A **disjoint-set data structure**, also called a **union–find data structure** or **merge–find set**, is a data structure that stores a collection of **[disjoint](https://en.wikipedia.org/wiki/Disjoint_sets)**(non-overlapping) sets. Equivalently, it stores a **[partition of a set](https://en.wikipedia.org/wiki/Partition_of_a_set)** into disjoint subsets.
 
 
 # <span style="text-decoration:underline;">Capabilities</span>
@@ -33,18 +18,21 @@ Thus the basic interface of this data structure consists of only three operation
 
 
 
-*   **make_set(v) **- creates a new set consisting of the new element **v**
+*   **make_set(v)**- creates a new set consisting of the new element **v**
 *   **union_sets(a, b)** - merges the two specified sets (the set in which the element **a** is located, and the set in which the element **b** is located)
-*   **find_set(v)** - returns the representative (also called leader/parent) of the set that contains the element** v**. This representative is an element of its corresponding set. It is selected in each set by the data structure itself (and can change over time, namely after** union_sets** calls). This representative can be used to check if two elements are part of the same set or not. **a** and **b** are exactly in the same set, if **find_set(a) == find_set(b). **Otherwise they are in different sets.
+*   **find_set(v)** - returns the representative (also called leader/parent) of the set that contains the element**v**. This representative is an element of its corresponding set. It is selected in each set by the data structure itself (and can change over time, namely after **union_sets** calls). This representative can be used to check if two elements are part of the same set or not. **a** and **b** are exactly in the same set, if **find_set(a) == find_set(b).** Otherwise they are in different sets.
 
 
 # <span style="text-decoration:underline;">How it works</span>
 
 We will store the sets in the form of **trees**: each tree will correspond to one set. And the root of the tree will be the representative/leader of the set.
 
-In the beginning, every element starts as a single set, therefore each vertex is its own tree. Then we combine the set containing the element 1 and the set containing the element 2. Then we combine the set containing the element 3 and the set containing the element 4. And in the last step, we combine the set containing the element 1 and the set containing the element 3.
+In the beginning, every element starts as a single set, therefore each vertex is its own tree.
+![Image_being_discussed](/blog/assets/img/Disjoint-set-data-structures/1.png)
 
-For the implementation this means that we will have to maintain an array **parent **that stores a reference to its immediate ancestor in the tree.
+ Then we combine the set containing the element 1 and the set containing the element 2. Then we combine the set containing the element 3 and the set containing the element 4. And in the last step, we combine the set containing the element 1 and the set containing the element 3.
+
+For the implementation this means that we will have to maintain an array **parent** that stores a reference to its immediate ancestor in the tree.
 
 
 # <span style="text-decoration:underline;">Implementation</span>
@@ -55,7 +43,7 @@ To create a new set (operation **make_set(v)**), we simply create a tree with ro
 
 To combine two sets (operation **union_sets(a, b)**), we first find the representative of the set in which **a** is located, and the representative of the set in which **b** is located. If the representatives are identical, that we have nothing to do, the sets are already merged. Otherwise, we can simply specify that one of the representatives is the parent of the other representative - thereby combining the two trees.
 
-Finally the implementation of the find representative function (operation **find_set(v)**): we simply climb the ancestors of the vertex **v **until we reach the root, i.e. a vertex such that the reference to the ancestor leads to itself. This operation is easily implemented recursively. Here is the implementation - 
+Finally the implementation of the find representative function (operation **find_set(v)**): we simply climb the ancestors of the vertex **v** until we reach the root, i.e. a vertex such that the reference to the ancestor leads to itself. This operation is easily implemented recursively. Here is the implementation - 
 
 
 ```
@@ -78,7 +66,7 @@ void union_sets(int a, int b) {
 ```
 
 
-The time complexity of this algorithm is** O(N)** where N is the size of the set of elements.
+The time complexity of this algorithm is **O(N)** where N is the size of the set of elements.
 
 
 # <span style="text-decoration:underline;">Improving the efficiency of the algorithm</span>
@@ -105,7 +93,7 @@ The simple implementation does what was intended: first find the representative 
 
 ## <span style="text-decoration:underline;">Union by Rank</span>
 
-Think about what happens when we join the larger tree to the smaller tree while merging the two sets. Clearly this can lead to trees with chain length of O(N). So if we always join the smaller tree to the larger one, we can significantly reduce the time complexity.
+Think about what happens when we join the larger tree to the smaller tree while merging the two sets. Clearly this can lead to trees with chain length of **O(N)**. So if we always join the smaller tree to the larger one, we can significantly reduce the time complexity.
 
 In this approach, we use the size of the tree as the rank and we join the tree with lower rank to the one with the higher rank. Here is the implementation -
 
@@ -132,7 +120,7 @@ void union_sets(int a, int b) {
 
 # <span style="text-decoration:underline;">Time Complexity</span>
 
-If we combine the two optimisation techniques that we discussed, the time complexity comes out to be O(α(n)), where α(n) is the inverse Ackermann function, which grows very slowly. In fact it grows so slowly, that it doesn't exceed 4 for all reasonable n. So we can say that we will reach **nearly constant** time queries. This is one of the reasons why a disjoint-set is so important.
+If we combine the two optimisation techniques that we discussed, the time complexity comes out to be **O(α(n))**, where **α(n)** is the inverse Ackermann function, which grows very slowly. In fact it grows so slowly, that it doesn't exceed 4 for all reasonable n. So we can say that we will reach **nearly constant** time queries. This is one of the reasons why a disjoint-set is so powerful.
 
 
 # <span style="text-decoration:underline;">Applications</span>
@@ -146,14 +134,14 @@ Formally the problem is defined in the following way: Initially we have an empty
 
 Here we can directly apply the data structure, and get a solution that handles an addition of a vertex or an edge and a query in nearly constant time on average.
 
-This application is quite important, because nearly the same problem appears in **Kruskal’s algorithm for minimum spanning tree **and**  **DSU helps in reducing it’s time complexity.
+This application is quite important, because nearly the same problem appears in **Kruskal’s algorithm for minimum spanning tree** and DSU helps in reducing it’s time complexity.
 
 
 ## <span style="text-decoration:underline;">Job Sequencing problem</span>
 
-Given a set of n jobs where each job i has a deadline d_i >=1 and profit p_i>=0. Only one job can be scheduled at a time. Each job takes 1 unit of time to complete. We earn the profit if and only if the job is completed by its deadline. The task is to find the subset of jobs that maximizes profit.
+Given a set of n jobs where each job i has a deadline **d_i** >= 1 and profit **p_i** >= 0. Only one job can be scheduled at a time. Each job takes 1 unit of time to complete. We earn the profit if and only if the job is completed by its deadline. The task is to find the subset of jobs that maximizes profit.
 
-**Note **: If you try to solve this greedily the time complexity will be O(n^2) but DSU makes it much faster.
+**Note** : If you try to solve this greedily the time complexity will be O(n^2) but DSU makes it much faster.
 
 All time slots are individual sets initially. We first find the maximum deadline of all jobs. Let the max deadline be m. We create m+1 individual sets. If a job is assigned a time slot of t where t => 0, then the job is scheduled during [t-1, t]. So a set with value X represents the time slot [X-1, X].
 
