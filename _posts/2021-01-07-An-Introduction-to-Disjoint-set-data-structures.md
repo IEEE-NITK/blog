@@ -1,19 +1,19 @@
- ---
- layout: post
- title: "Introduction to Disjoint-set Data Structures"
- author_github: ZerothKing
- date: 2017-05-14 23:32:44
- image: '/assets/img/'
- description: 'A practical introduction to Disjoint-set Data Structures'
- tags:
- - IEEE NITK
- - CompSoc
- - Disjoint-set
- - Data Structures and Algorithms
- categories:
- - Compsoc
- github_username: 'ZerothKing'
- ---
+---
+layout: post
+title: "Introduction to Disjoint-set Data Structures"
+author_github: ZerothKing
+date: 2021-01-07 01:57:00
+image: '/assets/img/'
+description: 'A practical introduction to Disjoint-set Data Structures'
+tags:
+- IEEE NITK
+- CompSoc
+- Disjoint-set
+- Data Structures and Algorithms
+categories:
+- Compsoc
+github_username: 'ZerothKing'
+---
 
 # **An Introduction to Disjoint-set data structures**
 
@@ -44,7 +44,7 @@ Thus the basic interface of this data structure consists of only three operation
 We will store the sets in the form of **trees**: each tree will correspond to one set. And the root of the tree will be the representative/leader of the set.
 
 In the beginning, every element starts as a single set, therefore each vertex is its own tree.
-![Image_being_discussed](/blog/assets/img/Disjoint-set-data-structures/1.png)
+![Image_being_discussed](assets/img/Disjoint-set-data-structures/1.png)
 
  Then we combine the set containing the element 1 and the set containing the element 2. Then we combine the set containing the element 3 and the set containing the element 4. And in the last step, we combine the set containing the element 1 and the set containing the element 3.
 
