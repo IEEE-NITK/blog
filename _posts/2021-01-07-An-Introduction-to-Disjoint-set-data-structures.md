@@ -1,4 +1,20 @@
 
+---
+layout: post
+title: An Introduction to Disjoint-set data structure""
+author_github: ZerothKing
+date: 2021-01-7 01:10:10
+image: '/assets/img/'
+description: 'A practical introduction to disjoint-set data structures'
+tags:
+- IEEE NITK
+- CompSoc
+- Disjoint-set
+- Data Structures and Algorithms
+categories:
+- Compsoc
+github_username: 'ZerothKing'
+---
 # **An Introduction to Disjoint-set data structures**
 
 
