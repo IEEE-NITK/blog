@@ -1,7 +1,7 @@
 
 ---
 layout: post
-title: An Introduction to Disjoint-set data structure""
+title: "An Introduction to Disjoint-set data structure"
 author_github: ZerothKing
 date: 2021-01-7 01:10:10
 image: '/assets/img/'
