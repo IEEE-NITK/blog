@@ -18,12 +18,12 @@ github_username: 'ikjot-2605'
 ## **What do you mean by "state"?** 
 Essentially, the state of the app, or a particular widget in the app, is *just information*, that is used to render the UI. This means that any change in the UI was caused by a change in the state of the application.
 <br>
-<center><img src = "/blog/assets/img/State-Management-In-Flutter/image1.png" height = 225></center>
+<center><img src = "/blog/assets/img/State-Management-In-Flutter/image1.png" height = 225 alt = "What is a State?"></center>
 <hr>
 
 ## **Alright, but what is state management?**
 State management is nothing but a means to handle the multiple states your application can have. But to go further here, we need to understand the difference between Ephemeral State and Application State.
-<center><img src = "/blog/assets/img/State-Management-In-Flutter/image2.png" height = 225></center>
+<center><img src = "/blog/assets/img/State-Management-In-Flutter/image2.png" height = 225 alt = "State Management"></center>
 
 <hr>
 
@@ -73,7 +73,7 @@ BLoC stands for Business Logic Components, and it’s much more of an architectu
 But what does it do? Anything you want. Maybe you fed it a String that said “Smith” and the logic in the BLoC was made to return a list of everyone in your contacts list with that last name. Maybe the BLoC gets fed the number of clock ticks that have passed since an animation started and the BLoC’s job is to calculate the position of your bouncing ball based on how long ago you pressed the button. You can make it do whatever you want, it’s an architecture, a method of handling State… what you do with it is entirely up to you.
 <br><br>
 
-<center><img src = "/blog/assets/img/State-Management-In-Flutter/image3.png" height = 500></center>
+<center><img src = "/blog/assets/img/State-Management-In-Flutter/image3.png" height = 500 alt = "BLoC Flow"></center>
 
 ### **Pros of BLoC**
 1. Easy to separate UI from logic
