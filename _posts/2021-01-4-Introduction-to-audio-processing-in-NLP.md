@@ -92,5 +92,7 @@ plt.show()
 ## References
 
 [Fourier Transform](https://en.wikipedia.org/wiki/Fourier_transform)
+
 [Spectrum and Cepstrum](https://agilescientific.com/blog/2012/3/23/the-spectrum-of-the-spectrum.html)
+
 [Mel-frequency cepstral coefficients](https://en.wikipedia.org/wiki/Mel-frequency_cepstrum)
