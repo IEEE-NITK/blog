@@ -107,6 +107,8 @@ This optimization gives a significant boost to the standalone Minimax Algorithm 
 As you can see, even with this optimization, the algorithm isn’t quite perfect. However, we can improve this algorithm further if we choose the order in which moves are explored wisely. For example, in chess, moves that capture pieces may be examined before moves that do not, and moves that have scored highly in earlier passes through the decision tree analysis may be evaluated before others. We can also consider storing some recent board evaluations (sometimes there are too many to store at once so we only consider the last few). With these, and several other improvements, this algorithm can be modified to give some fantastic results. 
 
 ## References
+[More on Minimax Algorithm](https://ieee.nitk.ac.in/blog/minimax-algorithm/)
+
 [Alpha Beta Pruning - Wikipedia](https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning)
 
 [More code - Javapoint](https://www.javatpoint.com/ai-alpha-beta-pruning)
