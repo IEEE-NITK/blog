@@ -81,6 +81,7 @@ def power(x, n):
         x = x * x
 
     return result			
+    
 ```
 
 A very similar function can be implemented to calculate P<sup>n</sup> in O(log(n) * m<sup>3</sup>) time where P is a square matrix, n is an integer and m is the dimension of P (ie. P is an m x m matrix).  
