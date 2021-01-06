@@ -26,8 +26,17 @@ Any machine learning task involves three steps - data collection, training and e
 
 #### Fourier Transform
 
-Fourier transform is an important tool used in signal processing, it is a mathematical transform that converts a time-domain signal into a frequency domain signal. When we calculate a Fourier transform, we begin with a function of time, f(t), and through mathematical decomposition, we produce a function of frequency, F(ω). When discrete signals are involved, Discrete Fourier Transform (DFT) is used, which is normally computed using the so-called Fast Fourier Transform (FFT).
+Fourier transform is an important tool used in signal processing, it is a mathematical transform that converts a time-domain signal into a frequency domain signal. When we calculate a Fourier transform, we begin with a function of time, f(t), and through mathematical decomposition, we produce a function of frequency, F(ω). When discrete signals are involved, Discrete Fourier Transform (DFT) is used, which is normally computed using the so-called Fast Fourier Transform (FFT). Here is a sample Python code to calculate FFT of an audio clip using the SciPy library.
 
+```
+import numpy as np
+from scipy.io import wavfile as wav
+from scipy.fft import fft
+
+rate, data = wav.read('audio.wav')
+fft_out = fft(data)
+print(fft_out)
+```
 
 #### Spectrum and Cepstrum
 
@@ -65,7 +74,23 @@ Howevere there are many wonderful libraries in python which can do all this in a
 
 ```
 import librosa
-y, sr = librosa.load(librosa.util.example_audio_file())
-mfcc  = librosa.feature.mfcc(y=y, sr=sr)
-print(mfcc)
+from librosa import display
+import matplotlib.pyplot as plt
+
+y, sr = librosa.load(librosa.util.example_audio_file()) # reading audio clip
+mfccs = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=13)     # calculating the first 13 MFCCs
+
+librosa.display.specshow(mfccs, x_axis='time')          # plotting the MFCCs
+plt.colorbar()
+plt.title('MFCC')
+plt.tight_layout()
+plt.show()
 ```
+
+![MFCC Plot of Sample Audio Clip](/blog/assets/img/Audio-Processing-NLP/mfcc.png)
+
+## References
+
+[Fourier Transform](https://en.wikipedia.org/wiki/Fourier_transform)
+[Spectrum and Cepstrum](https://agilescientific.com/blog/2012/3/23/the-spectrum-of-the-spectrum.html)
+[Mel-frequency cepstral coefficients](https://en.wikipedia.org/wiki/Mel-frequency_cepstrum)
