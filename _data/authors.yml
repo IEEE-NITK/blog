@@ -927,6 +927,5 @@ shivanshjoshi:
 ikjot-2605:
 	name: Ikjot Singh Dhody
 	github: ikjot-2605
-  author_image: ikjotsingh.jpg
-  description: 'State Management in Flutter'
+  author_image: 'ikjotsingh.jpg'
   email: ikjotsd@gmail.com   
