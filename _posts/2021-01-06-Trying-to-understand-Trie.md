@@ -12,7 +12,7 @@ tags:
 - Data Structures
 categories:
 - Compsoc
-github_username:'DeltaCube23'
+github_username: 'DeltaCube23'
 ---
 
 # Introduction
@@ -116,9 +116,9 @@ When keys are floating point numbers it can lead to long chains that are not rea
 
 Here is a list of some resources to get a better understanding of trie and also some common interview problems.
 
-[Maximum Xor Subarray](https://www.geeksforgeeks.org/find-the-maximum-subarray-xor-in-a-given-array/)
-[Trie Explained](https://www.hackerearth.com/practice/data-structures/advanced-data-structures/trie-keyword-tree/tutorial/)
-[Good Insight](https://medium.com/underrated-data-structures-and-algorithms/trie-data-structure-fd9a2aa6fcb8)
+[Maximum Xor Subarray](https://www.geeksforgeeks.org/find-the-maximum-subarray-xor-in-a-given-array/)<br>
+[Trie Explained](https://www.hackerearth.com/practice/data-structures/advanced-data-structures/trie-keyword-tree/tutorial/)<br>
+[Good Insight](https://medium.com/underrated-data-structures-and-algorithms/trie-data-structure-fd9a2aa6fcb8)<br>
 
 
 
