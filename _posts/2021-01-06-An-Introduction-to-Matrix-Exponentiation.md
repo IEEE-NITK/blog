@@ -15,7 +15,7 @@
  categories:
  - Compsoc
  github_username: 'AnirudhAchal'
- ---
+---
  
  Matrix Exponentiation is one of the most used techniques in advanced competitive programming. The concept of matrix exponentiation in its most general form is very useful in solving questions that involve calculating the nth term of a linear recurrence relation in time of the order of log(n). It is especially useful in converting a linear O(n) dynamic programming solution into a O(log(n)) solution. 
  
