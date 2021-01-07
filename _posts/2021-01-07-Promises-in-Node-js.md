@@ -1,6 +1,20 @@
-| layout | title | author_github | date | image | description | tags | categories |
-| :---   | :--   | :---          | :--- | :---  | :------     | :--  | :---       |
-| post   | Promises in Node Js | SureshKamediya | 2021-01-07  09:14:00 | /assests/img/Suresh.jpg | An introduction to Promises in Node js to get rid of callback hell and to create a promise.| `IEEE CompSoc Promises Development` | `CompSoc` |
+
+---
+layout: post
+title: "Promises in Node Js"
+author_github: SureshKamediya
+date: 2021-01-07 09:14:00
+image: '/assets/img/Suresh.jpg'
+description: 'An introductioin to Promises in Node js to get rid of callback hell and to create a promise.'
+tags:
+- IEEE NITK
+- CompSoc
+- Development
+- Promises
+categories:
+- CompSoc
+github_username: 'SureshKamediya'
+---
 
 
 # Promises in Node js
