@@ -2,7 +2,7 @@
 layout: post
 title: "An Introduction to Disjoint-set Data Structures"
 author_github: ZerothKing
-date: 2021/01/07 10:04:00
+date: 2021-01-07 13:04:00
 image: '/assets/img/'
 description: 'A practical introduction to Disjoint-set Data Structures'
 tags:
