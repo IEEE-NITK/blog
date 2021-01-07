@@ -1,6 +1,6 @@
 | layout | title | author_github | date | image | description | tags | categories |
 | :---   | :--   | :---          | :--- | :---  | :------     | :--  | :---       |
-| post   | Promises in Node Js | SureshKamediya | 2021-01-07  09:14:00 | /assests/img/Suresh.jpg | An introduction to Promises in Note js to get rid of callbackhell and how to create it.| `IEEE` `CompSoc` `Promises` `Development` | `CompSoc`|
+| post   | Promises in Node Js | SureshKamediya | 2021-01-07  09:14:00 | /assests/img/Suresh.jpg | An introduction to Promises in Node js to get rid of callbackhell and how to create promise.| `IEEE` `CompSoc` `Promises` `Development` | `CompSoc`|
 
 
 # Promises in Node js
