@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Promises in Node Js"
@@ -15,8 +14,6 @@ categories:
 - CompSoc
 github_username: 'SureshKamediya'
 ---
-
-
 # Promises in Node js
 
 ## Introduction
