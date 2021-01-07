@@ -51,7 +51,7 @@ Linear activation functions are generally only used in the output layer.
 
 #### Mathematical Expression -
 
-![](/blog/assets/img/Activation-Functions/sigmoid_equation.png)
+![Mathematical Expression](/blog/assets/img/Activation-Functions/sigmoid_equation.png)
 
 ![Graph](/blog/assets/img/Activation-Functions/sigmoid.png)
 
@@ -64,9 +64,9 @@ It is usually used for the output layer and sometimes the later hidden layers. T
 
 ## Tanh Function
 
-#### Mathematical Expression -
 
-![](/blog/assets/img/Activation-Functions/tanh_equation.png)
+
+![Mathematical Expression](/blog/assets/img/Activation-Functions/tanh_equation.png)
 
 
 ![Graph](/blog/assets/img/Activation-Functions/tanh.png)
