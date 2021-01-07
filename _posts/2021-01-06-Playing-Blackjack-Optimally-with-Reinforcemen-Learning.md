@@ -63,7 +63,7 @@ The optimal policy learnt by this algorithm is as follows:
 
 The agent we trained for 500,000 episodes with decaying epsilon value learnt the following policy:
 
-![Monte Carlo policy](/blog/assets/img/blackjack/mc-pol.jpg)
+![Monte Carlo policy](/blog/assets/img/blackjack/mc-pol.JPG)
 
 At a glance, it seems in the case of a usable ace, our agent learns a policy very similar to the HIT17 policy of our dealer. Since we can’t outright judge the quality of the policy, we observe the player playing 1000 rounds against the dealer and note the statistics.
 
@@ -92,7 +92,7 @@ Here we use a similar initialization for Q-values for each state and action. We 
 
 We once again train our agent on 500,000 episodes and it learns the following policy:
 
-![Q-learning policy](/blog/assets/img/blackjack/q-pol.jpg)
+![Q-learning policy](/blog/assets/img/blackjack/q-pol.JPG)
 
 After 1000 games based on the above policy:
 
