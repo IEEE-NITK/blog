@@ -145,10 +145,14 @@ myPromise.then((message) => {
 So if the promise gets rejected, it will jump to the catch( ) method and this time we will see a different message on the console.
 
 ## **Summary**
-    • Using callback functions in Node.js does have its disadvantages. Sometimes during the process of development, the nested use of callback functions can make the code messier and difficult to maintain.
-    • Most of the issues with nested callback functions can be mitigated with the use of promises and generators in node.js
-    • A Promise is a value returned by an asynchronous function to indicate the completion of the processing carried out by the asynchronous function.
-    • Promises can be nested within each other to make code look better and easier to maintain when an asynchronous function needs to be called after another asynchronous function.
+
+* Using callback functions in Node.js does have its disadvantages. Sometimes during the process of development, the nested use of callback functions can make the code messier and difficult to maintain.
+
+* Most of the issues with nested callback functions can be mitigated with the use of promises and generators in node.js
+
+* A Promise is a value returned by an asynchronous function to indicate the completion of the processing carried out by the asynchronous function.
+
+* Promises can be nested within each other to make code look better and easier to maintain when an asynchronous function needs to be called after another asynchronous function.
 
 _This post is just an introduction to promises in node js as I found that everyone has a simple doubt that why we need promises and how to get started with them. Hope it helps you. If you want to learn more go through the documentation on promises which are as follows-_
 
