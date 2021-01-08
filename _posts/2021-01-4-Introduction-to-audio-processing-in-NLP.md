@@ -26,7 +26,7 @@ Any machine learning task involves three steps - data collection, training and e
 
 #### Fourier Transform
 
-Fourier transform is an important tool used in signal processing, it is a mathematical transform that converts a time-domain signal into a frequency domain signal. When we calculate a Fourier transform, we begin with a function of time, f(t), and through mathematical decomposition, we produce a function of frequency, F(ω). When discrete signals are involved, Discrete Fourier Transform (DFT) is used, which is normally computed using the so-called Fast Fourier Transform (FFT). Here is a sample Python code to calculate FFT of an audio clip using the SciPy library.
+Fourier transform is an important tool used in signal processing, it is a mathematical transform that converts a time-domain signal into a frequency domain signal. When we calculate a Fourier transform, we begin with a function of time, f(t), and through mathematical decomposition, we produce a function of frequency, F(&omega;). When discrete signals are involved, Discrete Fourier Transform (DFT) is used, which is normally computed using the so-called Fast Fourier Transform (FFT). Here is a sample Python code to calculate FFT of an audio clip using the SciPy library. You can refer to this [link](https://en.wikipedia.org/wiki/Fast_Fourier_transform) to know more about FFT.
 
 ```
 import numpy as np
@@ -44,7 +44,7 @@ Two important features in audio processing are Spectrum and Cepstrum. Both Spect
 
 1. A spectrum is the Fourier transform of a signal, hence a spectrum is the frequency domain representation of a time-domain audio signal.
 
-2. A cepstrum is defined as the Fourier transform of the logarithm of the spectrum. This results in a signal that's neither in the frequency domain nor in the time domain. The domain of the resulting signal is called the quefrency.
+2. A cepstrum is defined as the Fourier transform of the logarithm of the spectrum. This results in a signal that's neither in the frequency domain nor in the time domain. The domain of the resulting signal is called the quefrency. You can refer to this [link](https://en.wikipedia.org/wiki/Cepstrum) to know more about cepstrum and quefrency.
 
 The reason for converting signals into their frequency domain is related closely to the biology of the human ear. The cochlea is a portion of the inner ear that looks like a snail shell and is a fluid-filled part with thousands of tiny hairs that are connected to nerves. The shorter hairs resonate with higher frequencies and the longer hairs resonate with lower frequencies. Since our ears are frequency analyzers, decomposing audio signals into frequency domain seems like a logical approach to extract features from it.
 
@@ -78,6 +78,11 @@ from librosa import display
 import matplotlib.pyplot as plt
 
 y, sr = librosa.load(librosa.util.example_audio_file()) # reading audio clip
+
+librosa.display.waveplot(y, sr=sr)                      # plotting audio clip
+plt.title('Audio Wave Plot')
+plt.show()
+
 mfccs = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=13)     # calculating the first 13 MFCCs
 
 librosa.display.specshow(mfccs, x_axis='time')          # plotting the MFCCs
@@ -86,6 +91,12 @@ plt.title('MFCC')
 plt.tight_layout()
 plt.show()
 ```
+
+This is the wave plot of the sample audio clip.
+
+![Wave Plot of Sample Audio Clip](/blog/assets/img/Audio-Processing-NLP/wave.png)
+
+This is the plot of the first 13 MFCCs of the sample audio clip.
 
 ![MFCC Plot of Sample Audio Clip](/blog/assets/img/Audio-Processing-NLP/mfcc.png)
 
