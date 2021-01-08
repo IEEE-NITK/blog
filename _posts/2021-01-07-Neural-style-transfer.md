@@ -1,3 +1,4 @@
+---
 layout: post
 title: "Why GraphQL is a big thing"
 author_github: dharmicksai
