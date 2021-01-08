@@ -55,7 +55,9 @@ You can call promise as a proxy for a value that will eventually become availabl
 Now let's look at the above example with "Promises", since we can attach Callbacks rather than passing them, this time the code looks much cleaner and easier to read.
 
 To use Promises within Node js, the promise module is required. To install the promise module, run the below command-
-npm install promise
+
+`npm install promise`
+
 and then require promise in your code to make the "then" function available.
 
 
@@ -80,11 +82,11 @@ Promises in Javascript
 
 A Promise is an object, and it has 3 states-
 
-    * Pending: Initial State, before the Promise succeeds or fails
-    * Resolved: Completed Promise
-    * Rejected: Failed Promise
+* Pending: Initial State, before the Promise succeeds or fails
+* Resolved: Completed Promise
+* Rejected: Failed Promise
 
-
+![Promises-image](/blog/assets/img/Promises-in-Node-js-image.png)
 
 Let's create the "promise" step by step-
 First, we use a constructor to create a Promise object:
@@ -99,7 +101,6 @@ const myPromise = new Promise((resolve, reject) => {
          // condition
 });
 ```
-
 
 Finally, there will be a condition. If the condition is met, the Promise will be resolved, otherwise, it will be rejected:
 
@@ -128,7 +129,6 @@ myPromise.then((message) => {
     console.log(message);
 });
 ```
-
 **catch() for rejected Promises**:
 
 However, the then() method is only for resolved Promises. What if the Promise fails? Then, we need to use the catch() method.
@@ -152,12 +152,12 @@ So if the promise gets rejected, it will jump to the catch( ) method and this ti
 
 _This post is just an introduction to promises in node js as I found that everyone has a simple doubt that why we need promises and how to get started with them. Hope it helps you. If you want to learn more go through the documentation on promises which are as follows-_
 
-References-
+**References-**
 
-https://nodejs.dev/learn/understanding-javascript-promises
+[Node js documentation](https://nodejs.dev/learn/understanding-javascript-promises)
 
-https://www.geeksforgeeks.org/promises-in-node-js/
+[Geeks for Geeks on Promise](https://www.geeksforgeeks.org/promises-in-node-js/)
 
-https://developer.ibm.com/languages/node-js/articles/promises-in-nodejs-an-alternative-to-callbacks/
+[Callbacks v/s Promises](https://developer.ibm.com/languages/node-js/articles/promises-in-nodejs-an-alternative-to-callbacks/)
 
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+[Promises in Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
