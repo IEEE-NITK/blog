@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Why GraphQL is a big thing"
+title: "Neural Style Transfer"
 author_github: dharmicksai
 date: 2021-01-07 19:00:00
 image: '/assets/img/'
@@ -21,11 +21,16 @@ Neural Style Transfer is the problem of applying the style of an image/painting 
  
 ## Style and Content loss
  
-As Loss function captures the objective of a model, we shall first look into style and content loss functions. When Training CNN model for image classification, each layer captures certain features of the input image .the lower layers capture low-level information whereas the higher-level layers capture the high-level content in terms of objects and their arrangement in the input image but do not constrain the exact pixel values. So we can say that the activations of Higher layers contain information about the content of an input image. Gram Matrix of a layer contains the dot product between different channel activations of a given layer this contains information on correlation of features extracted by different channels of a layer. The gram matrix contains the correlation between activations of different channels of a layer, this is similar to painting where we see a pattern or certain colour play, So we use Gram matrix of lower layers as style representation of an input image.
+As loss function captures the objective of a model, we shall first look into style and content loss functions. When training CNN model for image classification, each layer captures certain features of the input image .the lower layers capture low-level information whereas the higher-level layers capture the high-level content in terms of objects and their arrangement in the input image but do not constrain the exact pixel values. So we can say that the activations of higher layers contain information about the content of an input image. Gram matrix of a layer contains the dot product between different channel activations of a given layer this contains information on correlation of features extracted by different channels of a layer. The gram matrix contains the correlation between activations of different channels of a layer, this is similar to painting where we see a pattern or certain colour play, So we use gram matrix of lower layers as style representation of an input image.
  
 Style Representation
+
+$$
+\Large
+ G_{ij}^l = \sum_k F_{ik}^l . F_{jk}^l
+$$
  
-![Style Representation from Gats et al](/blog/assets/img/Neural-Style-Transfer/style_rep.png)
+
  
 Here G<sub>ij</sub><sup>l</sup> is the ij<sup>th</sup> entry in the gram matrix of Layer l. F<sub>i</sub><sup>l</sup> is the activations of i<sup>th</sup> channel in l<sup>th</sup> layer.
 We use the pre trained VGG16 Network for activations
@@ -36,17 +41,32 @@ We consider the content representation of the content image to bo the target for
  
 Content Loss given P<sup>l</sup> is target content activation of layer l:
  
-![content loss from Gats et al](/blog/assets/img/Neural-Style-Transfer/content_Loss.png)
+ $$
+ \Large
+ \mathcal{L}_{content}(\vec{p},\vec{x},l) = \frac{1}{2}.\sum_{i,j}(P_{ij}^l-F_{ij}^l)^2
+ $$
+
  
 Style loss given A<sup>l</sup> is target style representationof layer l:
+
+$$
+\Large
+E_l=\sum_{i,j}(A_{i,j}^l-G_{i,j}^l)^2\\
+
+\mathcal{L}_{style}(\vec{a},\vec{x})=\sum_{l=0}^L(w_l.E_l)
+$$
+
+Here w<sub>l</sub> is the weight per layer, the weight decreases from lower layers to higher layers
+
+
  
-![style loss per layer from Gats et al](/blog/assets/img/Neural-Style-Transfer/style_loss1.png)
+Total Loss given content representation $\Large \vec{p}$, style representation $\Large \vec{a}$, styled image representation $\Large \vec{x}$:
  
-![Total style loss from Gats et al](/blog/assets/img/Neural-Style-Transfer/style_loss2.png)
- 
-Total Loss given content representation p, style representation a, styled image representation x:
- 
-![Total loss from Gats et al](/blog/assets/img/Neural-Style-Transfer/Total_Loss.png)
+$$
+\Large
+\mathcal{L}_{total} = \alpha.\mathcal{L}_{content}(\vec{p},\vec{x})+\beta.\mathcal{L}_{style}(\vec{a},\vec{x})
+$$
+Here $\large \alpha$ and $\Large \beta$ are weights for content and style loss
  
 The brute force method to generate the styled image is to take a noise image and calculate its loss from pre-trained image classifier given style and content image and then apply gradient descent on individual pixels of noise image and repeating this process iteratively till we convert noise image to styled image. This method consumes a lot of time and there are no learned parameters.
  
@@ -54,18 +74,22 @@ The brute force method to generate the styled image is to take a noise image and
  
 ![Image Transformation Network from Jonson et al](/blog/assets/img/Neural-Style-Transfer/Feed_Forward.png)
  
-Here the image transformation network learns to map the content image to the style of the painting image, using this network we can generate images of a particular style. The Image transformation network consists of Residual blocks and non-residual convolution layers, for upsampling it uses fractional strided convolution. Batch Normalisation takes place after every Convolution layer, The output layer uses tanh activation to provide output in the range [0-255] The loss network is used to calculate the respective content and style loss given the style and content image. Using Gradient Dissent the model is trained in order to decrease the loss. The drawback of this is it can be used to generate the style of a single painting and not multiple paintings, so training new weights for new painting style is not practically feasible as it takes a lot of memory. In the Conditional Instance Normalisation, we will make a few changes to this Image Transformation Network using which we can generalise or use the same weights for multiple styles.
+Here the image transformation network learns to map the content image to the style of the painting image, using this network we can generate images of a particular style. The image transformation network consists of Residual blocks and non-residual convolution layers, for upsampling it uses fractional strided convolution. Batch normalisation takes place after every convolution layer, The output layer uses tanh activation to provide output in the range [0-255] The loss network is used to calculate the respective content and style loss given the style and content image. Using gradient dissent the model is trained in order to decrease the loss. The drawback of this is it can be used to generate the style of a single painting and not multiple paintings, so training new weights for new painting style is not practically feasible as it takes a lot of memory. In the conditional instance normalisation, we will make a few changes to this image transformation network using which we can generalise or use the same weights for multiple styles.
  
-## Conditional Instance normalisation
+## Conditional Instance Normalisation
  
-We can see that many paintings share some common features like brush strokes etc, conditional Instance normalisation helps us to encode style into an embedding and a common image transformation network for multiple styles. To understand about Instance Normalisation please look at this blog [link](https://medium.com/techspace-usict/normalization-techniques-in-deep-neural-networks-9121bf100d8). We see in this [paper](https://arxiv.org/pdf/1607.08022.pdf) that Instance Normalisation is better than Batch Normalisation in Image Transformation Network. For using a single Image Transformation network for multiple styles, we see the work in this [paper](https://arxiv.org/pdf/1610.07629.pdf), where they found a surprising fact about role of normalisation in Transformation network, where scaling and shifting of the instance normalized activations can be used to produce different styles. For each style, the activations of instances normalised layer are scaled and shifted differently and these scaling and shifting parameters represent the style as an embedding in space, we can use this property and can find embedding of different styles and during production for different styles, we can just change these shifting and scaling parameters in order to produce different styles, which majority of the weights remaining the same.
-![Conditional Instance Normalisation](/blog/assets/img/Neural-Style-Transfer/Instance_Normalisation.png) where µ and σ are x’s mean and standard deviation.
+We can see that many paintings share some common features like brush strokes etc, conditional instance normalisation helps us to encode style into an embedding and a common image transformation network for multiple styles. To understand about instance normalisation please look at this blog [link](https://medium.com/techspace-usict/normalization-techniques-in-deep-neural-networks-9121bf100d8). We see in this [paper](https://arxiv.org/pdf/1607.08022.pdf) that instance normalisation is better than batch normalisation in image transformation network. For using a single image transformation network for multiple styles, we see the work in this [paper](https://arxiv.org/pdf/1610.07629.pdf), where they found a surprising fact about role of normalisation in transformation network, where scaling and shifting of the instance normalized activations can be used to produce different styles. For each style, the activations of instances normalised layer are scaled and shifted differently and these scaling and shifting parameters represent the style as an embedding in space, we can use this property and can find embedding of different styles and during production for different styles, we can just change these shifting and scaling parameters in order to produce different styles, which majority of the weights remaining the same.
+
+$$
+\Large 
+z = \gamma_s.(\frac{x-\mu}{\sigma}) + \beta_s
+$$
  
 So for each style we can train γ<sub>s</sub> and β<sub>s</sub> which represents the particular style and can be replaced if we wanted different style. this decreasing the cost of memory.
  
 ![Applying Instance Normalisation](/blog/assets/img/Neural-Style-Transfer/Normalisation.png)
  
-The Image Transformation Network Details are given in this [paper](https://arxiv.org/pdf/1610.07629.pdf) For implementing Multi-style Transfer
+The image transformation network details are given in this [paper](https://arxiv.org/pdf/1610.07629.pdf) For implementing multi-style transfer;
  
 ![Image Transformation Network Details](/blog/assets/img/Neural-Style-Transfer/Network_Details.png)
  
@@ -75,7 +99,7 @@ The main drawback of this is we can not generate a styled image for an unseen st
  
 ![Image Transformation Network along with style prediction network](/blog/assets/img/Neural-Style-Transfer/style_prediction.png)
  
-The style Prediction network takes the style image as input and produces the style embedding(shift and scale parameters) for the particular style. This helps us to generalise to unseen styles. The style prediction network generates the shift β<sub>s</sub>  and scaling parameters γ<sub>s</sub> which are described in conditional instance normalisation. On plotting the embedding of style image we can see that similar styles are close to one another. This model is time,space-efficient and also it can generate stylized images for unseen style, this model can be deployed on mobile and desktop apps and would produce amazing results. For more information refer to this [paper](https://arxiv.org/pdf/1705.06830.pdf)
+The style prediction network takes the style image as input and produces the style embedding(shift and scale parameters) for the particular style. This helps us to generalise to unseen styles. The style prediction network generates the shift β<sub>s</sub>  and scaling parameters γ<sub>s</sub> which are described in conditional instance normalisation part. On plotting the embedding of style image we can see that similar styles are close to one another. This model is time,space-efficient and also it can generate stylized images for unseen style, this model can be deployed on mobile and desktop apps and would produce amazing results. For more information refer to this [paper](https://arxiv.org/pdf/1705.06830.pdf)
  
 ## References
 - [A Neural Algorithm of Artistic Style](https://arxiv.org/abs/1508.06576)
@@ -85,7 +109,3 @@ The style Prediction network takes the style image as input and produces the sty
 - [Normalization Techniques in Deep Neural Networks](https://medium.com/techspace-usict/normalization-techniques-in-deep-neural-networks-9121bf100d8)
 - [Exploring the structure of a real-time, arbitrary neural
 artistic stylization network](https://arxiv.org/pdf/1705.06830.pdf)
-
-
-
-
