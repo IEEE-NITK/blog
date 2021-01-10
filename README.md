@@ -57,7 +57,40 @@ If you're not a first time author, feel free to skip to the next section.
 	#### Body:
 	- This is where your content goes. In Github's flavor of markdown.
 
-### Step 4: Pushing your article to the repository
+### Step 4: Build locally and check for errors
+ - Install [Ruby and Jekyll](https://jekyllrb.com/docs/installation/)
+ - Install other dependencies:
+ 	```
+ 	gem install html-proofer jekyll-paginate jemoji
+ 	```
+ - Then build your blog:
+ 	```
+	jekyll build --destination blog/	#from the root of this repository
+	```
+ - To preview the blog locally:
+ 	``` 
+	jekyll serve		#from the root of this repository
+	```
+	The output of jekyll serve should have at the bottom:
+	```
+	    Server address: http://127.0.0.1:4000/
+	    Server running... press ctrl-c to stop.
+	```
+	Open [http://127.0.0.1:4000/](http://127.0.0.1:4000/) in your browser to preview the blogs
+	
+ - To test for errors:
+	```
+	htmlproofer ./_site --disable-external		#from the root of this repository
+	```
+	The final output of htmlproofer should be something like:
+	```
+	Ran on XYZ files!
+	
+	HTML-Proofer finished successfully.
+	```
+	If not, check for missing links and follow the error message
+	
+### Step 5: Pushing your article to the repository
 - Create a new branch in your local repository and commit your changes to it.
 - Push the newly created branch to the main repository and create a Pull Request
 - When making the pull request follow this:
