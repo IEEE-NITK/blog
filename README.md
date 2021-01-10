@@ -89,6 +89,10 @@ If you're not a first time author, feel free to skip to the next section.
 	HTML-Proofer finished successfully.
 	```
 	If not, check for missing links and follow the error message
+ - Remove the build files before making your commits
+ 	```
+	rm -r blog/
+	```
 	
 ### Step 5: Pushing your article to the repository
 - Create a new branch in your local repository and commit your changes to it.
