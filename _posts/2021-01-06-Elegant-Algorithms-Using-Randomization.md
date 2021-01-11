@@ -13,6 +13,7 @@ tags:
 categories:
 - CompSoc
 github_username: 'Dragonado'
+use_math: true
 ---
 ## **Elegant Algorithms using Randomization**
 
