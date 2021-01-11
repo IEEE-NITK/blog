@@ -44,6 +44,10 @@ Now at some time step $t $, we would have written so much that there would be no
 
 This gives us intuition about why RNN fails to perform well when there are strong dependencies on information seen long before. 
 
+For example, if we had a sentence, <br> 
+```Alice lives in France. She is an artist. She speaks``` <br> 
+and had to predict the next word, we could easily say that it would be ```French``` but it would be difficult for the RNN model to remember the word ```France``` seen long before and hence fails to predict the correct next word.
+
 ### Math behind RNN
 Let us now see the actual math that goes behind RNN.
 
@@ -103,6 +107,10 @@ After taking in information from the previous state and the current input to cal
 
 Finally, instead of keeping all this information in the current state, we introduce one more gate which specifies how much percent of each value should be kept in the state and how much should be discarded similar to the selective forget that we saw above.
 
+If the same example,<br>
+ ```Alice lives in France. She is an artist. She speaks ``` <br>
+ is given to the LSTM model to predict the next word, it would retain the information ```France``` seen long before using gates and would be able to predict the next word as ```French```.
+
 ### Math behind LSTM
 We will now see the mathematical equations behind LSTM,
 
@@ -124,7 +132,7 @@ The final state $S_{t}$ is then found from $\tilde{S_{t}}$ and the previous stat
 
 
 ### Conclusion
-Thus we intuitively understand the architecture of LSTMs and RNNs and then connect it with the actual mathematical equations that go behind these models. We also get an intuitive understanding of why LSTM has a better architecture, and how it helps them in performing better than RNN, and solve the problems like vanishing gradients in RNN to an extent.
+Thus we intuitively understand the architecture of LSTMs and RNNs and then connect it with the actual mathematical equations that go behind these models. We also get an intuitive understanding of why LSTM has a better architecture, and how it helps them in performing better than RNN, and solve the problems like long-term dependencies in RNN to an extent.
 
 
 ### References
