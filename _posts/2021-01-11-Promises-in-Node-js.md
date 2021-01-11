@@ -86,7 +86,7 @@ A Promise is an object, and it has 3 states-
 * Resolved: Completed Promise
 * Rejected: Failed Promise
 
-![Promises-image](/blog/assets/img/Promises-in-Node-js-image.png)
+![Promises-image](/blog/assets/img/promise_image.png)
 
 Let's create the "promise" step by step-
 First, we use a constructor to create a Promise object:
