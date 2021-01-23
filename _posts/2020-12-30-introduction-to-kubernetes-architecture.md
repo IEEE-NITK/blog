@@ -15,36 +15,69 @@
  ---
 This blog post will give you a basic idea of what Kubernetes is,its applications and infrastructure.
 
-## **Containers**
+Let's take a look at how application development and deployment has changed over time.
 
-As the era of microservices began,the use of containers has gained much popularity . We basically encapsulate each application with its dependencies and libraries as a **container image** which can be executable on any machine.We can spin up multiple applications on a single system without any environment conflicts. 
+![container_evolution](/blog/assets/img/Introduction-to-Kubernetes-Architecture/containerevolution.png)
 
-## **Motivation to read about Kubernetes**
+### **Traditional deployment era**
+Early on, organizations ran applications on physical servers. There was no way to define resource boundaries for applications in a physical server, and this caused resource allocation issues. For example, if multiple applications run on a physical server, there can be instances where one application would take up most of the resources, and as a result, the other applications would underperform. A solution for this would be to run each application on a different physical server. But this did not scale as resources were underutilized, and it was expensive for organizations to maintain many physical servers.
 
-So far everything is good with containers. One can use runtime softwares like Docker and deploy the application containers. 
-However communication between containers become difficult if we are deploying hundred's of containers (it's a gigantic mess), and what if a container dies?
-Container Orchestration tool comes into action to address the above problems.
+### **Virtualized deployment era**
+As a solution, virtualization was introduced. It allows you to run multiple Virtual Machines (VMs) on a single physical server's CPU. Virtualization allows applications to be isolated between VMs and provides a level of security as the information of one application cannot be freely accessed by another application.
 
-## **Kubernetes as a container orchestration tool**
+Virtualization allows better utilization of resources in a physical server and allows better scalability because an application can be added or updated easily, reduces hardware costs, and much more. With virtualization you can present a set of physical resources as a cluster of disposable virtual machines.
 
-Kubernetes is  a platform designed to completely manage the life cycle of containerized applications and services using methods that provide predictability, scalability, and high availability.
+Each VM is a full machine running all the components, including its own operating system, on top of the virtualized hardware.
 
-Suppose if a container dies,Kubernetes API server notices it and deploys another container in place of the dead, preventing the downtime of the application.
-Kubernetes also has an inbuilt mechanism that allows individual containers in the cluster to communicate with each other. 
+### **Container deployment era**
+Containers are similar to VMs, but they have relaxed isolation properties to share the Operating System (OS) among the applications. Therefore, containers are considered lightweight. Similar to a VM, a container has its own filesystem, share of CPU, memory, process space, and more. As they are decoupled from the underlying infrastructure, they are portable across clouds and OS distributions.
 
-To understand how Kubernetes is able to provide these facilities,it is important to get a sense of how it is designed and organized at a high level. One can visualize kubernetes as a system built on layers,with each layer abstracting the complexity of lower layers 
+## Containers have become popular because they provide extra benefits, such as:
 
-At the base of the system, Kubernetes brings together the individual computers and Virtual machines into a cluster using a shared network for server communication.
+* **Agile application creation and deployment**:
+Increased ease and efficiency of container image creation compared to VM image use.
 
-Kubernetes cluster has one server as a master server, which acts as a gateway or brain for the cluster. Master node has an (Kube-apiserver) API for user and client interactions, maintaining the other servers,allocating the resources to nodes.
-We communicate with the cluster(basically with the API server) using kubectl commands.
+* **Continuous development, integration, and deployment**: 
+provides for reliable and frequent container image build and deployment with quick and easy rollbacks (due to image immutability).
+* **Dev and Ops separation of concerns**:
+create application container images at build/release time rather than deployment time, thereby decoupling applications from infrastructure.
+Observability not only surfaces OS-level information and metrics, but also application health and other signals.
+* **Environmental consistency across development, testing, and production**: Runs the same on a laptop as it does in the cloud.
+* **Cloud and OS distribution portability**:
+ Runs on Ubuntu, RHEL, CoreOS, on-premises, on major public clouds, and anywhere else.
+* **Application-centric management**:
+Raises the level of abstraction from running an OS on virtual hardware to running an application on an OS using logical resources.
+* **Loosely coupled, distributed, elastic, liberated micro-services**: 
+applications are broken into smaller, independent pieces and can be deployed and managed dynamically – not a monolithic stack running on one big single-purpose machine.
+* **Resource isolation**: predictable application performance.
 
-The nodes are responsible for running workloads using external and local resources. Kubernetes runs apps and services in containers, so each node has a container runtime(example Docker) and also has kubelet (think of this like a captain of a ship) which listens to the master node for instructions like creating or destroying pods as need.
+Now that we have understood what container is and what VM is.
 
-The most important design principle in Kubernetes is we simply define the desired state of our system and Kubernetes works to ensure that the actual state is reflects the desired state. So we don't need to necessarily log in to cluster and check for the things broken and fix.
-All we got to do is to state what our system or cluster should look like. We submit a declarative plan in JSON or YAML defining what to create and how it should be managed.
-Below is an example pod deployment file.
- 
+**Let's understand why we use Kubernetes.**
+
+Containers are a good way to bundle and run your applications. In a production environment, you need to manage the containers that run the applications and ensure that there is no downtime. For example, if a container goes down, another container needs to start. Wouldn't it be easier if this behavior was handled by a system?
+
+That's how Kubernetes comes to the rescue!. It takes care of scaling and failover for your application, provides deployment patterns, and more.
+
+The components on the master server work together to accept user requests, determine the best ways to schedule workload containers, authenticate clients and nodes, adjust cluster-wide networking, and manage scaling and health checking responsibilities. We will look at each of the individual components in the master node and try to understand their functionalities.
+
+![architecture](/blog/assets/img/Introduction-to-Kubernetes-Architecture/architecture.png)
+
+
+As you can see in the diagram, there are a lot of terms that you might not understand. I will explain it one by one.
+## Master
+Master is the controlling element or brain of the cluster.Master has 3 main components in it:
+### API Server
+ The application that serves Kubernetes functionality through a RESTful interface and stores the state of the cluster.
+### Scheduler
+Scheduler watches API server for new Pod requests. It communicates with Nodes to create new pods and to assign work to nodes while allocating resources or imposing constraints.
+### Controller Manager
+Component on the master that runs controllers. Includes Node controller(basically checks if desired number of nodes are active), Endpoint Controller, Namespace Controller, etc.
+## Worker Nodes
+These machines perform the requested, assigned tasks. The Kubernetes master controls them. There are 4 component inside Nodes:
+### Pod
+ All containers will run in a pod. Pods abstract the network and storage away from the underlying containers. Your app will run here.
+This is how we deploy pods on the node.
 ```yaml
 #pod.yaml file
 apiVersion: v1
@@ -64,51 +97,17 @@ spec:
       ports: sravani/php-ngnix:v1
       - containerPort: 88
 ```
-The components on the master server work together to accept user requests, determine the best ways to schedule workload containers, authenticate clients and nodes, adjust cluster-wide networking, and manage scaling and health checking responsibilities. We will look at each of the individual components in the master node and try to understand their functionalities.
 
-![architecture](/blog/assets/img/Introduction-to-Kubernetes-Architecture/architecture.png)
+### Kubelet
+Kubectl registering the nodes with the cluster, watches for work assignments from the scheduler, instantiate new Pods, report back to the master.
 
+### Container Engine
+Responsible for managing containers, image pulling, stopping the container, starting the container, destroying the container, etc.
 
-
-## **etcd**
-
-etcd is a key-value store used to store the state of our cluster and it acts like a backend service discovery and database,it  runs on different servers in Kubernetes clusters at the same time to monitor changes in clusters and to store state/configuration data.
-
-We use etcd to persist information regarding our cluster configuration, object(example pods) specifications, object statuses, nodes on the cluster, and which nodes the objects are assigned to run on.
-
-## **kube-apiserver**
-
-It is the most important component of the master node as it acts as a bridge between various components to maintain cluster health and is also responsible for making sure that the data in etcd store and service details of the deployed objects are in agreement. 
-
-For example,we have specified that we need two replicas (instances) of a pod and now one pod died,the etcd store updates the state of the pod, kube-apiserver notices the change in etcd and jumps into action to restore the desired state.
-
-## **kube-scheduler**
-It is the process that actually assigns workloads to specific nodes in the cluster is the scheduler. This service reads in a workload’s operating requirements, analyzes the current infrastructure environment, and places the work on an acceptable node or nodes.
-
-The scheduler is responsible for tracking available capacity on each host to make sure that workloads are not scheduled in excess of the available resources. The scheduler must know the total capacity as well as the resources already allocated to existing workloads on each server.
- 
-## **Kube-controller-manager**
-There are many controller managers like Replication controller manager ,node controller manager,Endpoints controller etc.
-This is the component on the master node that runs all the controllers(imagine this as an office of all controllers).
-### Some functionalities of the controllers include:
-  * Checking the cloud provider to determine if a node has been deleted in the cloud after it stops responding.(Node controller)
-
-  * Responsible for maintaining the correct number of pods for every replication controller object in the system(Replication Controller)
-
-## **Kubernetes Node Components**
-Node components run on every node, maintaining running pods and providing the Kubernetes runtime environment.
-
-## **Container Runtime**:
-The container runtime is the underlying software that is used to run containers. In our case, it happens to be Docker. The container runtime is the software that is responsible for running containers.
- Kubernetes supports several runtimes like Docker, containerd, cri-o, rktlet, and any implementation of the Kubernetes CRI (Container Runtime Interface).
-
-## **Kubelet**:
-Kubelet is the agent that runs on each node in the cluster. The agent is responsible for making sure that the containers are running on the nodes as expected.
-It’s a small service in each node responsible for relaying information to and from control plane service. It interacts with etcd store to read configuration details and write values. This communicates with the master component to receive commands and work. The kubelet process then assumes responsibility for maintaining the state of work and the node server. It manages network rules, port forwarding, etc.
-The kubelet takes a set of PodSpecs that are provided through various mechanisms and ensures that the containers described in those PodSpecs are running and healthy. The kubelet doesn’t manage containers which were not created by Kubernetes.
-## **Kube-Proxy** :
-This is a proxy service which runs on each node and helps in making services available to the external host. It helps in forwarding the request to correct containers and is capable of performing primitive load balancing. It makes sure that the networking environment is predictable and accessible and at the same time it is isolated as well. It manages pods on node, volumes, secrets, creating new containers’ health checkup, etc.
-
+### Kube Proxy
+Responsible for forwarding app user requests to the right pod.
+I’m not going to describe the detailed concept here, cause it will lead to a boring situation.
+You can read the official documentation for more details information.[Click here](https://kubernetes.io/docs/home)
 
 
 ## References
