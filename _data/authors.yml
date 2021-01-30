@@ -924,6 +924,12 @@ shivanshjoshi:
   github: shivanshjoshi
   author_image: 'blog-author.jpg'
   email: shiv.191mt044@nitk.edu.in
+nishant-nayak:
+  name: Nishant Nayak
+  github: nishant-nayak
+  author_image: nishant_nayak.jpg
+  description: Theater Enthusiast, Singer, Engineer?
+  email: nishantnayak2001@gmail.com
 Dragonado:
   name: Chaithanya Shyam D
   github: Dragonado
@@ -940,3 +946,8 @@ shruthanr:
   github: shruthanr
   author_image: shruthan.jpg
   email: shruthan@outlook.com
+Ananya:
+  name: Ananya P
+  github: Ananya
+  author_image: blog-author.jpg
+  email: ananyap.191mt006@nitk.edu.in
