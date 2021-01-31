@@ -1,20 +1,19 @@
 ---
- layout: post
- title: "A beginner's guide to Cloud computing"
- author_github: srujangit123
- date: 2021-01-24 20:00:00
- image: '/assets/img/'
- description: 'A beginner's guide to Cloud computing'
- tags:
- - IEEE NITK
- - CompSoc
- - Cloud
- categories:
- - Compsoc
- github_username: 'srujangit123'
+layout: post
+title: "A beginner's guide to Cloud computing"
+author_github: srujangit123
+date: 2021-01-24 20:00:00
+image: '/assets/img/'
+description: 'A beginner's guide to Cloud computing'
+tags:
+- IEEE NITK
+- CompSoc
+- Cloud
+categories:
+- Compsoc
+github_username: 'srujangit123'
 ---
-
- ## What is cloud?
+##  What is cloud?
 
 Simply put, cloud computing provides storage, computing resources, networking and other services without direct management by the user. 
 
