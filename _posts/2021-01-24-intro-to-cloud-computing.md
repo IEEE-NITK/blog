@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "A beginner's guide to Cloud computing"
+title: "A beginner's guide to Cloud Computing"
 author_github: srujangit123
 date: 2021-01-24 20:00:00
 image: '/assets/img/'
-description: 'A beginner's guide to Cloud computing'
+description: 'Introduction to cloud computing'
 tags:
 - IEEE NITK
 - CompSoc
@@ -71,7 +71,7 @@ This tight integration lowers the cost associated with on-premises DevOps automa
 
 ## Cloud Services:
 
-![Cloud services](/blog/assets/img/Intro-to-cloud/image2.png)
+![Cloud services](/blog/assets/img/Intro-to-cloud/image2.jpg)
 
 
 ### Infrastructure as a Service(IaaS): 
