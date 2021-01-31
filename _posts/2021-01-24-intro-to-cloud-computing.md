@@ -1,4 +1,4 @@
- ---
+---
  layout: post
  title: "A beginner's guide to Cloud computing"
  author_github: srujangit123
@@ -12,7 +12,7 @@
  categories:
  - Compsoc
  github_username: 'srujangit123'
- ---
+---
 
  ## What is cloud?
 
