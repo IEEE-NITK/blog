@@ -1,45 +1,56 @@
----
-layout: compress
----
-
 <!DOCTYPE html>
 <html>
     {% include head.html %}
+
     <body>
-        
+        <div class="colorlib-loader">
+            <div id="loader"></div>
+			<div id="loader"></div>
+			<div id="loader"></div>
+			<div id="loader"></div>
+			<div id="loader"></div>
+        </div>
+    <div id="page">
     <nav class="colorlib-nav" role="navigation">
         <div class="top-menu">
             <div class="container">
                 <div class="row" id="header">
                     <div class="col-md-2">
                         <div id="colorlib-logo">
-                            <a href="/" title="home">
-                                <img src="{{ site.baseurl}}/assets/img/ieee_nitk.png" alt="IEEE Logo" class="navbar-logo">
+                            <a href="{{ site.url }}" title="home">
+                                <img src="{{ site.baseurl }}/assets/img/ieee_nitk.png" alt="IEEE Logo" class="navbar-logo">
                             </a>
                         </div>
                     </div>
                     <div class="col-md-10 text-right menu-1">
                         <ul>
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/team">Team</a></li>
-                            <li>
-                                <a class="nav-link dropdown-toggle has-dropdown" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    SIGs
-                                </a>
-                                <ul class="dropdown dropdown-menu">
-                                    <li class="dropdown-item"><a href="/compsoc">Compsoc</a></li>
-                                    <li class="dropdown-item"><a href="/diode">Diode</a></li>
-                                    <li class="dropdown-item"><a href="/piston">Piston</a></li>
-                                    <li class="dropdown-item"><a href="/wie">Women in Engineering</a></li>
-                                    <li class="dropdown-item"><a href="/sight">SIGHT</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="/blog/">Blog</a></li>
-                            <li><a href="/gyan/">Gyan</a></li>
-                            <li><a href="/achieve">Achievements</a></li>
-                            <li><a href="/publications">Publications</a></li>
-                            <li><a href="/joinus">Join Us</a></li>
-                            <li><a href="/expo">Virtual Project Expo</a></li>
+                            {% for nav in site.data.header %}
+                                {% if nav.name == "SIGs" %}
+                                    <li class="dropdown-nav">
+                                        <a class="nav-link dropdown-toggle has-dropdown" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            SIGs
+                                        </a>
+                                        <ul class="dropdown dropdown-menu">
+                                        {% for sigs in nav.sigs %}
+                                            <li class="dropdown-item"><a href="{{site.url}}/{{sigs.link}}">{{sigs.name}}</a></li>
+                                        {% endfor %}
+                                        </ul>
+                                    </li>
+                                {% elsif nav.name == "Affinity Groups" %}
+                                    <li class="dropdown-nav">
+                                        <a class="nav-link dropdown-toggle has-dropdown" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Affinity Groups
+                                        </a>
+                                        <ul class="dropdown dropdown-menu">
+                                        {% for sigs in nav.groups %}
+                                            <li class="dropdown-item"><a href="{{site.url}}/{{sigs.link}}">{{sigs.name}}</a></li>
+                                        {% endfor %}
+                                        </ul>
+                                    </li>
+                                {% else %}
+                                    <li><a href="{{site.url}}/{{nav.link}}">{{nav.name}}</a></li>
+                                {% endif %}
+                            {% endfor %}
                         </ul>
                     </div>
                 </div>
@@ -49,6 +60,7 @@ layout: compress
 
     <!-- Landing -->
     <section class="video-hero" style="height: 500px; background-size:cover; background-position: center center;background-attachment:fixed;" data-section="home">
+        <div id="particles-js"></div>
         <div class="display-t display-t2 text-center">
             <div class="display-tc display-tc2">
                 <div class="container">
@@ -63,12 +75,18 @@ layout: compress
     </section>
 
 
-            <section class="content">
-                {{ content }}
-            </section>
-            {% include paginator.html%}
-        {% include footer.html %}
-        <script id="dsq-count-scr" src="//ieeenitk.disqus.com/count.js" async></script>
+    <section class="content">
+        {{ content }}
+    </section>
+
+
+    {% include paginator.html %}
+    
+    {% include footer.html %}
+    </div>
+
+    <script src="{{site.baseurl}}/assets/js/main.js"></script>
+    <script id="dsq-count-scr" src="//ieeenitk.disqus.com/count.js" async></script>
 
     </body>
 </html>

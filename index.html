@@ -2,10 +2,13 @@
 layout: default
 ---
 
-<main id="scroll" class="home" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+<main id="scroll" class="home animate-box" style="margin-top: 60px;" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
 
 
     {% for post in paginator.posts %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="{{ post.url | prepend: site.baseurl }}">
                     <meta itemprop="datePublished" content="{{post.date}}">
@@ -22,8 +25,8 @@ layout: default
                     <a href="{{ post.url | prepend: site.baseurl }}"><h2 class="post-title" itemprop="name">{{ post.title }}</h2></a>
                     <p class="description">
                         {{ post.content | strip_html | truncatewords:40 }}
-                        <a href="{{ post.url | prepend: site.baseurl }}" class="link">Read more about {{post.title}}</a>
                     </p>
+                    <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a>
 
                     <div class="tags">
                         {% for tag in post.tags %}
@@ -33,5 +36,9 @@ layout: default
 
                 </div>
         </article>
+            </div>
+        </div>
+    </div>
     {% endfor %}
+
 </main>

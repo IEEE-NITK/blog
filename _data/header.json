@@ -1,34 +1,39 @@
 [
 	{
 		"name": "Home",
-		"link": "/"
-    },
+		"link": ""
+  },
     {
 		"name": "Team",
-		"link": "team"
+		"link": "team.html"
     },
     {
 		"name": "SIGs",
 		"sigs": [
             {
                 "name": "Computer Society",
-                "link": "compsoc"
+                "link": "compsoc.html"
             },
             {
                 "name": "Diode",
-                "link": "diode"
+                "link": "diode.html"
             },
             {
                 "name": "Piston",
-                "link": "piston"
-            },
+                "link": "piston.html"
+            }                                          
+        ]
+    },
+    {
+		"name": "Affinity Groups",
+		"groups": [
             {
                 "name": "Women in Engineering",
-                "link": "wie"
+                "link": "wie.html"
             },
             {
                 "name": "SIGHT",
-                "link": "sight"
+                "link": "sight.html"
             }                                           
         ]
     },
@@ -42,18 +47,14 @@
     },
     {
 		"name": "Achievements",
-		"link": "achieve"
+		"link": "achieve.html"
     },
     {
 		"name": "Publications",
-		"link": "publications"
+		"link": "publications.html"
     },
     {
-		"name": "Join Us",
-		"link": "joinus"
-    },
-    {
-      "name": "Virtual Project Expo",
-      "link": "virtual-expo/"
-      }
+		"name": "Impulse",
+		"link": "impulse.html"
+    }
 ]    
