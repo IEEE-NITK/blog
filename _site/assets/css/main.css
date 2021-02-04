@@ -1,12 +1,4 @@
-  html {
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
-  }
-  
-  body {
-    margin: 0
-  }
-  
+ 
   article,
   aside,
   details,
@@ -760,9 +752,8 @@
     }
   }
   
-  @media only screen and (min-width:37.5rem) {
+  @media only screen and (min-width:768px) {
     .header-post .content {
-      *zoom: 1;
       width: auto;
       max-width: 1000px;
       float: none;

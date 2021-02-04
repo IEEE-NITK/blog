@@ -4,9 +4,9 @@
       <ul class="pagination">
 
           {% if paginator.previous_page %}
-            <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a></li>
+            <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><<</a></li>
           {% else %}
-            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="disabled"><a><<</a></li>
           {% endif %} 
 
           {% assign stIndex = paginator.page | minus: 2 %}
@@ -22,12 +22,13 @@
 
           {% if stIndex > 1 %}
             <li class="page-no-screen"><a href="{{ site.baseurl }}/">First</a></li>
+            <li class="disabled page-no-screen"><a> .. </a></li>
           {% endif %}
 
 
           {% for page in (stIndex..endIndex) %}
               {% if page == paginator.page %}
-                <li class="active"><a href="#">{{ page }}</a></li>
+                <li class="active"><a>{{ page }}</a></li>
               {% elsif page == 1 %}
                 <li><a href="{{ site.baseurl }}/">{{ page }}</a></li>
               {% else %}
@@ -36,13 +37,14 @@
           {% endfor %} 
 
           {% if endIndex < paginator.total_pages %}
+            <li class="disabled page-no-screen"><a> .. </a></li>
             <li class="page-no-screen"><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', paginator.total_pages }}">Last</a></li>
           {% endif %}
 
           {% if paginator.next_page %}
-            <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a></li>
+            <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">>></a></li>
           {% else %}
-            <li class="disabled"><a href="#">&raquo;</a></li>
+            <li class="disabled"><a>>></a></li>
           {% endif %}
       </ul>
   </div>

@@ -93,12 +93,12 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countto/1.2.0/jquery.countTo.js"></script>
 
         <script src="/blog/assets/js/particles.js"></script>
         <!-- Favicon -->
-        <link rel="shortcut icon" href="/blog/assets/img/logo.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="/blog/favicon.ico" type="image/x-icon" />
         <link rel="manifest" href="/blog/assets/img/icons/manifest.json">
 
         <title>Blog | IEEE NITK</title>
@@ -106,7 +106,7 @@
         <!-- highlighter theme  -->
         <link rel="stylesheet" href="/blog/assets/css/monokai-sublime.css">
 
-        <link rel="stylesheet" href="/blog/assets/css/main.css">
+        <link rel="stylesheet" href="/blog/assets/css/blog.css">
         <link rel="canonical" href="/blog/page16/">
         <link rel="alternate" type="application/rss+xml" title="A blog about our findings and musings"
         href="http://localhost:4000/blog/feed.xml" />
@@ -239,13 +239,12 @@
     </section>
 
 
-    <section class="content">
-        <main id="scroll" class="home animate-box" style="margin-top: 60px;" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+    <div class="colorlib-blog">
+        <!-- <main id="scroll" class="home" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
 
 
     
-    <div class="container-fluid">
-        <div class="row">
+        <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 text-center">
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="/blog/alterego/">
@@ -260,9 +259,9 @@
                     </time>
                 </a>
                 <div class="content">
-                    <a href="/blog/alterego/"><h2 class="post-title" itemprop="name">Alterego</h2></a>
+                    <a href="/blog/alterego/"><h2 class="post-title" itemprop="name"><strong>Alterego</strong></h2></a>
                     <p class="description">
-                        AlterEgo We basically can’t live without our cell phones, our digital devices. But at the moment, the use of those devices is very disruptive. Wouldn’t it be rather nice if we could just think of the question and a device...
+                        AlterEgo We basically can’t live without our cell phones, our digital devices. But at the moment, the use of those devices is very disruptive. Wouldn’t it be rather nice if we could just think of...
                     </p>
                     <a href="/blog/alterego/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a>
 
@@ -276,10 +275,8 @@
         </article>
             </div>
         </div>
-    </div>
     
-    <div class="container-fluid">
-        <div class="row">
+        <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 text-center">
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="/blog/regenerative-braking/">
@@ -294,9 +291,9 @@
                     </time>
                 </a>
                 <div class="content">
-                    <a href="/blog/regenerative-braking/"><h2 class="post-title" itemprop="name">Envision Project 3: Regenerative Braking</h2></a>
+                    <a href="/blog/regenerative-braking/"><h2 class="post-title" itemprop="name"><strong>Envision Project 3: Regenerative Braking</strong></h2></a>
                     <p class="description">
-                        Idea: Regenerative Braking is an energy recovery mechanism which slows a vehicle or object by converting its kinetic energy into a form which can be either be used immediately or stored until needed. We have implemented this RBS in bicycles...
+                        Idea: Regenerative Braking is an energy recovery mechanism which slows a vehicle or object by converting its kinetic energy into a form which can be either be used immediately or stored until needed. We have...
                     </p>
                     <a href="/blog/regenerative-braking/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a>
 
@@ -310,10 +307,8 @@
         </article>
             </div>
         </div>
-    </div>
     
-    <div class="container-fluid">
-        <div class="row">
+        <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 text-center">
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="/blog/washable-electronics/">
@@ -328,9 +323,9 @@
                     </time>
                 </a>
                 <div class="content">
-                    <a href="/blog/washable-electronics/"><h2 class="post-title" itemprop="name">Washable Electronics using Water repellant Graphene Circuits</h2></a>
+                    <a href="/blog/washable-electronics/"><h2 class="post-title" itemprop="name"><strong>Washable Electronics using Water repellant Graphene Circuits</strong></h2></a>
                     <p class="description">
-                        Washable electronics? Water-repellent graphene circuits make it possible! New graphene printing technology can produce electronic circuits that are low-cost, flexible, highly conductive and water repellent. The nanotechnology “would lend enormous value to self-cleaning wearable/washable electronics that are resistant to stains,...
+                        Washable electronics? Water-repellent graphene circuits make it possible! New graphene printing technology can produce electronic circuits that are low-cost, flexible, highly conductive and water repellent. The nanotechnology “would lend enormous value to self-cleaning wearable/washable electronics...
                     </p>
                     <a href="/blog/washable-electronics/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a>
 
@@ -346,10 +341,8 @@
         </article>
             </div>
         </div>
-    </div>
     
-    <div class="container-fluid">
-        <div class="row">
+        <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 text-center">
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="/blog/qemu-virtualization/">
@@ -364,9 +357,9 @@
                     </time>
                 </a>
                 <div class="content">
-                    <a href="/blog/qemu-virtualization/"><h2 class="post-title" itemprop="name">QEMU/KVM for Virtual Machines</h2></a>
+                    <a href="/blog/qemu-virtualization/"><h2 class="post-title" itemprop="name"><strong>QEMU/KVM for Virtual Machines</strong></h2></a>
                     <p class="description">
-                        A “virtual machine” or “VM” is a virtual computer system. It is a tightly isolated software container with an operating system and application inside. Putting multiple VMs on a single computer enables several operating systems and applications to run on...
+                        A “virtual machine” or “VM” is a virtual computer system. It is a tightly isolated software container with an operating system and application inside. Putting multiple VMs on a single computer enables several operating systems...
                     </p>
                     <a href="/blog/qemu-virtualization/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a>
 
@@ -382,10 +375,8 @@
         </article>
             </div>
         </div>
-    </div>
     
-    <div class="container-fluid">
-        <div class="row">
+        <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 text-center">
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="/blog/amazon-go/">
@@ -400,9 +391,9 @@
                     </time>
                 </a>
                 <div class="content">
-                    <a href="/blog/amazon-go/"><h2 class="post-title" itemprop="name">Amazon Go - Cashier Less Shopping</h2></a>
+                    <a href="/blog/amazon-go/"><h2 class="post-title" itemprop="name"><strong>Amazon Go - Cashier Less Shopping</strong></h2></a>
                     <p class="description">
-                        Amazon Go is Amazon’s cashier-less shopping platform. Contrary to Amazon’s online website, the Go is a brick and mortar store- similar to your regular convenience store. What’s unique about the Go is that you can pick up an item and...
+                        Amazon Go is Amazon’s cashier-less shopping platform. Contrary to Amazon’s online website, the Go is a brick and mortar store- similar to your regular convenience store. What’s unique about the Go is that you can...
                     </p>
                     <a href="/blog/amazon-go/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a>
 
@@ -418,10 +409,8 @@
         </article>
             </div>
         </div>
-    </div>
     
-    <div class="container-fluid">
-        <div class="row">
+        <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 text-center">
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="/blog/smart-lighting-systems/">
@@ -436,9 +425,9 @@
                     </time>
                 </a>
                 <div class="content">
-                    <a href="/blog/smart-lighting-systems/"><h2 class="post-title" itemprop="name">Envision Project 2: Smart Lighting Systems</h2></a>
+                    <a href="/blog/smart-lighting-systems/"><h2 class="post-title" itemprop="name"><strong>Envision Project 2: Smart Lighting Systems</strong></h2></a>
                     <p class="description">
-                        Idea With the ongoing developments in the technological World, a lot of efforts have been invested in the field of automation to make everyone’s life easier. As engineering students and the future of the World, it is our responsibility to...
+                        Idea With the ongoing developments in the technological World, a lot of efforts have been invested in the field of automation to make everyone’s life easier. As engineering students and the future of the World,...
                     </p>
                     <a href="/blog/smart-lighting-systems/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a>
 
@@ -452,12 +441,306 @@
         </article>
             </div>
         </div>
-    </div>
+    
+
+</main> -->
+
+<main id="scroll" class="container" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+
+    
+        
+        
+            <div class="card-deck">
+        
+            <div class="animate-box card">
+                <article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                        <!-- <a class="datetime" href="/blog/alterego/">
+                            <meta itemprop="datePublished" content="2018-05-29 05:02:44 +0530">
+                            <time datetime="2018-05-29T05:02:44+05:30">
+                                <span class="day">
+                                    29
+                                </span>
+                                <span class="month-year">
+                                    May 2018
+                                </span>
+                            </time>
+                        </a> -->
+                        <h2>
+                            <a href="/blog/alterego/">Alterego</a>
+                            <!-- 
+                            
+                            
+                            
+                             -->
+                        </h2>
+                        <p class="author-wrap">
+                            <span class="author-img" style="background-image: url(/blog/assets/img/authors/sinchana.jpg);"></span> 
+                            <span class="author">by Sinchana Hegde</span>
+                            &nbsp;
+                            |
+                            &nbsp;
+                            <span class="admin"><span>May 29, 2018</span></span>
+                        </p>
+                        <p>
+                            AlterEgo We basically can’t live without our cell phones, our digital devices. But at the moment, the use of those devices is very disruptive. Wouldn’t it be rather nice if we could just think of the question and a device...
+                        </p>
+                        <!-- <a href="/blog/alterego/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a> -->
+
+                        <div class="tags">
+                            
+                                <a href="/blog/tags/#alterego">Alterego</a>
+                            
+                        </div>
+                </article>
+            </div>
+        
+    
+        
+        
+            <div class="animate-box card">
+                <article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                        <!-- <a class="datetime" href="/blog/regenerative-braking/">
+                            <meta itemprop="datePublished" content="2018-05-21 05:02:44 +0530">
+                            <time datetime="2018-05-21T05:02:44+05:30">
+                                <span class="day">
+                                    21
+                                </span>
+                                <span class="month-year">
+                                    May 2018
+                                </span>
+                            </time>
+                        </a> -->
+                        <h2>
+                            <a href="/blog/regenerative-braking/">Envision Project 3: Regenerative Braking</a>
+                            <!-- 
+                            
+                            
+                            
+                             -->
+                        </h2>
+                        <p class="author-wrap">
+                            <span class="author-img" style="background-image: url(/blog/assets/img/authors/salman_shah.jpg);"></span> 
+                            <span class="author">by Salman Shah</span>
+                            &nbsp;
+                            |
+                            &nbsp;
+                            <span class="admin"><span>May 21, 2018</span></span>
+                        </p>
+                        <p>
+                            Idea: Regenerative Braking is an energy recovery mechanism which slows a vehicle or object by converting its kinetic energy into a form which can be either be used immediately or stored until needed. We have implemented this RBS in bicycles...
+                        </p>
+                        <!-- <a href="/blog/regenerative-braking/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a> -->
+
+                        <div class="tags">
+                            
+                                <a href="/blog/tags/#braking">Braking</a>
+                            
+                        </div>
+                </article>
+            </div>
+        
+            </div>
+        
+    
+        
+        
+            <div class="card-deck">
+        
+            <div class="animate-box card">
+                <article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                        <!-- <a class="datetime" href="/blog/washable-electronics/">
+                            <meta itemprop="datePublished" content="2018-05-16 15:30:30 +0530">
+                            <time datetime="2018-05-16T15:30:30+05:30">
+                                <span class="day">
+                                    16
+                                </span>
+                                <span class="month-year">
+                                    May 2018
+                                </span>
+                            </time>
+                        </a> -->
+                        <h2>
+                            <a href="/blog/washable-electronics/">Washable Electronics using Water repellant Graphene Circuits</a>
+                            <!-- 
+                            
+                            
+                            
+                             -->
+                        </h2>
+                        <p class="author-wrap">
+                            <span class="author-img" style="background-image: url(/blog/assets/img/authors/blog-author.jpg);"></span> 
+                            <span class="author">by Sonal S. Parab</span>
+                            &nbsp;
+                            |
+                            &nbsp;
+                            <span class="admin"><span>May 16, 2018</span></span>
+                        </p>
+                        <p>
+                            Washable electronics? Water-repellent graphene circuits make it possible! New graphene printing technology can produce electronic circuits that are low-cost, flexible, highly conductive and water repellent. The nanotechnology “would lend enormous value to self-cleaning wearable/washable electronics that are resistant to stains,...
+                        </p>
+                        <!-- <a href="/blog/washable-electronics/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a> -->
+
+                        <div class="tags">
+                            
+                                <a href="/blog/tags/#graphene">graphene</a>
+                            
+                                <a href="/blog/tags/#electronics">electronics</a>
+                            
+                        </div>
+                </article>
+            </div>
+        
+    
+        
+        
+            <div class="animate-box card">
+                <article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                        <!-- <a class="datetime" href="/blog/qemu-virtualization/">
+                            <meta itemprop="datePublished" content="2018-05-16 15:30:30 +0530">
+                            <time datetime="2018-05-16T15:30:30+05:30">
+                                <span class="day">
+                                    16
+                                </span>
+                                <span class="month-year">
+                                    May 2018
+                                </span>
+                            </time>
+                        </a> -->
+                        <h2>
+                            <a href="/blog/qemu-virtualization/">QEMU/KVM for Virtual Machines</a>
+                            <!-- 
+                            
+                            
+                            
+                             -->
+                        </h2>
+                        <p class="author-wrap">
+                            <span class="author-img" style="background-image: url(/blog/assets/img/authors/archit.jpg);"></span> 
+                            <span class="author">by Archit Pandey</span>
+                            &nbsp;
+                            |
+                            &nbsp;
+                            <span class="admin"><span>May 16, 2018</span></span>
+                        </p>
+                        <p>
+                            A “virtual machine” or “VM” is a virtual computer system. It is a tightly isolated software container with an operating system and application inside. Putting multiple VMs on a single computer enables several operating systems and applications to run on...
+                        </p>
+                        <!-- <a href="/blog/qemu-virtualization/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a> -->
+
+                        <div class="tags">
+                            
+                                <a href="/blog/tags/#virtualization">virtualization</a>
+                            
+                                <a href="/blog/tags/#qemu">qemu</a>
+                            
+                        </div>
+                </article>
+            </div>
+        
+            </div>
+        
+    
+        
+        
+            <div class="card-deck">
+        
+            <div class="animate-box card">
+                <article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                        <!-- <a class="datetime" href="/blog/amazon-go/">
+                            <meta itemprop="datePublished" content="2018-05-16 15:30:30 +0530">
+                            <time datetime="2018-05-16T15:30:30+05:30">
+                                <span class="day">
+                                    16
+                                </span>
+                                <span class="month-year">
+                                    May 2018
+                                </span>
+                            </time>
+                        </a> -->
+                        <h2>
+                            <a href="/blog/amazon-go/">Amazon Go - Cashier Less Shopping</a>
+                            <!-- 
+                            
+                            
+                            
+                             -->
+                        </h2>
+                        <p class="author-wrap">
+                            <span class="author-img" style="background-image: url(/blog/assets/img/authors/anirudhsundar.jpg);"></span> 
+                            <span class="author">by Anirudh Sundar</span>
+                            &nbsp;
+                            |
+                            &nbsp;
+                            <span class="admin"><span>May 16, 2018</span></span>
+                        </p>
+                        <p>
+                            Amazon Go is Amazon’s cashier-less shopping platform. Contrary to Amazon’s online website, the Go is a brick and mortar store- similar to your regular convenience store. What’s unique about the Go is that you can pick up an item and...
+                        </p>
+                        <!-- <a href="/blog/amazon-go/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a> -->
+
+                        <div class="tags">
+                            
+                                <a href="/blog/tags/#iot">IoT</a>
+                            
+                                <a href="/blog/tags/#spatial-imaging">Spatial Imaging</a>
+                            
+                        </div>
+                </article>
+            </div>
+        
+    
+        
+        
+            <div class="animate-box card">
+                <article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                        <!-- <a class="datetime" href="/blog/smart-lighting-systems/">
+                            <meta itemprop="datePublished" content="2018-05-13 15:30:30 +0530">
+                            <time datetime="2018-05-13T15:30:30+05:30">
+                                <span class="day">
+                                    13
+                                </span>
+                                <span class="month-year">
+                                    May 2018
+                                </span>
+                            </time>
+                        </a> -->
+                        <h2>
+                            <a href="/blog/smart-lighting-systems/">Envision Project 2: Smart Lighting Systems</a>
+                            <!-- 
+                            
+                            
+                            
+                             -->
+                        </h2>
+                        <p class="author-wrap">
+                            <span class="author-img" style="background-image: url(/blog/assets/img/authors/anirudh.jpg);"></span> 
+                            <span class="author">by Anirudh B H</span>
+                            &nbsp;
+                            |
+                            &nbsp;
+                            <span class="admin"><span>May 13, 2018</span></span>
+                        </p>
+                        <p>
+                            Idea With the ongoing developments in the technological World, a lot of efforts have been invested in the field of automation to make everyone’s life easier. As engineering students and the future of the World, it is our responsibility to...
+                        </p>
+                        <!-- <a href="/blog/smart-lighting-systems/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a> -->
+
+                        <div class="tags">
+                            
+                                <a href="/blog/tags/#iot">IoT</a>
+                            
+                        </div>
+                </article>
+            </div>
+        
+            </div>
+        
     
 
 </main>
 
-    </section>
+
+    </div>
 
 
     
@@ -466,7 +749,7 @@
       <ul class="pagination">
 
           
-            <li><a href="/blog/page15/">&laquo;</a></li>
+            <li><a href="/blog/page15/"><<</a></li>
            
 
           
@@ -476,6 +759,7 @@
 
           
             <li class="page-no-screen"><a href="/blog/">First</a></li>
+            <li class="disabled page-no-screen"><a> .. </a></li>
           
 
 
@@ -489,7 +773,7 @@
               
           
               
-                <li class="active"><a href="#">16</a></li>
+                <li class="active"><a>16</a></li>
               
           
               
@@ -502,11 +786,12 @@
            
 
           
+            <li class="disabled page-no-screen"><a> .. </a></li>
             <li class="page-no-screen"><a href="/blog/page31/">Last</a></li>
           
 
           
-            <li><a href="/blog/page17/">&raquo;</a></li>
+            <li><a href="/blog/page17/">>></a></li>
           
       </ul>
   </div>
@@ -609,9 +894,9 @@
         </div>
     </div>
 </footer>
-</div>
+
 <div class="gototop js-top">
-<a href="" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
+    <a href="" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
 </div>
     </div>
 

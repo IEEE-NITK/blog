@@ -93,12 +93,12 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countto/1.2.0/jquery.countTo.js"></script>
 
         <script src="/blog/assets/js/particles.js"></script>
         <!-- Favicon -->
-        <link rel="shortcut icon" href="/blog/assets/img/logo.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="/blog/favicon.ico" type="image/x-icon" />
         <link rel="manifest" href="/blog/assets/img/icons/manifest.json">
 
         <title>Blog | IEEE NITK</title>
@@ -106,7 +106,7 @@
         <!-- highlighter theme  -->
         <link rel="stylesheet" href="/blog/assets/css/monokai-sublime.css">
 
-        <link rel="stylesheet" href="/blog/assets/css/main.css">
+        <link rel="stylesheet" href="/blog/assets/css/blog.css">
         <link rel="canonical" href="/blog/page31/">
         <link rel="alternate" type="application/rss+xml" title="A blog about our findings and musings"
         href="http://localhost:4000/blog/feed.xml" />
@@ -239,13 +239,12 @@
     </section>
 
 
-    <section class="content">
-        <main id="scroll" class="home animate-box" style="margin-top: 60px;" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+    <div class="colorlib-blog">
+        <!-- <main id="scroll" class="home" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
 
 
     
-    <div class="container-fluid">
-        <div class="row">
+        <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 text-center">
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="/blog/how-to-get-started-with-bots/">
@@ -260,9 +259,9 @@
                     </time>
                 </a>
                 <div class="content">
-                    <a href="/blog/how-to-get-started-with-bots/"><h2 class="post-title" itemprop="name">How to Get Started with Bots</h2></a>
+                    <a href="/blog/how-to-get-started-with-bots/"><h2 class="post-title" itemprop="name"><strong>How to Get Started with Bots</strong></h2></a>
                     <p class="description">
-                        How to get Started with bots Have you ever been fascinated by robots - Awestrucking objects which are capable of performing some cool tasks without needing a human intervention (well, unless they decide to go mad! :P) ? And certainly...
+                        How to get Started with bots Have you ever been fascinated by robots - Awestrucking objects which are capable of performing some cool tasks without needing a human intervention (well, unless they decide to go...
                     </p>
                     <a href="/blog/how-to-get-started-with-bots/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a>
 
@@ -276,10 +275,8 @@
         </article>
             </div>
         </div>
-    </div>
     
-    <div class="container-fluid">
-        <div class="row">
+        <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 text-center">
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="/blog/hello-world/">
@@ -294,9 +291,9 @@
                     </time>
                 </a>
                 <div class="content">
-                    <a href="/blog/hello-world/"><h2 class="post-title" itemprop="name">Hello World</h2></a>
+                    <a href="/blog/hello-world/"><h2 class="post-title" itemprop="name"><strong>Hello World</strong></h2></a>
                     <p class="description">
-                        A dissection of the hello world C program DISCLAMER: The contents on this page are strictly R rated. With R standing for Rigorous material. This is not a beginner’s guide to C. This is more of an article for intermediate/advanced...
+                        A dissection of the hello world C program DISCLAMER: The contents on this page are strictly R rated. With R standing for Rigorous material. This is not a beginner’s guide to C. This is more...
                     </p>
                     <a href="/blog/hello-world/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a>
 
@@ -316,10 +313,8 @@
         </article>
             </div>
         </div>
-    </div>
     
-    <div class="container-fluid">
-        <div class="row">
+        <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 text-center">
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="/blog/getting-to-love-the-terminal/">
@@ -334,9 +329,9 @@
                     </time>
                 </a>
                 <div class="content">
-                    <a href="/blog/getting-to-love-the-terminal/"><h2 class="post-title" itemprop="name">Getting to love the Terminal</h2></a>
+                    <a href="/blog/getting-to-love-the-terminal/"><h2 class="post-title" itemprop="name"><strong>Getting to love the Terminal</strong></h2></a>
                     <p class="description">
-                        I Just Got Ubuntu! But I’m not so sure about this command line Early days with the Unix command line interface, or the terminal (bash shell by default) can be pretty annoying and intimidating. But it doesn’t have to be....
+                        I Just Got Ubuntu! But I’m not so sure about this command line Early days with the Unix command line interface, or the terminal (bash shell by default) can be pretty annoying and intimidating. But...
                     </p>
                     <a href="/blog/getting-to-love-the-terminal/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a>
 
@@ -354,10 +349,8 @@
         </article>
             </div>
         </div>
-    </div>
     
-    <div class="container-fluid">
-        <div class="row">
+        <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 text-center">
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="/blog/installing-ubuntu/">
@@ -372,9 +365,9 @@
                     </time>
                 </a>
                 <div class="content">
-                    <a href="/blog/installing-ubuntu/"><h2 class="post-title" itemprop="name">Installing Ubuntu For Windows Users</h2></a>
+                    <a href="/blog/installing-ubuntu/"><h2 class="post-title" itemprop="name"><strong>Installing Ubuntu For Windows Users</strong></h2></a>
                     <p class="description">
-                        Installing Ubuntu For Windows Users Hie Installing Ubuntu on your machine is really helpfull in college days. It comes free and there are lots of open source softwares available for it. Last year, a lot of people came to my...
+                        Installing Ubuntu For Windows Users Hie Installing Ubuntu on your machine is really helpfull in college days. It comes free and there are lots of open source softwares available for it. Last year, a lot...
                     </p>
                     <a href="/blog/installing-ubuntu/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a>
 
@@ -390,10 +383,8 @@
         </article>
             </div>
         </div>
-    </div>
     
-    <div class="container-fluid">
-        <div class="row">
+        <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 text-center">
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="/blog/introduction-to-ieee/">
@@ -408,9 +399,9 @@
                     </time>
                 </a>
                 <div class="content">
-                    <a href="/blog/introduction-to-ieee/"><h2 class="post-title" itemprop="name">Introduction to IEEE-NITK Chapter</h2></a>
+                    <a href="/blog/introduction-to-ieee/"><h2 class="post-title" itemprop="name"><strong>Introduction to IEEE-NITK Chapter</strong></h2></a>
                     <p class="description">
-                        IEEE is the world’s largest professional association advancing innovation and technological excellence for the benefit of humanity. IEEE and its members inspire a global community to innovate for a better tomorrow through its highly-cited publications, conferences, technology standards, and professional...
+                        IEEE is the world’s largest professional association advancing innovation and technological excellence for the benefit of humanity. IEEE and its members inspire a global community to innovate for a better tomorrow through its highly-cited publications,...
                     </p>
                     <a href="/blog/introduction-to-ieee/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a>
 
@@ -424,12 +415,265 @@
         </article>
             </div>
         </div>
-    </div>
+    
+
+</main> -->
+
+<main id="scroll" class="container" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+
+    
+        
+        
+            <div class="card-deck">
+        
+            <div class="animate-box card">
+                <article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                        <!-- <a class="datetime" href="/blog/how-to-get-started-with-bots/">
+                            <meta itemprop="datePublished" content="2017-06-01 23:58:33 +0530">
+                            <time datetime="2017-06-01T23:58:33+05:30">
+                                <span class="day">
+                                    01
+                                </span>
+                                <span class="month-year">
+                                    June 2017
+                                </span>
+                            </time>
+                        </a> -->
+                        <h2>
+                            <a href="/blog/how-to-get-started-with-bots/">How to Get Started with Bots</a>
+                            <!-- 
+                            
+                            
+                            
+                             -->
+                        </h2>
+                        <p class="author-wrap">
+                            <span class="author-img" style="background-image: url(/blog/assets/img/authors/tarun_mittal.jpg);"></span> 
+                            <span class="author">by Tarun Mittal</span>
+                            &nbsp;
+                            |
+                            &nbsp;
+                            <span class="admin"><span>June 01, 2017</span></span>
+                        </p>
+                        <p>
+                            How to get Started with bots Have you ever been fascinated by robots - Awestrucking objects which are capable of performing some cool tasks without needing a human intervention (well, unless they decide to go mad! :P) ? And certainly...
+                        </p>
+                        <!-- <a href="/blog/how-to-get-started-with-bots/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a> -->
+
+                        <div class="tags">
+                            
+                                <a href="/blog/tags/#bots">Bots</a>
+                            
+                        </div>
+                </article>
+            </div>
+        
+    
+        
+        
+            <div class="animate-box card">
+                <article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                        <!-- <a class="datetime" href="/blog/hello-world/">
+                            <meta itemprop="datePublished" content="2017-05-26 16:18:33 +0530">
+                            <time datetime="2017-05-26T16:18:33+05:30">
+                                <span class="day">
+                                    26
+                                </span>
+                                <span class="month-year">
+                                    May 2017
+                                </span>
+                            </time>
+                        </a> -->
+                        <h2>
+                            <a href="/blog/hello-world/">Hello World</a>
+                            <!-- 
+                            
+                            
+                            
+                             -->
+                        </h2>
+                        <p class="author-wrap">
+                            <span class="author-img" style="background-image: url(/blog/assets/img/authors/adithyabk.jpg);"></span> 
+                            <span class="author">by Adithya Bhat</span>
+                            &nbsp;
+                            |
+                            &nbsp;
+                            <span class="admin"><span>May 26, 2017</span></span>
+                        </p>
+                        <p>
+                            A dissection of the hello world C program DISCLAMER: The contents on this page are strictly R rated. With R standing for Rigorous material. This is not a beginner’s guide to C. This is more of an article for intermediate/advanced...
+                        </p>
+                        <!-- <a href="/blog/hello-world/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a> -->
+
+                        <div class="tags">
+                            
+                                <a href="/blog/tags/#gcc">GCC</a>
+                            
+                                <a href="/blog/tags/#c">C</a>
+                            
+                                <a href="/blog/tags/#programming">Programming</a>
+                            
+                                <a href="/blog/tags/#helloworld">HelloWorld</a>
+                            
+                        </div>
+                </article>
+            </div>
+        
+            </div>
+        
+    
+        
+        
+            <div class="card-deck">
+        
+            <div class="animate-box card">
+                <article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                        <!-- <a class="datetime" href="/blog/getting-to-love-the-terminal/">
+                            <meta itemprop="datePublished" content="2017-05-24 16:18:33 +0530">
+                            <time datetime="2017-05-24T16:18:33+05:30">
+                                <span class="day">
+                                    24
+                                </span>
+                                <span class="month-year">
+                                    May 2017
+                                </span>
+                            </time>
+                        </a> -->
+                        <h2>
+                            <a href="/blog/getting-to-love-the-terminal/">Getting to love the Terminal</a>
+                            <!-- 
+                            
+                            
+                            
+                             -->
+                        </h2>
+                        <p class="author-wrap">
+                            <span class="author-img" style="background-image: url(/blog/assets/img/authors/blog-author.jpg);"></span> 
+                            <span class="author">by Kaushik S Kalmady</span>
+                            &nbsp;
+                            |
+                            &nbsp;
+                            <span class="admin"><span>May 24, 2017</span></span>
+                        </p>
+                        <p>
+                            I Just Got Ubuntu! But I’m not so sure about this command line Early days with the Unix command line interface, or the terminal (bash shell by default) can be pretty annoying and intimidating. But it doesn’t have to be....
+                        </p>
+                        <!-- <a href="/blog/getting-to-love-the-terminal/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a> -->
+
+                        <div class="tags">
+                            
+                                <a href="/blog/tags/#unix">Unix</a>
+                            
+                                <a href="/blog/tags/#terminal">Terminal</a>
+                            
+                                <a href="/blog/tags/#bash">Bash</a>
+                            
+                        </div>
+                </article>
+            </div>
+        
+    
+        
+        
+            <div class="animate-box card">
+                <article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                        <!-- <a class="datetime" href="/blog/installing-ubuntu/">
+                            <meta itemprop="datePublished" content="2017-05-24 01:33:44 +0530">
+                            <time datetime="2017-05-24T01:33:44+05:30">
+                                <span class="day">
+                                    24
+                                </span>
+                                <span class="month-year">
+                                    May 2017
+                                </span>
+                            </time>
+                        </a> -->
+                        <h2>
+                            <a href="/blog/installing-ubuntu/">Installing Ubuntu For Windows Users</a>
+                            <!-- 
+                            
+                            
+                            
+                             -->
+                        </h2>
+                        <p class="author-wrap">
+                            <span class="author-img" style="background-image: url(/blog/assets/img/authors/hrily.jpg);"></span> 
+                            <span class="author">by Hrishi Hiraskar</span>
+                            &nbsp;
+                            |
+                            &nbsp;
+                            <span class="admin"><span>May 24, 2017</span></span>
+                        </p>
+                        <p>
+                            Installing Ubuntu For Windows Users Hie Installing Ubuntu on your machine is really helpfull in college days. It comes free and there are lots of open source softwares available for it. Last year, a lot of people came to my...
+                        </p>
+                        <!-- <a href="/blog/installing-ubuntu/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a> -->
+
+                        <div class="tags">
+                            
+                                <a href="/blog/tags/#linux">Linux</a>
+                            
+                                <a href="/blog/tags/#ubuntu">Ubuntu</a>
+                            
+                        </div>
+                </article>
+            </div>
+        
+            </div>
+        
+    
+        
+        
+            <div class="card-deck">
+        
+            <div class="animate-box card">
+                <article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                        <!-- <a class="datetime" href="/blog/introduction-to-ieee/">
+                            <meta itemprop="datePublished" content="2017-05-15 05:02:44 +0530">
+                            <time datetime="2017-05-15T05:02:44+05:30">
+                                <span class="day">
+                                    15
+                                </span>
+                                <span class="month-year">
+                                    May 2017
+                                </span>
+                            </time>
+                        </a> -->
+                        <h2>
+                            <a href="/blog/introduction-to-ieee/">Introduction to IEEE-NITK Chapter</a>
+                            <!-- 
+                            
+                            
+                            
+                             -->
+                        </h2>
+                        <p class="author-wrap">
+                            <span class="author-img" style="background-image: url(/blog/assets/img/authors/salman_shah.jpg);"></span> 
+                            <span class="author">by Salman Shah</span>
+                            &nbsp;
+                            |
+                            &nbsp;
+                            <span class="admin"><span>May 15, 2017</span></span>
+                        </p>
+                        <p>
+                            IEEE is the world’s largest professional association advancing innovation and technological excellence for the benefit of humanity. IEEE and its members inspire a global community to innovate for a better tomorrow through its highly-cited publications, conferences, technology standards, and professional...
+                        </p>
+                        <!-- <a href="/blog/introduction-to-ieee/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a> -->
+
+                        <div class="tags">
+                            
+                                <a href="/blog/tags/#introduction">Introduction</a>
+                            
+                        </div>
+                </article>
+            </div>
+        
     
 
 </main>
 
-    </section>
+
+    </div>
 
 
     
@@ -438,7 +682,7 @@
       <ul class="pagination">
 
           
-            <li><a href="/blog/page30/">&laquo;</a></li>
+            <li><a href="/blog/page30/"><<</a></li>
            
 
           
@@ -448,6 +692,7 @@
 
           
             <li class="page-no-screen"><a href="/blog/">First</a></li>
+            <li class="disabled page-no-screen"><a> .. </a></li>
           
 
 
@@ -473,14 +718,14 @@
               
           
               
-                <li class="active"><a href="#">31</a></li>
+                <li class="active"><a>31</a></li>
               
            
 
           
 
           
-            <li class="disabled"><a href="#">&raquo;</a></li>
+            <li class="disabled"><a>>></a></li>
           
       </ul>
   </div>
@@ -583,9 +828,9 @@
         </div>
     </div>
 </footer>
-</div>
+
 <div class="gototop js-top">
-<a href="" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
+    <a href="" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
 </div>
     </div>
 

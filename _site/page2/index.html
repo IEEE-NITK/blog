@@ -93,12 +93,12 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countto/1.2.0/jquery.countTo.js"></script>
 
         <script src="/blog/assets/js/particles.js"></script>
         <!-- Favicon -->
-        <link rel="shortcut icon" href="/blog/assets/img/logo.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="/blog/favicon.ico" type="image/x-icon" />
         <link rel="manifest" href="/blog/assets/img/icons/manifest.json">
 
         <title>Blog | IEEE NITK</title>
@@ -106,7 +106,7 @@
         <!-- highlighter theme  -->
         <link rel="stylesheet" href="/blog/assets/css/monokai-sublime.css">
 
-        <link rel="stylesheet" href="/blog/assets/css/main.css">
+        <link rel="stylesheet" href="/blog/assets/css/blog.css">
         <link rel="canonical" href="/blog/page2/">
         <link rel="alternate" type="application/rss+xml" title="A blog about our findings and musings"
         href="http://localhost:4000/blog/feed.xml" />
@@ -239,13 +239,12 @@
     </section>
 
 
-    <section class="content">
-        <main id="scroll" class="home animate-box" style="margin-top: 60px;" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+    <div class="colorlib-blog">
+        <!-- <main id="scroll" class="home" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
 
 
     
-    <div class="container-fluid">
-        <div class="row">
+        <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 text-center">
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="/blog/Applications-of-Neural-Networks-in-Power-Systems/">
@@ -260,9 +259,9 @@
                     </time>
                 </a>
                 <div class="content">
-                    <a href="/blog/Applications-of-Neural-Networks-in-Power-Systems/"><h2 class="post-title" itemprop="name">Application of Neural Networks in Power Systems</h2></a>
+                    <a href="/blog/Applications-of-Neural-Networks-in-Power-Systems/"><h2 class="post-title" itemprop="name"><strong>Application of Neural Networks in Power Systems</strong></h2></a>
                     <p class="description">
-                        Application of Neural Networks in Power Systems Have you ever heard of Machine Learning or Neural Networks, but you don’t know their applications? Scroll down to find out! For most beginners, the title itself might be a bit complicated to...
+                        Application of Neural Networks in Power Systems Have you ever heard of Machine Learning or Neural Networks, but you don’t know their applications? Scroll down to find out! For most beginners, the title itself might...
                     </p>
                     <a href="/blog/Applications-of-Neural-Networks-in-Power-Systems/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a>
 
@@ -282,10 +281,8 @@
         </article>
             </div>
         </div>
-    </div>
     
-    <div class="container-fluid">
-        <div class="row">
+        <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 text-center">
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="/blog/What-is-Machine-Learning/">
@@ -300,9 +297,9 @@
                     </time>
                 </a>
                 <div class="content">
-                    <a href="/blog/What-is-Machine-Learning/"><h2 class="post-title" itemprop="name">What is machine learning?</h2></a>
+                    <a href="/blog/What-is-Machine-Learning/"><h2 class="post-title" itemprop="name"><strong>What is machine learning?</strong></h2></a>
                     <p class="description">
-                        What is Machine Learning? Machine learning is a school of computer science that focuses on programming machines to improve their performance through data and iteration. The machine can learn without being explicitly programmed. Yes, you read it right. This is...
+                        What is Machine Learning? Machine learning is a school of computer science that focuses on programming machines to improve their performance through data and iteration. The machine can learn without being explicitly programmed. Yes, you...
                     </p>
                     <a href="/blog/What-is-Machine-Learning/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a>
 
@@ -318,10 +315,8 @@
         </article>
             </div>
         </div>
-    </div>
     
-    <div class="container-fluid">
-        <div class="row">
+        <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 text-center">
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="/blog/TarjansAlgo/">
@@ -336,9 +331,9 @@
                     </time>
                 </a>
                 <div class="content">
-                    <a href="/blog/TarjansAlgo/"><h2 class="post-title" itemprop="name">An Overview of Tarjan's Algorithm</h2></a>
+                    <a href="/blog/TarjansAlgo/"><h2 class="post-title" itemprop="name"><strong>An Overview of Tarjan's Algorithm</strong></h2></a>
                     <p class="description">
-                        Background Strong components in directed graphs are components in which all vertices are strongly connected to each other. 2 vertices A and B are strongly connected if there is a directed path from A-&gt;B and B-&gt;A. Need for Computing Strongly...
+                        Background Strong components in directed graphs are components in which all vertices are strongly connected to each other. 2 vertices A and B are strongly connected if there is a directed path from A-&gt;B and...
                     </p>
                     <a href="/blog/TarjansAlgo/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a>
 
@@ -354,10 +349,8 @@
         </article>
             </div>
         </div>
-    </div>
     
-    <div class="container-fluid">
-        <div class="row">
+        <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 text-center">
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="/blog/SLAM/">
@@ -372,9 +365,9 @@
                     </time>
                 </a>
                 <div class="content">
-                    <a href="/blog/SLAM/"><h2 class="post-title" itemprop="name">SLAM Coverage Algorithms</h2></a>
+                    <a href="/blog/SLAM/"><h2 class="post-title" itemprop="name"><strong>SLAM Coverage Algorithms</strong></h2></a>
                     <p class="description">
-                        With the increased use of robots in industries, the need for robots to be more efficient is incredibly high. One of the key concerns is the way in which they commute. Gone are the days when robots were restricted to...
+                        With the increased use of robots in industries, the need for robots to be more efficient is incredibly high. One of the key concerns is the way in which they commute. Gone are the days...
                     </p>
                     <a href="/blog/SLAM/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a>
 
@@ -390,10 +383,8 @@
         </article>
             </div>
         </div>
-    </div>
     
-    <div class="container-fluid">
-        <div class="row">
+        <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 text-center">
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="/blog/Solving-a-traffic-problem-using-graph-decomposition/">
@@ -408,9 +399,9 @@
                     </time>
                 </a>
                 <div class="content">
-                    <a href="/blog/Solving-a-traffic-problem-using-graph-decomposition/"><h2 class="post-title" itemprop="name">Solving a traffic problem using graph decomposition</h2></a>
+                    <a href="/blog/Solving-a-traffic-problem-using-graph-decomposition/"><h2 class="post-title" itemprop="name"><strong>Solving a traffic problem using graph decomposition</strong></h2></a>
                     <p class="description">
-                        Solving a traffic problem using graph decomposition The Capital city is known for its prosperous life and big opportunities. Its inhabitants are called “capitolates”. Every capitolate in Capital city wants to live a happy and peaceful life. Now Capital city...
+                        Solving a traffic problem using graph decomposition The Capital city is known for its prosperous life and big opportunities. Its inhabitants are called “capitolates”. Every capitolate in Capital city wants to live a happy and...
                     </p>
                     <a href="/blog/Solving-a-traffic-problem-using-graph-decomposition/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a>
 
@@ -426,10 +417,8 @@
         </article>
             </div>
         </div>
-    </div>
     
-    <div class="container-fluid">
-        <div class="row">
+        <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 text-center">
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="/blog/web-vulnerabilities/">
@@ -444,9 +433,9 @@
                     </time>
                 </a>
                 <div class="content">
-                    <a href="/blog/web-vulnerabilities/"><h2 class="post-title" itemprop="name">Web Vulnerabilities</h2></a>
+                    <a href="/blog/web-vulnerabilities/"><h2 class="post-title" itemprop="name"><strong>Web Vulnerabilities</strong></h2></a>
                     <p class="description">
-                        Web Vulnerabilities A vulnerability is a hole or a weakness in the application, which can be a design flaw or an implementation bug, that allows an attacker to cause harm to the stakeholders of an application. Websites across the world...
+                        Web Vulnerabilities A vulnerability is a hole or a weakness in the application, which can be a design flaw or an implementation bug, that allows an attacker to cause harm to the stakeholders of an...
                     </p>
                     <a href="/blog/web-vulnerabilities/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a>
 
@@ -466,12 +455,320 @@
         </article>
             </div>
         </div>
-    </div>
+    
+
+</main> -->
+
+<main id="scroll" class="container" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+
+    
+        
+        
+            <div class="card-deck">
+        
+            <div class="animate-box card">
+                <article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                        <!-- <a class="datetime" href="/blog/Applications-of-Neural-Networks-in-Power-Systems/">
+                            <meta itemprop="datePublished" content="2020-03-14 05:02:44 +0530">
+                            <time datetime="2020-03-14T05:02:44+05:30">
+                                <span class="day">
+                                    14
+                                </span>
+                                <span class="month-year">
+                                    March 2020
+                                </span>
+                            </time>
+                        </a> -->
+                        <h2>
+                            <a href="/blog/Applications-of-Neural-Networks-in-Power-Systems/">Application of Neural Networks in Power Systems</a>
+                            <!-- 
+                            
+                            
+                            
+                             -->
+                        </h2>
+                        <p class="author-wrap">
+                            <span class="author-img" style="background-image: url(/blog/assets/img/authors/aditya-c.jpeg);"></span> 
+                            <span class="author">by Aditya C</span>
+                            &nbsp;
+                            |
+                            &nbsp;
+                            <span class="admin"><span>March 14, 2020</span></span>
+                        </p>
+                        <p>
+                            Application of Neural Networks in Power Systems Have you ever heard of Machine Learning or Neural Networks, but you don’t know their applications? Scroll down to find out! For most beginners, the title itself might be a bit complicated to...
+                        </p>
+                        <!-- <a href="/blog/Applications-of-Neural-Networks-in-Power-Systems/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a> -->
+
+                        <div class="tags">
+                            
+                                <a href="/blog/tags/#ieee-nitk">IEEE NITK</a>
+                            
+                                <a href="/blog/tags/#power-systems">Power Systems</a>
+                            
+                                <a href="/blog/tags/#neural-networks">Neural Networks</a>
+                            
+                                <a href="/blog/tags/#machine-learning">Machine Learning</a>
+                            
+                        </div>
+                </article>
+            </div>
+        
+    
+        
+        
+            <div class="animate-box card">
+                <article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                        <!-- <a class="datetime" href="/blog/What-is-Machine-Learning/">
+                            <meta itemprop="datePublished" content="2020-03-07 05:02:44 +0530">
+                            <time datetime="2020-03-07T05:02:44+05:30">
+                                <span class="day">
+                                    07
+                                </span>
+                                <span class="month-year">
+                                    March 2020
+                                </span>
+                            </time>
+                        </a> -->
+                        <h2>
+                            <a href="/blog/What-is-Machine-Learning/">What is machine learning?</a>
+                            <!-- 
+                            
+                            
+                            
+                             -->
+                        </h2>
+                        <p class="author-wrap">
+                            <span class="author-img" style="background-image: url(/blog/assets/img/authors/AdithyaKannan250.jpg);"></span> 
+                            <span class="author">by Adithya Kannan</span>
+                            &nbsp;
+                            |
+                            &nbsp;
+                            <span class="admin"><span>March 07, 2020</span></span>
+                        </p>
+                        <p>
+                            What is Machine Learning? Machine learning is a school of computer science that focuses on programming machines to improve their performance through data and iteration. The machine can learn without being explicitly programmed. Yes, you read it right. This is...
+                        </p>
+                        <!-- <a href="/blog/What-is-Machine-Learning/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a> -->
+
+                        <div class="tags">
+                            
+                                <a href="/blog/tags/#ieee-nitk">IEEE NITK</a>
+                            
+                                <a href="/blog/tags/#machine-learning">Machine Learning</a>
+                            
+                        </div>
+                </article>
+            </div>
+        
+            </div>
+        
+    
+        
+        
+            <div class="card-deck">
+        
+            <div class="animate-box card">
+                <article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                        <!-- <a class="datetime" href="/blog/TarjansAlgo/">
+                            <meta itemprop="datePublished" content="2020-03-07 05:02:44 +0530">
+                            <time datetime="2020-03-07T05:02:44+05:30">
+                                <span class="day">
+                                    07
+                                </span>
+                                <span class="month-year">
+                                    March 2020
+                                </span>
+                            </time>
+                        </a> -->
+                        <h2>
+                            <a href="/blog/TarjansAlgo/">An Overview of Tarjan's Algorithm</a>
+                            <!-- 
+                            
+                            
+                            
+                             -->
+                        </h2>
+                        <p class="author-wrap">
+                            <span class="author-img" style="background-image: url(/blog/assets/img/authors/adityasoho.jpg);"></span> 
+                            <span class="author">by Aditya Sohoni</span>
+                            &nbsp;
+                            |
+                            &nbsp;
+                            <span class="admin"><span>March 07, 2020</span></span>
+                        </p>
+                        <p>
+                            Background Strong components in directed graphs are components in which all vertices are strongly connected to each other. 2 vertices A and B are strongly connected if there is a directed path from A-&gt;B and B-&gt;A. Need for Computing Strongly...
+                        </p>
+                        <!-- <a href="/blog/TarjansAlgo/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a> -->
+
+                        <div class="tags">
+                            
+                                <a href="/blog/tags/#ieee-nitk">IEEE NITK</a>
+                            
+                                <a href="/blog/tags/#compsoc">CompSoc</a>
+                            
+                        </div>
+                </article>
+            </div>
+        
+    
+        
+        
+            <div class="animate-box card">
+                <article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                        <!-- <a class="datetime" href="/blog/SLAM/">
+                            <meta itemprop="datePublished" content="2020-03-07 05:02:44 +0530">
+                            <time datetime="2020-03-07T05:02:44+05:30">
+                                <span class="day">
+                                    07
+                                </span>
+                                <span class="month-year">
+                                    March 2020
+                                </span>
+                            </time>
+                        </a> -->
+                        <h2>
+                            <a href="/blog/SLAM/">SLAM Coverage Algorithms</a>
+                            <!-- 
+                            
+                            
+                            
+                             -->
+                        </h2>
+                        <p class="author-wrap">
+                            <span class="author-img" style="background-image: url(/blog/assets/img/authors/JaiMandal250jpg);"></span> 
+                            <span class="author">by Jai Mandal</span>
+                            &nbsp;
+                            |
+                            &nbsp;
+                            <span class="admin"><span>March 07, 2020</span></span>
+                        </p>
+                        <p>
+                            With the increased use of robots in industries, the need for robots to be more efficient is incredibly high. One of the key concerns is the way in which they commute. Gone are the days when robots were restricted to...
+                        </p>
+                        <!-- <a href="/blog/SLAM/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a> -->
+
+                        <div class="tags">
+                            
+                                <a href="/blog/tags/#ieee-nitk">IEEE NITK</a>
+                            
+                                <a href="/blog/tags/#piston">Piston</a>
+                            
+                        </div>
+                </article>
+            </div>
+        
+            </div>
+        
+    
+        
+        
+            <div class="card-deck">
+        
+            <div class="animate-box card">
+                <article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                        <!-- <a class="datetime" href="/blog/Solving-a-traffic-problem-using-graph-decomposition/">
+                            <meta itemprop="datePublished" content="2020-02-21 17:51:30 +0530">
+                            <time datetime="2020-02-21T17:51:30+05:30">
+                                <span class="day">
+                                    21
+                                </span>
+                                <span class="month-year">
+                                    February 2020
+                                </span>
+                            </time>
+                        </a> -->
+                        <h2>
+                            <a href="/blog/Solving-a-traffic-problem-using-graph-decomposition/">Solving a traffic problem using graph decomposition</a>
+                            <!-- 
+                            
+                            
+                            
+                             -->
+                        </h2>
+                        <p class="author-wrap">
+                            <span class="author-img" style="background-image: url(/blog/assets/img/authors/VarunRaghavendra.jpg);"></span> 
+                            <span class="author">by Varun Raghavendra</span>
+                            &nbsp;
+                            |
+                            &nbsp;
+                            <span class="admin"><span>February 21, 2020</span></span>
+                        </p>
+                        <p>
+                            Solving a traffic problem using graph decomposition The Capital city is known for its prosperous life and big opportunities. Its inhabitants are called “capitolates”. Every capitolate in Capital city wants to live a happy and peaceful life. Now Capital city...
+                        </p>
+                        <!-- <a href="/blog/Solving-a-traffic-problem-using-graph-decomposition/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a> -->
+
+                        <div class="tags">
+                            
+                                <a href="/blog/tags/#algorithms">Algorithms</a>
+                            
+                                <a href="/blog/tags/#graph-theory">Graph Theory</a>
+                            
+                        </div>
+                </article>
+            </div>
+        
+    
+        
+        
+            <div class="animate-box card">
+                <article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                        <!-- <a class="datetime" href="/blog/web-vulnerabilities/">
+                            <meta itemprop="datePublished" content="2020-01-15 05:02:44 +0530">
+                            <time datetime="2020-01-15T05:02:44+05:30">
+                                <span class="day">
+                                    15
+                                </span>
+                                <span class="month-year">
+                                    January 2020
+                                </span>
+                            </time>
+                        </a> -->
+                        <h2>
+                            <a href="/blog/web-vulnerabilities/">Web Vulnerabilities</a>
+                            <!-- 
+                            
+                            
+                            
+                             -->
+                        </h2>
+                        <p class="author-wrap">
+                            <span class="author-img" style="background-image: url(/blog/assets/img/authors/Vineeth.jpg);"></span> 
+                            <span class="author">by Vineeth Rajesh</span>
+                            &nbsp;
+                            |
+                            &nbsp;
+                            <span class="admin"><span>January 15, 2020</span></span>
+                        </p>
+                        <p>
+                            Web Vulnerabilities A vulnerability is a hole or a weakness in the application, which can be a design flaw or an implementation bug, that allows an attacker to cause harm to the stakeholders of an application. Websites across the world...
+                        </p>
+                        <!-- <a href="/blog/web-vulnerabilities/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a> -->
+
+                        <div class="tags">
+                            
+                                <a href="/blog/tags/#ieee-nitk">IEEE NITK</a>
+                            
+                                <a href="/blog/tags/#compsoc">CompSoc</a>
+                            
+                                <a href="/blog/tags/#web">web</a>
+                            
+                                <a href="/blog/tags/#vulnerabilities">vulnerabilities</a>
+                            
+                        </div>
+                </article>
+            </div>
+        
+            </div>
+        
     
 
 </main>
 
-    </section>
+
+    </div>
 
 
     
@@ -480,7 +777,7 @@
       <ul class="pagination">
 
           
-            <li><a href="/blog/">&laquo;</a></li>
+            <li><a href="/blog/"><<</a></li>
            
 
           
@@ -497,7 +794,7 @@
               
           
               
-                <li class="active"><a href="#">2</a></li>
+                <li class="active"><a>2</a></li>
               
           
               
@@ -514,11 +811,12 @@
            
 
           
+            <li class="disabled page-no-screen"><a> .. </a></li>
             <li class="page-no-screen"><a href="/blog/page31/">Last</a></li>
           
 
           
-            <li><a href="/blog/page3/">&raquo;</a></li>
+            <li><a href="/blog/page3/">>></a></li>
           
       </ul>
   </div>
@@ -621,9 +919,9 @@
         </div>
     </div>
 </footer>
-</div>
+
 <div class="gototop js-top">
-<a href="" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
+    <a href="" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
 </div>
     </div>
 

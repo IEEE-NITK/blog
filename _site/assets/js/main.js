@@ -165,7 +165,6 @@ $(document).ready(function ( $ ) {
 
 
 	var goToTop = function() {
-
 		$('.js-gotop').on('click', function(event){
 			
 			event.preventDefault();
@@ -178,9 +177,11 @@ $(document).ready(function ( $ ) {
 		});
 
 		$(window).scroll(function(){
+			console.log("scrolling");
 
 			var $win = $(window);
 			if ($win.scrollTop() > 200) {
+				console.log("heyyy");
 				$('.js-top').addClass('active');
 			} else {
 				$('.js-top').removeClass('active');

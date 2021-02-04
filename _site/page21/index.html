@@ -93,12 +93,12 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countto/1.2.0/jquery.countTo.js"></script>
 
         <script src="/blog/assets/js/particles.js"></script>
         <!-- Favicon -->
-        <link rel="shortcut icon" href="/blog/assets/img/logo.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="/blog/favicon.ico" type="image/x-icon" />
         <link rel="manifest" href="/blog/assets/img/icons/manifest.json">
 
         <title>Blog | IEEE NITK</title>
@@ -106,7 +106,7 @@
         <!-- highlighter theme  -->
         <link rel="stylesheet" href="/blog/assets/css/monokai-sublime.css">
 
-        <link rel="stylesheet" href="/blog/assets/css/main.css">
+        <link rel="stylesheet" href="/blog/assets/css/blog.css">
         <link rel="canonical" href="/blog/page21/">
         <link rel="alternate" type="application/rss+xml" title="A blog about our findings and musings"
         href="http://localhost:4000/blog/feed.xml" />
@@ -239,13 +239,12 @@
     </section>
 
 
-    <section class="content">
-        <main id="scroll" class="home animate-box" style="margin-top: 60px;" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+    <div class="colorlib-blog">
+        <!-- <main id="scroll" class="home" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
 
 
     
-    <div class="container-fluid">
-        <div class="row">
+        <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 text-center">
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="/blog/magnetically-repelling-ice/">
@@ -260,9 +259,9 @@
                     </time>
                 </a>
                 <div class="content">
-                    <a href="/blog/magnetically-repelling-ice/"><h2 class="post-title" itemprop="name">Magnetically repelling ice</h2></a>
+                    <a href="/blog/magnetically-repelling-ice/"><h2 class="post-title" itemprop="name"><strong>Magnetically repelling ice</strong></h2></a>
                     <p class="description">
-                        People can be nervous fliers to begin with. Even when there isn’t a cloud in the sky, there are few words that cause anxiety in some like, “Prepare for takeoff.” But add wintry conditions to the mix, add some ice,...
+                        People can be nervous fliers to begin with. Even when there isn’t a cloud in the sky, there are few words that cause anxiety in some like, “Prepare for takeoff.” But add wintry conditions to...
                     </p>
                     <a href="/blog/magnetically-repelling-ice/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a>
 
@@ -276,10 +275,8 @@
         </article>
             </div>
         </div>
-    </div>
     
-    <div class="container-fluid">
-        <div class="row">
+        <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 text-center">
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="/blog/the-beginning-of-the-end-have-the-machines-won/">
@@ -294,9 +291,9 @@
                     </time>
                 </a>
                 <div class="content">
-                    <a href="/blog/the-beginning-of-the-end-have-the-machines-won/"><h2 class="post-title" itemprop="name">The Beginning Of The End - Have The Machines Won?</h2></a>
+                    <a href="/blog/the-beginning-of-the-end-have-the-machines-won/"><h2 class="post-title" itemprop="name"><strong>The Beginning Of The End - Have The Machines Won?</strong></h2></a>
                     <p class="description">
-                        Wondering when artificially intelligent robots will take over the Earth? Wonder no more — they’ve already done it! You’re probably thinking But wait. Wouldn’t I have noticed if chrome-plated autonomous killing machines began to exterminate humans? Not necessarily. It turns out...
+                        Wondering when artificially intelligent robots will take over the Earth? Wonder no more — they’ve already done it! You’re probably thinking But wait. Wouldn’t I have noticed if chrome-plated autonomous killing machines began to exterminate humans?...
                     </p>
                     <a href="/blog/the-beginning-of-the-end-have-the-machines-won/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a>
 
@@ -312,10 +309,8 @@
         </article>
             </div>
         </div>
-    </div>
     
-    <div class="container-fluid">
-        <div class="row">
+        <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 text-center">
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="/blog/introduction-to-docker/">
@@ -330,9 +325,9 @@
                     </time>
                 </a>
                 <div class="content">
-                    <a href="/blog/introduction-to-docker/"><h2 class="post-title" itemprop="name">Introduction to Docker</h2></a>
+                    <a href="/blog/introduction-to-docker/"><h2 class="post-title" itemprop="name"><strong>Introduction to Docker</strong></h2></a>
                     <p class="description">
-                        Docker is probably the most talked-about infrastructure technology of the past few years. And why not? It makes managing and deploying applications so much easier without the overhead of a Virtual Machine. Here’s how: Docker is a tool designed to...
+                        Docker is probably the most talked-about infrastructure technology of the past few years. And why not? It makes managing and deploying applications so much easier without the overhead of a Virtual Machine. Here’s how: Docker...
                     </p>
                     <a href="/blog/introduction-to-docker/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a>
 
@@ -350,10 +345,8 @@
         </article>
             </div>
         </div>
-    </div>
     
-    <div class="container-fluid">
-        <div class="row">
+        <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 text-center">
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="/blog/the-ligo-experiment/">
@@ -368,9 +361,9 @@
                     </time>
                 </a>
                 <div class="content">
-                    <a href="/blog/the-ligo-experiment/"><h2 class="post-title" itemprop="name">The LIGO Experiment</h2></a>
+                    <a href="/blog/the-ligo-experiment/"><h2 class="post-title" itemprop="name"><strong>The LIGO Experiment</strong></h2></a>
                     <p class="description">
-                        The LIGO (Laser Interferometer Gravitational-Wave Observatory) Experiment – A completely different perspective of studying the universe. Einstein’s Prediction Over a century ago, Albert Einstein proposed the idea of something called a Gravitational Wave which was a part of his General...
+                        The LIGO (Laser Interferometer Gravitational-Wave Observatory) Experiment – A completely different perspective of studying the universe. Einstein’s Prediction Over a century ago, Albert Einstein proposed the idea of something called a Gravitational Wave which was...
                     </p>
                     <a href="/blog/the-ligo-experiment/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a>
 
@@ -384,10 +377,8 @@
         </article>
             </div>
         </div>
-    </div>
     
-    <div class="container-fluid">
-        <div class="row">
+        <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 text-center">
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="/blog/wireless-power-transmission/">
@@ -402,9 +393,9 @@
                     </time>
                 </a>
                 <div class="content">
-                    <a href="/blog/wireless-power-transmission/"><h2 class="post-title" itemprop="name">Wireless Power Transmission</h2></a>
+                    <a href="/blog/wireless-power-transmission/"><h2 class="post-title" itemprop="name"><strong>Wireless Power Transmission</strong></h2></a>
                     <p class="description">
-                        We cannot imagine the world without electric power. Generally power is transmitted through wires, however there is an idea to eradicate the hazardous usage of electrical wires which involves a lot of confusion particularly in organizing them. Some of these...
+                        We cannot imagine the world without electric power. Generally power is transmitted through wires, however there is an idea to eradicate the hazardous usage of electrical wires which involves a lot of confusion particularly in...
                     </p>
                     <a href="/blog/wireless-power-transmission/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a>
 
@@ -418,10 +409,8 @@
         </article>
             </div>
         </div>
-    </div>
     
-    <div class="container-fluid">
-        <div class="row">
+        <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 text-center">
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="/blog/using-mdns-in-iot/">
@@ -436,9 +425,9 @@
                     </time>
                 </a>
                 <div class="content">
-                    <a href="/blog/using-mdns-in-iot/"><h2 class="post-title" itemprop="name">Making Iot communications easy using mDNS</h2></a>
+                    <a href="/blog/using-mdns-in-iot/"><h2 class="post-title" itemprop="name"><strong>Making Iot communications easy using mDNS</strong></h2></a>
                     <p class="description">
-                        A project in Iot often requires multiple devices communicating with each other. This is usually done through sending messages over sockets. To locate a device, usually addresses are used. This is good technique, but due to commom use of DHCP,...
+                        A project in Iot often requires multiple devices communicating with each other. This is usually done through sending messages over sockets. To locate a device, usually addresses are used. This is good technique, but due...
                     </p>
                     <a href="/blog/using-mdns-in-iot/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a>
 
@@ -454,12 +443,308 @@
         </article>
             </div>
         </div>
-    </div>
+    
+
+</main> -->
+
+<main id="scroll" class="container" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+
+    
+        
+        
+            <div class="card-deck">
+        
+            <div class="animate-box card">
+                <article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                        <!-- <a class="datetime" href="/blog/magnetically-repelling-ice/">
+                            <meta itemprop="datePublished" content="2017-11-05 05:02:44 +0530">
+                            <time datetime="2017-11-05T05:02:44+05:30">
+                                <span class="day">
+                                    05
+                                </span>
+                                <span class="month-year">
+                                    November 2017
+                                </span>
+                            </time>
+                        </a> -->
+                        <h2>
+                            <a href="/blog/magnetically-repelling-ice/">Magnetically repelling ice</a>
+                            <!-- 
+                            
+                            
+                            
+                             -->
+                        </h2>
+                        <p class="author-wrap">
+                            <span class="author-img" style="background-image: url(/blog/assets/img/authors/blog-author.jpg);"></span> 
+                            <span class="author">by Sonal S. Parab</span>
+                            &nbsp;
+                            |
+                            &nbsp;
+                            <span class="admin"><span>November 05, 2017</span></span>
+                        </p>
+                        <p>
+                            People can be nervous fliers to begin with. Even when there isn’t a cloud in the sky, there are few words that cause anxiety in some like, “Prepare for takeoff.” But add wintry conditions to the mix, add some ice,...
+                        </p>
+                        <!-- <a href="/blog/magnetically-repelling-ice/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a> -->
+
+                        <div class="tags">
+                            
+                                <a href="/blog/tags/#magnetism">Magnetism</a>
+                            
+                        </div>
+                </article>
+            </div>
+        
+    
+        
+        
+            <div class="animate-box card">
+                <article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                        <!-- <a class="datetime" href="/blog/the-beginning-of-the-end-have-the-machines-won/">
+                            <meta itemprop="datePublished" content="2017-11-05 05:02:44 +0530">
+                            <time datetime="2017-11-05T05:02:44+05:30">
+                                <span class="day">
+                                    05
+                                </span>
+                                <span class="month-year">
+                                    November 2017
+                                </span>
+                            </time>
+                        </a> -->
+                        <h2>
+                            <a href="/blog/the-beginning-of-the-end-have-the-machines-won/">The Beginning Of The End - Have The Machines Won?</a>
+                            <!-- 
+                            
+                            
+                            
+                             -->
+                        </h2>
+                        <p class="author-wrap">
+                            <span class="author-img" style="background-image: url(/blog/assets/img/authors/palak.jpg);"></span> 
+                            <span class="author">by Palak Singhal</span>
+                            &nbsp;
+                            |
+                            &nbsp;
+                            <span class="admin"><span>November 05, 2017</span></span>
+                        </p>
+                        <p>
+                            Wondering when artificially intelligent robots will take over the Earth? Wonder no more — they’ve already done it! You’re probably thinking But wait. Wouldn’t I have noticed if chrome-plated autonomous killing machines began to exterminate humans? Not necessarily. It turns out...
+                        </p>
+                        <!-- <a href="/blog/the-beginning-of-the-end-have-the-machines-won/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a> -->
+
+                        <div class="tags">
+                            
+                                <a href="/blog/tags/#artificial-intelligence">Artificial Intelligence</a>
+                            
+                                <a href="/blog/tags/#ai-threat">AI threat</a>
+                            
+                        </div>
+                </article>
+            </div>
+        
+            </div>
+        
+    
+        
+        
+            <div class="card-deck">
+        
+            <div class="animate-box card">
+                <article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                        <!-- <a class="datetime" href="/blog/introduction-to-docker/">
+                            <meta itemprop="datePublished" content="2017-10-30 15:40:10 +0530">
+                            <time datetime="2017-10-30T15:40:10+05:30">
+                                <span class="day">
+                                    30
+                                </span>
+                                <span class="month-year">
+                                    October 2017
+                                </span>
+                            </time>
+                        </a> -->
+                        <h2>
+                            <a href="/blog/introduction-to-docker/">Introduction to Docker</a>
+                            <!-- 
+                            
+                            
+                            
+                             -->
+                        </h2>
+                        <p class="author-wrap">
+                            <span class="author-img" style="background-image: url(/blog/assets/img/authors/mahim_agrawal.jpg);"></span> 
+                            <span class="author">by Mahim Agrawal</span>
+                            &nbsp;
+                            |
+                            &nbsp;
+                            <span class="admin"><span>October 30, 2017</span></span>
+                        </p>
+                        <p>
+                            Docker is probably the most talked-about infrastructure technology of the past few years. And why not? It makes managing and deploying applications so much easier without the overhead of a Virtual Machine. Here’s how: Docker is a tool designed to...
+                        </p>
+                        <!-- <a href="/blog/introduction-to-docker/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a> -->
+
+                        <div class="tags">
+                            
+                                <a href="/blog/tags/#docker">Docker</a>
+                            
+                                <a href="/blog/tags/#containers">Containers</a>
+                            
+                                <a href="/blog/tags/#devops">DevOps</a>
+                            
+                        </div>
+                </article>
+            </div>
+        
+    
+        
+        
+            <div class="animate-box card">
+                <article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                        <!-- <a class="datetime" href="/blog/the-ligo-experiment/">
+                            <meta itemprop="datePublished" content="2017-10-30 15:40:09 +0530">
+                            <time datetime="2017-10-30T15:40:09+05:30">
+                                <span class="day">
+                                    30
+                                </span>
+                                <span class="month-year">
+                                    October 2017
+                                </span>
+                            </time>
+                        </a> -->
+                        <h2>
+                            <a href="/blog/the-ligo-experiment/">The LIGO Experiment</a>
+                            <!-- 
+                            
+                            
+                            
+                             -->
+                        </h2>
+                        <p class="author-wrap">
+                            <span class="author-img" style="background-image: url(/blog/assets/img/authors/megh_bhalerao.jpeg);"></span> 
+                            <span class="author">by Megh Bhalerao</span>
+                            &nbsp;
+                            |
+                            &nbsp;
+                            <span class="admin"><span>October 30, 2017</span></span>
+                        </p>
+                        <p>
+                            The LIGO (Laser Interferometer Gravitational-Wave Observatory) Experiment – A completely different perspective of studying the universe. Einstein’s Prediction Over a century ago, Albert Einstein proposed the idea of something called a Gravitational Wave which was a part of his General...
+                        </p>
+                        <!-- <a href="/blog/the-ligo-experiment/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a> -->
+
+                        <div class="tags">
+                            
+                                <a href="/blog/tags/#ligo">LIGO</a>
+                            
+                        </div>
+                </article>
+            </div>
+        
+            </div>
+        
+    
+        
+        
+            <div class="card-deck">
+        
+            <div class="animate-box card">
+                <article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                        <!-- <a class="datetime" href="/blog/wireless-power-transmission/">
+                            <meta itemprop="datePublished" content="2017-10-30 15:40:08 +0530">
+                            <time datetime="2017-10-30T15:40:08+05:30">
+                                <span class="day">
+                                    30
+                                </span>
+                                <span class="month-year">
+                                    October 2017
+                                </span>
+                            </time>
+                        </a> -->
+                        <h2>
+                            <a href="/blog/wireless-power-transmission/">Wireless Power Transmission</a>
+                            <!-- 
+                            
+                            
+                            
+                             -->
+                        </h2>
+                        <p class="author-wrap">
+                            <span class="author-img" style="background-image: url(/blog/assets/img/authors/blog-author.jpg);"></span> 
+                            <span class="author">by Vanshika Gupta</span>
+                            &nbsp;
+                            |
+                            &nbsp;
+                            <span class="admin"><span>October 30, 2017</span></span>
+                        </p>
+                        <p>
+                            We cannot imagine the world without electric power. Generally power is transmitted through wires, however there is an idea to eradicate the hazardous usage of electrical wires which involves a lot of confusion particularly in organizing them. Some of these...
+                        </p>
+                        <!-- <a href="/blog/wireless-power-transmission/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a> -->
+
+                        <div class="tags">
+                            
+                                <a href="/blog/tags/#power">Power</a>
+                            
+                        </div>
+                </article>
+            </div>
+        
+    
+        
+        
+            <div class="animate-box card">
+                <article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                        <!-- <a class="datetime" href="/blog/using-mdns-in-iot/">
+                            <meta itemprop="datePublished" content="2017-10-26 00:00:00 +0530">
+                            <time datetime="2017-10-26T00:00:00+05:30">
+                                <span class="day">
+                                    26
+                                </span>
+                                <span class="month-year">
+                                    October 2017
+                                </span>
+                            </time>
+                        </a> -->
+                        <h2>
+                            <a href="/blog/using-mdns-in-iot/">Making Iot communications easy using mDNS</a>
+                            <!-- 
+                            
+                            
+                            
+                             -->
+                        </h2>
+                        <p class="author-wrap">
+                            <span class="author-img" style="background-image: url(/blog/assets/img/authors/hrily.jpg);"></span> 
+                            <span class="author">by Hrishi Hiraskar</span>
+                            &nbsp;
+                            |
+                            &nbsp;
+                            <span class="admin"><span>October 26, 2017</span></span>
+                        </p>
+                        <p>
+                            A project in Iot often requires multiple devices communicating with each other. This is usually done through sending messages over sockets. To locate a device, usually addresses are used. This is good technique, but due to commom use of DHCP,...
+                        </p>
+                        <!-- <a href="/blog/using-mdns-in-iot/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a> -->
+
+                        <div class="tags">
+                            
+                                <a href="/blog/tags/#iot">Iot</a>
+                            
+                                <a href="/blog/tags/#networking">Networking</a>
+                            
+                        </div>
+                </article>
+            </div>
+        
+            </div>
+        
     
 
 </main>
 
-    </section>
+
+    </div>
 
 
     
@@ -468,7 +753,7 @@
       <ul class="pagination">
 
           
-            <li><a href="/blog/page20/">&laquo;</a></li>
+            <li><a href="/blog/page20/"><<</a></li>
            
 
           
@@ -478,6 +763,7 @@
 
           
             <li class="page-no-screen"><a href="/blog/">First</a></li>
+            <li class="disabled page-no-screen"><a> .. </a></li>
           
 
 
@@ -491,7 +777,7 @@
               
           
               
-                <li class="active"><a href="#">21</a></li>
+                <li class="active"><a>21</a></li>
               
           
               
@@ -504,11 +790,12 @@
            
 
           
+            <li class="disabled page-no-screen"><a> .. </a></li>
             <li class="page-no-screen"><a href="/blog/page31/">Last</a></li>
           
 
           
-            <li><a href="/blog/page22/">&raquo;</a></li>
+            <li><a href="/blog/page22/">>></a></li>
           
       </ul>
   </div>
@@ -611,9 +898,9 @@
         </div>
     </div>
 </footer>
-</div>
+
 <div class="gototop js-top">
-<a href="" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
+    <a href="" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
 </div>
     </div>
 

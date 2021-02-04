@@ -93,12 +93,12 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countto/1.2.0/jquery.countTo.js"></script>
 
         <script src="/blog/assets/js/particles.js"></script>
         <!-- Favicon -->
-        <link rel="shortcut icon" href="/blog/assets/img/logo.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="/blog/favicon.ico" type="image/x-icon" />
         <link rel="manifest" href="/blog/assets/img/icons/manifest.json">
 
         <title>Blog | IEEE NITK</title>
@@ -106,7 +106,7 @@
         <!-- highlighter theme  -->
         <link rel="stylesheet" href="/blog/assets/css/monokai-sublime.css">
 
-        <link rel="stylesheet" href="/blog/assets/css/main.css">
+        <link rel="stylesheet" href="/blog/assets/css/blog.css">
         <link rel="canonical" href="/blog/page4/">
         <link rel="alternate" type="application/rss+xml" title="A blog about our findings and musings"
         href="http://localhost:4000/blog/feed.xml" />
@@ -239,13 +239,12 @@
     </section>
 
 
-    <section class="content">
-        <main id="scroll" class="home animate-box" style="margin-top: 60px;" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+    <div class="colorlib-blog">
+        <!-- <main id="scroll" class="home" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
 
 
     
-    <div class="container-fluid">
-        <div class="row">
+        <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 text-center">
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="/blog/Bluetooth-Low-Energy/">
@@ -260,9 +259,9 @@
                     </time>
                 </a>
                 <div class="content">
-                    <a href="/blog/Bluetooth-Low-Energy/"><h2 class="post-title" itemprop="name">Bluetooth Low Energy</h2></a>
+                    <a href="/blog/Bluetooth-Low-Energy/"><h2 class="post-title" itemprop="name"><strong>Bluetooth Low Energy</strong></h2></a>
                     <p class="description">
-                        We all know how infuriating it is when our devices drains battery when it uses wireless communication like wifi, bluetooth, infra-red. In every device we use, we are always concerned with the power consumption. A device which consumes less power...
+                        We all know how infuriating it is when our devices drains battery when it uses wireless communication like wifi, bluetooth, infra-red. In every device we use, we are always concerned with the power consumption. A...
                     </p>
                     <a href="/blog/Bluetooth-Low-Energy/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a>
 
@@ -282,10 +281,8 @@
         </article>
             </div>
         </div>
-    </div>
     
-    <div class="container-fluid">
-        <div class="row">
+        <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 text-center">
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="/blog/An-Intro-to-WebSockets/">
@@ -300,9 +297,9 @@
                     </time>
                 </a>
                 <div class="content">
-                    <a href="/blog/An-Intro-to-WebSockets/"><h2 class="post-title" itemprop="name">An Introduction To WebSockets</h2></a>
+                    <a href="/blog/An-Intro-to-WebSockets/"><h2 class="post-title" itemprop="name"><strong>An Introduction To WebSockets</strong></h2></a>
                     <p class="description">
-                        Introduction Have you ever wondered how the extremely volatile stock/share market prices are constantly updated on online portals? To have a glimpse of how rapid the changes are, head here Cryptowatch portal Similarly how do new messages automatically pop up...
+                        Introduction Have you ever wondered how the extremely volatile stock/share market prices are constantly updated on online portals? To have a glimpse of how rapid the changes are, head here Cryptowatch portal Similarly how do...
                     </p>
                     <a href="/blog/An-Intro-to-WebSockets/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a>
 
@@ -320,10 +317,8 @@
         </article>
             </div>
         </div>
-    </div>
     
-    <div class="container-fluid">
-        <div class="row">
+        <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 text-center">
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="/blog/why-do-GANs-matter/">
@@ -338,9 +333,9 @@
                     </time>
                 </a>
                 <div class="content">
-                    <a href="/blog/why-do-GANs-matter/"><h2 class="post-title" itemprop="name">Why do Generative Adversarial Nets matter?</h2></a>
+                    <a href="/blog/why-do-GANs-matter/"><h2 class="post-title" itemprop="name"><strong>Why do Generative Adversarial Nets matter?</strong></h2></a>
                     <p class="description">
-                        A new class of Generative Models was proposed in 2014 by Ian Goodfellow (a.k.a The GANfather) which brought in a novel method of dealing with issues in ML and AI. The Invention of Generative Adversarial Networks (GANs) can be regarded...
+                        A new class of Generative Models was proposed in 2014 by Ian Goodfellow (a.k.a The GANfather) which brought in a novel method of dealing with issues in ML and AI. The Invention of Generative Adversarial...
                     </p>
                     <a href="/blog/why-do-GANs-matter/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a>
 
@@ -366,10 +361,8 @@
         </article>
             </div>
         </div>
-    </div>
     
-    <div class="container-fluid">
-        <div class="row">
+        <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 text-center">
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="/blog/colonization-of-mars/">
@@ -384,9 +377,9 @@
                     </time>
                 </a>
                 <div class="content">
-                    <a href="/blog/colonization-of-mars/"><h2 class="post-title" itemprop="name">Who doesn't want to live on another planet?</h2></a>
+                    <a href="/blog/colonization-of-mars/"><h2 class="post-title" itemprop="name"><strong>Who doesn't want to live on another planet?</strong></h2></a>
                     <p class="description">
-                        The colonization of Mars has been a popular theme of discussion over the past few decades. Whether it's in the spirit of exploration, expansion of human settlement or mining for additional resources, the idea of inhabiting another planet has allured...
+                        The colonization of Mars has been a popular theme of discussion over the past few decades. Whether it's in the spirit of exploration, expansion of human settlement or mining for additional resources, the idea of...
                     </p>
                     <a href="/blog/colonization-of-mars/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a>
 
@@ -402,10 +395,8 @@
         </article>
             </div>
         </div>
-    </div>
     
-    <div class="container-fluid">
-        <div class="row">
+        <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 text-center">
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="/blog/bionics/">
@@ -420,9 +411,9 @@
                     </time>
                 </a>
                 <div class="content">
-                    <a href="/blog/bionics/"><h2 class="post-title" itemprop="name">Bionics - The Gap between disability and ability</h2></a>
+                    <a href="/blog/bionics/"><h2 class="post-title" itemprop="name"><strong>Bionics - The Gap between disability and ability</strong></h2></a>
                     <p class="description">
-                        1.Bionics and its growing relevance The rise of bionics has prompted some interesting questions- Can we trade away our biological body for a repairable one , one that won’t age?. Bionics is defined as the science of connecting biological systems...
+                        1.Bionics and its growing relevance The rise of bionics has prompted some interesting questions- Can we trade away our biological body for a repairable one , one that won’t age?. Bionics is defined as the...
                     </p>
                     <a href="/blog/bionics/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a>
 
@@ -438,10 +429,8 @@
         </article>
             </div>
         </div>
-    </div>
     
-    <div class="container-fluid">
-        <div class="row">
+        <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 text-center">
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="/blog/generate-text-with-gpt2/">
@@ -456,9 +445,9 @@
                     </time>
                 </a>
                 <div class="content">
-                    <a href="/blog/generate-text-with-gpt2/"><h2 class="post-title" itemprop="name">Generate Strange Text with GPT-2</h2></a>
+                    <a href="/blog/generate-text-with-gpt2/"><h2 class="post-title" itemprop="name"><strong>Generate Strange Text with GPT-2</strong></h2></a>
                     <p class="description">
-                        GPT-2 refers to a set of Language Models released recently by OpenAI. My objective is to find weird ways that GPT-2 can fail, and also some smart things it is capable of. I’ll be using talktotransformer for this task. It’s...
+                        GPT-2 refers to a set of Language Models released recently by OpenAI. My objective is to find weird ways that GPT-2 can fail, and also some smart things it is capable of. I’ll be using...
                     </p>
                     <a href="/blog/generate-text-with-gpt2/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a>
 
@@ -474,12 +463,328 @@
         </article>
             </div>
         </div>
-    </div>
+    
+
+</main> -->
+
+<main id="scroll" class="container" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+
+    
+        
+        
+            <div class="card-deck">
+        
+            <div class="animate-box card">
+                <article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                        <!-- <a class="datetime" href="/blog/Bluetooth-Low-Energy/">
+                            <meta itemprop="datePublished" content="2019-12-30 07:02:44 +0530">
+                            <time datetime="2019-12-30T07:02:44+05:30">
+                                <span class="day">
+                                    30
+                                </span>
+                                <span class="month-year">
+                                    December 2019
+                                </span>
+                            </time>
+                        </a> -->
+                        <h2>
+                            <a href="/blog/Bluetooth-Low-Energy/">Bluetooth Low Energy</a>
+                            <!-- 
+                            
+                            
+                            
+                             -->
+                        </h2>
+                        <p class="author-wrap">
+                            <span class="author-img" style="background-image: url(/blog/assets/img/authors/suraj.jpg);"></span> 
+                            <span class="author">by Suraj Kulkarni</span>
+                            &nbsp;
+                            |
+                            &nbsp;
+                            <span class="admin"><span>December 30, 2019</span></span>
+                        </p>
+                        <p>
+                            We all know how infuriating it is when our devices drains battery when it uses wireless communication like wifi, bluetooth, infra-red. In every device we use, we are always concerned with the power consumption. A device which consumes less power...
+                        </p>
+                        <!-- <a href="/blog/Bluetooth-Low-Energy/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a> -->
+
+                        <div class="tags">
+                            
+                                <a href="/blog/tags/#low-power">low power</a>
+                            
+                                <a href="/blog/tags/#wireless-communication">wireless communication</a>
+                            
+                                <a href="/blog/tags/#diode">Diode</a>
+                            
+                                <a href="/blog/tags/#ieee-nitk">IEEE NITK</a>
+                            
+                        </div>
+                </article>
+            </div>
+        
+    
+        
+        
+            <div class="animate-box card">
+                <article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                        <!-- <a class="datetime" href="/blog/An-Intro-to-WebSockets/">
+                            <meta itemprop="datePublished" content="2019-12-30 07:02:44 +0530">
+                            <time datetime="2019-12-30T07:02:44+05:30">
+                                <span class="day">
+                                    30
+                                </span>
+                                <span class="month-year">
+                                    December 2019
+                                </span>
+                            </time>
+                        </a> -->
+                        <h2>
+                            <a href="/blog/An-Intro-to-WebSockets/">An Introduction To WebSockets</a>
+                            <!-- 
+                            
+                            
+                            
+                             -->
+                        </h2>
+                        <p class="author-wrap">
+                            <span class="author-img" style="background-image: url(/blog/assets/img/authors/akshara.jpg);"></span> 
+                            <span class="author">by P Akshara</span>
+                            &nbsp;
+                            |
+                            &nbsp;
+                            <span class="admin"><span>December 30, 2019</span></span>
+                        </p>
+                        <p>
+                            Introduction Have you ever wondered how the extremely volatile stock/share market prices are constantly updated on online portals? To have a glimpse of how rapid the changes are, head here Cryptowatch portal Similarly how do new messages automatically pop up...
+                        </p>
+                        <!-- <a href="/blog/An-Intro-to-WebSockets/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a> -->
+
+                        <div class="tags">
+                            
+                                <a href="/blog/tags/#web">Web</a>
+                            
+                                <a href="/blog/tags/#web-sockets">Web Sockets</a>
+                            
+                                <a href="/blog/tags/#networks">Networks</a>
+                            
+                        </div>
+                </article>
+            </div>
+        
+            </div>
+        
+    
+        
+        
+            <div class="card-deck">
+        
+            <div class="animate-box card">
+                <article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                        <!-- <a class="datetime" href="/blog/why-do-GANs-matter/">
+                            <meta itemprop="datePublished" content="2019-11-10 10:35:00 +0530">
+                            <time datetime="2019-11-10T10:35:00+05:30">
+                                <span class="day">
+                                    10
+                                </span>
+                                <span class="month-year">
+                                    November 2019
+                                </span>
+                            </time>
+                        </a> -->
+                        <h2>
+                            <a href="/blog/why-do-GANs-matter/">Why do Generative Adversarial Nets matter?</a>
+                            <!-- 
+                            
+                            
+                            
+                             -->
+                        </h2>
+                        <p class="author-wrap">
+                            <span class="author-img" style="background-image: url(/blog/assets/img/authors/videh.png);"></span> 
+                            <span class="author">by Videh Raj Nema</span>
+                            &nbsp;
+                            |
+                            &nbsp;
+                            <span class="admin"><span>November 10, 2019</span></span>
+                        </p>
+                        <p>
+                            A new class of Generative Models was proposed in 2014 by Ian Goodfellow (a.k.a The GANfather) which brought in a novel method of dealing with issues in ML and AI. The Invention of Generative Adversarial Networks (GANs) can be regarded...
+                        </p>
+                        <!-- <a href="/blog/why-do-GANs-matter/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a> -->
+
+                        <div class="tags">
+                            
+                                <a href="/blog/tags/#deep-learning">Deep Learning</a>
+                            
+                                <a href="/blog/tags/#generative-adversarial-networks">Generative Adversarial Networks</a>
+                            
+                                <a href="/blog/tags/#gans">GANs</a>
+                            
+                                <a href="/blog/tags/#generative-models">Generative Models</a>
+                            
+                                <a href="/blog/tags/#machine-learning">Machine Learning</a>
+                            
+                                <a href="/blog/tags/#compsoc">CompSoc</a>
+                            
+                                <a href="/blog/tags/#ieee-nitk">IEEE NITK</a>
+                            
+                        </div>
+                </article>
+            </div>
+        
+    
+        
+        
+            <div class="animate-box card">
+                <article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                        <!-- <a class="datetime" href="/blog/colonization-of-mars/">
+                            <meta itemprop="datePublished" content="2019-11-10 10:35:00 +0530">
+                            <time datetime="2019-11-10T10:35:00+05:30">
+                                <span class="day">
+                                    10
+                                </span>
+                                <span class="month-year">
+                                    November 2019
+                                </span>
+                            </time>
+                        </a> -->
+                        <h2>
+                            <a href="/blog/colonization-of-mars/">Who doesn't want to live on another planet?</a>
+                            <!-- 
+                            
+                            
+                            
+                             -->
+                        </h2>
+                        <p class="author-wrap">
+                            <span class="author-img" style="background-image: url(/blog/assets/img/authors/drishika.png);"></span> 
+                            <span class="author">by Drishika Nadella</span>
+                            &nbsp;
+                            |
+                            &nbsp;
+                            <span class="admin"><span>November 10, 2019</span></span>
+                        </p>
+                        <p>
+                            The colonization of Mars has been a popular theme of discussion over the past few decades. Whether it's in the spirit of exploration, expansion of human settlement or mining for additional resources, the idea of inhabiting another planet has allured...
+                        </p>
+                        <!-- <a href="/blog/colonization-of-mars/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a> -->
+
+                        <div class="tags">
+                            
+                                <a href="/blog/tags/#piston">Piston</a>
+                            
+                                <a href="/blog/tags/#ieee-nitk">IEEE NITK</a>
+                            
+                        </div>
+                </article>
+            </div>
+        
+            </div>
+        
+    
+        
+        
+            <div class="card-deck">
+        
+            <div class="animate-box card">
+                <article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                        <!-- <a class="datetime" href="/blog/bionics/">
+                            <meta itemprop="datePublished" content="2019-11-10 10:35:00 +0530">
+                            <time datetime="2019-11-10T10:35:00+05:30">
+                                <span class="day">
+                                    10
+                                </span>
+                                <span class="month-year">
+                                    November 2019
+                                </span>
+                            </time>
+                        </a> -->
+                        <h2>
+                            <a href="/blog/bionics/">Bionics - The Gap between disability and ability</a>
+                            <!-- 
+                            
+                            
+                            
+                             -->
+                        </h2>
+                        <p class="author-wrap">
+                            <span class="author-img" style="background-image: url(/blog/assets/img/authors/nikhil.png);"></span> 
+                            <span class="author">by Nikhil Nair</span>
+                            &nbsp;
+                            |
+                            &nbsp;
+                            <span class="admin"><span>November 10, 2019</span></span>
+                        </p>
+                        <p>
+                            1.Bionics and its growing relevance The rise of bionics has prompted some interesting questions- Can we trade away our biological body for a repairable one , one that won’t age?. Bionics is defined as the science of connecting biological systems...
+                        </p>
+                        <!-- <a href="/blog/bionics/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a> -->
+
+                        <div class="tags">
+                            
+                                <a href="/blog/tags/#diode">Diode</a>
+                            
+                                <a href="/blog/tags/#ieee-nitk">IEEE NITK</a>
+                            
+                        </div>
+                </article>
+            </div>
+        
+    
+        
+        
+            <div class="animate-box card">
+                <article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                        <!-- <a class="datetime" href="/blog/generate-text-with-gpt2/">
+                            <meta itemprop="datePublished" content="2019-11-02 07:06:00 +0530">
+                            <time datetime="2019-11-02T07:06:00+05:30">
+                                <span class="day">
+                                    02
+                                </span>
+                                <span class="month-year">
+                                    November 2019
+                                </span>
+                            </time>
+                        </a> -->
+                        <h2>
+                            <a href="/blog/generate-text-with-gpt2/">Generate Strange Text with GPT-2</a>
+                            <!-- 
+                            
+                            
+                            
+                             -->
+                        </h2>
+                        <p class="author-wrap">
+                            <span class="author-img" style="background-image: url(/blog/assets/img/authors/kinshuk.jpg);"></span> 
+                            <span class="author">by Kinshuk Kashyap</span>
+                            &nbsp;
+                            |
+                            &nbsp;
+                            <span class="admin"><span>November 02, 2019</span></span>
+                        </p>
+                        <p>
+                            GPT-2 refers to a set of Language Models released recently by OpenAI. My objective is to find weird ways that GPT-2 can fail, and also some smart things it is capable of. I’ll be using talktotransformer for this task. It’s...
+                        </p>
+                        <!-- <a href="/blog/generate-text-with-gpt2/" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a> -->
+
+                        <div class="tags">
+                            
+                                <a href="/blog/tags/#nlp">NLP</a>
+                            
+                                <a href="/blog/tags/#ml-ai">ML/AI</a>
+                            
+                        </div>
+                </article>
+            </div>
+        
+            </div>
+        
     
 
 </main>
 
-    </section>
+
+    </div>
 
 
     
@@ -488,7 +793,7 @@
       <ul class="pagination">
 
           
-            <li><a href="/blog/page3/">&laquo;</a></li>
+            <li><a href="/blog/page3/"><<</a></li>
            
 
           
@@ -498,6 +803,7 @@
 
           
             <li class="page-no-screen"><a href="/blog/">First</a></li>
+            <li class="disabled page-no-screen"><a> .. </a></li>
           
 
 
@@ -511,7 +817,7 @@
               
           
               
-                <li class="active"><a href="#">4</a></li>
+                <li class="active"><a>4</a></li>
               
           
               
@@ -524,11 +830,12 @@
            
 
           
+            <li class="disabled page-no-screen"><a> .. </a></li>
             <li class="page-no-screen"><a href="/blog/page31/">Last</a></li>
           
 
           
-            <li><a href="/blog/page5/">&raquo;</a></li>
+            <li><a href="/blog/page5/">>></a></li>
           
       </ul>
   </div>
@@ -631,9 +938,9 @@
         </div>
     </div>
 </footer>
-</div>
+
 <div class="gototop js-top">
-<a href="" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
+    <a href="" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
 </div>
     </div>
 
