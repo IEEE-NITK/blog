@@ -1,25 +1,25 @@
 ---
 layout: post
 title: "Water-Jet Guided Laser Cutting"
-author_github: ''
+author_github: 'Mallikarjun'
 date: 2021-02-10 21:46:44
-image: '/assets/img/authors/blog-author.jpg'
+image: '/assets/img/'
 description: ''
 tags:
 - IEEE NITK
 - Piston
 categories:
 - Piston
-github_username: ''
+github_username: 'Mallikarjun'
 ---
 
-## Laser:
+## Laser
 
-The term &#39;Laser&#39; originated as an acronym for &#39; **L** ight **A** mplification by **S** timulated **E** mission of **R** adiation.&#39; The difference between a Laser and other Light sources is the coherence. The spatial coherence of lasers allows them to be focused on a tight spot, enabling applications such as lithography, laser printing, refractive surgery, and of course, Laser Cutting.
+The term 'Laser' originated as an acronym for **Light Amplification by Stimulated Emission of Radiation**. The difference between a Laser and other Light sources is the coherence. The spatial coherence of lasers allows them to be focused on a tight spot, enabling applications such as lithography, laser printing, refractive surgery, and of course, Laser Cutting.
 
 Laser cutting is one of the most popular applications of Lasers. Compared to conventional mechanical cutting techniques, laser cutting is more accurate, eco-friendly, and efficient.
 
-## Water-Jet Guided Laser Cutting:
+## Water-Jet Guided Laser Cutting
 
 In Water-Jet Guided Laser Cutting, the laser beam used is guided to the workpiece through a high-pressure water jet. The water jet functions like an optical surface, resulting in total internal refraction of the laser due to the difference in refractivity index of water and air. Similar to an optical fiber, the beam is reflected many times on the surface of the jet before reaching the workpiece.
 
