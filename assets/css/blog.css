@@ -437,7 +437,6 @@
   }
   
   .post-content hr {
-    *zoom: 1;
     width: auto;
     max-width: 47.5rem;
     float: none;
@@ -467,4 +466,26 @@
 
   .card {
     flex: 1 !important;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .card {
+      display: block !important;
+      flex: none;
+    }
+    .card-deck {
+      display: block !important;
+    }
+  }
+
+  .nav-bg {
+    height: 70px;
+    background-color: #499bef;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .nav-bg {
+      height: 90px;
+      background-color: #499bef;
+    }
   }

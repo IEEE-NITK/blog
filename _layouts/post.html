@@ -2,7 +2,8 @@
 <html lang="pt-br">
     {% include head.html %}
     <body>
-        {% include svg-icons.html %}
+        <div id="page">
+        {% include header-default.html %}
         {% include header-post.html %}
         <section class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
@@ -27,7 +28,8 @@
             {% include footer.html %}
             {% include highlighter.html %}
         </section>
-
+        </div>
+        <script src="{{site.baseurl}}/assets/js/main.js"></script>
     </body>
 </html>
             
