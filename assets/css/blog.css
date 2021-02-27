@@ -230,7 +230,6 @@
   .post-content ol,
   .post-content iframe {
     width: auto;
-    max-width: 50rem;
     float: none;
     display: block;
     margin-right: auto;
@@ -240,8 +239,6 @@
     padding: 0 1.25rem;
     margin: 0 auto 1.875rem;
     font-weight: 300;
-    font-style: normal;
-    font-size: 1.125rem;
     line-height: 2;
   }
 
@@ -281,7 +278,8 @@
   .post-content ol:after,
   .post-content .tags:after,
   .post-content iframe:after {
-    content: ''
+    content: '';
+    display: table;
   }
   
   .post-content p:after,
@@ -296,7 +294,7 @@
     clear: both
   }
   
-  @media only screen and (min-width:37.5rem) {
+  /* @media only screen and (min-width:37.5rem) {
     .post-content p,
     .post-content h1,
     .post-content h2,
@@ -307,7 +305,7 @@
     .post-content iframe {
       font-size: 1.25rem
     }
-  }
+  } */
   
   .post-content p,
   .post-content li {
@@ -316,7 +314,8 @@
   
   .post-content p code,
   .post-content li code {
-    color: #3085f4
+    color: #3085f4;
+    border: 0;
   }
   
   .post-content a {
@@ -324,7 +323,7 @@
     font-style: normal;
     color: rgb(0,86,167);
     text-decoration: none;
-    border-bottom: 2px solid rgb(0,86,167)
+    border-bottom: 1px solid rgb(0,86,167)
   }
   
   .post-content iframe {
@@ -346,35 +345,35 @@
   }
   
   .post-content h1 {
-    font-size: 1.875rem;
+    /* font-size: 1.875rem; */
     line-height: 1.4
   }
   
   @media only screen and (min-width:37.5rem) {
     .post-content h1 {
-      font-size: 2.813rem
+      /* font-size: 2.813rem */
     }
   }
   
   .post-content h2 {
-    font-size: 1.375rem;
+    /* font-size: 1.375rem; */
     line-height: 1.4
   }
   
   @media only screen and (min-width:37.5rem) {
     .post-content h2 {
-      font-size: 2.188rem
+      /* font-size: 2.188rem */
     }
   }
   
   .post-content h3 {
-    font-size: 1.125rem;
+    /* font-size: 1.125rem; */
     line-height: 1.4
   }
   
   @media only screen and (min-width:37.5rem) {
     .post-content h3 {
-      font-size: 1.563rem
+      /* font-size: 1.563rem */
     }
   }
   
@@ -395,22 +394,13 @@
   
   .post-content blockquote {
     width: auto;
-    max-width: 45.625rem;
     float: none;
     display: block;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 0;
-    padding-right: 0;
-    border-left: .313rem solid rgb(0,86,167);
-    padding: 0 1.875rem;
-    margin: 3.125rem auto
-  }
-  
-  .post-content blockquote:before,
-  .post-content blockquote:after {
-    content: '';
-    display: table
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-left: 4px solid rgb(0,86,167);
+    margin: 0 50px;
+    background-color: whitesmoke;
   }
   
   .post-content blockquote:after {
@@ -487,5 +477,87 @@
     .nav-bg {
       height: 90px;
       background-color: #499bef;
+    }
+  }
+
+  .header-post {
+    margin-top: 40px;
+  }
+
+  .header-post h1 {
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #000;
+    font-weight: 900;
+  }
+
+  .header-post .content {
+    margin: 30px;
+  }
+
+  .header-post .header-date {
+    margin-left: 4px;
+  }
+
+  .header-post .subtitle {
+    color: #101010;
+    margin: 5px 0;
+  }
+
+  .author-small {
+    position: relative;
+  }
+  .author-small .author-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+  }
+  .author-small .author-img img{
+    border-radius: 50%;
+  }
+  .author-small .author {
+    padding-left: 40px;
+  }
+
+  .m-2 {
+    margin-top: 20px;
+    margin-right: 15px;
+  }
+
+  pre {
+    background: #222;
+    width: 90%;
+    padding: 1.25rem;
+    color: #fff;
+    margin: 1.875rem auto;
+  }
+  
+  @media only screen and (min-width:37.5rem) {
+    pre {
+      padding: 2.5rem;
+      margin: 2.125rem auto;
+    }
+  }
+  
+  pre code:before,
+  pre code:after {
+    content: '';
+    display: table
+  }
+  
+  pre code:after {
+    clear: both
+  }
+  
+  @media only screen and (max-width:37.5rem) {
+    pre code {
+      overflow-x: scroll
     }
   }
