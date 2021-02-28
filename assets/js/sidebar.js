@@ -19,7 +19,7 @@ function shuffle(array){
 
 function loadArticles() {
     var articles = [];
-    var category = $("#category").html().toLowerCase();
+    var category = $("#category").text().toLowerCase();
     if (category === "diode" || category === "cas/sps") {
         category = "cas";
     }
