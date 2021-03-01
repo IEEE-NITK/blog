@@ -9,7 +9,7 @@ tags:
 - Artificial Intelligence
 - AI threat
 categories:
-- Compsoc
+- CompSoc
 github_username: smarty1palak
 ---
 

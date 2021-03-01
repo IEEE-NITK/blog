@@ -9,7 +9,7 @@ tags:
 - NLP
 - ML/AI
 categories:
-- Compsoc
+- CompSoc
 github_username: 'kinshukk'
 ---
 

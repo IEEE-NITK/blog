@@ -23,14 +23,14 @@
         <section class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
             <div class="container">
-                <div class="col-md-9" style="padding: 0;">
-                    <div class="colorlib-bg-white mt" style="margin-right: 15px;">
+                <div class="col-md-9 animate-box" style="padding: 0;">
+                    <div class="colorlib-bg-white mt mr">
                         <article role="article" id="scroll" class="post-content" itemprop="articleBody">
                             {{ content }}
                         </article>
                     </div>
                 </div>
-                <div class="col-md-3" style="padding: 0;">
+                <div class="col-md-3 animate-box" style="padding: 0;">
                     <div class="colorlib-bg-white mt">
                         {% include sidebar.html %}
                     </div>
@@ -40,12 +40,16 @@
             {% include author.html %}
             {% include comments.html %}
             {% if page.comments %}
-            <section class="comments">
-                <h4>Comments</h4>
-                <div class="fb-comments" data-href="http://ieeenitk.org/blog{{ page.url }}" data-colorscheme="dark"
-                    data-num-posts="4" data-width="706">
+            <div class="container">
+                <div class="colorlib-bg-white animate-box">
+                    <section class="disp-box">
+                        <h4>Comments</h4>
+                        <div class="fb-comments" data-href="http://ieee.nitk.ac.in/blog{{ page.url }}"
+                            data-colorscheme="dark" data-num-posts="4" data-width="706">
+                        </div>
+                    </section>
                 </div>
-            </section>
+            </div>
             {% endif %}
             {% include share.html %}
 
