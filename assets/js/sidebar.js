@@ -23,7 +23,6 @@ function loadArticles() {
     if (category === "diode" || category === "cas/sps") {
         category = "cas";
     }
-    var title = $("#title").html();
     $.getJSON("../search.json", function(result) {
         shuffle(result);
 

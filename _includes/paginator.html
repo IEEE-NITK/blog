@@ -15,8 +15,11 @@
           {% if stIndex < 1 %}
             {% assign stIndex = 1 %}
             {% assign endIndex = 5 %}
-          {% elsif endIndex > paginator.total_pages %}
-            {% assign stIndex = paginator.total_pages | minus: 5 %}
+          {% endif %}
+          {% if endIndex > paginator.total_pages %}
+            {% if paginator.total_pages > 5 %}
+              {% assign stIndex = paginator.total_pages | minus: 5 %}
+            {% endif %}
             {% assign endIndex = paginator.total_pages %}
           {% endif %}
 
