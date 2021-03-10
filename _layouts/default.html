@@ -4,6 +4,7 @@
 <head>
     {% include head.html %}
     <script src="{{site.baseurl}}/assets/js/particles.js"></script>
+    
     <script>
         $(document).ready(function () {
             particlesJS.load('particles-js', '{{site.baseurl}}/particlesjs-config.json', function () {
@@ -21,6 +22,7 @@
         <div id="loader"></div>
     </div>
     <div id="page">
+
         {% include header-default.html %}
 
         <!-- Landing -->
@@ -41,10 +43,9 @@
             </div>
         </section>
 
+        {% include menu-search.html %}
 
-        <div class="colorlib-blog">
-            {{ content }}
-        </div>
+        {{ content }}
 
 
         {% include paginator.html %}
@@ -54,7 +55,6 @@
 
     <script src="{{site.baseurl}}/assets/js/main.js"></script>
     <script id="dsq-count-scr" src="//ieeenitk.disqus.com/count.js" async></script>
-
 </body>
 
 </html>

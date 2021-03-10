@@ -1,4 +1,4 @@
-var isMobile = false;
+isMobile = false;
 
 $(document).ready(function ( $ ) {
 	
