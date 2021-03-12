@@ -11,7 +11,7 @@ tags:
 - Monte Carlo Tree Search
 - Alpha-Go
 categories:
-- Compsoc
+- CompSoc
 github_username: 'Madhuparna04'
 use_math: true
 comments: false

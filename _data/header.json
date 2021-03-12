@@ -1,0 +1,60 @@
+[
+	{
+		"name": "Home",
+		"link": ""
+  },
+    {
+		"name": "Team",
+		"link": "team.html"
+    },
+    {
+		"name": "SIGs",
+		"sigs": [
+            {
+                "name": "Computer Society",
+                "link": "compsoc.html"
+            },
+            {
+                "name": "Diode",
+                "link": "diode.html"
+            },
+            {
+                "name": "Piston",
+                "link": "piston.html"
+            }                                          
+        ]
+    },
+    {
+		"name": "Affinity Groups",
+		"groups": [
+            {
+                "name": "Women in Engineering",
+                "link": "wie.html"
+            },
+            {
+                "name": "SIGHT",
+                "link": "sight.html"
+            }                                           
+        ]
+    },
+    {
+		"name": "Blog",
+		"link": "blog/"
+    },
+    {
+		"name": "Gyan",
+		"link": "gyan/"
+    },
+    {
+		"name": "Achievements",
+		"link": "achieve.html"
+    },
+    {
+		"name": "Publications",
+		"link": "publications.html"
+    },
+    {
+		"name": "Impulse",
+		"link": "impulse.html"
+    }
+]    

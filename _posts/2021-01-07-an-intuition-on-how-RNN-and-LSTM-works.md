@@ -13,7 +13,7 @@ tags:
 - LSTM
 - Machine Learning
 categories:
-- Compsoc
+- CompSoc
 github_username: 'rakki-18'
 ---
 ##  An intuition on how Recurrent Neural Networks and LSTM works

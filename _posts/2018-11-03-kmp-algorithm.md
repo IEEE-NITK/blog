@@ -11,7 +11,7 @@ tags:
 - Competitive Programming
 - C++
 categories:
-- Compsoc
+- CompSoc
 github_username: 'Chans321'
 use_math: true
 comments: true
