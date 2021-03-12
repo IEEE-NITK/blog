@@ -48,20 +48,6 @@
             </div>
 
             {% include author.html %}
-            {% include comments.html %}
-            {% if page.comments %}
-            <div class="container">
-                <div class="colorlib-bg-white animate-box">
-                    <section class="disp-box">
-                        <h4>Comments</h4>
-                        <div class="fb-comments" data-href="http://ieee.nitk.ac.in/blog{{ page.url }}"
-                            data-colorscheme="dark" data-num-posts="4" data-width="706">
-                        </div>
-                    </section>
-                </div>
-            </div>
-            {% endif %}
-            {% include share.html %}
 
             {% include footer.html %}
             {% include highlighter.html %}
