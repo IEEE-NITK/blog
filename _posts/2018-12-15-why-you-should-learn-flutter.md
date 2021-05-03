@@ -11,7 +11,7 @@ tags:
 - Dart
 - Cross platform mobile development
 categories:
-- Compsoc
+- CompSoc
 github_username: 'gvaibhav1734'
 comments: true
 ---

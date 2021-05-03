@@ -34,7 +34,7 @@ If you're not a first time author, feel free to skip to the next section.
 	- GraphQL
 	- API Design
 	categories:
-	- Compsoc/Diode/Piston
+	- CompSoc/Diode/Piston
 	github_username: 'githubuser123'
 	---
 	GraphQL is a query language for APIs and a runtime for fulfilling those queries 
