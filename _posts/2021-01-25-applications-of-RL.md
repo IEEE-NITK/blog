@@ -2,7 +2,7 @@
 layout: post
 title: "What is Reinforcement Learning capable of?"
 author_github: Aryaman2912
-date: 2021-01-25 17:41:00
+date: 2021-05-07 17:41:00
 image: '/assets/img/'
 description: 'Applications of reinforcement learning in games, robotics and multi-agent systems'
 tags:
