@@ -2,7 +2,7 @@
 layout: post
 title: "Neural Style Transfer"
 author_github: dharmicksai
-date: 2021-01-07 19:00:00
+date: 2021-05-21 00:00:00
 image: '/assets/img/'
 description: 'Neural Style Transfer'
 tags:
@@ -14,6 +14,7 @@ tags:
 categories:
 - Compsoc
 github_username: 'dharmicksai'
+use_math: true
 ---
 # Neural Style Transfer
  
@@ -60,13 +61,13 @@ Here w<sub>l</sub> is the weight per layer, the weight decreases from lower laye
 
 
  
-Total Loss given content representation $\Large \vec{p}$, style representation $\Large \vec{a}$, styled image representation $\Large \vec{x}$:
+Total Loss given content representation $$\Large \vec{p}$$, style representation $$\Large \vec{a}$$, styled image representation $$\Large \vec{x}$$:
  
 $$
 \Large
 \mathcal{L}_{total} = \alpha.\mathcal{L}_{content}(\vec{p},\vec{x})+\beta.\mathcal{L}_{style}(\vec{a},\vec{x})
 $$
-Here $\large \alpha$ and $\Large \beta$ are weights for content and style loss
+Here $$\large \alpha$$ and $$\Large \beta$$ are weights for content and style loss.
  
 The brute force method to generate the styled image is to take a noise image and calculate its loss from pre-trained image classifier given style and content image and then apply gradient descent on individual pixels of noise image and repeating this process iteratively till we convert noise image to styled image. This method consumes a lot of time and there are no learned parameters.
  
