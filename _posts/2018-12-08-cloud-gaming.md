@@ -11,7 +11,7 @@ tags:
 - Google Project Stream
 - Nvidia Now
 categories:
-- Compsoc
+- CompSoc
 github_username: '17aakashsingh1999'
 use_math: true
 comments: false

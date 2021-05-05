@@ -7,8 +7,8 @@ image : '/assets/img'
 tags:
 - biometrics
 - brainprint
-catgories : 
-- piston
+categories : 
+- Piston
 github_username : 'pjk99'
 ---
 
