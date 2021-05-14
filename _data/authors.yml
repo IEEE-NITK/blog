@@ -924,6 +924,12 @@ shivanshjoshi:
   github: shivanshjoshi
   author_image: 'blog-author.jpg'
   email: shiv.191mt044@nitk.edu.in
+gaurang2001:
+  name: Gaurang Velingkar
+  github: gaurang2001
+  author_image: gaurang.jpg
+  description: 'Developer'
+  email: gaurangvelingkar@gmail.com
 nishant-nayak:
   name: Nishant Nayak
   github: nishant-nayak
@@ -966,6 +972,16 @@ rak108:
   github: rak108
   author_image: rakshitavaradarajan.jpg
   email: rakshitajps@gmail.com
+Pramod5-CIV:
+  name: Pramod Sunil Parande
+  github: Pramod5-CIV
+  author_image: 'blog-author.jpg'
+  email: pramod.191cv234@nitk.edu.in
+shreyasrao114:
+  name: M Shreyas Rao
+  github: shreyasrao114
+  author_image: 'blog-author.jpg'
+  email: shreyas.rao114@gmail.com
 erin-sam-joe:
   name: Erin Sam Joe
   github: erin-sam-joe
