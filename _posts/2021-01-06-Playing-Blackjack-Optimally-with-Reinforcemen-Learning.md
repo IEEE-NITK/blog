@@ -26,7 +26,7 @@ For a quick insight into the technical basics of RL, _it is a setup where an age
 
 ![RL basic idea](/blog/assets/img/blackjack/rl.jpg)
 
-What is referred to as the agent’s **policy** can be thought of as a strategy while playing a game. More formally, it’s **a function that maps a state to an action or a distribution over actions**. We also define an **action-value function**, Q that gives us a measure of how good it is to take a particular action in each state, or to know how favorable each action is in a state of the game. There is also a **state-value function** which tells you how good it is to be in each state but that isn't as good for when we don't have a model of the environment. To derive the policy from a state-value function, the agent should be able to query a model that can predict what next state is reached for each action, it could then choose the action that would lead to the state with highest value. Thus, this would require a model. Iteration on the action-values extends itself easily to Q-learning (discussed later) that learns transition probability by trial and error rather than rely on a model.
+What is referred to as the agent’s **policy** can be thought of as a strategy while playing a game. More formally, it’s **a function that maps a state to an action or a distribution over actions**. We also define an **action-value function**, Q that gives us a measure of how good it is to take a particular action in each state, or to know how favorable each action is in a state of the game. There is also a **state-value function** which tells you how good it is to be in each state. It is the expected reward that is obtained by following a given policy, starting from that state.
 
 All this sounds very similar to a human playing a game, and you’re right, it really is. The usual concept of points conveniently plays the role of reward. So, let’s understand it better by playing the casino card game of blackjack.
 
@@ -56,7 +56,7 @@ As an example, this is the evaluation of a policy that chooses to stick only on 
 
 ![Monte Carlo evaluation](/blog/assets/img/blackjack/mc-eval.jpg)
 
-The game plan is to initialize our policy such that it’s stochastic which means that all actions have a possibility of being selected (here we just assign all values to 0). We evaluate the current policy using Monte Carlo evaluation and then we can easily improve this current policy but acting greedy with respect to it (we actually act ϵ greedily). Basically, look at the values corresponding to the current state in the Q-function and choose the action that maximizes the value. With this new policy, we re-compute the Q-table and the process goes on.
+The game plan is to initialize our policy such that it’s stochastic which means that all actions have a possibility of being selected (here we just assign all probabilities to the same value or randomly initialize the policy). We evaluate the current policy using Monte Carlo evaluation and then we can easily improve this current policy but acting greedy with respect to it (we actually act ϵ greedily). Basically, look at the values corresponding to the current state in the Q-function and choose the action that maximizes the value. With this new policy, we re-compute the Q-table and the process goes on.
 Mathematically, going in reverse from the time step of termination of the episode, the return for each state-action pair is computed according to the following formula, with future rewards being discounted by a factor of $\gamma$ raised to the power of how much later they are received.
 $$
 G_t=R_{t+1} +\gamma R_{t+2}+...+\gamma ^{T-1}R_T
@@ -125,7 +125,7 @@ Regardless, temporal difference methods are usually more efficient and converge 
 
 #### DRAWBACKS OF TD:
 
-Temporal difference learning is faster but less stable and may converge to the wrong solution. We estimate the Q-values only from the current reward, and use our own estimate of the model to predict the future reward. While this is faster, our targets are based on our estimated model itself, making it unstable. Moreover, our estimate starts off arbitrarily wrong, so we might train toward wrong targets and might converge to a wrong solution.
+Temporal difference learning is faster but less stable and may converge to the wrong solution. We estimate the Q-values only from the current reward, and use our own estimate of the values of the next state to predict the future reward. While this is faster, our targets are based on our estimation itself, making it unstable. Moreover, our estimate starts off arbitrarily wrong, so we might train toward wrong targets and might converge to a wrong solution.
 
 ## What next?
 
