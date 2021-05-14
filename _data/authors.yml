@@ -929,6 +929,12 @@ Shreya301:
   github: Shreya301
   author_image: Shreya_Namath.jpg
   email: shreyanamath033@gmail.com
+gaurang2001:
+  name: Gaurang Velingkar
+  github: gaurang2001
+  author_image: gaurang.jpg
+  description: 'Developer'
+  email: gaurangvelingkar@gmail.com
 nishant-nayak:
   name: Nishant Nayak
   github: nishant-nayak
@@ -951,6 +957,11 @@ shruthanr:
   github: shruthanr
   author_image: shruthan.jpg
   email: shruthan@outlook.com
+Aryaman2912:
+  name: Aryaman M
+  github: Aryaman2912
+  author_image: aryaman.jpg
+  email: aryaman2912@gmail.com
 Ananya:
   name: Ananya P
   github: Ananya
@@ -966,3 +977,23 @@ rak108:
   github: rak108
   author_image: rakshitavaradarajan.jpg
   email: rakshitajps@gmail.com
+Pramod5-CIV:
+  name: Pramod Sunil Parande
+  github: Pramod5-CIV
+  author_image: 'blog-author.jpg'
+  email: pramod.191cv234@nitk.edu.in
+shreyasrao114:
+  name: M Shreyas Rao
+  github: shreyasrao114
+  author_image: 'blog-author.jpg'
+  email: shreyas.rao114@gmail.com
+erin-sam-joe:
+  name: Erin Sam Joe
+  github: erin-sam-joe
+  author_image: 'blog-author.jpg'
+  email: erin.191me131@nitk.edu.in
+akashbharadwaj2001:
+  name: Akash S Bharadwaj
+  github: akashbharadwaj2001
+  author_image: 'blog-author.jpg'
+  email: akashbharadwaj.191ec103@nitk.edu.in
