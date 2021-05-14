@@ -9,7 +9,7 @@ tags:
 - ZKP
 - Cryptography
 categories:
-- Compsoc
+- CompSoc
 github_username: 'arpi-r'
 ---
 

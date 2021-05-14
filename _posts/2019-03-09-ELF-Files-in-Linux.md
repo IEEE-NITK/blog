@@ -10,7 +10,7 @@ tags:
 - Linux
 - Binary
 categories:
-- Compsoc
+- CompSoc
 github_username: 'arpi-r'
 ---
 

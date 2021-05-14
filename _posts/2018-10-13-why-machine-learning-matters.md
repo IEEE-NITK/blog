@@ -11,7 +11,7 @@ tags:
 - Machine Learning
 - Artificial Intelligence
 categories:
-- Compsoc
+- CompSoc
 github_username: 'siddhartha15'
 ---
 **Hello everyone !**

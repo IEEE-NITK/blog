@@ -11,7 +11,7 @@ tags:
 - DIAL
 - RNN
 categories:
-- Compsoc
+- CompSoc
 github_username: 'Madhuparna04'
 use_math: true
 comments: false
