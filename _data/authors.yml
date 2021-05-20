@@ -929,6 +929,12 @@ dharmicksai:
   github: dharmicksai 
   author_image: dharmick.jpg 
   email: dharmicksaik@gmail.com 
+gaurang2001:
+  name: Gaurang Velingkar
+  github: gaurang2001
+  author_image: gaurang.jpg
+  description: 'Developer'
+  email: gaurangvelingkar@gmail.com
 nishant-nayak:
   name: Nishant Nayak
   github: nishant-nayak
@@ -981,6 +987,16 @@ sahaj7100:
   github: sahaj7100
   author_image: 'blog-author.jpg'
   email: sajee.saxena@gmail.com
+Pramod5-CIV:
+  name: Pramod Sunil Parande
+  github: Pramod5-CIV
+  author_image: 'blog-author.jpg'
+  email: pramod.191cv234@nitk.edu.in
+shreyasrao114:
+  name: M Shreyas Rao
+  github: shreyasrao114
+  author_image: 'blog-author.jpg'
+  email: shreyas.rao114@gmail.com
 erin-sam-joe:
   name: Erin Sam Joe
   github: erin-sam-joe
