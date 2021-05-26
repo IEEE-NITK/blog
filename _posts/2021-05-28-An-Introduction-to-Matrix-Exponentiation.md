@@ -2,9 +2,9 @@
  layout: post
  title: "An Introduction to Matrix Exponentiation"
  author_github: AnirudhAchal
- date: 2021-01-06 18:31:23
+ date: 2021-05-28 00:00:23
  image: '/assets/img/'
- description: 'Introductory blog to Matrix Exponentiation'
+ description: 'Introductory Blog to Matrix Exponentiation'
  tags:
  - IEEE NITK
  - CompSoc
@@ -42,8 +42,7 @@ def get_fibonacci(n):
 
 ```
 
-This solution is an iterative dp that runs in linear time ie. O(n). Note that this solution has a space complexity of O(n), but it can be easily converted into O(1) space. 
-
+This solution is an iterative dp that runs in linear time ie. O(n). Note that this solution has a space complexity of O(n), but it can be easily converted into O(1) space.
 
 Now at first there does not seem to be any straightforward way to improve the time complexity of this solution. This is where matrix exponentiation comes into the picture. Our goal is to obtain a recurrence relation of the form F<sub>n</sub> = P * F<sub>n - 1</sub>  where P is a constant matrix and F<sub>n</sub> and F<sub>n - 1</sub> are matrices.  Let us see what happens if we obtain such a relation. 
 
@@ -63,7 +62,7 @@ F<sub>4</sub> = P<sup>3</sup> * F<sub>1</sub>
 
 Fn = P<sup>n - 1</sup> * F<sub>1</sub>
 
-This is a very helpful relation. We have got the nth term of the series in terms of the base matrix F<sub>1</sub>. <b>Note:</b> This base matrix need not always be n = 1. 
+This is a very helpful relation. We have got the nth term of the series in terms of the base matrix F<sub>1</sub>. <b>Note:</b> This base matrix need not always be n = 1.
 
 You must already be knowing that x<sup>n</sup> can be calculated in O(log(n)) time using binary exponentiation where x and n are integers. Refer to the code below in case you need a refresher on how that is done. If you have never heard of binary exponentiation, go through [this](https://cp-algorithms.com/algebra/binary-exp.html) article before continuing.
 
@@ -80,7 +79,7 @@ def power(x, n):
         n = n // 2
         x = x * x
 
-    return result			
+    return result
     
 ```
 
@@ -139,7 +138,7 @@ Fn = |  fn  |
 where fn is the nth fibonacci number and fn_1 is the (n-1)th fibonacci number.
 ```
 
-Now we need to find P such that 
+Now we need to find P such that
 F<sub>n</sub> = P * F<sub>n - 1</sub> \
 Using f<sub>n</sub> = f<sub>n - 1</sub> + f<sub>n - 2</sub> and f<sub>n - 1</sub> = f<sub>n - 1</sub> and with the help of basic linear algebra we see that:
 
@@ -225,10 +224,10 @@ def get_tiling_count(n):
 
 Here are some other problems that you can try solving to practice this concept.
 
- - [Tiling 4x4](https://www.geeksforgeeks.org/count-number-of-ways-to-fill-a-n-x-4-grid-using-1-x-4-tiles/)
- - [Tetrahedron](https://codeforces.com/problemset/problem/166/E)
+- [Tiling 4x4](https://www.geeksforgeeks.org/count-number-of-ways-to-fill-a-n-x-4-grid-using-1-x-4-tiles/)
+- [Tetrahedron](https://codeforces.com/problemset/problem/166/E)
 
- ### References
- - https://codeforces.com/blog/entry/67776
- - https://www.youtube.com/watch?v=eMXNWcbw75E
- 
+### References
+
+- [https://codeforces.com/blog/entry/67776](https://codeforces.com/blog/entry/67776)
+- [https://www.youtube.com/watch?v=eMXNWcbw75E](https://www.youtube.com/watch?v=eMXNWcbw75E)
