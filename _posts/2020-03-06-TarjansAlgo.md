@@ -9,7 +9,7 @@ tags:
 - IEEE NITK
 - CompSoc
 categories:
-- Compsoc
+- CompSoc
 github_username: 'adityasohoni'
 ---
 **Background**  

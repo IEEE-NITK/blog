@@ -9,7 +9,7 @@ tags:
 - Social engineering
 - Security
 categories:
-- Compsoc
+- CompSoc
 github_username: 'pran-p'
 ---
 
