@@ -35,13 +35,9 @@ The microservice architecture enables rapid, frequent and reliable delivery of l
 Let’s go through each of these points one by one.
 
 1. *Highly maintainable and testable* - Since a huge application is broken down into several chunks, it’s not only easier to spot bugs, but also fix them without getting the entire application down. It is also possible to scale up or scale down a component easily, since each of them is completely independent of each other. Scaling up is making a component larger or faster to handle a greater load. In contrast, scaling down refers to decreasing your system resources.
-
 2. *Loosely coupled* - Each of the individual components, as mentioned before, are independent and isolated. They cannot communicate with each other, except through APIs. None of the components have any say on the structure of another communication. This gives the developers working on each of the components complete freedom to build the service as they would like it. A new stack can be added to a service to avail larger benefits at the application level.
-
 3. *Independently deployable* - Each of the components are independently deployed. I had mentioned earlier that it’s possible to scale up or scale down an individual service. This necessarily means that each component has its own set of dependencies. Two components can also work with different versions of the same dependency. This is possible with the use of containers. Each component is containerised along with its dependencies and configurations and independently deployed. (Containerisation simply means that the application, along with all its dependencies, is put into a “container” and is treated as a single unit during deployment)
-
 4. *Organized around business capabilities* - Microservices introduce a massive change in the organisational structure of a business group. Since the overall goal is a good user experience, development teams are no longer divided into web teams, systems teams, database teams and so on. Rather, they are cross functional teams that work towards fulfillment of one single functionality.
-
 5. *Owned by a small team* - A cleaner distribution of functionality into microservices allows for more streamlined organisations with smaller teams.
 
 Now that we know what Microservices are, we need to know why they are required in today’s world. But for that, we first need to know what monoliths are.
