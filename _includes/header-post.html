@@ -1,11 +1,22 @@
-<header class="header-post" role="banner">
-    <div class="content">
-        {% if page.date %}
-            <time itemprop="datePublished" datetime="{{ page.date }}" class="date">{{ page.date | date_to_string }}</time>
-        {% endif %}
-        <h1 class="post-title" itemprop="name">{{ page.title }}</h1>
-        <p itemprop="description" class="subtitle">{{ page.description }}</p>
+<div class="nav-bg"></div>
+<div class="container">
+    <div class="header-post col-md-12 colorlib-bg-white animate-box" role="banner">
+        <div class="content">
+            <h1 class="post-title">{{ page.title }}</h1>
+            <p class="author-small">
+                <span class="author-img"
+                    style="background-image: url({{site.baseurl}}/assets/img/authors/{{site.data.authors[page.github_username].author_image}});"></span>
+                <span class="author">by {{site.data.authors[page.github_username].name}}</span>
+                {% if page.date %}
+                &nbsp;
+                |
+                &nbsp;
+                <i class="fa fa-calendar"></i>
+                <time itemprop="datePublished" datetime="{{ page.date }}"
+                    class="header-date">{{ page.date | date_to_string }}</time>
+                {% endif %}
+            </p>
+            <p class="subtitle">{{ page.description }}</p>
+        </div>
     </div>
-     <a class="down" data-scroll href="#scroll"><svg class="icon icon-angle-down"><use xlink:href="#icon-angle-down"></use></svg></a>
-     {% include menu-search.html %}
-</header>
+</div>

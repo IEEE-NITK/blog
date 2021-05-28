@@ -10,7 +10,7 @@ tags:
 - Long Short Term Memory Neural Networks
 - Machine Learning
 categories:
-- Compsoc
+- CompSoc
 github_username: 'nimbus98'
 ---
 
