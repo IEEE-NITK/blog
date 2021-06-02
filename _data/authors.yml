@@ -280,12 +280,6 @@ RosaGeorge31:
   author_image: 'RosaGeorge.jpeg'
   user_description: 'Born to Code!'
   email: rosageorge97@gmail.com
-adwait1-G:
-  name: Adwaith Gautham
-  github: adwait1-G
-  author_image: blog-author.jpg
-  user_description: "boom! boom!"
-  email: adwait.gautham@gmail.com
 anirudh0707:
   name: Anirudh B H
   github: anirudh0707
@@ -471,7 +465,7 @@ adwait1-G:
   github: adwait1-G
   author_image: adwait.jpg
   user_description: 'On a mission of securing the cyberspace from bad guys'
-  email: adwait.gautham@gmail.com
+  email: ""
 hebbarashwin:
   name: Ashwin Hebbar
   github: hebbarashwin
