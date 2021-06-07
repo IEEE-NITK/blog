@@ -10,7 +10,7 @@ tags:
 - Github
 - Bash
 categories:
-- Compsoc
+- CompSoc
 github_username: 'ameyanrd'
 comments: true
 ---
