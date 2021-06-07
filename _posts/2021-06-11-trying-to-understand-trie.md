@@ -2,7 +2,7 @@
 layout: post
 title: 'Trying-to-understand-Trie'
 author_github: DeltaCube23
-date: 2021-01-06 17:39:42
+date: 2021-06-11 00:00:00
 image: '/assets/img/'
 description: 'An Overview of the Trie Data Structure'
 tags:
@@ -15,7 +15,7 @@ categories:
 github_username: 'DeltaCube23'
 ---
 
-# Introduction
+## Introduction
 
 A trie is a rooted tree that maintains a set of strings. Each string in the set is stored as a chain of characters that starts at the root. If two strings have a common prefix, they also have a common chain in the tree. Consider the following set of strings {canal, candy, there, the} and let us make an example trie from these.
 
@@ -31,7 +31,7 @@ The 2 basic operations of a trie is search and insert :
 
 The **size** of a trie is equal to the number of distinct prefixes of all the strings in the set. The **height** of a trie is defined as the length of the longest string in the set.
 
-# Applications
+## Applications
 
 Trie is an incredibly useful data structure for many real life applications which are based on string processing and handling. Some examples are given below:
 
@@ -41,10 +41,12 @@ Trie is an incredibly useful data structure for many real life applications whic
 
 **DNA Sequencing** - It is used to store and process large DNA sequences and search for matching patterns present in it. Since this process requires significant computation and memory a trie is quite an efficient data structure for this.
 
-# PseudoCode
+## PseudoCode
 
-**Trie Node Structure**
-```struct TrieNode
+### **Trie Node Structure**
+
+```cpp
+struct TrieNode
 {
     struct TrieNode *children[26];
     bool is_end;
@@ -59,8 +61,10 @@ Trie is an incredibly useful data structure for many real life applications whic
 struct TrieNode *root;
 ```
 
-**Insert Operation**
-```void insert(string key)
+### **Insert Operation**
+
+```cpp
+void insert(string key)
 {
     struct TrieNode *pwalk = root;
     
@@ -76,8 +80,10 @@ struct TrieNode *root;
 }
 ```
 
-**Search Operation**
-```bool search(string key)
+### **Search Operation**
+
+```cpp
+bool search(string key)
 {
     struct TrieNode *pwalk = root;
     
@@ -94,19 +100,19 @@ struct TrieNode *root;
 }
 ```
 
-# Improving efficiency of a solution using Trie
+## Improving efficiency of a solution using Trie
 
 Consider the problem where we need to find the maximum value xor pair in an array of numbers.
 
-The Naive approach would be to calculate the xor value of all pairs of numbers in the array and then find the maximum value out of it. However this is not very efficient as the time complexity is **O(N^2)**. 
+The Naive approach would be to calculate the xor value of all pairs of numbers in the array and then find the maximum value out of it. However this is not very efficient as the time complexity is **O(N^2)**.
 
-Here we can use trie to store the binary representation of each number in the array and then we search for each number the maximum xor value we can get by taking the path opposite to the value of that bit in the number. Suppose the current bit is 1 then we look for a path with the bit set to 0 and we take the path with the opposite bit as long as it exists. In this manner for each number we will end up with the maximum value xor pair it can form and then take the maximum of these values. 
+Here we can use trie to store the binary representation of each number in the array and then we search for each number the maximum xor value we can get by taking the path opposite to the value of that bit in the number. Suppose the current bit is 1 then we look for a path with the bit set to 0 and we take the path with the opposite bit as long as it exists. In this manner for each number we will end up with the maximum value xor pair it can form and then take the maximum of these values.
 
-# Comparison with other data structures
+## Comparison with other data structures
 
 Trie and hash tables are used in many similar applications. There are many advantages of a trie over a hash table :
 There are no collisions of different keys in a trie.
-Because of the above property the worst case look up time in a trie is better ( O(length) ) than hash table which can be ( O(n) ) due to collisions. Best case for both is the same ( O(length) ). 
+Because of the above property the worst case look up time in a trie is better ( O(length) ) than hash table which can be ( O(n) ) due to collisions. Best case for both is the same ( O(length) ).
 Trie provides an alphabetical ordering of entries.
 Trie does not require buckets unless a single key is associated with more than one value.
 
@@ -116,9 +122,6 @@ When keys are floating point numbers it can lead to long chains that are not rea
 
 Here is a list of some resources to get a better understanding of trie and also some common interview problems.
 
-[Maximum Xor Subarray](https://www.geeksforgeeks.org/find-the-maximum-subarray-xor-in-a-given-array/)<br>
-[Trie Explained](https://www.hackerearth.com/practice/data-structures/advanced-data-structures/trie-keyword-tree/tutorial/)<br>
-[Good Insight](https://medium.com/underrated-data-structures-and-algorithms/trie-data-structure-fd9a2aa6fcb8)<br>
-
-
-
+- [Maximum Xor Subarray](https://www.geeksforgeeks.org/find-the-maximum-subarray-xor-in-a-given-array/)
+- [Trie Explained](https://www.hackerearth.com/practice/data-structures/advanced-data-structures/trie-keyword-tree/tutorial/)
+- [Good Insight](https://medium.com/underrated-data-structures-and-algorithms/trie-data-structure-fd9a2aa6fcb8)
