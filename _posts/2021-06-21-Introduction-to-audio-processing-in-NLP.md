@@ -2,7 +2,7 @@
 layout: post
 title: "Introduction to Audio Processing in NLP"
 author_github: spectre900
-date: 2021-01-04 22:00:00
+date: 2021-06-21 00:00:00
 image: '/assets/img/'
 description: 'An introduction to the various techniques used for processing audio in NLP.'
 tags:
@@ -43,7 +43,6 @@ print(fft_out)
 Two important features in audio processing are Spectrum and Cepstrum. Both Spectrum and Cepstrum are closely related to each other.
 
 1. A spectrum is the Fourier transform of a signal, hence a spectrum is the frequency domain representation of a time-domain audio signal.
-
 2. A cepstrum is defined as the Fourier transform of the logarithm of the spectrum. This results in a signal that's neither in the frequency domain nor in the time domain. The domain of the resulting signal is called the quefrency. You can refer to this [link](https://en.wikipedia.org/wiki/Cepstrum) to know more about cepstrum and quefrency.
 
 The reason for converting signals into their frequency domain is related closely to the biology of the human ear. The cochlea is a portion of the inner ear that looks like a snail shell and is a fluid-filled part with thousands of tiny hairs that are connected to nerves. The shorter hairs resonate with higher frequencies and the longer hairs resonate with lower frequencies. Since our ears are frequency analyzers, decomposing audio signals into frequency domain seems like a logical approach to extract features from it.
