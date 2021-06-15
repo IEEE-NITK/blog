@@ -11,7 +11,7 @@ tags:
 - Distributed Systems
 - Cloud Computing
 categories:
-- Compsoc
+- CompSoc
 github_username: 'abhinavpy'
 ---
 
