@@ -2,7 +2,7 @@
 layout: post
 title: 'Trying-to-understand-Trie'
 author_github: DeltaCube23
-date: 2021-06-11 00:00:00
+date: 2021-06-18 00:00:00
 image: '/assets/img/'
 description: 'An Overview of the Trie Data Structure'
 tags:
