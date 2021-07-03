@@ -10,7 +10,7 @@ tags:
 - AI
 - Security AI
 categories:
-- Compsoc
+- CompSoc
 github_username: 'chennakeshava1998'
 ---
 
