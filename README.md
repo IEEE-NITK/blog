@@ -30,7 +30,6 @@ If you're not a first time author, feel free to skip to the next section.
 	description: 'Introductory post on writing a blog'
 	tags:
 	- IEEE NITK
-	- CompSoc
 	- Blog
 	categories:
 	- CompSoc/Diode/Piston
