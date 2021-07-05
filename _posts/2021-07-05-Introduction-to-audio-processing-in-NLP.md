@@ -2,7 +2,7 @@
 layout: post
 title: "Introduction to Audio Processing in NLP"
 author_github: spectre900
-date: 2021-06-21 00:00:00
+date: 2021-07-05 00:00:00
 image: '/assets/img/'
 description: 'An introduction to the various techniques used for processing audio in NLP.'
 tags:
@@ -11,7 +11,7 @@ tags:
 - Audio Processing
 - NLP
 categories:
-- Compsoc
+- CompSoc
 github_username: 'spectre900'
 ---
 

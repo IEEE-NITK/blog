@@ -12,7 +12,7 @@ tags:
 - Deep Learning
 - Unsupervised Learning
 categories:
-- Compsoc
+- CompSoc
 github_username: 'dharmicksai'
 use_math: true
 ---

@@ -10,7 +10,7 @@ tags:
 - Cloud
 - Systems
 categories:
-- Compsoc
+- CompSoc
 github_username: 'gaurang2001'
 comments: true
 ---

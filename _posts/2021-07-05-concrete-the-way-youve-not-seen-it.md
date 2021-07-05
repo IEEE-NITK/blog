@@ -2,7 +2,7 @@
 layout: post
 title: "Concrete: The Way You've Not Seen It"
 author_github: Harshavardhan
-date: 2021-06-21 00:00:00
+date: 2021-07-05 00:00:00
 image: '/assets/img/'
 description: ""
 tags:

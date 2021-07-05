@@ -10,7 +10,7 @@ tags:
 - Machine Learning
 - Python
 categories:
-- Compsoc/Diode/Piston
+- CompSoc/Diode/Piston
 github_username: 'shruthanr'
 ---
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1odpZAS42UzVk16TGol_ta24DtyX1ZB2B)

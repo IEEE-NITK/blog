@@ -9,6 +9,7 @@ tags:
 - IEEE-NITK
 - Diode
 - Machine Learning
+- Deep Learning
 - LSTM
 categories:
 - Diode

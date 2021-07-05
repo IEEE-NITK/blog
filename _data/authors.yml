@@ -918,21 +918,18 @@ shivanshjoshi:
   github: shivanshjoshi
   author_image: 'blog-author.jpg'
   email: shiv.191mt044@nitk.edu.in
-<<<<<<< HEAD
 spectre900:
   name: Pratham Nayak
   github: spectre900
   author_image: pratham.jpg
   description: 'Problem Solving Enthusiast'
   email: nayakpratham0@gmail.com
-=======
 DeltaCube23:
   name: Adithya Rajesh
   github: DeltaCube23
   author_image: AdithyaRajesh.jpg
   description: 'Those who do not remember the past often tend to repeat it - DP'
   email: adithyarajesh01@gmail.com
->>>>>>> master
 ikjot-2605:
   name: Ikjot Singh Dhody
   github: ikjot-2605
@@ -1062,3 +1059,8 @@ Predator4hack:
   github: Predator4hack
   author_image: 'blog-author.jpg'
   email: chandankum2440@gmail.com
+somaanilkumar:
+  name: Soma Anil Kumar
+  github: somaanilkumar
+  author_image: 'blog-author.jpg'
+  email: ""
