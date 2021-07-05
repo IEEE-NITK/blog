@@ -23,16 +23,14 @@ If you're not a first time author, feel free to skip to the next section.
 	```
 	---
 	layout: post
-	title: "Why GraphQL is a big thing"
+	title: "Writing a sample blog"
 	author_github: githubuser123
 	date: 2017-05-14 23:32:44
 	image: '/assets/img/'
-	description: 'Introductory post to GraphQL'
+	description: 'Introductory post on writing a blog'
 	tags:
 	- IEEE NITK
-	- CompSoc
-	- GraphQL
-	- API Design
+	- Blog
 	categories:
 	- CompSoc/Diode/Piston
 	github_username: 'githubuser123'
