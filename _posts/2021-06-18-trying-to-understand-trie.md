@@ -7,11 +7,11 @@ image: '/assets/img/'
 description: 'An Overview of the Trie Data Structure'
 tags:
 - IEEE-NITK
-- Compsoc
+- CompSoc
 - Algorithms
 - Data Structures
 categories:
-- Compsoc
+- CompSoc
 github_username: 'DeltaCube23'
 ---
 

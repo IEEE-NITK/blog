@@ -8,6 +8,7 @@ description: 'The technique of hiding text, images, audio inside an image.'
 tags:
 - IEEE NITK
 - Steganography
+- Encryption Techniques
 categories:
 - Diode
 github_username: 'Jimmy622'
