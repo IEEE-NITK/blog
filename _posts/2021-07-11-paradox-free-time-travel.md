@@ -2,7 +2,7 @@
 layout: post
 title: "Paradox Free Time Travel"
 description: "A guide to various paradoxes in Time Travel and their possible solutions"
-date: 2021-07-12 00:00:00
+date: 2021-07-11 00:00:00
 image: '/assets/img'
 tags:
 - IEEE NITK

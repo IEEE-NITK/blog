@@ -2,7 +2,7 @@
 layout: post
 title: "Alpha Beta Pruning"
 author_github: pranavdv
-date: 2021-07-12 00:00:00
+date: 2021-07-11 00:00:00
 image: '/assets/img/'
 description: 'Overview of the Alpha Beta Pruning optimization technique on regular Minimax'
 tags:

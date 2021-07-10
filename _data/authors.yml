@@ -918,20 +918,17 @@ shivanshjoshi:
   github: shivanshjoshi
   author_image: 'blog-author.jpg'
   email: shiv.191mt044@nitk.edu.in
-<<<<<<< HEAD
 pranavdv:
   name: Pranav DV
   github: pranavdv
   author_image: 'PranavDV.jpeg'
   email: pranavdv.191cs234@nitk.edu.in
-=======
 spectre900:
   name: Pratham Nayak
   github: spectre900
   author_image: pratham.jpg
   description: 'Problem Solving Enthusiast'
   email: nayakpratham0@gmail.com
->>>>>>> master
 DeltaCube23:
   name: Adithya Rajesh
   github: DeltaCube23
@@ -1077,3 +1074,8 @@ somaanilkumar:
   github: somaanilkumar
   author_image: 'blog-author.jpg'
   email: ""
+Shobuj-Paul:
+  name: Shobuj Paul
+  github: Shobuj-Paul
+  author_image: 'blog-author.jpg'
+  email: shobujpaul@hotmail.com
