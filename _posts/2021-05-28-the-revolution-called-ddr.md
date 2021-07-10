@@ -9,6 +9,7 @@ tags:
 - Diode
 - DDR
 - RAM
+- Digital Systems
 categories:
 - Diode
 github_username: 'krutideepanpanda'

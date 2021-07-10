@@ -11,7 +11,7 @@ tags:
 - Robotics
 - Multi-Agent Systems
 categories:
-- Compsoc
+- CompSoc
 github_username: 'Aryaman2912'
 ---
 

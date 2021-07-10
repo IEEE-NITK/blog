@@ -13,7 +13,7 @@
  - Competitive Programming
  - Algorithms
  categories:
- - Compsoc
+ - CompSoc
  github_username: 'AnirudhAchal'
 ---
  
