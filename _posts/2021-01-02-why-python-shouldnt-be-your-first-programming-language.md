@@ -50,5 +50,5 @@ In conclusion, we can all agree that Python has found good use in many fields of
 - [Python Variable Types](https://www.tutorialspoint.com/python/python_variable_types.htm)
 - [Pointers in Python: What's the Point?](https://realpython.com/pointers-in-python/)
 - [Example of Python's Data Encapsulation](https://www.quora.com/Why-do-some-people-say-that-object-oriented-programming-in-Python-is-a-joke/answer/Antonio-Nesic)
-- [Python | Compiled or Interpreted?](https://www.geeksforgeeks.org/python-compiled-or-interpreted/)
+- [Python - Compiled or Interpreted?](https://www.geeksforgeeks.org/python-compiled-or-interpreted/)
 - [What is the Python Global Interpreter Lock (GIL)?](https://realpython.com/python-gil/)
