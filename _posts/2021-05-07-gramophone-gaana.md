@@ -8,6 +8,7 @@ description: "Music. Who doesn’t love music? Hanging around with headphones on
 tags:
 - IEEE NITK
 - Diode
+- Audio recording and reproduction
 categories:
 - Diode
 github_username: 'akashbharadwaj2001'
