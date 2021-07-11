@@ -1,5 +1,7 @@
 sudo: false
 language: ruby
+rvm:
+- 2.6
 install:
 - gem install jekyll html-proofer jekyll-paginate jemoji
 script:
