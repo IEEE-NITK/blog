@@ -1,0 +1,101 @@
+---
+layout: default
+title: "Blog"
+---
+
+<!-- <main id="scroll" class="home" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+
+
+    {% for post in paginator.posts %}
+        <div class="row animate-box">
+            <div class="col-md-8 col-md-offset-2 text-center">
+        <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                <a class="datetime" href="{{ post.url | prepend: site.baseurl }}">
+                    <meta itemprop="datePublished" content="{{post.date}}">
+                    <time datetime="{{ post.date | date_to_xmlschema }}">
+                        <span class="day">
+                            {{ post.date | date: "%d" }}
+                        </span>
+                        <span class="month-year">
+                            {{ post.date | date: "%B %Y" }}
+                        </span>
+                    </time>
+                </a>
+                <div class="content">
+                    <a href="{{ post.url | prepend: site.baseurl }}"><h2 class="post-title" itemprop="name"><strong>{{ post.title }}</strong></h2></a>
+                    <p class="description">
+                        {{ post.content | strip_html | truncatewords:35 }}
+                    </p>
+                    <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a>
+
+                    <div class="tags">
+                        {% for tag in post.tags %}
+                            <a href="{{ site.baseurl }}/tags/#{{tag | slugify }}">{{ tag }}</a>
+                        {% endfor %}
+                    </div>
+
+                </div>
+        </article>
+            </div>
+        </div>
+    {% endfor %}
+
+</main> -->
+
+<main id="scroll" class="container" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+
+    {% for post in paginator.posts %}
+        {% assign ind = forloop.index0 | modulo: 2 %}
+        {% if ind == 0 %}
+            <div class="card-deck">
+        {% endif %}
+            <div class="animate-box card">
+                <article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                        <!-- <a class="datetime" href="{{ post.url | prepend: site.baseurl }}">
+                            <meta itemprop="datePublished" content="{{post.date}}">
+                            <time datetime="{{ post.date | date_to_xmlschema }}">
+                                <span class="day">
+                                    {{ post.date | date: "%d" }}
+                                </span>
+                                <span class="month-year">
+                                    {{ post.date | date: "%B %Y" }}
+                                </span>
+                            </time>
+                        </a> -->
+                        <h2>
+                            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                            <!-- {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+                            {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
+                            {% assign week = 7 | times: 24 | times: 60 | times: 60 %}
+                            {% assign one_week_ago = nowunix | minus: week | date: '%s' %}
+                            {% if posttime >= one_week_ago %}
+                                <span style="background-color: green;float: right;font-size: small !important;padding: 8px 15px!important;color: white !important;border-radius: 4px;">NEW</span>
+                            {% endif %} -->
+                        </h2>
+                        <p class="author-wrap">
+                            <span class="author-img" style="background-image: url({{site.baseurl}}/assets/img/authors/{{site.data.authors[post.github_username].author_image}});"></span> 
+                            <span class="author">by {{site.data.authors[post.github_username].name}}</span>
+                            &nbsp;
+                            |
+                            &nbsp;
+                            <span class="admin"><span>{{ post.date | date: "%B %d, %Y" }}</span></span>
+                        </p>
+                        <p>
+                            {{ post.content | strip_html | truncatewords:40 }}
+                        </p>
+                        <!-- <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-primary btn-outline with-arrow">Read more<i class="fa fa-arrow-right"></i></a> -->
+
+                        <div class="tags">
+                            {% for tag in post.tags %}
+                                <a href="{{ site.baseurl }}/tags/#{{tag | slugify }}">{{ tag }}</a>
+                            {% endfor %}
+                        </div>
+                </article>
+            </div>
+        {% if ind == 1 %}
+            </div>
+        {% endif %}
+    {% endfor %}
+
+</main>
+

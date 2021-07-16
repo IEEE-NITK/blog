@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% include head.html %}
+    <script src="{{site.baseurl}}/assets/js/particles.js"></script>
+    
+    <script>
+        $(document).ready(function () {
+            particlesJS.load('particles-js', '{{site.baseurl}}/particlesjs-config.json', function () {
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="colorlib-loader">
+        <div id="loader"></div>
+        <div id="loader"></div>
+        <div id="loader"></div>
+        <div id="loader"></div>
+        <div id="loader"></div>
+    </div>
+    <div id="page">
+
+        {% include header-default.html %}
+
+        <!-- Landing -->
+        <section class="video-hero"
+            style="height: 500px; background-size:cover; background-position: center center;background-attachment:fixed;"
+            data-section="home">
+            <div id="particles-js"></div>
+            <div class="display-t display-t2 text-center">
+                <div class="display-tc display-tc2">
+                    <div class="container">
+                        <div class="row row-title">
+                            <div class="col-md-12 animate-box">
+                                <h2 class="page-title">{{page.title}}</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {% include menu-search.html %}
+
+        {{ content }}
+
+
+        {% include paginator.html %}
+
+        {% include footer.html %}
+    </div>
+
+    <script src="{{site.baseurl}}/assets/js/main.js"></script>
+    <script id="dsq-count-scr" src="//ieeenitk.disqus.com/count.js" async></script>
+</body>
+
+</html>

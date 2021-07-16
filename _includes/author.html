@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="colorlib-bg-white animate-box">
+        <section class="author-big" itemprop="author">
+            <div class="details" itemscope itemtype="http://schema.org/Person">
+                <div class="col-md-4 col-sm-4 author-img-center">
+                    <img itemprop="image" class="author-img-big"
+                        src="{{site.baseurl}}/assets/img/authors/{{ site.data.authors[page.github_username].author_image }}"
+                        alt="{{site.data.authors[page.github_username].name}}">
+                </div>
+                <div class="col-md-8 sol-sm-8 author-details">
+                    <p>Author</p>
+                    <h3>
+                        <strong>
+                            {{ site.data.authors[page.github_username].name }}
+                        </strong>
+                    </h3>
+                    <p class="desc">{{site.data.authors[page.github_username].user_description}}</p>
+                    {% if site.data.authors[page.github_username].email != "" %}
+                    <i class="fa fa-envelope"></i>
+                    <a class="author-big-email" target="_blank"
+                        href="mailto:{{site.data.authors[page.github_username].email}}">{{site.data.authors[page.github_username].email}}</a>
+                    <br>
+                    {% endif %}
+                    <i class="fa fa-github"></i>
+                    <a class="author-big-email" target="_blank"
+                        href="https://github.com/{{page.github_username}}">{{page.github_username}}</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

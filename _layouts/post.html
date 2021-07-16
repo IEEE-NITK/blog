@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include head.html %}
+    <script src="{{ "/assets/js/sidebar.js" | prepend: site.baseurl }}"></script>
+    <script>
+        loadArticles();
+    </script>
+</head>
+
+<body>
+    <div class="colorlib-loader">
+        <div id="loader"></div>
+        <div id="loader"></div>
+        <div id="loader"></div>
+        <div id="loader"></div>
+        <div id="loader"></div>
+    </div>
+    <div id="page">
+        {% include header-default.html %}
+        {% include header-post.html %}
+        <section class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+            <div class="container">
+                <div class="col-md-9 animate-box" style="padding: 0;">
+                    <div class="colorlib-bg-white mt mr">
+                        <article role="article" id="scroll" class="post-content" itemprop="articleBody">
+                            {{ content }}
+                        </article>
+                    </div>
+                </div>
+                <div class="col-md-3 animate-box" style="padding: 0;">
+                    <div class="colorlib-bg-white mt">
+                        {% include sidebar.html %}
+                    </div>
+                    <div class="colorlib-bg-white mt">
+                        <div class="sidebar">
+                            <h3>Browse IEEE Blog</h3>
+                            <p>
+                                <a href="{{ "/series/" | prepend: site.baseurl }}">Series</a>
+                                <br>
+                                <a href="{{ "/tags/" | prepend: site.baseurl }}">Tags</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% include author.html %}
+
+            {% include footer.html %}
+            {% include highlighter.html %}
+        </section>
+    </div>
+    <script src="{{site.baseurl}}/assets/js/main.js"></script>
+</body>
+
+</html>
