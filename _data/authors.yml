@@ -280,12 +280,6 @@ RosaGeorge31:
   author_image: 'RosaGeorge.jpeg'
   user_description: 'Born to Code!'
   email: rosageorge97@gmail.com
-adwait1-G:
-  name: Adwaith Gautham
-  github: adwait1-G
-  author_image: blog-author.jpg
-  user_description: "boom! boom!"
-  email: adwait.gautham@gmail.com
 anirudh0707:
   name: Anirudh B H
   github: anirudh0707
@@ -471,7 +465,7 @@ adwait1-G:
   github: adwait1-G
   author_image: adwait.jpg
   user_description: 'On a mission of securing the cyberspace from bad guys'
-  email: adwait.gautham@gmail.com
+  email: ""
 hebbarashwin:
   name: Ashwin Hebbar
   github: hebbarashwin
@@ -924,12 +918,178 @@ BhaskarVyas:
   github: BhaskarVyas	
   author_image: bhaskar.jpeg
   user_description: "ECE NITK"
-  
 supreeth22: 
   name: Supreeth
   github: supreeth22 
-  
-  
-   
-
-
+Shree987:
+  name: Shreeraksha R Aithal
+  github: Shree987
+  author_image: shreeraksha.jpg
+  description: 'What is coming is better than what it is gone...'
+  email: shreeaithal2000@gmail.com
+shivanshjoshi:
+  name: Shivansh Joshi
+  github: shivanshjoshi
+  author_image: 'blog-author.jpg'
+  email: shiv.191mt044@nitk.edu.in
+pranavdv:
+  name: Pranav DV
+  github: pranavdv
+  author_image: 'PranavDV.jpeg'
+  email: pranavdv.191cs234@nitk.edu.in
+spectre900:
+  name: Pratham Nayak
+  github: spectre900
+  author_image: pratham.jpg
+  description: 'Problem Solving Enthusiast'
+  email: nayakpratham0@gmail.com
+DeltaCube23:
+  name: Adithya Rajesh
+  github: DeltaCube23
+  author_image: AdithyaRajesh.jpg
+  description: 'Those who do not remember the past often tend to repeat it - DP'
+  email: adithyarajesh01@gmail.com
+ikjot-2605:
+  name: Ikjot Singh Dhody
+  github: ikjot-2605
+  author_image: 'ikjotsingh.jpg'
+  email: ikjotsd@gmail.com   
+AnirudhAchal:
+  name: Anirudh Achal
+  github: Anirudh Achal
+  author_image: 'AnirudhAchal.JPG'
+  user_description: 'Hakuna Matata'
+  email: anirudh.achal@gmail.com
+dharmicksai:
+  name: K Dharmick Sai
+  github: dharmicksai 
+  author_image: dharmick.jpg 
+  email: dharmicksaik@gmail.com 
+gaurang2001:
+  name: Gaurang Velingkar
+  github: gaurang2001
+  author_image: gaurang.jpg
+  description: 'Developer'
+  email: gaurangvelingkar@gmail.com
+nishant-nayak:
+  name: Nishant Nayak
+  github: nishant-nayak
+  author_image: nishant_nayak.jpg
+  description: Theater Enthusiast, Singer, Engineer?
+  email: nishantnayak2001@gmail.com
+Dragonado:
+  name: Chaithanya Shyam D
+  github: Dragonado
+  author_image: 'blog-author.jpg'
+  email: codecraft15@gmail.com
+rakki-18:
+  name: Rakshit P
+  github: rakki-18
+  author_image: rakshit_p.jpeg
+  user_description: 'Football. Travel. Code.'
+  email: rakki22k@gmail.com
+shruthanr:
+  name: Shruthan R
+  github: shruthanr
+  author_image: shruthan.jpg
+  email: shruthan@outlook.com
+Aryaman2912:
+  name: Aryaman M
+  github: Aryaman2912
+  author_image: aryaman.jpg
+  email: aryaman2912@gmail.com
+Ananya:
+  name: Ananya P
+  github: Ananya
+  author_image: blog-author.jpg
+  email: ananyap.191mt006@nitk.edu.in
+Mallikarjun:
+  name: Mallikarjun G M
+  github: Mallikarjun
+  author_image: 'blog-author.jpg'
+  email: mallikarjungm@ieee.org
+rak108:
+  name: Rakshita Varadarajan
+  github: rak108
+  author_image: rakshitavaradarajan.jpg
+  email: rakshitajps@gmail.com
+varshini_c:
+  name: Varshini C
+  github: varshini_c
+  author_image: varshini_c.jpeg
+  email: varshinic.191ch057@nitk.edu.in
+sahaj7100:
+  name: Sahaj Saxena
+  github: sahaj7100
+  author_image: 'blog-author.jpg'
+  email: sajee.saxena@gmail.com
+Pramod5-CIV:
+  name: Pramod Sunil Parande
+  github: Pramod5-CIV
+  author_image: 'blog-author.jpg'
+  email: pramod.191cv234@nitk.edu.in
+shreyasrao114:
+  name: M Shreyas Rao
+  github: shreyasrao114
+  author_image: 'blog-author.jpg'
+  email: shreyas.rao114@gmail.com
+erin-sam-joe:
+  name: Erin Sam Joe
+  github: erin-sam-joe
+  author_image: 'blog-author.jpg'
+  email: erin.191me131@nitk.edu.in
+akashbharadwaj2001:
+  name: Akash S Bharadwaj
+  github: akashbharadwaj2001
+  author_image: 'blog-author.jpg'
+  email: akashbharadwaj.191ec103@nitk.edu.in
+viba-r-udupa:
+  name: Viba R Udupa
+  github: Viba
+  author_image: viba-r-udupa.jpg
+  email: vibamicky@gmail.com
+krutideepanpanda:
+  name: Kruti Deepan Panda
+  github: krutideepanpanda
+  author_image: 'blog-author.jpg'
+  email: krutideepanpanda.191ec126@nitk.edu.in
+yuv-b:
+  name: Yuvasankar B
+  github: yuv-b
+  author_image: 'blog-author.jpg'
+  email: yuvasankar.b@gmail.com
+Jimmy622:
+  name: Garvin Pokhra
+  github: Jimmy622
+  author_image: garvin-pokhra.jpg
+  email: garvinpokhra121@gmail.com
+Harshavardhan:
+  name: Harshavardhan S
+  github: Harshavardhan
+  author_image: 'blog-author.jpg'
+  email: harshakvs8@gmail.com
+Kaustubh:
+  name: Kaustubh
+  github: Kaustubh
+  author_image: 'blog-author.jpg'
+  email: kaustubh1501@gmail.com
+Predator4hack:
+  name: Chandan Kumar
+  github: Predator4hack
+  author_image: 'blog-author.jpg'
+  email: chandankum2440@gmail.com
+virenvarma007:
+  name: Viren Varma
+  github: virenvarma007
+  author_image: 'blog-author.jpg'
+  email: virenvarma007@gmail.com
+somaanilkumar:
+  name: Soma Anil Kumar
+  github: somaanilkumar
+  author_image: 'blog-author.jpg'
+  email: ""
+Shobuj-Paul:
+  name: Shobuj Paul
+  github: Shobuj-Paul
+  author_image: 'blog-author.jpg'
+  email: shobujpaul@hotmail.com

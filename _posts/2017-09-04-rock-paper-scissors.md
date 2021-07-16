@@ -42,4 +42,4 @@ The problem here is, of course, that it requires everyone on the road to have re
 1. Read Rock, Paper, Scissors: Game Theory in Everyday Life by Len Fisher.
 2. [PittsBurgh Post-Gazette](http://www.post-gazette.com/opinion/Op-Ed/2013/02/03/The-Next-Page-Everyday-uses-for-game-theory-such-as-when-to-wash-the-dishes/stories/201302030375)
 3. [Reference 1](http://ncase.me/trust/)
-4. [Khan Academy](https://www.khanacademy.org/economics-finance-domain/microeconomics/nash-equilibrium-tutorial)
+4. [Coursehero - Prisoner's Dilemma](https://www.coursehero.com/sg/microeconomics/the-prisoners-dilemma/#nash-equilibrium)
