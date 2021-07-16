@@ -2,7 +2,7 @@
 layout: post
 title: "A beginner's guide to Cloud Computing"
 author_github: srujangit123
-date: 2021-07-19 00:00:00
+date: 2021-07-17 00:00:00
 image: '/assets/img/'
 description: 'Introduction to cloud computing'
 tags:
@@ -41,7 +41,7 @@ Cloud client/UI is basically where users select some of their software requireme
 
 Easy scaling/elasticity: When a company gets heavy traffic at some time, in the traditional developer-owned data center they need to scale their service horizontally to keep up with the traffic. In the cloud this is done easily using auto scaling features provided by the cloud. This makes the developers work on new ideas instead of managing servers.
 
-### “Pay for what you use”
+### Pay for what you use
 
 The cloud service is elastic. The number of servers running in the cloud depends on the traffic. When there is usual traffic, the company doesn't need a lot of servers. So, it is auto scaled down as required. This helps the client by cutting down on unnecessary server maintenance costs.
 
@@ -59,7 +59,7 @@ With the cloud, you can expand your application to new regions and deploy global
 Cloud computing is used for building cloud native technologies and approaches like kubernetes for auto-scaling, microservices architecture, devOps etc.
 CI/CD : Whenever a developer commits and pushes changes to the repository, the CI system will rebuild the branch and run all related test cases to verify that new changes won’t break the existing application and functionalities. Cloud resources can automatically scale up and down based on CI/CD workloads.
 
-#### DevOps
+### DevOps
 
 The set of practices that combines software development and operations. Sometimes the development team and operations team work together for the entire software development lifecycle from developing, deploying to operations.
 CI/CD is one of the best practices devops teams implement.

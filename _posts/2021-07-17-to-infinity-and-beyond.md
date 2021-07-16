@@ -2,7 +2,7 @@
 layout: post
 title: "To Infinity and Beyond"
 author_github: Pranshu-S
-date: 2021-07-19 00:00:00
+date: 2021-07-17 00:00:00
 image: '/assets/img/'
 description: 'A read on future of space exploration'
 tags:
