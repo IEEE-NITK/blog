@@ -703,3 +703,7 @@
     position: relative;
     transition: all .5s ease;
   }
+
+  .post-content ol li {
+    margin-bottom: 2rem;
+  }

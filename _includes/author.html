@@ -15,10 +15,12 @@
                         </strong>
                     </h3>
                     <p class="desc">{{site.data.authors[page.github_username].user_description}}</p>
+                    {% if site.data.authors[page.github_username].email != "" %}
                     <i class="fa fa-envelope"></i>
                     <a class="author-big-email" target="_blank"
                         href="mailto:{{site.data.authors[page.github_username].email}}">{{site.data.authors[page.github_username].email}}</a>
                     <br>
+                    {% endif %}
                     <i class="fa fa-github"></i>
                     <a class="author-big-email" target="_blank"
                         href="https://github.com/{{page.github_username}}">{{page.github_username}}</a>
