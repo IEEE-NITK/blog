@@ -994,6 +994,11 @@ Ananya:
   github: Ananya
   author_image: blog-author.jpg
   email: ananyap.191mt006@nitk.edu.in
+srujangit123:
+  name: Srujan Bharadwaj
+  github: srujangit123
+  author_image: 'blog-author.jpg'
+  email: srujanbharadwaj44@gmail.com
 Mallikarjun:
   name: Mallikarjun G M
   github: Mallikarjun
@@ -1089,3 +1094,13 @@ Monal:
   github: Monal
   author_image: 'blog-author.jpg'
   email: monaldhankar@gmail.com
+Pranshu-S:
+  name: Pranshu Shukla
+  github: Pranshu-S
+  author_image: 'blog-author.jpg'
+  email: pranshushukla06@gmail.com
+nakshatra-gopi:
+  name: Nakshatra Gopi
+  github: nakshatra-gopi
+  author_image: 'blog-author.jpg'
+  email: nakshatragopi.191ee228@nitk.edu.in
