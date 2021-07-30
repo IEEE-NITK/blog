@@ -2,7 +2,7 @@
 layout: post
 title: "Revolutionising the Wheel"
 author_github: Monal
-date: 2021-07-26 00:00:00
+date: 2021-07-30 00:00:00
 image: '/assets/img/'
 description: "Superelastic tires and their part in tomorrow's future"
 tags:
