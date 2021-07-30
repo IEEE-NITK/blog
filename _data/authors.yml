@@ -979,6 +979,11 @@ shruthanr:
   github: shruthanr
   author_image: shruthan.jpg
   email: shruthan@outlook.com
+sravanireddy1102:
+  name: Sravani Katasani
+  github: sravanireddy1102
+  author_image: 'sravani.jpg'
+  email: sravani.191cs223@nitk.edu.in
 Aryaman2912:
   name: Aryaman M
   github: Aryaman2912
@@ -1084,6 +1089,11 @@ Shobuj-Paul:
   github: Shobuj-Paul
   author_image: 'blog-author.jpg'
   email: shobujpaul@hotmail.com
+Monal:
+  name: Monal Singh
+  github: Monal
+  author_image: 'blog-author.jpg'
+  email: monaldhankar@gmail.com
 Pranshu-S:
   name: Pranshu Shukla
   github: Pranshu-S
@@ -1094,3 +1104,8 @@ nakshatra-gopi:
   github: nakshatra-gopi
   author_image: 'blog-author.jpg'
   email: nakshatragopi.191ee228@nitk.edu.in
+v-kartikeya:
+  name: V Kartikeya
+  github: v-kartikeya
+  author_image: 'blog-author.jpg'
+  email: ""
