@@ -2,7 +2,7 @@
 layout: post
 title: "Learning Fluid Mechanics: From Living Organisms to Machines"
 author_github: bdiptesh99
-date: 2021-08-02 00:04:00
+date: 2021-08-02 00:00:00
 image: '/assets/img/'
 description: ''
 tags:
