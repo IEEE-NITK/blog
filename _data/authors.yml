@@ -1109,3 +1109,19 @@ v-kartikeya:
   github: v-kartikeya
   author_image: 'blog-author.jpg'
   email: ""
+ZerothKing:
+  name: Sanjkeet Jena
+  github: ZerothKing
+  author_image: sanjkeet.jpg
+  user_description: 'I am not lazy, I just really like doing nothing.'
+  email: sanjkeetjena@gmail.com
+bdiptesh99:
+  name: Diptesh Banerjee
+  github: bdiptesh99
+  author_image: 'blog-author.jpg'
+  email: bdiptesh99@gmail.com
+rahul-magesh:
+  name: Rahul Magesh
+  github: rahul-magesh
+  author_image: 'blog-author.jpg'
+  email: ""
