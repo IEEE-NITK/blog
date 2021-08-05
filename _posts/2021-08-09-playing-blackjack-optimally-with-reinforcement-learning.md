@@ -2,7 +2,7 @@
 layout: post
 title: "Playing Blackjack Optimally with Reinforcement Learning"
 author_github: Shreya301
-date: 2021-08-09 00:00:42
+date: 2021-08-09 00:00:00
 image: '/assets/img/'
 description: 'An insight into Reinforcement Learning methods and how they work on blackjack'
 tags:
@@ -10,8 +10,9 @@ tags:
 - CompSoc
 - Reinforcement Learning
 categories:
-- Compsoc
+- compsoc
 github_username: 'Shreya301'
+use_math: true
 ---
 
 ## Introduction to Reinforcement Learning
@@ -60,11 +61,11 @@ As an example, this is the evaluation of a policy that chooses to stick only on 
 The game plan is to initialize our policy such that it’s stochastic which means that all actions have a possibility of being selected (here we just assign all probabilities to the same value or randomly initialize the policy). We evaluate the current policy using Monte Carlo evaluation and then we can easily improve this current policy but acting greedy with respect to it (we actually act ϵ greedily). Basically, look at the values corresponding to the current state in the Q-function and choose the action that maximizes the value. With this new policy, we re-compute the Q-table and the process goes on.
 Mathematically, going in reverse from the time step of termination of the episode, the return for each state-action pair is computed according to the following formula, with future rewards being discounted by a factor of γ raised to the power of how much later they are received.
 $$
-G_t=R_{t+1} + γ R_{t+2}+...+ γ ^{T-1}R_T
+G_t=R_{t+1} + \gamma R_{t+2}+...+ \gamma ^{T-1}R_T
 $$
 Now the values are updated according to :
 $$
-Q(S,A)=Q(S,A)+ α (G_t-Q(S,A))
+Q(S,A)=Q(S,A)+ \alpha (G_t-Q(S,A))
 $$
 So the value is moved alpha (learning rate) times the error between what was previously computed to be the expected return and the return we actually received. To compute the returns, the value must be computed in reverse from the end of each episode. The backup diagram looks something like this:
 
@@ -81,9 +82,9 @@ The agent we trained for 500,000 episodes with decaying epsilon value learnt the
 
 At a glance, it seems in the case of a usable ace, our agent learns a policy very similar to the HIT17 policy of our dealer. Since we can’t outright judge the quality of the policy, we observe the player playing 1000 rounds against the dealer and note the statistics.
 
-wins = 434.0
-draws = 89.0
-losses = 477.0
+wins = 434.0<br>
+draws = 89.0<br>
+losses = 477.0<br>
 
 However, we still can’t manage to beat the dealer but that isn’t too concerning here, since HIT17 is a pretty great policy to begin with and blackjack, like most casino games, is rigged to be in favor of the dealer. Regardless, if our agent learned  a policy even slightly better than HIT17, it would have had more wins than losses.
 
@@ -104,7 +105,7 @@ Here is a visual of what state or action values each method considers for backup
 
 Here we use a similar initialization for Q-values for each state and action. We sample episodes and at each time step, the agent chooses an action ϵ-greedily, observes the reward from the next state and backs up the value for the current state-action pair. In Q-learning, in each step of each episode we sample, after choosing the action A and observing the reward R and next state S', the action-value corresponding to S,A is updated according to the formula:
 $$
-Q(S,A)=Q(S,A)+ α [R+ γ max(Q_a(S',a))-Q(S,A)]
+Q(S,A)=Q(S,A)+ \alpha [R+ \gamma max(Q_a(S',a))-Q(S,A)]
 $$
 The difference between this and our previous monte carlo update is in the target for update. Previously it was the sampled return which was calculated in reverse from episode termination. Here the target is the reward received + the discount factor times the maximum value from the next state, out of all the possible actions from that state. This way, for each update, what is considered is the maximum over the action values of the next state. The backup diagram looks like this:
 
@@ -116,9 +117,9 @@ We once again train our agent on 500,000 episodes and it learns the following po
 
 After 1000 games based on the above policy:
 
-wins = 420.0
-draws = 92.0
-losses = 488.0
+wins = 420.0<br>
+draws = 92.0<br>
+losses = 488.0<br>
 
 From these statistics, it does seem that our Q-learning policy didn’t perform as well as Monte Carlo; that could perhaps benefit from more rounds of training or tweaking the parameters.
 Regardless, temporal difference methods are usually more efficient and converge quicker since it updates the Q-values at every step and not just when an episode ends.
