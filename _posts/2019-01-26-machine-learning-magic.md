@@ -14,12 +14,12 @@ categories:
 github_username: 'saharsh007'
 ---
 
->"Did you ever wonder how ML algorithms work?"
->"How is the weather forecast done?"
->"How does the self-driving car mimic the way humans drive?"
+>"Did you ever wonder how ML algorithms work?"<br>
+>"How is the weather forecast done?"<br>
+>"How does the self-driving car mimic the way humans drive?"<br>
 >"Let's try to find answers to some of those questions..."
 
-# WHAT IS THIS MACHINE LEARNING ?
+## WHAT IS THIS MACHINE LEARNING ?
 
 Assume you have some data, it could be anything like a set of tweets or Images of handwritten numbers or Emails marked as spam.
 But you don’t know what to do with it!!!
@@ -37,10 +37,9 @@ So how does this becomes possible? We take the example of marking tweets as suic
 * the tweet uses suicide as a figure of speech eg: career suicide
 
 So we have to filter, even more, example:
+
 * The text conveys a serious display of suicidal ideation; e.g., I want to die or I want to kill myself or I wish my last suicide attempt was successful;
-
 * Posts where suicide plan and/or previous attempts are discussed; e.g., ”The fact that I tried to kill myself and it didn’t work makes me more depressed.”
-
 * The tone of the text is cloudy and not serious, eg: This makes me want to kill myself, lol, ”This day is horrible, I want to kill myself hahaha” are not included in this category.
 
 So we filter out tweets containing words like “haha” or “lol”, and include the tweets having “I want to die”, “I want to kill”, occurrences of “I”, “kill” and “myself” together. We train it with labelled test set(tweets labelled as suicidal or not suicidal).  Training means adding features and tweaking parameters of function so that it obtains the same result that is labelled on training data. After doing this our Model is ready.  
@@ -53,21 +52,21 @@ So Machine Learning is the science of programming computers so they can learn fr
 ML is a subset of the larger field of artificial intelligence (AI) that “focuses on teaching computers how to learn without the need to be programmed for specific tasks,”  
 In fact, the key idea behind ML is that it is possible to create algorithms that learn from data and make predictions on it.
 
-# TYPES OF MACHINE LEARNING
+## TYPES OF MACHINE LEARNING
 
-## SUPERVISED LEARNING:<span style="color:red"> Train me!</span>
+### SUPERVISED LEARNING:<span style="color:red"> Train me!</span>
 
 The case we saw above is an example of supervised learning, we had the labelled tweets and made a function to map tweets with the output
 
 But what if the data we had wasn’t labelled?
 
-## UNSUPERVISED LEARNING:<span style="color:red"> I am self-sufficient in Learning</span>
+### UNSUPERVISED LEARNING:<span style="color:red"> I am self-sufficient in Learning</span>
 
 That is when UNSUPERVISED LEARNING comes into action. It learns from data that are not labelled and does categorization or classification.
 
 And the last one is  
 
-## REINFORCEMENT LEARNING: <span style="color:red">My life my Rules! (hit and trail) 
+### REINFORCEMENT LEARNING: <span style="color:red">My life my Rules! (hit and trail)
 
 It is about taking suitable action to maximize reward in a particular situation.
 
@@ -83,12 +82,12 @@ How to learn more about Machine Learning?
 
 The best place to get Started with basics of ML is Andrew Ng’s [Machine Learning Course](https://www.coursera.org/learn/machine-learning) from coursera. It’s highly recommended for beginners. It’s easy for anyone who has a minimal amount of knowledge of maths :)type
 
-## References:  
+## References
 
-* https://medium.com/@ageitgey/machine-learning-is-fun-80ea3ec3c471
-* https://medium.com/@ageitgey/machine-learning-is-fun-80ea3ec3c471
-* https://ieee.nitk.ac.in/blog/Why-Machine-Learning-Matters/
-* https://towardsdatascience.com/unsupervised-learning-with-python-173c51dc7f03  
-* https://www.mathworks.com/discovery/machine-learning.html   
-* https://www.quora.com/What-is-machine-learning-4  
-* https://www.quora.com/What-is-reinforcement-learning  
+* [https://www.dezyre.com/article/top-10-machine-learning-projects-for-beginners-in-2021/397/](https://www.dezyre.com/article/top-10-machine-learning-projects-for-beginners-in-2021/397/)
+* [https://medium.com/@ageitgey/machine-learning-is-fun-80ea3ec3c471](https://medium.com/@ageitgey/machine-learning-is-fun-80ea3ec3c471)
+* [https://ieee.nitk.ac.in/blog/Why-Machine-Learning-Matters/](https://ieee.nitk.ac.in/blog/Why-Machine-Learning-Matters/)
+* [https://towardsdatascience.com/unsupervised-learning-with-python-173c51dc7f03](https://towardsdatascience.com/unsupervised-learning-with-python-173c51dc7f03)
+* [https://www.mathworks.com/discovery/machine-learning.html](https://www.mathworks.com/discovery/machine-learning.html)
+* [https://www.quora.com/What-is-machine-learning-4](https://www.quora.com/What-is-machine-learning-4)
+* [https://www.quora.com/What-is-reinforcement-learning](https://www.quora.com/What-is-reinforcement-learning)

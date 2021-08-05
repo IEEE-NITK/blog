@@ -984,6 +984,11 @@ shruthanr:
   github: shruthanr
   author_image: shruthan.jpg
   email: shruthan@outlook.com
+sravanireddy1102:
+  name: Sravani Katasani
+  github: sravanireddy1102
+  author_image: 'sravani.jpg'
+  email: sravani.191cs223@nitk.edu.in
 Aryaman2912:
   name: Aryaman M
   github: Aryaman2912
@@ -994,6 +999,11 @@ Ananya:
   github: Ananya
   author_image: blog-author.jpg
   email: ananyap.191mt006@nitk.edu.in
+srujangit123:
+  name: Srujan Bharadwaj
+  github: srujangit123
+  author_image: 'blog-author.jpg'
+  email: srujanbharadwaj44@gmail.com
 Mallikarjun:
   name: Mallikarjun G M
   github: Mallikarjun
@@ -1084,3 +1094,39 @@ Shobuj-Paul:
   github: Shobuj-Paul
   author_image: 'blog-author.jpg'
   email: shobujpaul@hotmail.com
+Monal:
+  name: Monal Singh
+  github: Monal
+  author_image: 'blog-author.jpg'
+  email: monaldhankar@gmail.com
+Pranshu-S:
+  name: Pranshu Shukla
+  github: Pranshu-S
+  author_image: 'blog-author.jpg'
+  email: pranshushukla06@gmail.com
+nakshatra-gopi:
+  name: Nakshatra Gopi
+  github: nakshatra-gopi
+  author_image: 'blog-author.jpg'
+  email: nakshatragopi.191ee228@nitk.edu.in
+v-kartikeya:
+  name: V Kartikeya
+  github: v-kartikeya
+  author_image: 'blog-author.jpg'
+  email: ""
+ZerothKing:
+  name: Sanjkeet Jena
+  github: ZerothKing
+  author_image: sanjkeet.jpg
+  user_description: 'I am not lazy, I just really like doing nothing.'
+  email: sanjkeetjena@gmail.com
+bdiptesh99:
+  name: Diptesh Banerjee
+  github: bdiptesh99
+  author_image: 'blog-author.jpg'
+  email: bdiptesh99@gmail.com
+rahul-magesh:
+  name: Rahul Magesh
+  github: rahul-magesh
+  author_image: 'blog-author.jpg'
+  email: ""
