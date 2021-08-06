@@ -2,7 +2,7 @@
 layout: post
 title: "A future called Quantum"
 author_github: SidDsloth
-date: 2021-09-06 00:00:44
+date: 2021-08-23 00:00:44
 image: '/assets/img/'
 description: 'A dive into the basics of Quantum Computing and its impact on various fields.'
 tags:
