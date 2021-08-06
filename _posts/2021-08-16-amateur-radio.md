@@ -2,7 +2,7 @@
 layout: post
 title: "Amateur Radio"
 author_github: Moha-Mankad
-date: 2021-08-30 00:00:00
+date: 2021-08-16 00:00:00
 image: '/assets/img/'
 description: ""
 tags:

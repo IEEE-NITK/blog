@@ -2,7 +2,7 @@
 layout: post
 title: "Different Ways to console.log for Better Clarity"
 author_github: tim-nitk
-date: 2021-08-30 00:00:00
+date: 2021-08-16 00:00:00
 image: '/assets/img/'
 description: "Helps in effective debugging + spices up your boring JS console command line"
 tags:
