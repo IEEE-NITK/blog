@@ -1044,6 +1044,12 @@ akashbharadwaj2001:
   github: akashbharadwaj2001
   author_image: 'blog-author.jpg'
   email: akashbharadwaj.191ec103@nitk.edu.in
+SidDsloth:
+  name: Manav Singhal
+  github: SidDsloth
+  author_image: 'manavsinghal.jpeg'
+  user_description: 'Exploring Life'
+  email: manav.relativity@gmail.com 
 viba-r-udupa:
   name: Viba R Udupa
   github: Viba
@@ -1094,6 +1100,12 @@ Shobuj-Paul:
   github: Shobuj-Paul
   author_image: 'blog-author.jpg'
   email: shobujpaul@hotmail.com
+BhaskarVyas:
+  name: Bhaskar Vyas
+  github: BhaskarVyas	
+  author_image: bhaskar.jpeg
+  user_description: "ECE NITK"
+  email: bhaskar.cs.vyas@gmail.com
 tim-nitk:
   name: Tilak 
   github: tim-nitk
@@ -1161,3 +1173,8 @@ ramyashri1887:
   github: ramyashri1887
   author_image: 'blog-author.jpg'
   email: ""
+Rohanrao02:
+  name: Rohan Rao H J
+  github: Rohanrao02
+  author_image: 'blog-author.jpg'
+  email: "rohanrao.jh@gmail.com"
