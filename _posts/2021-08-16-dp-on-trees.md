@@ -743,7 +743,7 @@ The final answer will be the maximum value of dp1[1] and dp[2].
 
 ## **<span style="text-decoration:underline;">Useful Resources</span>**
 
-[https://www.geeksforgeeks.org/dynamic-programming-trees-set-2/](https://www.geeksforgeeks.org/dynamic-programming-trees-set-2/)
-[https://www.commonlounge.com/discussion/8573ee40c4cb4673824c867715a5bc7b](https://www.commonlounge.com/discussion/8573ee40c4cb4673824c867715a5bc7b)  
-[https://www.youtube.com/watch?v=PgvJbi2cJSw](https://www.youtube.com/watch?v=PgvJbi2cJSw)
-[https://www.codechef.com/problems/FAMTREE](https://www.codechef.com/problems/FAMTREE)
+- [Dynamic Programming on Trees - GFG](https://www.geeksforgeeks.org/dynamic-programming-trees-set-2/)
+- [Dynamic Programming on Trees (or Tree DP) - CommonLounge](https://www.commonlounge.com/discussion/8573ee40c4cb4673824c867715a5bc7b)  
+- [Applications of DP on Trees in CP - Youtube](https://www.youtube.com/watch?v=PgvJbi2cJSw)
+- [FAMTREE - Codechef](https://www.codechef.com/problems/FAMTREE)
