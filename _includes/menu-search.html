@@ -1,0 +1,55 @@
+<div class="container">
+  <div class="search-bar animate-box">
+    <div class="text-center">
+      <input type="text" id="show-on-landing" class="search-box" placeholder="Search..." onclick="openSearch();">
+    </div>
+  </div>
+</div>
+
+<div id="myOverlay" class="overlay">
+  <span class="closebtn" onclick="closeSearch()" title="Close search bar"><i class="fa fa-times"></i></span>
+  <div class="overlay-content">
+    <div class="container">
+      <input type="text" class="search-box" id="search-input" placeholder="Search...">
+      <div class="results">
+        <div id="results-container"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="{{site.baseurl}}/assets/js/search-script.js"></script>
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/blog/search.json',
+    searchResultTemplate: '<div><a href="{url}">{title}</a><span style="margin-left: 0.7em;">{date}</span></div>'
+  });
+
+  function hideNavbar() {
+    $(".colorlib-nav").fadeOut();
+    if (isMobile.any()) $(".colorlib-nav-toggle").fadeOut("fast");
+  }
+
+  function showNavbar() {
+    $(".colorlib-nav").fadeIn();
+    if (isMobile.any()) $(".colorlib-nav-toggle").fadeIn();
+  }
+
+  function openSearch() {
+    hideNavbar();
+    document.getElementById("myOverlay").style.display = "block";
+    document.getElementById("search-input").focus();
+    $("#show-on-landing").hide();
+    $("body").css("overflow", "hidden");
+  }
+
+  function closeSearch() {
+    showNavbar();
+    document.getElementById("myOverlay").style.display = "none";
+    $("#show-on-landing").show();
+    $("#show-on-landing").val("");
+    $("body").css("overflow", "auto");
+  }
+</script>

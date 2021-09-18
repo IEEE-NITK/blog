@@ -1,0 +1,55 @@
+{% if paginator.total_pages > 1 %}
+<div class="row">
+  <div class="col-md-12 text-center">
+      <ul class="pagination">
+
+          {% if paginator.previous_page %}
+            <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><<</a></li>
+          {% else %}
+            <li class="disabled"><a><<</a></li>
+          {% endif %} 
+
+          {% assign stIndex = paginator.page | minus: 2 %}
+          {% assign endIndex = paginator.page | plus: 2 %}
+
+          {% if stIndex < 1 %}
+            {% assign stIndex = 1 %}
+            {% assign endIndex = 5 %}
+          {% endif %}
+          {% if endIndex > paginator.total_pages %}
+            {% if paginator.total_pages > 5 %}
+              {% assign stIndex = paginator.total_pages | minus: 5 %}
+            {% endif %}
+            {% assign endIndex = paginator.total_pages %}
+          {% endif %}
+
+          {% if stIndex > 1 %}
+            <li class="page-no-screen"><a href="{{ site.baseurl }}/">First</a></li>
+            <li class="disabled page-no-screen"><a> .. </a></li>
+          {% endif %}
+
+
+          {% for page in (stIndex..endIndex) %}
+              {% if page == paginator.page %}
+                <li class="active"><a>{{ page }}</a></li>
+              {% elsif page == 1 %}
+                <li><a href="{{ site.baseurl }}/">{{ page }}</a></li>
+              {% else %}
+                <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+              {% endif %}
+          {% endfor %} 
+
+          {% if endIndex < paginator.total_pages %}
+            <li class="disabled page-no-screen"><a> .. </a></li>
+            <li class="page-no-screen"><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', paginator.total_pages }}">Last</a></li>
+          {% endif %}
+
+          {% if paginator.next_page %}
+            <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">>></a></li>
+          {% else %}
+            <li class="disabled"><a>>></a></li>
+          {% endif %}
+      </ul>
+  </div>
+</div>
+{% endif %}

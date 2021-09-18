@@ -1,0 +1,22 @@
+<div class="nav-bg"></div>
+<div class="container">
+    <div class="header-post col-md-12 colorlib-bg-white animate-box" role="banner">
+        <div class="content">
+            <h1 class="post-title">{{ page.title }}</h1>
+            <p class="author-small">
+                <span class="author-img"
+                    style="background-image: url({{site.baseurl}}/assets/img/authors/{{site.data.authors[page.github_username].author_image}});"></span>
+                <span class="author">by {{site.data.authors[page.github_username].name}}</span>
+                {% if page.date %}
+                &nbsp;
+                |
+                &nbsp;
+                <i class="fa fa-calendar"></i>
+                <time itemprop="datePublished" datetime="{{ page.date }}"
+                    class="header-date">{{ page.date | date_to_string }}</time>
+                {% endif %}
+            </p>
+            <p class="subtitle">{{ page.description }}</p>
+        </div>
+    </div>
+</div>

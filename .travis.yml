@@ -1,0 +1,19 @@
+sudo: false
+language: ruby
+rvm:
+- 2.6
+install:
+- gem install jekyll html-proofer jekyll-paginate jemoji
+script:
+- jekyll build --destination blog/
+- jekyll build
+- htmlproofer ./_site --disable-external
+- rm -r ./blog
+deploy:
+  provider: pages
+  skip_cleanup: true
+  target_branch: gh-pages
+  github_token: "$GH_TOKEN"
+  on:
+    branch: master
+    
