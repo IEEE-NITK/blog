@@ -1,0 +1,36 @@
+name: Jekyll HTMLProofer
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    name: "Jekyll Build and Test"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Install Gems
+        run: sudo gem install jekyll html-proofer jekyll-paginate jemoji
+
+      - name: Build Jekyll Site
+        run: jekyll build
+
+      - name: Run HTML Proofer
+        run: htmlproofer --assume-extension ./_site --url-swap '^/blog/:/' --disable-external
+
+  deploy:
+    name: "Deploy to GitHub Pages"
+    if: ${{ github.ref_name == github.event.repository.default_branch }}
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          enable_jekyll: true
