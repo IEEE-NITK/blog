@@ -10,14 +10,13 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Install Gems
-        run: sudo gem install jekyll html-proofer jekyll-paginate jemoji
-
       - name: Build Jekyll Site
-        run: jekyll build
+        uses: jerryjvl/jekyll-build-action@v1
 
       - name: Run HTML Proofer
-        run: htmlproofer --assume-extension ./_site --url-swap '^/blog/:/' --disable-external
+        run: |
+          sudo gem install html-proofer
+          htmlproofer --assume-extension ./_site --url-swap '^/blog/:/' --disable-external
 
   deploy:
     name: "Deploy to GitHub Pages"
