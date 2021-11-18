@@ -4,8 +4,17 @@
 		"link": ""
     },
     {
-		"name": "Team",
-		"link": "team.html"
+      "name": "About",
+      "groups": [
+        {
+          "name": "About Us",
+          "link": "about-us.html"
+        },
+        {
+          "name": "Team",
+          "link": "team.html"
+        }
+      ]
     },
     {
 		"name": "SIGs",
