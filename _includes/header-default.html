@@ -56,6 +56,17 @@
                                         {% endfor %}
                                     </ul>
                                 </li>
+                            {% elsif nav.name == "About" %}
+                                <li class="dropdown-nav">
+                                    <a class="nav-link dropdown-toggle has-dropdown"  style="cursor: pointer;" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        About
+                                    </a>
+                                    <ul class="dropdown dropdown-menu">
+                                    {% for item in nav.groups %}
+                                        <li class="dropdown-item"><a href="{{site.url}}/{{item.link}}">{{item.name}}</a></li>
+                                    {% endfor %}
+                                    </ul>
+                                </li>
                             {% else %}
                                 <li><a href="{{site.url}}/{{nav.link}}">{{nav.name}}</a></li>
                             {% endif %}
