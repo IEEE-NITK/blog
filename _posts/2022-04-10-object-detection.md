@@ -81,9 +81,9 @@ YOLO algorithm works using the following three techniques:
 
 There are various dataset used for training the model
 
-1. [The COCO Dataset]("https://cocodataset.org/#download")
-2. [Open Images]("https://storage.googleapis.com/openimages/web/index.html")
-3. [Pascal VOC]("http://host.robots.ox.ac.uk/pascal/VOC/")
+1. The COCO Dataset
+2. Open Images
+3. Pascal VOC
 
 ## APPLICATIONS
 
@@ -101,8 +101,8 @@ There are various dataset used for training the model
 
 ## REFERENCES
 
-1. [https://github.com/amusi/awesome-object-detection]("https://github.com/amusi/awesome-object-detection")
-2. [https://towardsdatascience.com/beginners-guide-to-object-detection-algorithms-6620fb31c375"]("https://towardsdatascience.com/beginners-guide-to-object-detection-algorithms-6620fb31c375")
-3. [https://towardsdatascience.com/object-detection-with-10-lines-of-code-d6cb4d86f606]("https://towardsdatascience.com/object-detection-with-10-lines-of-code-d6cb4d86f606")
-4. [https://www.pyimagesearch.com/2018/05/14/a-gentle-guide-to-deep-learning-object-detection/]("https://www.pyimagesearch.com/2018/05/14/a-gentle-guide-to-deep-learning-object-detection/")
-5. [https://paperswithcode.com/task/object-detection]("https://paperswithcode.com/task/object-detection")
+1. [https://github.com/amusi/awesome-object-detection](https://github.com/amusi/awesome-object-detection)
+2. [https://towardsdatascience.com/beginners-guide-to-object-detection-algorithms-6620fb31c375"](https://towardsdatascience.com/beginners-guide-to-object-detection-algorithms-6620fb31c375)
+3. [https://towardsdatascience.com/object-detection-with-10-lines-of-code-d6cb4d86f606](https://towardsdatascience.com/object-detection-with-10-lines-of-code-d6cb4d86f606)
+4. [https://www.pyimagesearch.com/2018/05/14/a-gentle-guide-to-deep-learning-object-detection/](https://www.pyimagesearch.com/2018/05/14/a-gentle-guide-to-deep-learning-object-detection/)
+5. [https://paperswithcode.com/task/object-detection](https://paperswithcode.com/task/object-detection)
