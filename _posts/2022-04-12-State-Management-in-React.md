@@ -46,7 +46,7 @@ Let us discuss these in brief.
 
 Redux is a full fledged library, built for state management. It creates a javascript object called store, which keeps track of all the states used throughout the program
 
-![Redux Cycle](/blog/assets/img/react-redux-architecture.png)
+![Redux Cycle](/blog/assets/img/State-Management-in-React/react-redux-architecture.png)
 
 #### State
 
