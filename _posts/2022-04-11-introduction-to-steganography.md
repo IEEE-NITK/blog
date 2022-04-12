@@ -70,7 +70,7 @@ In steganography, the message to be hidden inside the cover–media must conside
 
 <h3>BASIC STEGANOGRAPHIC MODEL</h3>
 
-![](/blog/assets/img/introduction-to-steganography/1.png)
+![image1](/blog/assets/img/introduction-to-steganography/1.png)
 
 A basic steganographic model has a cover file(X) and secret message(M), which are input for the steganographic encoder. Steganographic Encoder function, f(X,M,K) hides the secret message into this cover file. The final output looks very similar to your cover file, with no visible changes. This completes encoding. We have to feed the Stego Object (Output) into a Steganographic Decoder to get back the secret message.
 
@@ -92,7 +92,7 @@ Suppose we want to insert the letter "A" into an image
 And the binary representation of A is 1000001
 I would need 7 bytes to insert the value of "A", and hence I would need three pixels (9 bytes) to encode "A". 
 
-![](/blog/assets/img/introduction-to-steganography/2.png)
+![image2](/blog/assets/img/introduction-to-steganography/2.png)
    
 Even after changing the 7 bits of the original image, there would be a negligible difference in the image, and hence we are successful in hiding the message without altering the image.
 The below code is a simple way to exactly replicate the above process.
