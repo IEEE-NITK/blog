@@ -16,10 +16,11 @@ description: 'An introduction to Trees and Competitive Programming with referenc
 tags:
 
 - IEEE NITK
-
 - CompSoc
-
 - Competitive Programming
+- Trees
+- Data Structures
+
 
 categories:
 
