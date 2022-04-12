@@ -13,7 +13,7 @@ categories:
 github_username: 'kid-116'
 ---
 
-<img src="/blog/assets/img/neuralink/hero.png" width="500">
+<img src="/blog/assets/img/neuralink/hero.png" width="500" alt="Brain waves">
 ## **Introduction**
 The valley startup, Neuralink, has been in the news lately following a clinical trial on monkeys gone wrong. Co-founded by Elon Musk, the company aims to develop Brain-Machine Interfaces (BMIs), an ambitious project, and we’ve come to expect nothing less from the billionaire business magnate. Human cognition consists of two major systems - the Limbic system processes our needs and emotions and is also the storehouse for our memories; the Cortex handles problem-solving, critical thinking, and the ability to plan. In the long run, Neuralink plans on being the third layer atop our brains allowing us to augment ourselves, ushering in the era of cyborgs (not to get too excited as it definitely won’t be the kind shown in movies and video games). In reality, this third layer already exists as mobile devices, laptops and the internet, which have become an essential part of our lives but the way we interact with these devices is a bottleneck. Think what it would be like if we were to integrate the functionality of these devices with the super-intelligent human brain. It could be revolutionary but let’s not get ahead of ourselves. Neuralink has a three-step approach towards achieving its ambitions - understanding, interface, engineering.
 
@@ -23,7 +23,7 @@ The human brain is the most complicated organ, and extensive research programs a
 #### Interfacing
 Interfacing involves mapping the network of neurons and the data it holds to computers. The answer to that is ‘The Link’ - a sealed neural implant that processes, simulates and transmits neural signals. It consists of tiny flexible neural threads containing thousands of electrodes to detect neural signals. The threads on the Link are so fine and flexible that they can’t be inserted by human hands and requires a robotic system that the neurosurgeon can use to reliably and efficiently insert these threads exactly where they need to be.
 <p align="center">
-    <img src="/blog/assets/img/neuralink/link.png" width="250">
+    <img src="/blog/assets/img/neuralink/link.png" width="250" alt="The Link">
     <i>The Link</i>
 </p>
 
