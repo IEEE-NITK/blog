@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags-->
+<!-- Give a small description in 3-4 sentences about the website -->
+<meta name="description"
+    content="IEEE NITK is a local chapter of the IEEE Organisation belonging in the Bangalore R10 Section. IEEE NITK undertakes lots of projects by its various SIGs which are formed and projects undertaken by students are futher applied to help solve daily world problems.">
+<!-- A small abstract idea about the website -->
+<meta name="abstract" content="This Website is about IEEE NITK Student Chapter">
+<!-- Important Keywords to be noted in the website  -->
+<meta name="keywords" content="IEEE, IEEE NITK, NITK Surathkal, NITK, Clubs in NITK, Technical Clubs in NITK">
+<!-- Tell the spider to index the first page and other pages as well-->
+<meta name="robots" content="index, follow">
+<!-- How often should spiders come back to your page -->
+<meta name="revisit-after" content="3 days">
+
+<!-- Copyright regarding the website -->
+<meta name="copyright" content="IEEE NITK">
+<!-- Tells Google Bot not to duplicate description -->
+<meta name="googlebot" content="noodp">
+<!-- Language for the website -->
+<meta name="language" content="English">
+
+<!-- Web Author for the image -->
+<meta name="web_author" content="IEEE NITK">
+<meta name="author" content="Salman Shah">
+<!-- Email ID -->
+<meta name="contact" content="chairman.nitkieee@gmail.com" />
+<!-- Email ID to reply to -->
+<meta name="reply-to" content="chairman.nitkieee@gmail.com">
+
+<!-- Refers to distribution of the page -->
+<meta name="distribution" content="global">
+<!-- Generator or formatter tag -->
+<meta name="generator" content="Jekyll">
+<!-- Disallow spammers for the webpage -->
+<meta name="no-email-collection" content="http://www.metatags.info/nospamharvesting">
+<!-- Rating for the page -->
+<meta name="rating" content="general">
+<!-- Content Type for the page -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- Fixing viewport on mobile views -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Google Authorship Markup -->
+<!-- Social: Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@IEEE_NITK">
+<meta name="twitter:title" content="Long Short Term Memory Neural Networks">
+<meta name="twitter:description"
+    content="An introduction to a commonly used Recurrent Neural Network">
+<meta property="twitter:image:src"
+    content="https://ieee.nitk.ac.in/blog/assets/img/blog-image.png">
+
+<!-- Social: Facebook / Open Graph -->
+<meta property="fb:app_id" content="0011038251882641" />
+<meta property="og:url" content="https://ieee.nitk.ac.in/blog/Long-Short-Term-Neural-Networks/" />
+<meta property="og:title" content="Long Short Term Memory Neural Networks">
+<meta property="og:image" content="https://ieee.nitk.ac.in/blog/assets/img/blog-image.png">
+<meta property="og:description"
+    content="An introduction to a commonly used Recurrent Neural Network">
+<meta property="og:site_name" content="A blog about our findings and musings">
+
+<!-- Social: Google+ / Schema.org  -->
+<meta itemprop="name" content="Long Short Term Memory Neural Networks" />
+<meta itemprop="description"
+    content="An introduction to a commonly used Recurrent Neural Network">
+<meta itemprop="image" content="https://ieee.nitk.ac.in/blog/assets/img/blog-image.png" />
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<!-- Windows 8 Tile Icons -->
+<meta name="application-name" content="IEEE-NITK Blog">
+<meta name="msapplication-TileColor" content="#0562DC">
+<meta name="msapplication-square70x70logo" content="smalltile.png" />
+<meta name="msapplication-square150x150logo" content="mediumtile.png" />
+<meta name="msapplication-wide310x150logo" content="widetile.png" />
+<meta name="msapplication-square310x310logo" content="largetile.png" />
+
+<!-- Android Lolipop Theme Color -->
+<meta name="theme-color" content="#0562DC">
+
+<!-- Linked Sheets needed -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="/blog/assets/css/icomoon.css">
+<link rel="stylesheet" href="/blog/assets/css/animate.css">
+<link rel="stylesheet" href="/blog/assets/css/bootstrap.css">
+<link rel="stylesheet" href="/blog/assets/css/style.css">
+
+<!-- Linked Scripts needed -->
+<script src="https://preview.colorlib.com/theme/unapp/js/modernizr-2.6.2.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+    integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countto/1.2.0/jquery.countTo.js"></script>
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="/blog/favicon.ico" type="image/x-icon" />
+<link rel="manifest" href="/blog/assets/img/icons/manifest.json">
+
+<title>Blog | IEEE NITK</title>
+
+<!-- highlighter theme  -->
+<link rel="stylesheet" href="/blog/assets/css/monokai-sublime.css">
+
+<link rel="stylesheet" href="/blog/assets/css/blog.css">
+<link rel="canonical" href="/blog/Long-Short-Term-Neural-Networks/">
+<link rel="alternate" type="application/rss+xml" title="A blog about our findings and musings"
+    href="https://ieee.nitk.ac.in/blog/feed.xml" />
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- This property belongs to IEEE NITK -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L6M5H3BJC8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L6M5H3BJC8');
+</script>
+
+    <script src="/blog/assets/js/sidebar.js"></script>
+    <script>
+        loadArticles();
+    </script>
+</head>
+
+<body>
+    <div class="colorlib-loader">
+        <div id="loader"></div>
+        <div id="loader"></div>
+        <div id="loader"></div>
+        <div id="loader"></div>
+        <div id="loader"></div>
+    </div>
+    <div id="page">
+        <nav class="colorlib-nav" role="navigation">
+    <div class="top-menu">
+        <div class="container">
+            <div class="row" id="header">
+                <div class="col-md-2">
+                    <div id="colorlib-logo">
+                        <a href="https://ieee.nitk.ac.in" title="home">
+                            <img src="/blog/assets/img/ieee_nitk.png" alt="IEEE Logo" class="navbar-logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-10 text-right menu-1">
+                    <ul>
+                        
+                            
+                                <li><a href="https://ieee.nitk.ac.in/">Home</a></li>
+                            
+                        
+                            
+                                <li class="dropdown-nav">
+                                    <a class="nav-link dropdown-toggle has-dropdown"  style="cursor: pointer;" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        About
+                                    </a>
+                                    <ul class="dropdown dropdown-menu">
+                                    
+                                        <li class="dropdown-item"><a href="https://ieee.nitk.ac.in/about-us.html">About Us</a></li>
+                                    
+                                        <li class="dropdown-item"><a href="https://ieee.nitk.ac.in/team.html">Team</a></li>
+                                    
+                                    </ul>
+                                </li>
+                            
+                        
+                            
+                                <li class="dropdown-nav">
+                                    <a class="nav-link dropdown-toggle has-dropdown" style="cursor: pointer;" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        SIGs
+                                    </a>
+                                    <ul class="dropdown dropdown-menu">
+                                    
+                                        <li class="dropdown-item"><a href="https://ieee.nitk.ac.in/compsoc.html">Computer Society</a></li>
+                                    
+                                        <li class="dropdown-item"><a href="https://ieee.nitk.ac.in/diode.html">Diode</a></li>
+                                    
+                                        <li class="dropdown-item"><a href="https://ieee.nitk.ac.in/piston.html">Piston</a></li>
+                                    
+                                    </ul>
+                                </li>
+                            
+                        
+                            
+                                <li class="dropdown-nav">
+                                    <a class="nav-link dropdown-toggle has-dropdown"  style="cursor: pointer;" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Affinity Groups
+                                    </a>
+                                    <ul class="dropdown dropdown-menu">
+                                    
+                                        <li class="dropdown-item"><a href="https://ieee.nitk.ac.in/wie.html">Women in Engineering</a></li>
+                                    
+                                        <li class="dropdown-item"><a href="https://ieee.nitk.ac.in/sight.html">SIGHT</a></li>
+                                    
+                                    </ul>
+                                </li>
+                            
+                        
+                            
+                                <li><a href="https://ieee.nitk.ac.in/events.html">Events</a></li>
+                            
+                        
+                            
+                                <li><a href="https://ieee.nitk.ac.in/blog/">Blog</a></li>
+                            
+                        
+                            
+                                <li><a href="https://ieee.nitk.ac.in/gyan/">Gyan</a></li>
+                            
+                        
+                            
+                                <li class="dropdown-nav">
+                                    <a class="nav-link dropdown-toggle has-dropdown" style="cursor: pointer;" id="navbarDropownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Achievements
+                                    </a>
+                                    <ul class="dropdown dropdown-menu">
+                                        
+                                            <li class="dropdown-item"><a href="https://ieee.nitk.ac.in/achieve.html">Awards</a></li>
+                                        
+                                            <li class="dropdown-item"><a href="https://ieee.nitk.ac.in/publications.html">Publications</a></li>
+                                        
+                                    </ul>
+                                </li>
+                            
+                        
+                            
+                                <li class="dropdown-nav">
+                                    <a class="nav-link dropdown-toggle has-dropdown"  style="cursor: pointer;" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Virtual Expo
+                                    </a>
+                                    <ul class="dropdown dropdown-menu">
+                                    
+                                        <li class="dropdown-item"><a href="https://ieee.nitk.ac.in/virtual-expo/compsoc/">CompSoc</a></li>
+                                    
+                                        <li class="dropdown-item"><a href="https://ieee.nitk.ac.in/virtual-expo/diode/">Diode</a></li>
+                                    
+                                        <li class="dropdown-item"><a href="https://ieee.nitk.ac.in/virtual-expo/piston/">Piston</a></li>
+                                    
+                                        <li class="dropdown-item"><a href="https://ieee.nitk.ac.in/virtual-expo/envision/">Envision</a></li>
+                                    
+                                    </ul>
+                                </li>
+                            
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+        <div class="nav-bg"></div>
+<div class="container">
+    <div class="header-post col-md-12 colorlib-bg-white animate-box" role="banner">
+        <div class="content">
+            <h1 class="post-title">Long Short Term Memory Neural Networks</h1>
+            <p class="author-small">
+                <span class="author-img"
+                    style="background-image: url(/blog/assets/img/authors/akashnair.jpeg);"></span>
+                <span class="author">by Akash Nair</span>
+                
+                &nbsp;
+                |
+                &nbsp;
+                <i class="fa fa-calendar"></i>
+                <time itemprop="datePublished" datetime="2019-08-22 16:30:30 +0530"
+                    class="header-date">22 Aug 2019</time>
+                
+            </p>
+            <p class="subtitle">An introduction to a commonly used Recurrent Neural Network</p>
+        </div>
+    </div>
+</div>
+        <section class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+            <div class="container">
+                <div class="col-md-9 animate-box" style="padding: 0;">
+                    <div class="colorlib-bg-white mt mr">
+                        <article role="article" id="scroll" class="post-content" itemprop="articleBody">
+                            <p>Long Short Term Memory Neural Networks or LSTM Neural Network is a commonly used Recurrent Neural Network model that is most commonly used in tasks like speech recognition, music generation etc. Lets take a deep dive into what Recurrent Neural Networks are and why we need and use LSTMs.</p>
+
+<h1 id="long-short-term-memory-neural-networks">Long Short Term Memory Neural Networks</h1>
+
+<h3 id="recurrent-neural-networks-and-why-lstms">Recurrent Neural Networks and Why LSTMs?</h3>
+
+<p><strong>Recurrent Neural Networks</strong> are those Neural Networks that we use to process information that require us to keep informed of previous information. In simpler words, when we want a model to perform a certain category of tasks like speech recognition, music generation, machine translation, sentiment classification, etc, all of which invloves keeping track of previous information (like keeping track of all the words while processing a sentence during machine translation), a normal Neural Network cannot do this, while a Recurrent Neural Network, which keeps a track of the past information in it’s internal state addresses this issue.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Recurrent Neural Network - Unrolled</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="/blog/assets/img/Long-Short-Term-Memory-Neural-Networks/RNN.png" alt="RNN" height="50%" width="50%" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The above diagram is that of a basic Recurrent Neural Network, the chained structure is appropriate for modeling sequences and using this structure for Neural Networks have proven to work for the above mentioned applications. LSTMs come into play when a certain problem occurs within RNNs itself.</p>
+
+<h4 id="problem-of-vanishing-gradients-due-to-long-term-dependencies"><strong>Problem of Vanishing Gradients due to Long Term Dependencies</strong></h4>
+
+<p>Consider the following small sentence: <code class="language-plaintext highlighter-rouge">She was riding her cycle</code> . Predicting the word ‘her’ using RNNs is relatively easy since it just has to process the immediate words next to it, but predicting some sort of information that requires some sort of context from earlier, for example, mentioning <code class="language-plaintext highlighter-rouge">I am from France</code> in the beginning of a paragraph, but having to predict the language that was spoken much later in the text. Here, as the gap between relevant information grows, it becomes difficult for RNNs to connect both information to make a valid prediction. This happens because while calculating gradients for the weights during backpropagation, the values from one end of the sequence may find it difficult to influence that in other ends of the sequence which may or may not play an important role in prediction. This is the case in normal RNNs, where ‘long range dependencies’ are not really supported.</p>
+
+<p>This is where LSTMs come into play!</p>
+
+<h2 id="long-short-term-memory-networks">Long Short Term Memory Networks</h2>
+
+<p><strong>Long Short Term Memory Networks</strong> (usually just called <code class="language-plaintext highlighter-rouge">LSTMs</code>) are a <em>special kind</em> of RNN, capable of learning long-term dependencies. They were introduced by Hochreiter &amp; Schmidhuber (1997). They are explicitly designed to avoid the long-term dependency problem by remembering information for long periods of time, and this is possible by introducing ‘memory cells’ which keep track of these dependencies throughout the sequence.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Long Short Term Memory Network</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="/blog/assets/img/Long-Short-Term-Memory-Neural-Networks/LSTM.png" alt="LSTM" height="50%" width="50%" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>This is how an LSTM looks like, it follows the same chain like structure like that of the RNNs, but it contains several added gates. It may seem difficult to process this as a whole, but we’ll walk through this step by step.</p>
+
+<p><strong>Note</strong>: The sigmoid function returns a value between 0 to 1 and this case, values very close to either 0 or 1 and hence is commonly used in our gates to make a particular decision.</p>
+
+<p>The following are states and gates involved in an LSTM cell:</p>
+<ol>
+  <li><strong>Activation layer</strong>: This layer consists of the activation values like the normal RNNs do</li>
+  <li><strong>Memory Cell</strong> or <strong>Candidate layer</strong>: This layer is involved in keeping track of dependencies</li>
+  <li><strong>Update Gate</strong>: Sigmoid function that decides whether or not the memory cell should keep track of the dependecy</li>
+  <li><strong>Forget Gate</strong>: Sigmoid function that decides whether or not the memory cell should leave or forget the dependency</li>
+  <li><strong>Output Gate</strong>: Sigmoid function that helps us filter what parts of the memory cell layer we want to pass into the output</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">LSTM Structure Inside</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="/blog/assets/img/Long-Short-Term-Memory-Neural-Networks/LSTM2.png" alt="LSTM2" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>If the diagram is overwhelming, the following equations may help you to walk through the process.</p>
+
+\[\hat{c}^{&lt;t&gt;} = tanh(  W_{c}[ a^{&lt;t-1&gt;},x^{&lt;t&gt;} ] + b_c  )\]
+
+<p>This is the calculation for a memory cell initially which takes into account the previous activation layer and input layers’ weights, and adds it to a bias, while passing the resultant to a tanh function that returns a score between -1 and 1, which in turn carries a dependency.</p>
+
+\[\Gamma_{u} = \sigma(  W_{u}[ a^{&lt;t-1&gt;},x^{&lt;t&gt;} ] + b_u  )\]
+
+\[\Gamma_{f} = \sigma(  W_{f}[ a^{&lt;t-1&gt;},x^{&lt;t&gt;} ] + b_f  )\]
+
+<p>Here, the decision is made whether or not to keep track of the dependency with the help of the update and forget gates, which are sigmoid layers.</p>
+
+\[\Gamma_{o} = \sigma(  W_{o}[ a^{&lt;t-1&gt;},x^{&lt;t&gt;} ] + b_o  )\]
+
+\[c^{&lt;t&gt;} = \Gamma_{u}*\hat{c}^{&lt;t&gt;} + \Gamma_{f}*c^{&lt;t-1&gt;}\]
+
+<p>Here, we decide what exactly to update into the memory cell, which either retains the dependency from earlier or updates it to a new value based on the decision made by the update and forget gates. Hence, the output will be filtered. This is done by running a sigmoid function layer to decide which parts of the memory cell we will send to the output and while the memory cells will be passed through tanh and then passed through the output gate to get only the filtered output. Here, our memory cells are updated appropriately.</p>
+
+\[a^{&lt;t&gt;} = \Gamma_{o}*tanh(c^{&lt;t&gt;})\]
+
+<p>The activation layer is influenced by certain memory cell values decided upon by the output gate, and is appropriately updated and passed onto the next cell.</p>
+
+<p>The resultant \(\hat{y}^{&lt;t&gt;}\) vector is obtained by passing the activation layer through a softmax function, but do note that this step is dependent on what problem we’re solving and isn’t part of the general LSTM framework.</p>
+
+<h2 id="character-to-character-lstm-model">Character to Character LSTM Model</h2>
+
+<p>We are going to use a two layer LSTM model with 512 hidden nodes in each layer. We will make the model read a text file that contains text from a transcript, in this example we will make the model read an exerpt from ‘The Outcasts’, we will then use the same sequence but shifted by one character as a target.</p>
+
+<p>Before we get started, here are some key terms to get used to:</p>
+
+<ol>
+  <li><strong>Vocabulary</strong>: This is a set of every character that our model requires</li>
+  <li><strong>LSTM Cell</strong> : We will make use of pyTorch’s LSTM cell that has the structure, as explained earlier</li>
+  <li><strong>Hidden State or Activation State</strong>: This is a vector of size(batch_size, hidden_size), the bigger dimension of the hidden_size, the more robust our model becomes but at the expense of computational cost. This vector acts as our short-term memory and is updated by the input at the time step t.</li>
+  <li><strong>Layers of an LSTM</strong>: We can stack LSTM cells on top of each other to obtain a layered LSTM model. This is done by passing the output of the first LSTM cell from the input to the second LSTM cell at any given time t, this gives a deeper network.</li>
+</ol>
+
+<p><strong>The code with explanation in comments is provided at the references section of this article</strong></p>
+
+<p>The model receives an “A” initially as an input to the LSTM cell at time t=0. After that, we get the output with the size of our vocabulary from the memory cell. If we apply softmax function to the output, we get the probabilities of the characters. Then we take ‘k’ most probable characters and then sample one character according to their probability in the space of these ‘k’ characters. This sampled character is now going to be input to the LSTM cell at time t=1, and so on.</p>
+
+<p>Always remember that pytorch expects batch dimensions everywhere, and don’t forget to convert numpy arrays into torch tensors and back to numpy again since we are dealing with integers in the end and we need them to look up actual characters.</p>
+
+<p>Here is some of the output while monitoring the losses during training:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Epoch: 0, Batch: 0, Train Loss: 4.375697, Validation Loss: 4.338589
+Epoch: 0, Batch: 5, Train Loss: 3.400858, Validation Loss: 3.402019
+Epoch: 1, Batch: 0, Train Loss: 3.239244, Validation Loss: 3.299909
+Epoch: 1, Batch: 5, Train Loss: 3.206378, Validation Loss: 3.262871
+.
+.
+.
+Epoch: 49, Batch: 0, Train Loss: 1.680400, Validation Loss: 2.052764
+Epoch: 49, Batch: 5, Train Loss: 1.701830, Validation Loss: 2.061397
+</code></pre></div></div>
+
+<p>Here is what the model learnt and generated in the first epoch:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">First Epoch</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="/blog/assets/img/Long-Short-Term-Memory-Neural-Networks/sampleoutput1.png" alt="epoch1" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>and this is the outcome after 50 epochs:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Fiftieth Epoch</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="/blog/assets/img/Long-Short-Term-Memory-Neural-Networks/sampleoutput2.png" alt="epoch50" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="final-outcome">Final Outcome</h3>
+
+<p>We can see that the resulting sample that at the 50th epoch doesn’t make much sense, but it does show signs that the model has learned a lot, like some words, some sentence structure and syntax. Now all we need to do is to tweak the model’s hyper-parameters to make it better, and we will have a better character to character model than we started off with.</p>
+
+<h2 id="references--">References -</h2>
+
+<ul>
+  <li><a href="https://gist.github.com/nimbus98/9c23ef7825d1c2ce42058d09f780ce08">Code for Character-to-Character Model</a></li>
+</ul>
+
+                        </article>
+                    </div>
+                </div>
+                <div class="col-md-3 animate-box" style="padding: 0;">
+                    <div class="colorlib-bg-white mt">
+                        <div class="sidebar">
+    <h2>Related Articles</h2>
+    <div class="temp-div">
+        <span id="category">CompSoc</span>
+        <span id="title">Long Short Term Memory Neural Networks</span>
+    </div>
+    <div class="related-articles"></div>
+</div>
+
+                    </div>
+                    <div class="colorlib-bg-white mt">
+                        <div class="sidebar">
+                            <h3>Browse IEEE Blog</h3>
+                            <p>
+                                <a href="/blog/series/">Series</a>
+                                <br>
+                                <a href="/blog/tags/">Tags</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+    <div class="colorlib-bg-white animate-box">
+        <section class="author-big" itemprop="author">
+            <div class="details" itemscope itemtype="http://schema.org/Person">
+                <div class="col-md-4 col-sm-4 author-img-center">
+                    <img itemprop="image" class="author-img-big"
+                        src="/blog/assets/img/authors/akashnair.jpeg"
+                        alt="Akash Nair">
+                </div>
+                <div class="col-md-8 sol-sm-8 author-details">
+                    <p>Author</p>
+                    <h3>
+                        <strong>
+                            Akash Nair
+                        </strong>
+                    </h3>
+                    <p class="desc">I like Food</p>
+                    
+                    <i class="fa fa-envelope"></i>
+                    <a class="author-big-email" target="_blank"
+                        href="mailto:akash30121998@gmail.com">akash30121998@gmail.com</a>
+                    <br>
+                    
+                    <i class="fa fa-github"></i>
+                    <a class="author-big-email" target="_blank"
+                        href="https://github.com/nimbus98">nimbus98</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+            <!-- Footer -->
+<footer id="colorlib-footer">
+    <div class="container">
+        <div class="row footer-row">
+            <div class="col-md-3 colorlib-widget">
+                <h4>About IEEE</h4>
+                <p>A not-for-profit organization, IEEE is the world's largest technical professional organization dedicated 
+                    to advancing technology for the benefit of humanity.
+                </p>
+                <p>
+                    <img src="/blog/assets/img/ieee_white.png" class="footer-logo" alt="IEEE">
+                    <img src="/blog/assets/img/ieee_nitk_white.png" class="footer-logo" alt="IEEE-NITK">
+                </p>
+            </div>
+            <div class="col-md-3 colorlib-widget">
+                <h4 class="secondary">Information</h4>
+                <p>
+                    <ul class="colorlib-footer-links">
+                        <li><a href="https://ieee.nitk.ac.in"><i class="fa fa-check"></i> Home</a></li>
+                        <li><a href="https://ieee.nitk.ac.in/team.html"><i class="fa fa-check"></i> Team</a></li>
+                        <li><a href="/blog/"><i class="fa fa-check"></i> Blog</a></li>
+                        <li><a href="https://ieee.nitk.ac.in/gyan/"><i class="fa fa-check"></i> Gyan</a></li>
+                        <li><a href="https://ieee.nitk.ac.in/achieve.html"><i class="fa fa-check"></i> Achievements</a></li>
+                        <li><a href="https://ieee.nitk.ac.in/publications.html"><i class="fa fa-check"></i> Publications</a></li>
+                        <li><a href="https://ieee.nitk.ac.in/joinus.html"><i class="fa fa-check"></i> Join Us</a></li>
+                    </ul>
+                </p>
+            </div>
+            <div class="col-md-3 colorlib-widget">
+                <h4 class="secondary">SIGs</h4>
+                <div class="f-blog">
+                    <div class="desc">
+                        <h2><a href="https://ieee.nitk.ac.in/compsoc.html"><i class="fa fa-laptop"></i> &nbsp; Compsoc</a></h2>
+                    </div>
+                </div>
+                <div class="f-blog">
+                    <div class="desc">
+                        <h2><a href="https://ieee.nitk.ac.in/diode.html"><i class="fa fa-plug"></i> &nbsp; Diode</a></h2>
+                    </div>
+                </div>
+                <div class="f-blog">
+                    <div class="desc">
+                        <h2><a href="https://ieee.nitk.ac.in/piston.html"><i class="fa fa-cogs"></i> &nbsp; Piston</a></h2>
+                    </div>
+                </div>
+                <br>
+                <h4 class="secondary">Affinity Groups</h4>
+                <div class="f-blog">
+                    <div class="desc">
+                        <h2><a href="https://ieee.nitk.ac.in/wie.html"><i class="fa fa-female"></i> &nbsp; Women in Engineering</a></h2>
+                    </div>
+                </div>
+                <div class="f-blog">
+                    <div class="desc">
+                        <h2><a href="https://ieee.nitk.ac.in/sight.html"><i class="fa fa-users"></i> &nbsp; SIGHT</a></h2>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-md-3 colorlib-widget">
+                <h4 class="secondary">Contact Info</h4>
+                <ul class="colorlib-footer-links">
+                    <li><strong>NITK Surathkal</strong><br>NH 66, Srinivasnagar<br>Surathkal, Mangalore<br>Karnataka 575025</li>
+                    <li><a href="mailto:ieee@nitk.edu.in" target="_blank"><i class="fa fa-envelope"></i>ieee@nitk.edu.in</a></li>
+                </ul>
+                <p>
+                    <ul class="colorlib-social-icons">
+                        <li><a href="https://github.com/IEEE-NITK" target="_blank"><i class="fa fa-github"></i></a></li>
+                        <li><a href="https://www.instagram.com/ieee_nitk" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/IEEE_NITK" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://facebook.com/IEEENITK" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/ieee-nitk-surathkal" target="_blank"><i class="fa fa-linkedin" target="_blank"></i></a></li>
+                        <li><a href="/blog/sitemap.xml" target="_blank"><i class="fa fa-rss" target="_blank"></i></a></li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="copy">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                <p>
+                    Copyright &copy;
+                    <script>document.write(new Date().getFullYear());</script>
+                    All rights reserved | Made with <i class="fa fa-heart" aria-hidden="true"></i> 
+                    by IEEE-NITK, <a href="http://jekyllrb.com/" target="_blank" class="copyright-link">Jekyll</a> 
+                    and <a href="https://colorlib.com" target="_blank" class="copyright-link">Colorlib</a>
+                    <br>
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="gototop js-top">
+    <a href="" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
+</div>
+            
+<script>
+	$(document).ready(function(){
+		if($("pre code").length){
+			
+			$.getScript('../assets/js/highlight.pack.js', function(){
+    			// load the highlighter script only if we have code snippets.
+    			$('pre code').each(function(i, block) {
+    				hljs.highlightBlock(block);
+  				});	
+    		});
+		}
+	});
+</script>
+        </section>
+    </div>
+    <script src="/blog/assets/js/main.js"></script>
+</body>
+
+</html>
