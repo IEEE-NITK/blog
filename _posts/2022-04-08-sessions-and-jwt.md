@@ -48,7 +48,7 @@ What I have described here are only the core concepts behind the two major metho
 
 ### __Sessions__
 
-After authorization, the server needs to generate a session ID and send it to the client. This is usually done by setting it to a cookie. The server stores the session id along with the user id for further reference. This is stored either in a database or an in-memory store like redis. The client then sends the session token on further requests to verify itself. Whenver there is a request, the server looks up the session id and retrieves the data from the database. If an user logs out, then the session id is removed from the storage.
+After authorization, the server needs to generate a session ID and send it to the client. This is usually done by setting it to a cookie. The server stores the session ID along with the user ID for further reference. This is stored either in a database or an in-memory store like [Redis](https://redis.io/). The client then sends the session token on further requests to verify itself. Whenver there is a request, the server looks up the session ID and retrieves the data from the database. If an user logs out, then the session ID is removed from the storage.
 
 
 OWASP provides a detailed article ([Link](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html)) on sessions which is a must read for anyone thinking of implementing sessions. Even if you end up using third party libraries, having this knowledge is essential. Here are some key points.
