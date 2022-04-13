@@ -96,7 +96,7 @@ Usually, servers are sitting behind a load balancer which splits the incoming tr
 
 The server doesn't have to maintain a state. All the necessary details are contained within the JWT itself. This also avoids the load balancer problem since the server doesn't have to remember anything.
 
-Signing out or invalidating a user/﻿user's token is a bit hard. Separate storage needs to be maintained with the expired tokens, and each time a token is submitted, it needs to be checked for validity.
+Signing out or invalidating a user/user's token is a bit hard. Separate storage needs to be maintained with the expired tokens, and each time a token is submitted, it needs to be checked for validity.
 
 It is also a bit risky since some of the clients' details are stored on the token itself, which can be read by anyone. So, it requires more security measures.
 
