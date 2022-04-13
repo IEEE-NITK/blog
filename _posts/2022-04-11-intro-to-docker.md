@@ -60,7 +60,7 @@ docker run
 
 * **Containers** : A container is a runnable instance of an image. We can create, start, stop, move, or delete a container using the Docker API or CLI.A container is relatively well isolated from other containers and its host machine.When a container is removed, any changes to its state that are not stored in persistent storage disappear.
 
-![docker-architecture](/blog/assets/img/Intro-to-Docker/Docker-image-build.png)
+![Docker-image-build](/blog/assets/img/Intro-to-Docker/Docker-image-build.png)
 
 
 ### Conlcusion:
