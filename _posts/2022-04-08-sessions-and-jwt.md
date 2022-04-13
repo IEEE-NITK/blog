@@ -96,7 +96,7 @@ The server doesn't have to maintain a state. All the necessary details are conta
 
 JWT isn't limited to authorization and has other applications in multiple other situations as well.
 
-Signing out or invalidating an user / user's token is a bit hard. A separate storage needs to be maintained with the expiried tokens and each time a token is submitted, it needs to be checked for validity.
+Signing out or invalidating a user/user's token is a bit hard. Separate storage needs to be maintained with the expired tokens and each time a token is submitted, it needs to be checked for validity.
 
 It is also a bit risky since some of the clients details are stored on the token itself which can be read by easily. So, it requires more security measures.
 
