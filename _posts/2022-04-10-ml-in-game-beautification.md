@@ -36,7 +36,7 @@ Developers (and fan modders) have a lot of methods to improve the visuals of an 
 
 This is where machine learning can make a difference. Fans used a software called A.I. Gigapixel which worked on the same principle to improve the resolution of Final Fantasy VII’s backdrops. The program works through a process of deep learning. Developers feed the system an extremely high resolution of an image and a low-resolution version of the same picture. The A.I. Gigapixel team then programs its neural network to attempt to make adjustments to the image.
 
-<img src='/blog/assets\img/ml-in-game-beautification/ff7-enhanced.png' alt='Final Fantasy VII enhanced' width='500'>
+<img src='/blog/assets/img/ml-in-game-beautification/ff7-enhanced.png' alt='Final Fantasy VII enhanced' width='500'>
 
 Furthermore, big graphic-oriented companies like Square Enix have been using machine learning to improve the visuals of their games. “Nvidia has been inventing new ways to generate interactive graphics for 25 years, and this is the first time we can do so with a neural network,” said Bryan Catanzaro, who led the team and is also vice president of Nvidia’s deep learning research arm. “Neural networks — specifically generative models — will change how graphics are created. This will enable developers to create new scenes at a fraction of the traditional cost.”
 
