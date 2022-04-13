@@ -7,6 +7,7 @@ description: 'An introduction to CSS Polygons'
 tags:
 - IEEE NITK
 - CompSoc
+- Web Development
 categories:
 - Diode  
 github_username: 'mrakshith21'
