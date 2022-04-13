@@ -20,7 +20,7 @@ Lets break this down. It is essentially a tree data structure but instead of sto
 ## **Hashes**
 Hashing is simply the process of passing some data through a formula that produces a result. Well then, what is sooo speacial about it?? Well..
 
-![alt text](../assets/img/merkle-trees/hash_functions.jpg)
+![alt text](/blog/assets/img/merkle-trees/hash_functions.jpg)
 
 Hash functions are one way mathematical functions that convert a given piece of data into another form (like encoded data). It is this one way property that makes it unique. It acts as a “digital fingerprint” for a piece of data. Hash functions are designed in a way that there is very little probability that another piece of data will also result in the same hash. Another interesting and useful property of hash functions is that they are pseudo random, i.e., even a small change in the data (say addition or removal of a letter) will result in a completely new and a random looking string, which makes it nearly impossible to reverse enginner the hash to get back the input data. This is really useful in cryptography when you want to check for the integrity of data.
 
@@ -30,7 +30,7 @@ If you want to play around with hashes, check this out!!
 
 ## **Merkle Trees**
 After construction, a Merkle Tree looks something like this:
-![alt text](../assets/img/merkle-trees/merkle-tree.png)
+![alt text](/blog/assets/img/merkle-trees/merkle-tree.png)
 
 a, b, c, and d are some data elements (files, public/private keys.. etc) and H is a hash function.
 
@@ -61,25 +61,25 @@ If you aren't familiar with git, you can learn it from [here](https://www.freeco
 
 Git maintains version history by maintaining a hash table in the .git folder. Hash of the object is the key, and the content is the value. A git object could be a commit, a tree, or a blob.
 
-![alt text](../assets/img/merkle-trees/git-working.jpeg)
+![alt text](/blog/assets/img/merkle-trees/git-working.jpeg)
 In our discussion on merkle trees, we will mainly focus on the lower half the above diagram.
 
 Every file in git is stored as a blob (binary large object). Blog is a file like object, with immutable raw data. If 2 files have the same content, then their hashes will be the same, so no new blob will be created even if the 2 files are in 2 different directories. 
 
 Every commit object has 2 reference pointers, one pointing to its parent (previous) commit and the other referencing its merkle tree root hash.
 
-![alt text](../assets/img/merkle-trees/git-versioning.jpeg)
+![alt text](/blog/assets/img/merkle-trees/git-versioning.jpeg)
 
 This merkle tree hash is computed by hashing all its "parent" nodes. The term "parent" might be a little misleading, but it is important to understand that 2 blobs come together (hashes are concatenated) and a new hash of the concatenated string becomes the hash of the merkle tree. So the direction is from bottom to up and not the other way.
 
-![alt text](../assets/img/merkle-trees/merkle-tree-git.jpeg)
+![alt text](/blog/assets/img/merkle-trees/merkle-tree-git.jpeg)
 
 ### ***How Merkle Tree helps in versioning***
 As discussed earlier, blobs are raw and immutable contents, you will never find a replica of a blob in memory. To understand this, let us consider an example...
 
 In the diagram ,blob1 in the second half of the diagram is **NOT** recreated, it refrences the earlier blob in memory. This is really useful in versioning because it helps save space as another complete copy of the repo need not be created, only the ones that are changed are reflected along the merkle path.
 
-![alt text](../assets/img/merkle-trees/versioning.jpeg)
+![alt text](/blog/assets/img/merkle-trees/versioning.jpeg)
 
 This way merkle trees are used in git to efficiently track and store versions.
 <br><br>
