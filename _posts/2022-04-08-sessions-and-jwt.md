@@ -26,7 +26,7 @@ Before going into their details, there are two terms that are often misused / in
 1. Authentication - the process of verifying a user and granting access.
 2. Authorization - the process of making sure that a person has permission to access a requested resource.
 
-Authentication is done before authorization. Authentication usuallay involves a user typing his / her username and password. Whereas in authorization the server makes sure that the user who is requesting access is actually who he/she is claiming to be and that he has permission to request.
+Authentication is done before authorization. Authentication usually involves a user typing his / her username and password. Whereas in authorization the server makes sure that the user who is requesting access is actually who he/she is claiming to be and that he has permission to request.
 
 In here, I am not going to explain the process of securely logging in a user and ensuring data security. That is a topic for another post.
 
