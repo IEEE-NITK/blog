@@ -87,7 +87,7 @@ That being said, here are some tradeoffs:
 
 The client holds no sensitive data. Invalidation of a session is as simple as just removing it from the storage. 
 
-Usually servers are sitting behind a load balancer which splits the incoming traffic. In this case, a user's request may be sent to server 1 for logging in but sent to server 2 for the next. To make sure that the session persists accross the server instances, either the session id must be stored in a shared memory or the load balancer must make sure to send the user's request to the same server everytime.
+Usually, servers are sitting behind a load balancer which splits the incoming traffic. In this case, a user's request may be sent to server 1 for logging in but sent to server 2 for the next. To make sure that the session persists across the server instances, either the session ID must be stored in shared memory or the load balancer must make sure to send the user's request to the same server every time.
 
 
 ### _JWT_
