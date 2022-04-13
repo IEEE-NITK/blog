@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Web design in a developer’s arsenal"
+title: "Web design in a developer's arsenal"
 author_github: not-shoyo
 date: 2022-04-12 14:22:00
 image: "/assets/img/"
