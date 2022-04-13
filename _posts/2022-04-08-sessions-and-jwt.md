@@ -44,7 +44,7 @@ This is the idea behind JWT. None of your data is actually stored with the atten
 
 ## __Technicalities__
 
-What I have described here is only the core concepts behind the two major methods of dealing with statefulness in a stateless protocol like HTTP. Although, there are some techinicalities that are not explained yet.
+What I have described here are only the core concepts behind the two major methods of dealing with statefulness in a stateless protocol like HTTP. Although, there are some technicalities that are not explained yet.
 
 ### __Sessions__
 
