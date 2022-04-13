@@ -91,7 +91,8 @@ There are various dataset used for training the model
    <img src="/blog/assets/img/Object-Detection/face_recognition.webp" alt="FACE RECOGNITION" style="zoom:67%;"/>
 
 2. **AUTONOMOUS VEHICLES** : Self-driving cars use object detection to spot pedestrians, other cars, and obstacles on the road in order to move around safely. For example, Tesla’s Autopilot AI heavily utilizes object detection to perceive environmental and surrounding threats such as oncoming vehicles or obstacles.
-   <img src="/blog/assets/img/Object-Detection/cars.jpg" alt="AUTONOMOUS VEHICLES" style="zoom:67%;"/>
+
+   <img src="/assets/img/Object-Detection/cars.jpg" alt="AUTONOMOUS VEHICLES" style="zoom:67%;"/>
 
 3. **People detection in Security** : A wide range of security applications in video surveillance are based on object detection, for example, to detect people in restricted or dangerous areas, suicide prevention, or to automate inspection tasks on remote locations with computer vision.
 
