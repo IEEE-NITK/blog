@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags-->
+<!-- Give a small description in 3-4 sentences about the website -->
+<meta name="description"
+    content="IEEE NITK is a local chapter of the IEEE Organisation belonging in the Bangalore R10 Section. IEEE NITK undertakes lots of projects by its various SIGs which are formed and projects undertaken by students are futher applied to help solve daily world problems.">
+<!-- A small abstract idea about the website -->
+<meta name="abstract" content="This Website is about IEEE NITK Student Chapter">
+<!-- Important Keywords to be noted in the website  -->
+<meta name="keywords" content="IEEE, IEEE NITK, NITK Surathkal, NITK, Clubs in NITK, Technical Clubs in NITK">
+<!-- Tell the spider to index the first page and other pages as well-->
+<meta name="robots" content="index, follow">
+<!-- How often should spiders come back to your page -->
+<meta name="revisit-after" content="3 days">
+
+<!-- Copyright regarding the website -->
+<meta name="copyright" content="IEEE NITK">
+<!-- Tells Google Bot not to duplicate description -->
+<meta name="googlebot" content="noodp">
+<!-- Language for the website -->
+<meta name="language" content="English">
+
+<!-- Web Author for the image -->
+<meta name="web_author" content="IEEE NITK">
+<meta name="author" content="Salman Shah">
+<!-- Email ID -->
+<meta name="contact" content="chairman.nitkieee@gmail.com" />
+<!-- Email ID to reply to -->
+<meta name="reply-to" content="chairman.nitkieee@gmail.com">
+
+<!-- Refers to distribution of the page -->
+<meta name="distribution" content="global">
+<!-- Generator or formatter tag -->
+<meta name="generator" content="Jekyll">
+<!-- Disallow spammers for the webpage -->
+<meta name="no-email-collection" content="http://www.metatags.info/nospamharvesting">
+<!-- Rating for the page -->
+<meta name="rating" content="general">
+<!-- Content Type for the page -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- Fixing viewport on mobile views -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Google Authorship Markup -->
+<!-- Social: Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@IEEE_NITK">
+<meta name="twitter:title" content="Alpha Beta Pruning">
+<meta name="twitter:description"
+    content="Overview of the Alpha Beta Pruning optimization technique on regular Minimax">
+<meta property="twitter:image:src"
+    content="https://ieee.nitk.ac.in/blog/assets/img/blog-image.png">
+
+<!-- Social: Facebook / Open Graph -->
+<meta property="fb:app_id" content="0011038251882641" />
+<meta property="og:url" content="https://ieee.nitk.ac.in/blog/Alpha-Beta-Pruning/" />
+<meta property="og:title" content="Alpha Beta Pruning">
+<meta property="og:image" content="https://ieee.nitk.ac.in/blog/assets/img/blog-image.png">
+<meta property="og:description"
+    content="Overview of the Alpha Beta Pruning optimization technique on regular Minimax">
+<meta property="og:site_name" content="A blog about our findings and musings">
+
+<!-- Social: Google+ / Schema.org  -->
+<meta itemprop="name" content="Alpha Beta Pruning" />
+<meta itemprop="description"
+    content="Overview of the Alpha Beta Pruning optimization technique on regular Minimax">
+<meta itemprop="image" content="https://ieee.nitk.ac.in/blog/assets/img/blog-image.png" />
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<!-- Windows 8 Tile Icons -->
+<meta name="application-name" content="IEEE-NITK Blog">
+<meta name="msapplication-TileColor" content="#0562DC">
+<meta name="msapplication-square70x70logo" content="smalltile.png" />
+<meta name="msapplication-square150x150logo" content="mediumtile.png" />
+<meta name="msapplication-wide310x150logo" content="widetile.png" />
+<meta name="msapplication-square310x310logo" content="largetile.png" />
+
+<!-- Android Lolipop Theme Color -->
+<meta name="theme-color" content="#0562DC">
+
+<!-- Linked Sheets needed -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="/blog/assets/css/icomoon.css">
+<link rel="stylesheet" href="/blog/assets/css/animate.css">
+<link rel="stylesheet" href="/blog/assets/css/bootstrap.css">
+<link rel="stylesheet" href="/blog/assets/css/style.css">
+
+<!-- Linked Scripts needed -->
+<script src="https://preview.colorlib.com/theme/unapp/js/modernizr-2.6.2.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+    integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countto/1.2.0/jquery.countTo.js"></script>
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="/blog/favicon.ico" type="image/x-icon" />
+<link rel="manifest" href="/blog/assets/img/icons/manifest.json">
+
+<title>Blog | IEEE NITK</title>
+
+<!-- highlighter theme  -->
+<link rel="stylesheet" href="/blog/assets/css/monokai-sublime.css">
+
+<link rel="stylesheet" href="/blog/assets/css/blog.css">
+<link rel="canonical" href="/blog/Alpha-Beta-Pruning/">
+<link rel="alternate" type="application/rss+xml" title="A blog about our findings and musings"
+    href="https://ieee.nitk.ac.in/blog/feed.xml" />
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- This property belongs to IEEE NITK -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L6M5H3BJC8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L6M5H3BJC8');
+</script>
+
+    <script src="/blog/assets/js/sidebar.js"></script>
+    <script>
+        loadArticles();
+    </script>
+</head>
+
+<body>
+    <div class="colorlib-loader">
+        <div id="loader"></div>
+        <div id="loader"></div>
+        <div id="loader"></div>
+        <div id="loader"></div>
+        <div id="loader"></div>
+    </div>
+    <div id="page">
+        <nav class="colorlib-nav" role="navigation">
+    <div class="top-menu">
+        <div class="container">
+            <div class="row" id="header">
+                <div class="col-md-2">
+                    <div id="colorlib-logo">
+                        <a href="https://ieee.nitk.ac.in" title="home">
+                            <img src="/blog/assets/img/ieee_nitk.png" alt="IEEE Logo" class="navbar-logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-10 text-right menu-1">
+                    <ul>
+                        
+                            
+                                <li><a href="https://ieee.nitk.ac.in/">Home</a></li>
+                            
+                        
+                            
+                                <li class="dropdown-nav">
+                                    <a class="nav-link dropdown-toggle has-dropdown"  style="cursor: pointer;" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        About
+                                    </a>
+                                    <ul class="dropdown dropdown-menu">
+                                    
+                                        <li class="dropdown-item"><a href="https://ieee.nitk.ac.in/about-us.html">About Us</a></li>
+                                    
+                                        <li class="dropdown-item"><a href="https://ieee.nitk.ac.in/team.html">Team</a></li>
+                                    
+                                    </ul>
+                                </li>
+                            
+                        
+                            
+                                <li class="dropdown-nav">
+                                    <a class="nav-link dropdown-toggle has-dropdown" style="cursor: pointer;" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        SIGs
+                                    </a>
+                                    <ul class="dropdown dropdown-menu">
+                                    
+                                        <li class="dropdown-item"><a href="https://ieee.nitk.ac.in/compsoc.html">Computer Society</a></li>
+                                    
+                                        <li class="dropdown-item"><a href="https://ieee.nitk.ac.in/diode.html">Diode</a></li>
+                                    
+                                        <li class="dropdown-item"><a href="https://ieee.nitk.ac.in/piston.html">Piston</a></li>
+                                    
+                                    </ul>
+                                </li>
+                            
+                        
+                            
+                                <li class="dropdown-nav">
+                                    <a class="nav-link dropdown-toggle has-dropdown"  style="cursor: pointer;" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Affinity Groups
+                                    </a>
+                                    <ul class="dropdown dropdown-menu">
+                                    
+                                        <li class="dropdown-item"><a href="https://ieee.nitk.ac.in/wie.html">Women in Engineering</a></li>
+                                    
+                                        <li class="dropdown-item"><a href="https://ieee.nitk.ac.in/sight.html">SIGHT</a></li>
+                                    
+                                    </ul>
+                                </li>
+                            
+                        
+                            
+                                <li><a href="https://ieee.nitk.ac.in/events.html">Events</a></li>
+                            
+                        
+                            
+                                <li><a href="https://ieee.nitk.ac.in/blog/">Blog</a></li>
+                            
+                        
+                            
+                                <li><a href="https://ieee.nitk.ac.in/gyan/">Gyan</a></li>
+                            
+                        
+                            
+                                <li class="dropdown-nav">
+                                    <a class="nav-link dropdown-toggle has-dropdown" style="cursor: pointer;" id="navbarDropownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Achievements
+                                    </a>
+                                    <ul class="dropdown dropdown-menu">
+                                        
+                                            <li class="dropdown-item"><a href="https://ieee.nitk.ac.in/achieve.html">Awards</a></li>
+                                        
+                                            <li class="dropdown-item"><a href="https://ieee.nitk.ac.in/publications.html">Publications</a></li>
+                                        
+                                    </ul>
+                                </li>
+                            
+                        
+                            
+                                <li class="dropdown-nav">
+                                    <a class="nav-link dropdown-toggle has-dropdown"  style="cursor: pointer;" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Virtual Expo
+                                    </a>
+                                    <ul class="dropdown dropdown-menu">
+                                    
+                                        <li class="dropdown-item"><a href="https://ieee.nitk.ac.in/virtual-expo/compsoc/">CompSoc</a></li>
+                                    
+                                        <li class="dropdown-item"><a href="https://ieee.nitk.ac.in/virtual-expo/diode/">Diode</a></li>
+                                    
+                                        <li class="dropdown-item"><a href="https://ieee.nitk.ac.in/virtual-expo/piston/">Piston</a></li>
+                                    
+                                        <li class="dropdown-item"><a href="https://ieee.nitk.ac.in/virtual-expo/envision/">Envision</a></li>
+                                    
+                                    </ul>
+                                </li>
+                            
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+        <div class="nav-bg"></div>
+<div class="container">
+    <div class="header-post col-md-12 colorlib-bg-white animate-box" role="banner">
+        <div class="content">
+            <h1 class="post-title">Alpha Beta Pruning</h1>
+            <p class="author-small">
+                <span class="author-img"
+                    style="background-image: url(/blog/assets/img/authors/PranavDV.jpeg);"></span>
+                <span class="author">by Pranav DV</span>
+                
+                &nbsp;
+                |
+                &nbsp;
+                <i class="fa fa-calendar"></i>
+                <time itemprop="datePublished" datetime="2021-07-11 05:30:00 +0530"
+                    class="header-date">11 Jul 2021</time>
+                
+            </p>
+            <p class="subtitle">Overview of the Alpha Beta Pruning optimization technique on regular Minimax</p>
+        </div>
+    </div>
+</div>
+        <section class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+            <div class="container">
+                <div class="col-md-9 animate-box" style="padding: 0;">
+                    <div class="colorlib-bg-white mt mr">
+                        <article role="article" id="scroll" class="post-content" itemprop="articleBody">
+                            <p>Among the many advancements computer science has made in the past couple of decades, Artificial Intelligence (AI) is the most widely known. You might have simply heard about J.A.R.V.I.S from the Avengers or smart assistants like Siri or Alexa. All of them use AI and machine learning algorithms to work as well as they do. It turns out that we can get a glimpse into one such algorithm - particularly the one used by computers to beat you at chess, connect 4, tic-tac-toe and more. It’s called the <strong>Minimax Algorithm</strong> and you can implement this by yourself very quickly. In fact, you can optimize this algorithm to run faster and more efficiently using a technique called <strong>Alpha Beta Pruning</strong> in just a few extra lines of code. Let’s see how it works.</p>
+
+<h2 id="basic-gameplay---the-minimax-algorithm">Basic Gameplay - The Minimax Algorithm</h2>
+
+<p>Two player turn based games like chess, tic-tac-toe, backgammon etc, when played against a computer are based on the <strong>Minimax Algorithm</strong>. This algorithm uses backtracking to find the optimal move at any point in the game by assuming that the opponent also plays optimally. The two players are sometimes called the <strong>maximising</strong> and <strong>minimising players</strong>. The objective of the maximising player is to get the largest possible positive score or the smallest possible negative score based on board evaluations. On the other hand, the minimising player tries to get the largest possible negative score or smallest possible positive score. These scores indicate the player having the upper hand at that instant - positive for maximising player and negative for minimizing player.</p>
+
+<p>The way these scores are evaluated differ in technique and complexity based on the game. For something simple like tic-tac-toe (where there aren’t too many positions to consider) we could exhaustively search all patterns until the game ends. Then the winning games could have score 1, losing games score -1 and games that draw get a score of 0. For complicated games like chess, this evaluation is a lot more involved and the number of moves is too large for us to search all positions until the game ends. So the evaluations are done considering several other metrics.</p>
+
+<p>Since this is a backtracking based algorithm, it tries all possible moves from a given board position while assuming that the opponent is always going to play the best move they can. The number of moves the algorithm <strong>looks ahead</strong> is the <strong>depth of the recursion</strong>. At the end of the process, the algorithm picks the best board evaluation and makes a move intending to arrive at it. The various intermediate boards are evaluated along the way and the scores make up the <strong>decision tree</strong> of the algorithm.</p>
+
+<p>To understand what this tree looks like, consider the example of <strong>Connect 4</strong> - a popular two player turn based game - being evaluated using minimax. Here’s a visual representation of the boards and the moves explored by the algorithm at the very beginning of the game :</p>
+
+<p><img src="/blog/assets/img/Alpha-Beta-Pruning/Connect4_Minimax.png" alt="Decision Tree of Connect4" /></p>
+
+<p>Instead, if we assign scores for each board evaluation, it could look like this:</p>
+
+<p><img src="/blog/assets/img/Alpha-Beta-Pruning/Decision_Tree.png" alt="Board Evaluated Decision Tree" /></p>
+
+<p>As you can see, the algorithm tries all the moves it can make, and then all subsequent moves the opponent can make, repeatedly until it reaches the depth of its recursion. Then it picks the maximum of the branches for maximising player and minimum of the branches for minimising player until the backtracking is complete and returns the calculated value and the move/branch corresponding to it.</p>
+
+<p>Here is the pseudocode for the algorithm:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function minimax(node, depth, maximizingPlayer) is
+    if depth = 0 or node is a terminal node then
+        return the score/evaluation of node
+    if maximizingPlayer then
+        best_score := −∞
+        for each child of node do
+            branch_score := minimax(child, depth-1,False)
+            best_score := max(best_score, branch_score)
+        return best_score
+    else (* minimizing player *)
+        best_score := +∞
+        for each child of node do
+            branch_score := minimax(child, depth-1,True)
+            best_score := min(best_score, branch_score)
+        return best_score
+</code></pre></div></div>
+
+<h2 id="the-need-to-optimize---alpha-beta-pruning">The Need to Optimize - Alpha Beta Pruning</h2>
+
+<p>You might have already noticed that while this exhaustive search for the best result is indeed more or less foolproof, it is very time consuming and often excessive. The reason for this is because there are some moves that are so glaringly bad or some which are obviously the best ones possible and they become apparent much before the depth of recursion is reached. Unfortunately the algorithm in its current implementation cannot recognize such moves and continues its search.</p>
+
+<p>To improve this, we use an optimization technique called <strong>Alpha Beta Pruning</strong>. This optimization can tell the algorithm when it has found a really good or bad move so that it can stop exploring further or to simply ignore evaluating that sequence of moves. The algorithm gets its name because it manages to shorten or <strong>prune</strong> unnecessary branches of the decision tree.</p>
+
+<p>After pruning, the tree might look something like this :</p>
+
+<p><img src="/blog/assets/img/Alpha-Beta-Pruning/Connect4_Pruned.png" alt="Decision Tree of Connect4 after pruning" /></p>
+
+<p>Once again, in terms of board evaluation, it could look like this:</p>
+
+<p><img src="/blog/assets/img/Alpha-Beta-Pruning/Pruned_tree.png" alt="Board Evaluated Decision Tree after pruning" /></p>
+
+<p>The values seen in grey are not evaluated - those are the branches that the algorithm decided as unnecessary to explore.</p>
+
+<p>This is the pseudo code for the implementation :</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function alphabeta(node, depth, α, β, maximizingPlayer) is
+    if depth = 0 or node is a terminal node then
+        return the score/evaluation of node
+    if maximizingPlayer then
+        best_score := −∞
+        for each child of node do
+            branch_score := alphabeta(child, depth-1, α, β, False)
+            best_score := max(best_score, brach_score)
+            α := max(α, best_score)
+            if α ≥ β then
+                break (* β cutoff *)
+        return best_score
+    else
+        best_score := +∞
+        for each child of node do
+            branch_score := alphabeta(child, depth-1, α, β, True)
+            best_score := min(best_score, branch_score)
+            β := min(β, best_score)
+            if β ≤ α then
+                break (* α cutoff *)
+        return best_score
+</code></pre></div></div>
+
+<p>The variables alpha and beta are used to denote the most favourable board evaluations for the maximising and minimising player respectively. Whenever the maximum score that the minimizing player is assured of becomes less than the minimum score that the maximizing player is assured of, the maximizing player need not consider further descendants of this node, as they will never be reached in the actual play.</p>
+
+<h2 id="some-shortcomings-of-the-optimization">Some Shortcomings of the Optimization</h2>
+
+<p>This optimization gives a significant boost to the standalone Minimax Algorithm but is not always bound to work. Sometimes, if the moves explored by the algorithm are just in a <strong>bad order</strong>, then it might come across one of those really good or bad moves towards the end at that level of recursion. Another unfortunate drawback of this algorithm is the fact that it <strong>cannot remember</strong> previously evaluated boards. Often we can arrive at a certain board position by performing the moves in different orders. But since the algorithm does not keep track of these boards, it re-evaluates them. In such cases, Alpha Beta Pruning hasn’t managed to reduce the number of boards that need to be evaluated.</p>
+
+<h2 id="improvements-and-conclusion">Improvements and Conclusion</h2>
+
+<p>As you can see, even with this optimization, the algorithm isn’t quite perfect. However, we can improve this algorithm further if we choose the order in which moves are explored wisely. For example, in chess, moves that capture pieces may be examined before moves that do not, and moves that have scored highly in earlier passes through the decision tree analysis may be evaluated before others. We can also consider storing some recent board evaluations (sometimes there are too many to store at once so we only consider the last few). With these, and several other improvements, this algorithm can be modified to give some fantastic results.</p>
+
+<h2 id="references">References</h2>
+
+<p><a href="https://ieee.nitk.ac.in/blog/minimax-algorithm/">More on Minimax Algorithm</a></p>
+
+<p><a href="https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning">Alpha Beta Pruning - Wikipedia</a></p>
+
+<p><a href="https://www.javatpoint.com/ai-alpha-beta-pruning">More code - Javapoint</a></p>
+
+<p><a href="http://web.cs.ucla.edu/~rosen/161/notes/alphabeta.html">Some theory and exercises - UCLA Recitation</a></p>
+
+<p><a href="https://www.cs.cornell.edu/courses/cs312/2002sp/lectures/rec21.htm">More examples - Cornell Recitation</a></p>
+
+                        </article>
+                    </div>
+                </div>
+                <div class="col-md-3 animate-box" style="padding: 0;">
+                    <div class="colorlib-bg-white mt">
+                        <div class="sidebar">
+    <h2>Related Articles</h2>
+    <div class="temp-div">
+        <span id="category">Compsoc</span>
+        <span id="title">Alpha Beta Pruning</span>
+    </div>
+    <div class="related-articles"></div>
+</div>
+
+                    </div>
+                    <div class="colorlib-bg-white mt">
+                        <div class="sidebar">
+                            <h3>Browse IEEE Blog</h3>
+                            <p>
+                                <a href="/blog/series/">Series</a>
+                                <br>
+                                <a href="/blog/tags/">Tags</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+    <div class="colorlib-bg-white animate-box">
+        <section class="author-big" itemprop="author">
+            <div class="details" itemscope itemtype="http://schema.org/Person">
+                <div class="col-md-4 col-sm-4 author-img-center">
+                    <img itemprop="image" class="author-img-big"
+                        src="/blog/assets/img/authors/PranavDV.jpeg"
+                        alt="Pranav DV">
+                </div>
+                <div class="col-md-8 sol-sm-8 author-details">
+                    <p>Author</p>
+                    <h3>
+                        <strong>
+                            Pranav DV
+                        </strong>
+                    </h3>
+                    <p class="desc"></p>
+                    
+                    <i class="fa fa-envelope"></i>
+                    <a class="author-big-email" target="_blank"
+                        href="mailto:pranavdv.191cs234@nitk.edu.in">pranavdv.191cs234@nitk.edu.in</a>
+                    <br>
+                    
+                    <i class="fa fa-github"></i>
+                    <a class="author-big-email" target="_blank"
+                        href="https://github.com/pranavdv">pranavdv</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+            <!-- Footer -->
+<footer id="colorlib-footer">
+    <div class="container">
+        <div class="row footer-row">
+            <div class="col-md-3 colorlib-widget">
+                <h4>About IEEE</h4>
+                <p>A not-for-profit organization, IEEE is the world's largest technical professional organization dedicated 
+                    to advancing technology for the benefit of humanity.
+                </p>
+                <p>
+                    <img src="/blog/assets/img/ieee_white.png" class="footer-logo" alt="IEEE">
+                    <img src="/blog/assets/img/ieee_nitk_white.png" class="footer-logo" alt="IEEE-NITK">
+                </p>
+            </div>
+            <div class="col-md-3 colorlib-widget">
+                <h4 class="secondary">Information</h4>
+                <p>
+                    <ul class="colorlib-footer-links">
+                        <li><a href="https://ieee.nitk.ac.in"><i class="fa fa-check"></i> Home</a></li>
+                        <li><a href="https://ieee.nitk.ac.in/team.html"><i class="fa fa-check"></i> Team</a></li>
+                        <li><a href="/blog/"><i class="fa fa-check"></i> Blog</a></li>
+                        <li><a href="https://ieee.nitk.ac.in/gyan/"><i class="fa fa-check"></i> Gyan</a></li>
+                        <li><a href="https://ieee.nitk.ac.in/achieve.html"><i class="fa fa-check"></i> Achievements</a></li>
+                        <li><a href="https://ieee.nitk.ac.in/publications.html"><i class="fa fa-check"></i> Publications</a></li>
+                        <li><a href="https://ieee.nitk.ac.in/joinus.html"><i class="fa fa-check"></i> Join Us</a></li>
+                    </ul>
+                </p>
+            </div>
+            <div class="col-md-3 colorlib-widget">
+                <h4 class="secondary">SIGs</h4>
+                <div class="f-blog">
+                    <div class="desc">
+                        <h2><a href="https://ieee.nitk.ac.in/compsoc.html"><i class="fa fa-laptop"></i> &nbsp; Compsoc</a></h2>
+                    </div>
+                </div>
+                <div class="f-blog">
+                    <div class="desc">
+                        <h2><a href="https://ieee.nitk.ac.in/diode.html"><i class="fa fa-plug"></i> &nbsp; Diode</a></h2>
+                    </div>
+                </div>
+                <div class="f-blog">
+                    <div class="desc">
+                        <h2><a href="https://ieee.nitk.ac.in/piston.html"><i class="fa fa-cogs"></i> &nbsp; Piston</a></h2>
+                    </div>
+                </div>
+                <br>
+                <h4 class="secondary">Affinity Groups</h4>
+                <div class="f-blog">
+                    <div class="desc">
+                        <h2><a href="https://ieee.nitk.ac.in/wie.html"><i class="fa fa-female"></i> &nbsp; Women in Engineering</a></h2>
+                    </div>
+                </div>
+                <div class="f-blog">
+                    <div class="desc">
+                        <h2><a href="https://ieee.nitk.ac.in/sight.html"><i class="fa fa-users"></i> &nbsp; SIGHT</a></h2>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-md-3 colorlib-widget">
+                <h4 class="secondary">Contact Info</h4>
+                <ul class="colorlib-footer-links">
+                    <li><strong>NITK Surathkal</strong><br>NH 66, Srinivasnagar<br>Surathkal, Mangalore<br>Karnataka 575025</li>
+                    <li><a href="mailto:ieee@nitk.edu.in" target="_blank"><i class="fa fa-envelope"></i>ieee@nitk.edu.in</a></li>
+                </ul>
+                <p>
+                    <ul class="colorlib-social-icons">
+                        <li><a href="https://github.com/IEEE-NITK" target="_blank"><i class="fa fa-github"></i></a></li>
+                        <li><a href="https://www.instagram.com/ieee_nitk" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/IEEE_NITK" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://facebook.com/IEEENITK" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/ieee-nitk-surathkal" target="_blank"><i class="fa fa-linkedin" target="_blank"></i></a></li>
+                        <li><a href="/blog/sitemap.xml" target="_blank"><i class="fa fa-rss" target="_blank"></i></a></li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="copy">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                <p>
+                    Copyright &copy;
+                    <script>document.write(new Date().getFullYear());</script>
+                    All rights reserved | Made with <i class="fa fa-heart" aria-hidden="true"></i> 
+                    by IEEE-NITK, <a href="http://jekyllrb.com/" target="_blank" class="copyright-link">Jekyll</a> 
+                    and <a href="https://colorlib.com" target="_blank" class="copyright-link">Colorlib</a>
+                    <br>
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="gototop js-top">
+    <a href="" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
+</div>
+            
+<script>
+	$(document).ready(function(){
+		if($("pre code").length){
+			
+			$.getScript('../assets/js/highlight.pack.js', function(){
+    			// load the highlighter script only if we have code snippets.
+    			$('pre code').each(function(i, block) {
+    				hljs.highlightBlock(block);
+  				});	
+    		});
+		}
+	});
+</script>
+        </section>
+    </div>
+    <script src="/blog/assets/js/main.js"></script>
+</body>
+
+</html>
