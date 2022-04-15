@@ -7,15 +7,13 @@ description: 'An introduction to CSS Polygons'
 tags:
 - IEEE NITK
 - CompSoc
-- Web Development
+- Web
 categories:
 - Diode  
 github_username: 'mrakshith21'
 ---
 
-
 <style>
-    
 
   .shapes {
       
@@ -42,8 +40,6 @@ github_username: 'mrakshith21'
       clip-path: polygon(50% 0%, 0% 30%, 0% 70%, 50% 100%, 100% 70%, 100% 30%);
       background: cornflowerblue;
     }
-
-
   }
 
   .img-animation {
@@ -65,21 +61,6 @@ github_username: 'mrakshith21'
       }
   }
 
-  .circle{
-    width : 100%;
-    margin : auto;
-  }
-  .inset{
-    width: 100%;
-    margin: auto;
-  }
-
-  .caption{
-    
-    margin: auto;
-  }
-
-
   .hover-effect{
     width : 70%;
     height : 100px;
@@ -99,7 +80,6 @@ github_username: 'mrakshith21'
     color : white;
     clip-path: circle(100% at 50% 50%);
   }
-
 
 </style>
 
@@ -125,11 +105,7 @@ I will be presenting 4 values of clip-path in this blog.
 
 ### Circle
 
-<div class="circle">
-  <figure>
-    <img src="../assets/img/polygon/Circle.png"/>
-  </figure>
-</div>
+![Circle](/blog/assets/img/polygon/Circle.png)
 
 **The contrast in the second image above and in all images further are for demo
 purpose. The contrasted region will be invisible in the actual rendering.**
@@ -155,11 +131,7 @@ Inset is used to work with the edges of reactangles.
 The edges will be pulled back by an inset specified. You can think of it being
 similar to a padding in an image, just that the padded region becomes invisible.
 
-<div class="inset">
-  <figure>
-    <img src="../assets/img/polygon/Inset.png"/>
-  </figure>
-</div>
+![Inset](/blog/assets/img/polygon/Inset.png)
 
 ```
 img{
@@ -178,11 +150,7 @@ by using ```round <border-radius>```
 
 This allows you to create oval-shaped or elliptical clippings.
 
-<div class="inset">
-  <figure>
-    <img src="../assets/img/polygon/Ellipse.png"/>
-  </figure>
-</div>
+![Ellipse](/blog/assets/img/polygon/Ellipse.png)
 
 ```
   img{
@@ -199,12 +167,7 @@ The general format for an ellipse is
 It is the most intersesting of all values so far. With polygon you can 
 control multiple end-points of the clipping.
 
-<div class="inset">
-  <figure>
-    <img src="../assets/img/polygon/Polygon.png"/>
-  </figure>
-</div>
-
+![Circle](/blog/assets/img/polygon/Polygon.png)
 ```
   img{
     clip-path: polygon(50% 0%, 0% 50%, 50% 100%, 100% 50%);
@@ -229,7 +192,7 @@ appears slightly slanted. It is quite easy to
 implement this using ```clip-path : polygon()```. You just need to tweak the
 vertex at the bottom right and you're done.
 
-![Angled section](../assets/img/polygon/Angled.png)
+![Angled section](/blog/assets/img/polygon/Angled.png)
 
 ```
   div{
@@ -281,7 +244,7 @@ displayed as rectangular images. You can instead use clip-path to give
 a feeling to those pictures. Add animations and the effect is even better.
 
 <div >
-      <img class="img-animation" src="../assets/img/polygon/Cat.jpeg" alt="">
+      <img class="img-animation" src="/blog/assets/img/polygon/Cat.jpeg" alt="Animation">
 </div>
 
 
