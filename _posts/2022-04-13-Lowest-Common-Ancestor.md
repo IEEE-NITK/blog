@@ -10,20 +10,21 @@
  categories:
  - CompSoc
  github_username: sathuhebbar
+ use_math: true
 ---
 
-<b>T (V, E)</b> is a tree on <b>n</b> vertices rooted at vertex <b>r</b>. <br>
-Suppose <b>u, v</b> belong to V. <br>
-Consider the list of all vertices on the path from u to the root written in order:
-<b>P(u)</b> = [u, u<sub>1</sub>, u<sub>2</sub>, ... r] <br>
+$T(V, E)$ is a tree on $n$ vertices rooted at vertex $r$. <br>
+Suppose $u, v$ belong to V. <br>
+Consider the list of all vertices on the path from $u$ to the root written in order: <br>
+$P(u)$ = $[u$, $u$<sub>$1$</sub>, $u$<sub>$2$</sub>, ... $r]$ <br>
 Similarly for v:
-<b>P(v)</b> = [v, v<sub>1</sub>, v<sub>2</sub>, ... r] <br>
-Note that <b>len(P(u)) = 1 + depth(u) </b>. <br>
-The first vertex common to the two lists P(u) and P(v) is <b>LCA(u, v)</b>.
+$P(v)$ = $[v$, $v$<sub>$1$</sub>, $v$<sub>$2$</sub>, ... $r]$ <br>
+Note that $len(P(u)) = 1 + depth(u) $. <br>
+The first vertex common to the two lists $P(u)$ and $P(v)$ is $LCA(u, v)$.
 
-<h2>Algorithm 1:</h2>
+# Algorithm 1:
 The naive algorithm:
-The first vertex common to P(u) and P(v) is the last vertex common to <b>reversed(P(u))</b> and <b>reversed(P(v))</b>.
+The first vertex common to $P(u)$ and $P(v)$ is the last vertex common to $reversed(P(u))$ and $reversed(P(v))$.
 ```
 def P(u, p):
     ls, x = [], u
@@ -48,24 +49,25 @@ u, v = map(int, input().split())
 print(lca(u, v, p))
 ```
 <b> Time complexity </b> <br>
-The height <b>h</b> is the largest depth of any vertex in the tree. <br>
-An LCA query with this algorithm performs <b>O(max(len(P(u)), len(P(v))))</b> operations, <br>
-which is, in the worst case <b>O(h)</b>.
+The height $h$ is the largest depth of any vertex in the tree. <br>
+An LCA query with this algorithm performs $O(max(len(P(u)), len(P(v))))$ operations, <br>
+which is, in the worst case $O(h)$.
 
-<h2>Algorithm 2</h2>
-Here is an <b>O((log h)<sup>2</sup>)</b> solution. <br>
-We preprocess the tree in <b>O(n log(n))</b> time to make a table that can find the ancestor k levels
-above the specified node in <b>O(log h)</b>. <br>
+# Algorithm 2
+Here is an $O((log(h))$<sup>$2$</sup>$)$ solution. <br>
+We preprocess the tree in $O(n log(n))$ time to make a table that can find the ancestor $k$ levels
+above the specified node in $O(log(h))$. <br>
 1. Perform a DFS traversal and keep track of all ancestors of a node using a list. <br>
-2. Store ancestors which are x levels above each node where x is a power of two. <br>
-3. To answer the query <b>kabove</b>, jump to the farthest known ancestor that is not more than k levels above the specified node. <br>
-4. Call <b>kabove</b> on that node with a reduced k. <br>
+2. Store ancestors which are $x$ levels above each node where $x$ is a power of two. <br>
+3. To answer the query $kabove$, jump to the farthest known ancestor that is not more than k levels above the specified node. <br>
+4. Call $kabove$ on that node with a reduced $k$. <br>
 
-With <b>kabove</b>, we can binary search for the LCA. 
-Let <b>l = 0</b> and <b>r = min(depth(u), depth(v))</b>. The depth of lca(u, v) lies in <b>[l, r]</b>.
-If the ancestors at depth <b>m</b> match, <b>lca(u, v)</b>
-is at that depth or is below. Otherwise, it is above.
-Try submitting this code for the 'Company Queries' problem on CSES.
+With $kabove$, we can binary search for the LCA. 
+1. Let $l = 0$ and $r = min(depth(u), depth(v))$. The depth of lca(u, v) lies in $[l, r]$.
+2. If the ancestors at depth $m$ match, $lca(u, v)$ is at a depth $>= m$ .
+   Otherwise, it is at a depth lower than $m$.
+<br>
+This, and the code for later algorithms are written as solutions to the 'Company Queries II' problems on the CSES site.
 ``` python 
 class Engine:
     def __init__(self, n, p):
@@ -132,20 +134,20 @@ for _ in range(q):
     print(e.lca(u, v))
 ``` 
 <b> Time complexity </b> <br>
-<b>O(n log(n))</b> preprocessing, <b>O((log h)<sup>2</sup>)</b> per query.
+$O(n log(n))$ preprocessing, $O((log(h))$<sup>$2$</sup>$)$ per query.
 
-<h2>Algorithm 3</h2>
-If we assign a value to each vertex <b>val[v]</b> during a DFS traversal
-such that the child chosen is assigned the smallest untaken value after <b>val[v]</b>,
-it is easy to see that all children of <b>v</b> will have values in the range
-<b>[val[v] + 1, val[v] + nd[v] - 1]</b> where <b>nd[v] = 1 + number of descendants of v</b>.
-Thus, testing whether <b>v</b> is an ancestor of <b>u</b> is just checking if
-<b>val[u]</b> lies in the above range.
+# Algorithm 3
+If we assign a value to each vertex $val[v]$ during a DFS traversal
+such that the child chosen is assigned the smallest untaken value after $val[v]$,
+it is easy to see that all children of $v$ will have values in the range
+$[val[v] + 1, val[v] + nd[v] - 1]$ where $nd[v] = 1 +$ number of descendants of $v$.
+Thus, testing whether $v$ is an ancestor of $u$ is just checking if
+$val[u]$ lies in the above range.
 
 With this addition, the below improves on the earlier algorithm. <br>
 1. If u is an ancestor of v or v is an ancestor of u or u is v, we are done.
-2. Otherwise, look for the farthest among the known ancestors of <b>v</b> which is not an ancestor of <b>u</b>. If there is no such node, the parent of v is <b>lca(u, v)</b>.
-3. If there is such a node <b>x</b>, the required LCA is <b>lca(x, u)</b>. 
+2. Otherwise, look for the farthest among the known ancestors of $v$ which is not an ancestor of $u$. If there is no such node, the parent of v is $lca(u, v)$.
+3. If there is such a node $x$, the required LCA is $lca(x, u)$. 
 <br>
 
 ```cpp
@@ -153,55 +155,10 @@ With this addition, the below improves on the earlier algorithm. <br>
 
 using namespace std;
 
-using ll = long long;
-using ld = long double;
-using pii = pair<int, int>;
-using vi = vector<int>;
-using vll = vector<ll>;
-using vld = vector<ld>;
-using vvi = vector<vector<int>>;
-
-string to_string(bool b) { return b ? "true" : "false"; }
-
-string to_string(string s) { return s; }
-
-template <typename T, typename U> string to_string(pair<T, U> p) {
-    return "(" + to_string(p.first) + ", " + to_string(p.second) + ")";
-}
-
-template <typename T, typename U, typename V>
-string to_string(tuple<T, U, V> trip) {
-    return "(" + to_string(get<0>(trip)) + ", " + to_string(get<1>(trip)) +
-           ", " + to_string(get<2>(trip)) + ")";
-}
-
-template <typename T> string to_string(const T &c) {
-    string out = "{";
-    bool f = true;
-    for (const auto &x : c) {
-        if (f) {
-            out += to_string(x);
-            f = false;
-            continue;
-        }
-        out += ", " + to_string(x);
-    }
-    out += "}";
-    return out;
-}
-
-template <typename T> void print(const T &x) { cout << to_string(x) << '\n'; }
-
 void init_io() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
 }
-
-using ll = long long;
-using ld = long double;
-using pii = pair<int, int>;
-using vi = vector<int>;
-using vvi = vector<vector<int>>;
 
 struct Engine {
     vector<int> lgt, dpth, nd, val;
@@ -295,9 +252,107 @@ signed main() {
     return 0;
 }
 ```
-These are a few elementary algorithms. Here are a few interesting sites:
-1. LCA and RMQ, [CP-Algorithms](https://cp-algorithms.com/graph/lca.html) <b></b>
-2. Farach Colton and Bender, <b>O(n)</b> or <b>O(n log n)</b> preprocessing, <b>O(1) query</b>
+
+# Algorithm 4
+The offline version of algorithm 3 can find LCAs in $O(log(n))$. 
+<h3>Storing the queries:</h3>
+1. Keep a list of lists $qs$ of length $n + 1$ and two lists $vs, ans$ of length $q$. 
+2. For every query $(u, v)$, append the query number $j$ to $qs[u]$ and let $vs[j] = v$. <br>
+<h3>Algorithm:</h3>
+1. We find $lca(u, v)$ during another DFS traversal. 
+2. When $u$ is reached, we have $P(u)$.
+<br>
+For every $j$ in $qs[u]$, let $v = vs[j]$,   
+3. If $u$ is an ancestor of $v$, we are done.
+4. Otherwise, binary search for $lca(u, v)$ in $P(u)$ using the ancestor test.
+5. Assign the value to $ans[j]$.
+<br>
+
+```cpp
+#include <bits/stdc++.h>
+
+using namespace std;
+
+void init_io() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+}
+
+vector<int> vs, ans, nd, val, P;
+vector<vector<int>> adj, qs;
+
+int dfs1(int u, int vl) {
+    nd[u] = 1, val[u] = vl;
+    for (int x : adj[u]) {
+        vl = dfs1(x, vl + 1);
+        nd[u] += nd[x];
+    }
+    return vl;
+}
+
+int is_ancestor(int u, int v) {
+    return val[v] >= val[u] and val[v] < val[u] + nd[u];
+}
+
+void dfs2(int u, vector<int> &P) {
+    for (int j : qs[u]) {
+        int v = vs[j];
+        if (is_ancestor(u, v))
+            ans[j] = u;
+        else {
+			int l = 0, r = P.size() - 1;
+            while (r - l > 2) {
+                int m = l + (r - l) / 2;
+                if (is_ancestor(P[m], v))
+                    l = m;
+                else
+                    r = m - 1;
+            }
+            for (int m = r; m >= l; m--)
+                if (is_ancestor(P[m], v)) {
+                    ans[j] = P[m];
+                    break;
+                }
+        }
+    }
+    P.push_back(u);
+    for (int x : adj[u])
+        dfs2(x, P);
+    P.pop_back();
+}
+
+int main() {
+    init_io();
+    int n, q;
+    cin >> n >> q;
+    adj.resize(n + 1);
+    qs.resize(n + 1);
+    ans.resize(q);
+    vs.resize(q);
+    val.resize(n + 1);
+    nd.resize(n + 1);
+    for (int j = 2; j <= n; j++) {	
+        int x;
+        cin >> x;
+        adj[x].push_back(j);
+    }
+    dfs1(1, 0);
+    for (int j = 0; j < q; j++) {
+        int u, v;
+        cin >> u >> v;
+        qs[u].push_back(j);
+        vs[j] = v;
+    }
+    dfs2(1, P);
+    for (int j = 0; j < q; j++)
+        cout << ans[j] << '\n';
+    return 0;
+}
+```
+# Resources:
+Here are a few interesting sites:
+1. LCA and RMQ, [CP-Algorithms](https://cp-algorithms.com/graph/lca.html)
+2. Farach Colton and Bender, $O(n)$ or $O(n log(n))$ preprocessing, $O(1)$ query
 [CP-Algorithms](https://cp-algorithms.com/graph/lca_farachcoltonbender.html)
 3. Tarjan's algorithm (offline), 
 [CP-Algorithms](https://cp-algorithms.com/graph/lca_tarjan.html)
