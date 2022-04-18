@@ -25,7 +25,7 @@ Object detection is commonly confused with image recognition, so before we proce
 
 **Object detection** : It draws a box around each dog and labels the box “dog”. The model predicts where each object is and what label should be applied. In that way, object detection provides more information about an image than recognition.
 <br>
-<img src="/assets/img/Object-Detection/detect_vs_recognition.jpg" alt="Compare detection vs recognition" style="width:1000px;"/>
+<img src="/assets/img/Object-Detection/detect_vs_recognition.jpg" alt="Compare detection vs recognition" style="zoom:67%;"/>
 
 ## HOW OBJECT DETECTION WORKS?
 
