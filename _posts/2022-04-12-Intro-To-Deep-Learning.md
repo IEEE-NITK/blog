@@ -76,7 +76,7 @@ Traditional ML algorithms are not useful while working with high dimensional dat
 
 
 Another challenge is to extract the features or parameters in our data that play a vital role in predicting the outcome. This very process is referred to as feature extraction. ML does not seem to be able to efficiently extract features from the data we provide it. Let us take the example of image recognition, the patterns present in the image cannot be extracted satisfactorily with ML, and it fails to efficiently recognize important features in an image, like a face, scenery,etc…
-Overcoming challenges with DL
+
 
 ## How does DL work
 ### Intuition
