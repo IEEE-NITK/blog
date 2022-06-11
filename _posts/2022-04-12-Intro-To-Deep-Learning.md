@@ -182,7 +182,7 @@ The number of legal board positions in Go has been calculated to be approximatel
 
 DeepMind’s AlphaGo defeated Lee Sedol, one of the best Go players in the world!
 
-![GO](/blog/assets/img/intro-to-dl/go.jped)
+![GO](/blog/assets/img/intro-to-dl/go.jpeg)
 
 
 *Lee Sedol vs. AlphaGo in 2016 *
