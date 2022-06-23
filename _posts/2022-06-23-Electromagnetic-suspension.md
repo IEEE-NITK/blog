@@ -1,7 +1,7 @@
 ﻿---
 layout: post
 title: "Electromagnetic Suspension"
-author_github: abhilash
+author_github: ABHILASHBHARADWAJ-K
 date: 23-06-2022 00:00:00
 description: "How cool is it to replace a set of shock absorbers with a pair of Electromagnets! How is that even possible? It must have been a revolutionary idea!"
 tags:
@@ -10,7 +10,7 @@ tags:
 - Electromagnetic Suspension
 categories:
 - Piston
-github_username: "abhilash"
+github_username: "ABHILASHBHARADWAJ-K"
 ---
 
 # Electromagnetic Suspension
