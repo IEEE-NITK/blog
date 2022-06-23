@@ -2,7 +2,7 @@
 layout: post
 title: "Merkle Trees and their application in Git"
 author_github: advaithcurpod
-date: 2022-04-09 15:16:00
+date: 2022-06-23 15:16:00
 image: 'assets/img/'
 description: ''
 tags:
@@ -97,31 +97,3 @@ If you have any more questions or just want to chat, feel free to contact me at 
 3. [All about Merkle Trees](https://www.codementor.io/blog/merkle-trees-5h9arzd3n8)
 4. [Merkle Tree in Bitcoin blockchain](https://medium.com/blockchain-stories/the-tale-of-merkle-tree-in-bitcoin-blockchain-2c5fa5a298f7)
 5. [How Git works](https://github.com/kdakan/How-Git-Works)
-<!-- 
-Everything is git is content addressable => we care about what the data is (CONTENT) rather than where it is stored (LOCATION)... and if u think abt it, content based addressing makes more intuitive sense to refer to data by its content..
-for eg.. you go to a library, u r looking for a book..you ask the librarian for it... which is better and relates more to the real world?
-1. "thomas calculus volume 1 edition 3" by thomas OR (content addressing)
-2. the book in the 3rd shelf, 2nd row, 4th from left end? (location based)
-unfortuantely, most of todays web follows the loation based addressing... no wonder, file not found errors are so common!!
-
-In this diagram, we will primarily focus on the lower half, which is the *tree* and the *blob*.
-
-The tree here, indeed is a merkle tree and we will see how it helps git keep track of versions effetively.
-
-
-
-### An overview of Hash functions
-A hash function is a one-way mathematical function (can be computed only in one direction and not the other way round) that acts as a “digital fingerprint”. Hash functions are designed in a way that there is very little probability that another piece of data will also result in the same hash. Another interesting and useful property of hahs functions is that they are pseduo random, i.e., even a small change in the data (say an additional space) will result in a completely new string, which makes it nearly impossible to reverse enginner the hash to get backthe data. This is really useful in cryptography. Hash functions, how they work and its applications could be a subject of another entire blog, for now, lets get back to our discussion on *merkle trees*. -->
-<!-- 
-After construction, a Merkle Tree looks something like this:
-![alt text](../assets/img/merkle-trees/merkle-tree.png)
-
-a, b, c, and d are some data elements (files, public/private keys.. etc) and H is a hash function.
-
-Each node is created by hashing the concatenation of its “parents” in the tree. For eg: H(ab) is formed by concatenating its "parents:, H(a) and H(b).
-
-Note: In general and in most use cases, merkle trees are binary trees, but it is not a restriction. -->
-<!-- 
-The tree is constructed by taking nodes at the same height, concatenating their values, hashing the result and recursively performing this operation until the root is reached. -->
-<!-- 
-Once built, data can be audited (checked for) using ***only the root hash logarithmic time*** to the number of leaves (also called a Merkle-Proof). When we are auditing data, what we are essentially doing is checking if a given piece of information is a part of the merkle tree or not? It works by recreating the branch containing the piece of data from the root to the piece of data being audited. In the example above, if we wanted to audit c (assuming we have the root hash), we would need to be given H(d) and H(H(a) + H(b)). We would hash c to get H(c), then concatenate and hash H(c) with H(d), then concatenate and hash the result of that with H(H(a) + H(b)). If the result was the same string as the root hash, it would imply that c is truly a part of the data in the Merkle Tree. -->
