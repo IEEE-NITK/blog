@@ -2,7 +2,7 @@
 layout: post
 title: "Web design in a developer's arsenal"
 author_github: not-shoyo
-date: 2022-04-12 14:22:00
+date: 2022-06-30 14:22:00
 image: "/assets/img/"
 description: "An intro to Web-Design’s increasing encroachment in a Web-Developer’s workspace"
 tags:
