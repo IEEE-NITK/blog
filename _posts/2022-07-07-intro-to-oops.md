@@ -2,15 +2,14 @@
 layout: post
 title: "Introduction to object oriented programming"
 author_github: AmandeepSingh285
-date: 2022-04-11 23:48:30
+date: 2022-07-07 00:00:00
 image: '/assets/img/'
 description: 'Introduction to object oriented programming'
 tags:
 - IEEE NITK
 - Blog
 - OOPS
-categories:
-- CompSoc
+categories: CompSoc
 github_username: 'AmandeepSingh285'
 comments: true
 ---
@@ -31,7 +30,6 @@ A class can be defined as a blueprint from which objects are defined or created.
 - Modifiers: A class can either be public, private or protected.
 - Body: Consists of methods and data fields. The body is generally surrounded by curly brackets in languages like C++ and Java.  
 
-<br><br>
 
 There are four pillars of object oriented programming namely:
 
@@ -57,9 +55,6 @@ The capability of a class to derive properties and characteristics from another 
 Polymorphism refers to the ability of a variable, object or function to take multiple forms. For example, in English, the verb run has a different meaning if you use it with a laptop, a foot race, and business. Here, we understand the meaning of run based on the other words used along with it. The same also applied to Polymorphism.
 
 ## Advantages of OOPs:
-
-
-
 
 - OOPs makes development and maintenance easier, whereas, in a procedure-oriented programming language, it is not easy to manage if code grows as project size increases.
 - It enhances program modularity because every object exists independently.

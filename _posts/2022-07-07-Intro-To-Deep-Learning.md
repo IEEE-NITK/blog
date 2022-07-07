@@ -1,20 +1,20 @@
- ---
- layout: post
- title: "Introduction To Deep Learning"
- author_github: harry7337
- date: 2022-04-12 16:26:23
- image: '/assets/img/intro-to-dl'
- description: 'Introductory post on the fascinating field of Deep Learning and its Application'
- tags:
- - IEEE NITK
- - Blog
- - Machine Learning
- - Deep Learning
- - AI
- categories:
- - CompSoc
- github_username: 'harry7337'
- ---
+---
+layout: post
+title: "Introduction To Deep Learning"
+author_github: harry7337
+date: 2022-07-07 16:26:23
+image: '/assets/img/intro-to-dl'
+description: 'Introductory post on the fascinating field of Deep Learning and its Application'
+tags:
+- IEEE NITK
+- Blog
+- Machine Learning
+- Deep Learning
+- AI
+categories: CompSoc
+github_username: 'harry7337'
+---
+
 # Introduction to Deep Learning
 
 
@@ -103,11 +103,8 @@ Similarly, in an ANN, a __perceptron__(the basic computational unit in an ANN an
 
 
 1. On the left side data input represented by xi.
-
 2. We multiply each of the input by a weight wi, along the arrow (also called a synapse). So w1 * x1, w2 * x2, w3 * x3 and so on. The larger the weight, the more influential the corresponding input is.
-
 3. Once all the inputs are multiplied by a weight, we sum all of them up and add a bias to it bi.
-
 4. Now, we have an activation function. This particular activation f(x) outputs 1 if the sum obtained before is greater than or equal to zero. It outputs 0 otherwise. 
 
 *Activation functions helps us map the input to a discrete output*.
@@ -125,7 +122,6 @@ The working we saw just now is an example of a single-layer perceptron. Let us l
 Neural networks with two or more layers are called multi-layer perceptron. This type of neural network has greater processing power. In this, the algorithm consists of two phases: 
 
 - __Forward phase__: Where the activations are propagated from the input to the output layer
-
 - __Backward phase__: Where the error between the observed actual and the ideal value in the output layer is used to modify the weights and bias values.
 
 ![Multi-Level Perceptron](/blog/assets/img/intro-to-dl/multi-perceptron.png)
@@ -185,7 +181,7 @@ DeepMind’s AlphaGo defeated Lee Sedol, one of the best Go players in the world
 ![GO](/blog/assets/img/intro-to-dl/go.jpeg)
 
 
-*Lee Sedol vs. AlphaGo in 2016 *
+*Lee Sedol vs. AlphaGo in 2016*
 
 *Source: The New Yorker*
 
@@ -197,7 +193,6 @@ Deep learning is not here to take part in the AI revolution, in fact it is takin
 
 Despite its positives, we must remember not to misuse AI such as this; to cause detrimental effects to the rest of humanity goes against the principles of why AI was pioneered in the first place- to help people. 
 
-I hope I inspired you to further pursue deep learning and use it to add something tangible to the community. With that, this is Harish Gumnur signing off.
-_ _ _
-*According to Keyword Planner, a tool provided by Google to analyze the number of keyword searches on a monthly basis over a particular period of time. The time period referenced in this blog is April 2020 to March 2022.
-
+I hope I inspired you to further pursue deep learning and use it to add something tangible to the community. With that, this is Harish Gumnur signing off. 
+<br>_ _ _<br>
+*According to Keyword Planner, a tool provided by Google to analyze the number of keyword searches on a monthly basis over a particular period of time. The time period referenced in this blog is April 2020 to March 2022.*
