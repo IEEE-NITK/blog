@@ -15,7 +15,7 @@ jobs:
 
       - name: Run HTML Proofer
         run: |
-          sudo gem install html-proofer
+          sudo gem install html-proofer -v 3.19.4
           htmlproofer --assume-extension ./_site --url-swap '^/blog/:/' --disable-external
 
   deploy:
