@@ -1,38 +1,21 @@
-
 ---
-
 layout: post
-
 title: "Trees in Competitive Programming"
-
 author_github: Dhruvil-Lakhtaria
-
-date: 2022-04-11 00:00:44
-
+date: 2022-07-21 00:00:00
 image: '/assets/img/'
-
 description: 'An introduction to Trees and Competitive Programming with reference to Trees.'
-
 tags:
-
 - IEEE NITK
 - CompSoc
 - Competitive Programming
 - Trees
 - Data Structures
-
-
 categories:
-
 - CompSoc
-
 github_username: 'Dhruvil-Lakhtaria'
-
 use_math: true
-
 ---
-
-  
 
 ## Introduction
 
@@ -81,44 +64,36 @@ The node having at least a child node is called an  **internal node**.
 and Many More
 
 Lets talk about the DFS:
--   Parent-child convention: For understanding DFS or any topic related to Tree, we use this convention, in this, we fix a root node and then we add children to it, then if the child also has a child we call it grandchild of root node and child of the node which is connected to.
+- Parent-child convention: For understanding DFS or any topic related to Tree, we use this convention, in this, we fix a root node and then we add children to it, then if the child also has a child we call it grandchild of root node and child of the node which is connected to.
 
-![alt_text](/assets/img/DP_on_Trees/6.png)
+![alt_text](/blog/assets/img/DP_on_Trees/6.png)
 
 - In the above example node, 1 is the root node, node 2 and 3 are children of root 1, node 4 and 5 are children of root 2 and grandchildren of root 1, and similarly, 6 is the child of root 3 and grandchild of root 1. It is often misunderstood that a node cannot have more than 2 children.  
 Only in a Binary Tree, we can have at most 2 children, but in general, it’s ok if a node has more than 2 children.
-
-![alt_text](/assets/img/DP_on_Trees/7.png)
-
+![alt_text](/blog/assets/img/DP_on_Trees/7.png)
 - So in the above figure , if we do dfs of root node 1, the order will be
-
 - 1 → 2 → 5 → 3 → 4→ 6→ 7 → 8
-
 - So overall in DFS we finish all the children before moving to the next child, and this is true for every node we visit.
-
-![alt_text](/assets/img/DP_on_Trees/8.png)
-
+![alt_text](/blog/assets/img/DP_on_Trees/8.png)
 - First, 1 is Parent Node and node 2 is its child, so before visiting 3 we have to complete 2.
-
-![alt_text](/assets/img/DP_on_Trees/9.png)
-
+![alt_text](/blog/assets/img/DP_on_Trees/9.png)
 - Similarly, now node 2 is its parent node and root 4 and its children have to be completed before we visit 5. Let’s take an example:
 
-![alt_text](/assets/img/DP_on_Trees/10.png)First we visit the root node.
+![alt_text](/blog/assets/img/DP_on_Trees/10.png)First we visit the root node.
 
-![alt_text](/assets/img/DP_on_Trees/11.png)Then we move on to its first child.
+![alt_text](/blog/assets/img/DP_on_Trees/11.png)Then we move on to its first child.
 
-![alt_text](/assets/img/DP_on_Trees/12.png)Then we visit the child of node 2.
+![alt_text](/blog/assets/img/DP_on_Trees/12.png)Then we visit the child of node 2.
 
-![alt_text](/assets/img/DP_on_Trees/13.png)after we are done with all the children of node 2 we move onto node 3.
+![alt_text](/blog/assets/img/DP_on_Trees/13.png)after we are done with all the children of node 2 we move onto node 3.
 
-![alt_text](/assets/img/DP_on_Trees/14.png)Since there are no children of 3 we move to the next child which is 4.
+![alt_text](/blog/assets/img/DP_on_Trees/14.png)Since there are no children of 3 we move to the next child which is 4.
 
-![alt_text](/assets/img/DP_on_Trees/15.png)then we move to first child of 4 That is node 6.
+![alt_text](/blog/assets/img/DP_on_Trees/15.png)then we move to first child of 4 That is node 6.
 
-![alt_text](/assets/img/DP_on_Trees/16.png)Then we complete the node 7.
+![alt_text](/blog/assets/img/DP_on_Trees/16.png)Then we complete the node 7.
 
-![alt_text](/assets/img/DP_on_Trees/17.png)and we finish it with node 8.
+![alt_text](/blog/assets/img/DP_on_Trees/17.png)and we finish it with node 8.
 
 #### Other algorithms
 Refer the following link 
