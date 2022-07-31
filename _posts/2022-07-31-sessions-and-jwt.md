@@ -54,7 +54,6 @@ After authorization, the server needs to generate a session ID and send it to th
 OWASP provides a detailed article ([Link](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html)) on sessions, which is a must-read for anyone thinking of implementing sessions. Even if you end up using third-party libraries, having this knowledge is essential. Here are some key points:
 
 - Session IDs are supposed to be long, random strings of at least 128 bits.
-
 - They must not reveal any information about the architecture of your server (such as default names used by frameworks) or about the user itself.
 - They must be unpredictable (random enough) to prevent brute force attacks. Using a good cryptographically secure random number generator is a must.
 - Usage of proper cookie flags for storing and transmitting the ID token is recommended.
