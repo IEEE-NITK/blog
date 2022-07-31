@@ -1,4 +1,4 @@
-﻿nithinme:
+nithinme:
   name: Nithin M Eapen
   author_image: 'blog-author.jpg'
   user_description: 'The more you dream, the farther you get'
@@ -1260,3 +1260,25 @@ gayatri1705:
   github: gayatri1705
   author_image: 'blog-author.jpg'
   email: ""
+famousfive1:
+  name: Tejaswi Hegde
+  github: famousfive1
+  author_image: 'tejaswihegde.png'
+  user_description: 'I like coding....'
+  email: "tejaswihegde1@gmail.com"
+VikasKBhat:
+  name: Vikas Keshavamurthy Bhat
+  github: VikasKBhat
+  author_image: 'blog-author.jpg'
+  user_description: 'CP Enthusiast'
+  email: "vikaskbhat03@gmail.com"
+DharaneedaranKS:
+  name: Dharaneedaran K S
+  github: DharaneedaranKS
+  author_image: 'blog-author.jpg'
+  email: ""
+JuvvaSrinithya:
+  name: Juvva Srinithya
+  github: JuvvaSrinithya
+  author_image: 'blog-author.jpg'
+  email: "juvvasrinithya.201mt023@nitk.edu.in"
