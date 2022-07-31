@@ -1,4 +1,4 @@
-﻿nithinme:
+nithinme:
   name: Nithin M Eapen
   author_image: 'blog-author.jpg'
   user_description: 'The more you dream, the farther you get'
@@ -1266,3 +1266,9 @@ famousfive1:
   author_image: 'tejaswihegde.png'
   user_description: 'I like coding....'
   email: "tejaswihegde1@gmail.com"
+VikasKBhat:
+  name: Vikas Keshavamurthy Bhat
+  github: VikasKBhat
+  author_image: 'blog-author.jpg'
+  user_description: 'CP Enthusiast'
+  email: "vikaskbhat03@gmail.com"
