@@ -15,7 +15,7 @@ github_username: 'anirudhprabhakaran3'
 
 # The Qubit Report
 
-In part 1, we looked at quantum computing and its workings. Now, we’re going to look at a few places where this magical technology is being used!
+In [Part 1 of the Qubit Report](https://istenitk.wordpress.com/?p=2973), we looked at quantum computing and its workings. Now, we’re going to look at a few places where this magical technology is being used!
 
 Quantum computing has been around for some time now. The first quantum computer was made in 1998 as a collaboration between three fellows:  Isaac Chuang (Los Alamos National Laboratory), Neil Gershenfeld (Massachusetts Institute of Technology), and Mark Kubinec (University of California, Berkeley). This primitive machine had two qubits and was the first quantum computer that could load some data and give some output. Since then, the field has not hit the breaks yet. The most powerful quantum computer currently has 216 qubits.
 
