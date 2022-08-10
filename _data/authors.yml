@@ -944,7 +944,7 @@ ikjot-2605:
   name: Ikjot Singh Dhody
   github: ikjot-2605
   author_image: 'ikjotsingh.jpg'
-  email: ikjotsd@gmail.com   
+  email: ikjotsd@gmail.com
 AnirudhAchal:
   name: Anirudh Achal
   github: Anirudh Achal
@@ -953,9 +953,9 @@ AnirudhAchal:
   email: anirudh.achal@gmail.com
 dharmicksai:
   name: K Dharmick Sai
-  github: dharmicksai 
-  author_image: dharmick.jpg 
-  email: dharmicksaik@gmail.com 
+  github: dharmicksai
+  author_image: dharmick.jpg
+  email: dharmicksaik@gmail.com
 gaurang2001:
   name: Gaurang Velingkar
   github: gaurang2001
@@ -1049,7 +1049,7 @@ SidDsloth:
   github: SidDsloth
   author_image: 'manavsinghal.jpeg'
   user_description: 'Exploring Life'
-  email: manav.relativity@gmail.com 
+  email: manav.relativity@gmail.com
 viba-r-udupa:
   name: Viba R Udupa
   github: Viba
@@ -1102,12 +1102,12 @@ Shobuj-Paul:
   email: shobujpaul@hotmail.com
 BhaskarVyas:
   name: Bhaskar Vyas
-  github: BhaskarVyas	
+  github: BhaskarVyas
   author_image: bhaskar.jpeg
   user_description: "ECE NITK"
   email: bhaskar.cs.vyas@gmail.com
 tim-nitk:
-  name: Tilak 
+  name: Tilak
   github: tim-nitk
   email: tmaddy.191mt050@nitk.edu.in
   author_image: 'blog-author.jpg'
@@ -1121,9 +1121,9 @@ Sujay1101:
   github: Sujay1101
   author_image: 'blog-author.jpg'
   email: sujaychuttar@gmail.com
-vaibhavpuri32: 
-  name: Vaibhav Puri	
-  github: vaibhavpuri32	
+vaibhavpuri32:
+  name: Vaibhav Puri
+  github: vaibhavpuri32
   author_image: vaibhav.png
   user_description: "Every Night comes to an end"
   email: vaibhavpuri32@gmail.com
@@ -1282,3 +1282,8 @@ JuvvaSrinithya:
   github: JuvvaSrinithya
   author_image: 'blog-author.jpg'
   email: "juvvasrinithya.201mt023@nitk.edu.in"
+anirudhprabhakaran3:
+  name: Anirudh Prabhakaran
+  github: anirudhprabhakaran3
+  author_image: 'blog-author.jpg'
+  email: "anirudhprabhakaran3@gmail.com"
