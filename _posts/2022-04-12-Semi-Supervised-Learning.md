@@ -5,7 +5,7 @@
  author_github: Vaish-922
  date: 2017-05-14 23:32:44
  image: '/assets/img/'
- description: 'Introductory post on writing a blog'
+ description: 'Semi Supervised Learning'
  tags:
  - IEEE NITK
  - Blog
@@ -15,7 +15,13 @@
  ---
 ```
 
-Machine Learning is broadly classified into three main categories - Supervised Learning, Unsupervised Learning, and Semi Supervised Learning. Supervised Learning includes models like linear regression, whereas unsupervised has logistic regression. Semi-supervised Learning falls between unsupervised Learning (with no labelled training data) and supervised Learning (with only labelled training data). It is a remarkable instance of weak supervision.
+Machine Learning is broadly classified into three main categories -
+
+1. Supervised Learning - used when all the available data is annotated
+2. Unsupervised Learning - no annotated data is available
+3. Semi Supervised Learning.  
+
+Supervised Learning includes models like linear regression, whereas unsupervised has logistic regression. Semi-supervised Learning falls between unsupervised Learning (with no labelled training data) and supervised Learning (with only labelled training data). It is a remarkable instance of weak supervision.
 
   
   
@@ -48,6 +54,67 @@ The basic working of an SSL model is as given:
 -   Link the data inputs in the labelled training data with the inputs in the unlabeled data.
     
 -   Then, train the model the same way you did with the labelled set in the beginning in order to decrease the error and improve the model’s accuracy.
-    
 
-SSL is used in various aspects of our lives nowadays. Its most common practical uses include Speech Analysis, Web Content Classification, Protein Sequence Classification, Text Document Classifier, etc.
+The above method is commonly known as the self training method or psuedo label method. However, this method becomes heavily dataset dependent and in some cases might reduce accuracy by a great extent. 
+
+</br>
+
+The algorithm for psuedo label is as follows:
+
+Pseudo-Label are target classes for unlabeled data as if they were true labels. The class, which has maximum predicted probability predicted using a network for each unlabeled sample, is picked up:
+
+![](2022-09-02-16-29-09.png)
+
+Pseudo-Label is used in a fine-tuning phase with Dropout. The pre-trained network is trained in a supervised fashion with labeled and unlabeled data simultaneously:
+
+![](2022-09-02-16-29-54.png)
+
+where n is the number of samples in labeled data for SGD, n’ is the number of samples in unlabeled data; C is the number of classes;
+fmi is the output for labeled data, ymi is the corresponding label;
+f’mi for unlabeled data, y’mi is the corresponding pseudo-label;
+
+α(t) is a coefficient balancing them at epoch t. If α(t) is too high, it disturbs training even for labeled data. Whereas if α(t) is too small, we cannot use benefit from unlabeled data.
+
+α(t) is slowly increased, to help the optimization process to avoid poor local minima:
+
+![](2022-09-02-16-30-39.png)
+
+
+</br> </br>
+One more popular algorithm used for SSL is known as the TMean Teacher Model
+
+In the mean teacher model, two identical models are trained with two different strategies called the student and teacher model. In which, only the student model is trained. And, a very minimal amount of weights of student model is assigned to the teacher model at every step called exponential moving average weights that's why we call it as Mean teacher.
+
+There are two cost functions to be calculated here which is important during back propogation. The cost functions are:
+1. Classification cost(C(θ)) - binary cross-entropy between label predicted by student model and original label. 
+2. Consistency Cost(J(θ)) - mean squared difference between the predicted outputs of the student (weights θ and noise η) and teacher model (weights θ′ and noise η′).
+
+</br>
+
+![](2022-09-02-16-36-42.png)
+
+Consistency cost is actually the distribution difference between two predictions (student and teacher prediction) and the original label is not required. During training, the model tries to minimize the distribution difference between the student and teacher model. So, instead of labeled data, we may utilize unlabelled data here. The mathematical declaration of consistency cost is as follows.
+
+![](2022-09-02-16-44-23.png)
+
+While back-propagating in the student model, the overall cost
+(O(θ)) is calculated with the given formula:
+
+![](2022-09-02-16-45-11.png)
+
+During training, the exponential moving average(EMA) weights of the student model are assigned to the teacher model at every step and the proportion of weights assigned is controlled by parameter alpha(α). As mentioned in equation 3, while assigning weights, the teacher model holds its previous weights in alpha(α) proportion and (1−α) portion of student weights.
+
+![](2022-09-02-16-46-44.png)
+
+
+</br>  
+With the amount of data growing exponentially, there is no time to label and annotate them. This is where semi supervised learning comes into the picture. 
+SSL is used in various aspects of our lives nowadays. Its most common practical uses include Speech Analysis, Web Content Classification, Protein Sequence Classification, Text Document Classifier, etc. 
+</br> </br>
+References
+
+[1] https://towardsdatascience.com/pseudo-labeling-to-deal-with-small-datasets-what-why-how-fd6f903213af
+
+[2] https://en.wikipedia.org/wiki/Semi-supervised_learning#:~:text=Semi%2Dsupervised%20learning%20is%20an,with%20only%20labeled%20training%20data)
+
+[3] https://www.geeksforgeeks.org/ml-semi-supervised-learning/
