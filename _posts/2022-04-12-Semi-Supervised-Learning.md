@@ -15,7 +15,7 @@
  ---
 ```
 
-<<<<<<< HEAD
+
 Machine Learning is broadly classified into three main categories -
 
 1. Supervised Learning - used when all the available data is annotated
@@ -23,15 +23,13 @@ Machine Learning is broadly classified into three main categories -
 3. Semi Supervised Learning.  
 
 Supervised Learning includes models like linear regression, whereas unsupervised has logistic regression. Semi-supervised Learning falls between unsupervised Learning (with no labelled training data) and supervised Learning (with only labelled training data). It is a remarkable instance of weak supervision.
-=======
+
 Machine Learning is broadly classified into three main categories - 
 1. Supervised Learning - used when all the available data is annotated
 2. Unsupervised Learning - no annotated data is available
 3. Semi Supervised Learning. 
 
 Supervised Learning includes models like linear regression, whereas unsupervised has logistic regression. Semi-supervised Learning falls between unsupervised Learning (with no labelled training data) and supervised Learning (with only labelled training data). It is a remarkable instance of weak supervision. 
->>>>>>> 186570470ff28367690f6eae0613491e97c6a6a1
-
   
   
 
@@ -63,7 +61,6 @@ The basic working of an SSL model is as given:
 -   Link the data inputs in the labelled training data with the inputs in the unlabeled data.
     
 -   Then, train the model the same way you did with the labelled set in the beginning in order to decrease the error and improve the model’s accuracy.
-<<<<<<< HEAD
 
 The above method is commonly known as the self training method or psuedo label method. However, this method becomes heavily dataset dependent and in some cases might reduce accuracy by a great extent. 
 
@@ -128,20 +125,3 @@ References
 [2] https://en.wikipedia.org/wiki/Semi-supervised_learning#:~:text=Semi%2Dsupervised%20learning%20is%20an,with%20only%20labeled%20training%20data)
 
 [3] https://www.geeksforgeeks.org/ml-semi-supervised-learning/
-=======
-
-The above method is commonly known as the self training method or psuedo label method. However, this method becomes heavily dataset dependent and in some cases might reduce accuracy by a great extent. 
-
-The algorithm for psuedo label is as follows:
-
-Pseudo-Label are target classes for unlabeled data as if they were true labels. The class, which has maximum predicted probability predicted using a network for each unlabeled sample, is picked up:
-
-
-    
-
-SSL is used in various aspects of our lives nowadays. Its most common practical uses include Speech Analysis, Web Content Classification, Protein Sequence Classification, Text Document Classifier, etc.
-
-References:
-[1] https://en.wikipedia.org/wiki/Semi-supervised_learning#:~:text=Semi%2Dsupervised%20learning%20is%20an,with%20only%20labeled%20training%20data)
-[2] https://www.geeksforgeeks.org/ml-semi-supervised-learning/
->>>>>>> 186570470ff28367690f6eae0613491e97c6a6a1
