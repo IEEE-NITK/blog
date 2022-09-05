@@ -35,16 +35,14 @@ A blockchain is a distributed software network that functions both as a digital 
 * Each player in the bitcoin system maintains their own personal ledger with all the set of transactions till date. The transactions are immutable in nature, i.e, once written they cannot be changed.
 * Whenever a new transaction is made, it is hashed via a special function called cryptographic hash function. This is a special function 
 f(Message, Private Key) which returns the hash of the message using the private key of user.
-* The cryptographic hash function is such that it is difficult to invert and thus going from the hashed output back to the message is incredibly difficult. For example, the CHF called SHA256 generates a 256 bit unique hash for each input, and therefore the probability of a hash corresponding to a message is 2-256  , which is practically 0.
+* The cryptographic hash function is such that it is difficult to invert and thus going from the hashed output back to the message is incredibly difficult. For example, the CHF called SHA256 generates a 256 bit unique hash for each input, and therefore the probability of a hash corresponding to a message is 2^-256  , which is practically 0.
 * When this message is received by Alice, she can verify that it was indeed sent by Bob by using her public key using a function verify (Message, Hash, Public Key).
 
 ## **Nonce and Proof of Work**
 
 ![alt_text](/blog/assets/img/BlockChain/4.png)
 
-Ok, so that’s it for theory, now let’s see where we can implement it. Let us consider the case of a system which requires lots of pin connection with a microcontroller, which is typically Arduino Uno. So sometimes we need to cascade two Arduinos due to pin shortage or sensor working or whatever the reason. To ensure the working of cascading, I2C comes into the picture.
-
-A4 pin of Arduino Uno board is SDA and A5 is SCL, so we have to connect these pins of one Arduino to another. Also, as per I2C protocol, we need to define one Arduino as master and another one as a slave for which we can use Arduino IDE with ‘wire’ library for I2C.
+Ok, so that's it for theory. Now let's see where we can implement it. In the supply chain, it has great utility. But how? So let's take example of mushrooms. Let's say I buy mushrooms from some farmer in Udupi, I will make a block with that information of when, where and how much mushrooms were bought from which farmer. So in the next step, this goes in some processing plant so even at this stage I will store the information related to processing and this way I have all the information of all steps travelled by mushroom before reaching to customer. Now in case of any defect, in just a matter of minutes, we can go back and see where the issue is.
 
 In Bitcoin’s Proof of Work mining process, the goal is to solve a mathematical puzzle in order to discover the next block hash and receive Bitcoin rewards. Miners must find a nonce value that, when plugged into the hashing algorithm, generates a hash value that is lower than the target difficulty.
 
