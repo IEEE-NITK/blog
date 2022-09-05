@@ -1,4 +1,4 @@
-nithinme:
+﻿nithinme:
   name: Nithin M Eapen
   author_image: 'blog-author.jpg'
   user_description: 'The more you dream, the farther you get'
@@ -1178,12 +1178,10 @@ Rohanrao02:
   github: Rohanrao02
   author_image: 'blog-author.jpg'
   email: "rohanrao.jh@gmail.com"
-<<<<<<< HEAD
 Vaish-922:
   name: Vaishali S
   github: Vaish-922
   email: "emailforvaishali@gmail.com"
-=======
 advaithcurpod:
   name: Advaith Prasad Curpod
   github: advaithcurpod
@@ -1308,4 +1306,22 @@ Meghna-U:
   github: Meghna-U
   author_image: 'blog-author.jpg'
   email: ""
+<<<<<<< HEAD
 >>>>>>> 87b5f681e54294a85ef7e85d5f462041edca7887
+=======
+vinayakj02:
+  name: Vinayak Vatsalya J 
+  github: vinayakj02
+  author_image: 'vinayakj02_.jpg'
+  email: "vinayakv02.j@gmail.com"
+HrishiCoolkarni:
+  name: Hrishikesh Kulkarni
+  github: HrishiCoolkarni
+  author_image: 'blog-author.jpg'
+  email: ""
+madhanraj13579:
+  name: Madhan Raj R
+  github: madhanraj13579
+  author_image: 'blog-author.jpg'
+  email: "madhnarajr.201ch029@nitk.edu.in"
+>>>>>>> 70a76cc73b260c05fb1a22249e1dc056de1a3b81
