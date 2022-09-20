@@ -1,21 +1,22 @@
 ---
- layout: post
- title: "Complexity Theory"
- author_github: Rohan-Kamat
- date: 2022-09-18
- image: '/assets/img/'
- description: 'Post on the basic ideas of complexity theory'
- tags:
- - IEEE NITK
- - CompSoc
- - Algorithm analysis
+layout: post
+title: "Complexity Theory"
+author_github: Rohan-Kamat
+date: 2022-09-18 00:00:00
+image: '/assets/img/'
+description: 'Post on the basic ideas of complexity theory'
 
- categories:
- - CompSoc
+tags:
+- IEEE NITK
+- CompSoc
+- Algorithm analysis
 
- github_username: 'Rohan-Kamat'
+categories:
+- CompSoc
 
+github_username: 'Rohan-Kamat'
 ---
+
 # COMPLEXITY THEORY
 Complexity theory is a field focusing on classifying computational problems based on the  resources utilized, and relating these classes to each other. Complexity of a problem refers to the amount of resources utilized by it. A computational problem is one which can be solved by the mechanical and electronic implementation of mathematical steps. To accomplish this, we need an algorithm, which is a step-by-step procedure to solve a problem. Complexity theory deals with the complexity of problems which can’t get a better complexity regardless of the algorithm used for solving it.
 
@@ -51,12 +52,10 @@ Polynomial time or polytime is the time represented by O(nk), i.e. any problem w
 CLASSES OF COMPUTATIONAL PROBLEMS
 ---------------------------------
 
-*   **P class of problems:** These are the class of problems which can be solved in polytime, i.e. there exists an algorithm to solve these problems in O(nk)time.
+- **P class of problems:** These are the class of problems which can be solved in polytime, i.e. there exists an algorithm to solve these problems in O(nk)time.
+- **NP class of problems:** These are the class of problems which can be verified in polytime. This means that they may or may not have a polytime solution but given a solution to the problem, it can be verified in polytime whether the solution given is valid or not. Evidently the NP class of problems are decision problems, i.e their output is either yes or no. P is a subset of NP, as any problem that has a polytime solution can also be verified in polytime. Whether it is a proper subset is still an open question.
 
-
-*   **NP class of problems:** These are the class of problems which can be verified in polytime. This means that they may or may not have a polytime solution but given a solution to the problem, it can be verified in polytime whether the solution given is valid or not. Evidently the NP class of problems are decision problems, i.e their output is either yes or no. P is a subset of NP, as any problem that has a polytime solution can also be verified in polytime. Whether it is a proper subset is still an open question.
-
-    ### POLYNOMIAL TIME REDUCTIONS
+### POLYNOMIAL TIME REDUCTIONS
 
     This concept is used to solve problems using the solutions to other problems. If an algorithm to solve one problem is known to us and we need to solve another problem, we can convert/reduce the second problem to an input of the first one and use the output of the first problem hence obtained as the output to the second problem as well. However,
 
@@ -68,10 +67,8 @@ CLASSES OF COMPUTATIONAL PROBLEMS
     An instance of a problem is the problem along with its inputs(Say if A is our problem A(a,b,c) where a,b,c are inputs, is an instance). Technically speaking, an instance of problem A has to be reduced to an instance of problem B to solve problem A using B.
 
 ![image_4](/blog/assets/img/complexity-theory/Polytime_reduction.png)
-*   **NP-Complete(NPC):** These are the class of problems which are also a subset of NP and all problems in the class NP can be polytime reduced to these problems. NPC problems are of great significance as they have the power to answer the “question of the millennium” – is P=NP or P≠NP. This is because, if a polytime algorithm can be generated to solve any of the NPC problems, it would imply that all NP problems can also be solved in polytime, since they are polytime reducible to the NPC problem. Hence P=NP. On the other hand if it can be proved that no polytime algorithm exists for any of the NPC problems, it would also imply that no polytime algorithm exists for any NP problem, i.e. P≠NP.
 
+* **NP-Complete(NPC):** These are the class of problems which are also a subset of NP and all problems in the class NP can be polytime reduced to these problems. NPC problems are of great significance as they have the power to answer the “question of the millennium” – is P=NP or P≠NP. This is because, if a polytime algorithm can be generated to solve any of the NPC problems, it would imply that all NP problems can also be solved in polytime, since they are polytime reducible to the NPC problem. Hence P=NP. On the other hand if it can be proved that no polytime algorithm exists for any of the NPC problems, it would also imply that no polytime algorithm exists for any NP problem, i.e. P≠NP.
+* **NP-hard:** NP-hard problems are those which may or may not have a polytime verifier but all NP problems can be polytime reduced to NP-hard problems. NPC = NP Ո NP-hard
 
-*   **NP-hard:** NP-hard problems are those which may or may not have a polytime verifier but all NP problems can be polytime reduced to NP-hard problems.
-    NPC = NP Ո NP-hard
-
-    ![Complexity hierarchy](/blog/assets/img/complexity-theory/Complexity_hierarchy.png)
+![Complexity hierarchy](/blog/assets/img/complexity-theory/Complexity_hierarchy.png)
