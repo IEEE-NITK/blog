@@ -1,4 +1,4 @@
-nithinme:
+﻿nithinme:
   name: Nithin M Eapen
   author_image: 'blog-author.jpg'
   user_description: 'The more you dream, the farther you get'
@@ -1160,6 +1160,10 @@ Rohanrao02:
   github: Rohanrao02
   author_image: 'blog-author.jpg'
   email: "rohanrao.jh@gmail.com"
+Vaish-922:
+  name: Vaishali S
+  github: Vaish-922
+  email: "emailforvaishali@gmail.com"
 advaithcurpod:
   name: Advaith Prasad Curpod
   github: advaithcurpod
@@ -1335,3 +1339,8 @@ raghawendra:
   github: raghawendra
   author_image: 'blog-author.jpg'
   email: "raghw678@gmail.com"
+Vaish-922:
+  name: VAISHALI S
+  github: Vaish-922
+  author_image: 'blog-author.jpg'
+  email: "vaish.201ee263@nitk.edu.in"
