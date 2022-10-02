@@ -2,7 +2,7 @@
 layout: post
 title: "Semi Supervised Learning"
 author_github: Vaish-922
-date: 2022-09-25 00:00:00
+date: 2022-10-02 00:00:00
 image: '/assets/img/'
 description: ''
 tags:

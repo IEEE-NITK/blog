@@ -2,7 +2,7 @@
 layout: post
 title: "Evolution of Microprocessor"
 author_github: rishee-k
-date: 2022-09-25 00:00:00
+date: 2022-10-02 00:00:00
 
 description: "Microprocessor is a control unit of a microcomputer, made on a small chip capable of performing ALU (arithmetic logic unit) operations and communicating with  other devices connected to it. Let’s see about its evolution."
 

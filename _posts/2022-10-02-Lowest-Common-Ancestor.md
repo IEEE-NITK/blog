@@ -2,7 +2,7 @@
  layout: post
  title: "Lowest Common Ancestor"
  author_github: sathuhebbar
- date: 2022-04-13 23:32:44
+ date: 2022-10-02 00:00:00
  image: '/assets/img/'
  description: 'A few LCA finding algorithms'
  tags:
