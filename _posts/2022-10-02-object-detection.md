@@ -2,7 +2,7 @@
  layout: post
  title: "Object Detection with Deep Learning"
  author_github: RadhikaChhabra17
- date: 2022-04-10 16:22:44
+ date: 2022-10-02 00:00:00
  image: '/assets/img/'
  description: 'Have you ever wondered how self driving cars detect obstacles on their way or how image captioning works? All this is possible due to object detection. This blog explains how deep learning techniques are used in object detection.'
  tags:
@@ -25,7 +25,7 @@ Object detection is commonly confused with image recognition, so before we proce
 
 **Object detection** : It draws a box around each dog and labels the box “dog”. The model predicts where each object is and what label should be applied. In that way, object detection provides more information about an image than recognition.
 <br>
-<img src="/assets/img/Object-Detection/detect_vs_recognition.jpg" alt="Compare detection vs recognition" style="zoom:68%;"/>
+<img src="/blog/assets/img/Object-Detection/detect_vs_recognition.jpg" alt="Compare detection vs recognition" style="zoom:68%;"/>
 
 ## HOW OBJECT DETECTION WORKS?
 
@@ -70,15 +70,13 @@ YOLO algorithm works using the following three techniques:
 
 1.  **Residual blocks** : First, the image is divided into various grids. Every grid cell will detect objects that appear within them. For example, if an object center appears within a certain grid cell, then this cell will be responsible for detecting it.
     <br>
-    <img src="/assets/img/Object-Detection/grids.png" alt="RESIDUAL BLOCK" style="zoom:67%;"/>
-
+    <img src="/blog/assets/img/Object-Detection/grids.png" alt="RESIDUAL BLOCK" style="zoom:67%;"/>
 2.  **Bounding box regression** : A bounding box is an outline that highlights an object in an image. YOLO uses a single bounding box regression to predict the height, width, center, and class of objects.
     <br>
-    <img src="/assets/img/Object-Detection/box.png" alt="BOUNDING BOX" style="zoom:67%;"/>
-
+    <img src="/blog/assets/img/Object-Detection/box.png" alt="BOUNDING BOX" style="zoom:67%;"/>
 3.  **Intersection over union (IOU)** : Intersection over union (IOU) is a phenomenon in object detection that describes how boxes overlap. YOLO uses IOU to provide an output box that surrounds the objects perfectly. Each grid cell is responsible for predicting the bounding boxes and their confidence scores. The IOU is equal to 1 if the predicted bounding box is the same as the real box.
     <br>
-    <img src="/assets/img/Object-Detection/iou.jpeg" alt="IOU" style="zoom:67%;"/>
+    <img src="/blog/assets/img/Object-Detection/iou.jpeg" alt="IOU" style="zoom:67%;"/>
 
 ## Object Detection Dataset
 
@@ -92,16 +90,12 @@ There are various dataset used for training the model
 
 1. **FACE RECOGNITION** : Most face recognition systems are powered by object detection. It can be used to detect faces, classify emotions or expressions, and feed the resulting box to an image-retrieval system to identify a specific person out of a group. It is also used in unlocking phone with face lock.
    <br>
-   <img src="/assets/img/Object-Detection/face_recognition.webp" alt="FACE RECOGNITION" style="zoom:67%;"/>
-
+   <img src="/blog/assets/img/Object-Detection/face_recognition.webp" alt="FACE RECOGNITION" style="zoom:67%;"/>
 2. **AUTONOMOUS VEHICLES** : Self-driving cars use object detection to spot pedestrians, other cars, and obstacles on the road in order to move around safely. For example, Tesla’s Autopilot AI heavily utilizes object detection to perceive environmental and surrounding threats such as oncoming vehicles or obstacles.
    <br>
-   <img src="/assets/img/Object-Detection/cars.jpg" alt="AUTONOMOUS VEHICLES" style="zoom:67%;"/>
-
+   <img src="/blog/assets/img/Object-Detection/cars.jpg" alt="AUTONOMOUS VEHICLES" style="zoom:67%;"/>
 3. **People detection in Security** : A wide range of security applications in video surveillance are based on object detection, for example, to detect people in restricted or dangerous areas, suicide prevention, or to automate inspection tasks on remote locations with computer vision.
-
 4. **Pose Estimation** : Finding the location of the main joints of a body from images, videos, or a sequence of images. Forms of pose estimation are present in applications such as Action recognition, Human interactions, creation of assets for virtual reality and 3D graphics games, robotics and more
-
 5. **Crowd Counting** : Crowd counting is another valuable application of object detection. For densely populated areas like theme parks, malls, and city squares, object detection can help businesses and municipalities more effectively measure different kinds of traffic—whether on foot, in vehicles, or otherwise.
 
 ## REFERENCES

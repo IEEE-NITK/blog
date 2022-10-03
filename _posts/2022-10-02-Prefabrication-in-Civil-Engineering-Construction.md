@@ -2,7 +2,7 @@
 layout: post
 title: "Prefabrication in Civil Engineering Construction"
 author_github: RajeevBhat026
-date: 2022-09-25 00:00:00
+date: 2022-10-02 00:00:00
 description: 'Prefabrication is the designing and manufacturing of assemblies under factory conditions, then transporting them to—and assembling them on a construction site.'
 
 tags:
