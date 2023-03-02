@@ -56,6 +56,7 @@ If you're not a first time author, feel free to skip to the next section.
 	- This is where your content goes. In Github's flavor of markdown.
 
 ### Step 4: Build locally and check for errors
+## Option 1
  - Install [Ruby and Jekyll](https://jekyllrb.com/docs/installation/)
  - Install other dependencies:
  	```
@@ -74,6 +75,19 @@ If you're not a first time author, feel free to skip to the next section.
 	    Server address: http://127.0.0.1:4000/
 	    Server running... press ctrl-c to stop.
 	```
+	## Option 2
+1. Install Docker on your local system. Find link to install [here](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/)
+2. Run the following command to download the docker image
+```
+docker-compose up
+```
+* In case you want to shut down your docker container, kindly do it by running `docker-compose down`. It should allow you to shut down your docker container.
+* In case you have shut down you docker container with Ctrl+C you will still need to shut it down using `docker-compose down`.
+
+
+	
+	
+	
 	Open [http://127.0.0.1:4000/](http://127.0.0.1:4000/) in your browser to preview the blogs
 	
  - To test for errors:
