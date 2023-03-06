@@ -262,24 +262,6 @@ mahirjain25:
   author_image: 'mahir.jpg'
   user_description: 'Hard work beats talent when talent fails to work hard.'
   email: mahirjain25@gmail.com
-somnathsarkar:
-  name: Somanth Sarkar
-  github: somnathsarkar
-  author_image: 'blog-author.jpg'
-  user_description: 'Programmer, interested in CP.'
-  email: somnath.k.sarkar@gmail.com
-abhishekthigale:
-  name: Abhishek Thigale
-  github: abhishekthigale
-  author_image: 'abhishek.jpg'
-  user_description: 'Mech Engineer for Life!'
-  email: abhithigale3@gmail.com
-RosaGeorge31:
-  name: Rosa Anil George
-  github: RosaGeorg31
-  author_image: 'RosaGeorge.jpeg'
-  user_description: 'Born to Code!'
-  email: rosageorge97@gmail.com
 anirudh0707:
   name: Anirudh B H
   github: anirudh0707
@@ -944,7 +926,7 @@ ikjot-2605:
   name: Ikjot Singh Dhody
   github: ikjot-2605
   author_image: 'ikjotsingh.jpg'
-  email: ikjotsd@gmail.com   
+  email: ikjotsd@gmail.com
 AnirudhAchal:
   name: Anirudh Achal
   github: Anirudh Achal
@@ -953,9 +935,9 @@ AnirudhAchal:
   email: anirudh.achal@gmail.com
 dharmicksai:
   name: K Dharmick Sai
-  github: dharmicksai 
-  author_image: dharmick.jpg 
-  email: dharmicksaik@gmail.com 
+  github: dharmicksai
+  author_image: dharmick.jpg
+  email: dharmicksaik@gmail.com
 gaurang2001:
   name: Gaurang Velingkar
   github: gaurang2001
@@ -1049,7 +1031,7 @@ SidDsloth:
   github: SidDsloth
   author_image: 'manavsinghal.jpeg'
   user_description: 'Exploring Life'
-  email: manav.relativity@gmail.com 
+  email: manav.relativity@gmail.com
 viba-r-udupa:
   name: Viba R Udupa
   github: Viba
@@ -1102,12 +1084,12 @@ Shobuj-Paul:
   email: shobujpaul@hotmail.com
 BhaskarVyas:
   name: Bhaskar Vyas
-  github: BhaskarVyas	
+  github: BhaskarVyas
   author_image: bhaskar.jpeg
   user_description: "ECE NITK"
   email: bhaskar.cs.vyas@gmail.com
 tim-nitk:
-  name: Tilak 
+  name: Tilak
   github: tim-nitk
   email: tmaddy.191mt050@nitk.edu.in
   author_image: 'blog-author.jpg'
@@ -1121,9 +1103,9 @@ Sujay1101:
   github: Sujay1101
   author_image: 'blog-author.jpg'
   email: sujaychuttar@gmail.com
-vaibhavpuri32: 
-  name: Vaibhav Puri	
-  github: vaibhavpuri32	
+vaibhavpuri32:
+  name: Vaibhav Puri
+  github: vaibhavpuri32
   author_image: vaibhav.png
   user_description: "Every Night comes to an end"
   email: vaibhavpuri32@gmail.com
@@ -1178,6 +1160,201 @@ Rohanrao02:
   github: Rohanrao02
   author_image: 'blog-author.jpg'
   email: "rohanrao.jh@gmail.com"
+advaithcurpod:
+  name: Advaith Prasad Curpod
+  github: advaithcurpod
+  author_image: 'advaithcurpod.jpeg'
+  email: "advaithcurpod@gmail.com"
+anirudh1221:
+  name: Anirudh Singh Solanki
+  github: anirudh1221
+  author_image: 'blog-author.jpg'
+  email: ""
+ABHILASHBHARADWAJ-K:
+  name: Abhilash Bharadwaj
+  github: ABHILASHBHARADWAJ-K
+  author_image: 'blog-author.jpg'
+  email: "abhilash.bhrdwj88@gmail.com"
+not-shoyo:
+  name: Akheel Muhammed
+  github: not-shoyo
+  author_image: 'akheel_muhammed.JPG'
+  email: "akheelsaajid@gmail.com"
+apurva-20:
+  name: Apurva S
+  github: apurva-20
+  author_image: 'blog-author.jpg'
+  email: ""
+Anannnyyaa:
+  name: Anannya Rao
+  github: Anannnyyaa
+  author_image: 'blog-author.jpg'
+  email: "anannyaraob@gmail.com"
+harry7337:
+  name: Harish Gumnur
+  github: harry7337
+  author_image: 'blog-author.jpg'
+  email: "hari.8jan@gmail.com"
+AmandeepSingh285:
+  name: Amandeep Singh
+  github: AmandeepSingh285
+  author_image: Amandeep_Singh.jpg
+  description: ""
+  email: "amandeep.singh.28@gmail.com"
+ashrithdr:
+  name: Ashrith D R
+  github: ashrithdr
+  author_image: 'blog-author.jpg'
+  email: ""
+gauravKumar:
+  name: Gaurav Kumar
+  github: gauravKumar
+  author_image: 'blog-author.jpg'
+  email: "gauravkumar.201cv117@nitk.edu.in"
+kavyabhat02:
+  name: Kavya Bhat
+  github: kavyabhat02
+  author_image: kavya.jpg
+  email: "kavyabhat@gmail.com"
+harishA3:
+  name: Harish R Kale
+  github: harishA3
+  author_image: 'blog-author.jpg'
+  email: "harishrkale20@gmail.com"
+ChinmayaSharma-hue:
+  name: Chinmaya Sharma
+  github: ChinmayaSharma-hue
+  author_image: 'blog-author.jpg'
+  email: ""
+Dhruvil-Lakhtaria:
+  name: Dhruvil Lakhtaria
+  github: Dhruvil-Lakhtaria
+  author_image: 'dhruvil.jpeg'
+  user_description: 'Football Code and Music'
+  email: "lakhtariadhruvil123@gmail.com"
+himanshu:
+  name: Himanshu S Garud
+  github: himanshu
+  author_image: 'blog-author.jpg'
+  email: "himan.201me122@nitk.edu.in"
+gayatri1705:
+  name: Gayatri Kattimani
+  github: gayatri1705
+  author_image: 'blog-author.jpg'
+  email: ""
+famousfive1:
+  name: Tejaswi Hegde
+  github: famousfive1
+  author_image: 'tejaswihegde.png'
+  user_description: 'I like coding....'
+  email: "tejaswihegde1@gmail.com"
+VikasKBhat:
+  name: Vikas Keshavamurthy Bhat
+  github: VikasKBhat
+  author_image: 'blog-author.jpg'
+  user_description: 'CP Enthusiast'
+  email: "vikaskbhat03@gmail.com"
+DharaneedaranKS:
+  name: Dharaneedaran K S
+  github: DharaneedaranKS
+  author_image: 'blog-author.jpg'
+  email: ""
+JuvvaSrinithya:
+  name: Juvva Srinithya
+  github: JuvvaSrinithya
+  author_image: 'blog-author.jpg'
+  email: "juvvasrinithya.201mt023@nitk.edu.in"
+anirudhprabhakaran3:
+  name: Anirudh Prabhakaran
+  github: anirudhprabhakaran3
+  author_image: anirudh_prabhakaran.jpg
+  email: "anirudhprabhakaran3@gmail.com"
+MistaAsh:
+  name: Ashish Bharath
+  github: MistaAsh
+  author_image: 'ashish-bharath.jfif'
+  email: "ashishbharath2002@gmail.com"
+kshamaa24:
+  name: Kshamaa Acharya B
+  github: kshamaa24
+  author_image: 'blog-author.jpg'
+  email: "kshamaaacharyab.201me128@nitk.edu.in"
+Meghna-U:
+  name: Meghna Uppuluri
+  github: Meghna-U
+  author_image: 'blog-author.jpg'
+  email: ""
+vinayakj02:
+  name: Vinayak Vatsalya J
+  github: vinayakj02
+  author_image: 'vinayakj02_.jpg'
+  email: "vinayakv02.j@gmail.com"
+HrishiCoolkarni:
+  name: Hrishikesh Kulkarni
+  github: HrishiCoolkarni
+  author_image: 'blog-author.jpg'
+  email: ""
+madhanraj13579:
+  name: Madhan Raj R
+  github: madhanraj13579
+  author_image: 'blog-author.jpg'
+  email: "madhnarajr.201ch029@nitk.edu.in"
+madhavkumar1523:
+  name: Madhav Kumar
+  github: madhavkumar1523
+  author_image: 'madhav.jpeg'
+  user_description: 'Cruising through life'
+  email: madhavkumar1523@gmail.com
+anuragkumar2121:
+  name: Anurag Kumar
+  github: anuragkumar2121
+  author_image: 'blog-author.jpg'
+  email: "ark88ark2121@gmail.com"
+Jayasrivastava345:
+  name: Jaya Srivastava
+  github: Jayasrivastava345
+  author_image: 'blog-author.jpg'
+  email: ""
+mohiteManthan:
+  name: Mohite Manthan Ravindra
+  github: mohiteManthan
+  author_image: 'blog-author.jpg'
+  email: "manthanrmohite@gmail.com"
+Rohan-Kamat:
+  name: Rohan Kamat
+  github: Rohan-Kamat
+  author_image: 'RohanKamat_pic.png'
+  email: "rohankamat20022002@gmail.com"
+gagana-05:
+  name: K A Gaganashree
+  github: gagana-05
+  author_image: 'blog-author.jpg'
+  email: ""
+raghawendra:
+  name: Raghwendra Pratap Yadav
+  github: raghawendra
+  author_image: 'blog-author.jpg'
+  email: "raghw678@gmail.com"
+Vaish-922:
+  name: VAISHALI S
+  github: Vaish-922
+  author_image: 'blog-author.jpg'
+  email: "emailforvaishali@gmail.com"
+RajeevBhat026:
+  name: Rajeev Bhat
+  github: RajeevBhat026
+  author_image: 'blog-author.jpg'
+  email: "rajeev.b026@gmail.com"
+rishee-k:
+  name: Rishee K
+  github: rishee-k
+  author_image: 'blog-author.jpg'
+  email: ""
+RadhikaChhabra17:
+  name: Radhika Chhabra
+  github: RadhikaChhabra17
+  author_image: 'RadhikaChhabra.jpeg'
+  email: "7radhikachhabra7@gmail.com"
 kid-116:
   name: Mehul Todi
   github: kid-116
