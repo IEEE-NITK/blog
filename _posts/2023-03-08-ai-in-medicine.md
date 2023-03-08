@@ -2,7 +2,7 @@
 layout: post
 title: "AI in Medicine"
 author_github: swetha-thomas
-date: 2022-04-12 22:11:15
+date: 2023-03-08 00:00:00
 image: '/assets/img/'
 description: 'Explore the Applications of AI in Medicine'
 tags:
@@ -29,22 +29,12 @@ Radiological imaging is of paramount importance as doctors often use them to con
 
 Some examples of AI used in Radiological Imaging are:
 
-[<img src="/assets/img/ai-in-medicine/radiology.png" width="550" alt="AI In Radiology"/>](/assets/img/ai-in-medicine/radiology.png)
+![Radiology](/blog/assets/img/ai-in-medicine/radiology.png)
 
-
-- Detecting lung and breast cancer based on CT scans
-
-  Lung and breast cancer is known to be two of the leading causes of cancer-related deaths. Hence, advancements in screening processes are of utmost importance. So, AI has been implemented in nodule identification from scan images and has shown promising results in terms of sensitivity and specificity compared to radiologist performance without AI.
-
-- Assessing cardiac health from Electrocardiograms 
-
-  Researchers found that by combining AI with imaging techniques like electrocardiograms and cardiac MRI images, physicians could improve predictive models indicating a patient’s risk for heart attacks. 
-
-- Classifying skin lesions from images of the skin
-
-  AI is making progress in the field of dermatology, particularly in improving the sensitivity and accuracy of screening of skin lesions including malignancies.
-
-- Finding indicators of diabetic retinopathy in eye images
+- **Detecting lung and breast cancer based on CT scans** - Lung and breast cancer is known to be two of the leading causes of cancer-related deaths. Hence, advancements in screening processes are of utmost importance. So, AI has been implemented in nodule identification from scan images and has shown promising results in terms of sensitivity and specificity compared to radiologist performance without AI.
+- **Assessing cardiac health from Electrocardiograms** - Researchers found that by combining AI with imaging techniques like electrocardiograms and cardiac MRI images, physicians could improve predictive models indicating a patient’s risk for heart attacks. 
+- **Classifying skin lesions from images of the skin** - AI is making progress in the field of dermatology, particularly in improving the sensitivity and accuracy of screening of skin lesions including malignancies.
+- **Finding indicators of diabetic retinopathy in eye images**
 
 Now let us take a quick dive into how AI is actually used in detection of lung cancer from CT scans.
 
@@ -52,7 +42,7 @@ Which ML technique is used for this? Deep Learning.
 
 Deep Learning is a technique that is inspired by our brain’s own network of neurons. In this specific situation, we’ll be using the deep learning algorithm called Convolutional Neural Network (CNN).
 
-[<img src="/assets/img/ai-in-medicine/cnn.png" width="550" alt="CNN"/>](/assets/img/ai-in-medicine/cnn.png)
+![CNN](/blog/assets/img/ai-in-medicine/cnn.png)
 
 The CNN architecture generally consists of 3 main types of layers: convolutional layers, pooling layers, and a fully connected layer.
 
@@ -64,7 +54,7 @@ Based on the activation values of the final convolutional layer, the fully conne
 
 Developing drugs is a very laborious process involving years of work and huge amounts of investment.
 
-[<img src="/assets/img/ai-in-medicine/drug.png" width="450" alt="DrugDevelopment"/>](/assets/img/ai-in-medicine/drug.png)
+![Drug](/blog/assets/img/ai-in-medicine/drug.png)
 
 There are 4 main stages in drug development and AI is used in all the stages.
 
@@ -90,7 +80,7 @@ No patient is the same. Sounds obvious, yet often doctors treat patients with th
 
 ## 4. Improve gene editing
 
-[<img src="/assets/img/ai-in-medicine/gene.png" align="left" width="200" alt="GeneEditing"/>](/assets/img/ai-in-medicine/gene.png)
+![Gene](/blog/assets/img/ai-in-medicine/gene.png)
 
 Gene editing has been gaining popularity as potential treatment for genetic diseases. CRISPR-Cas9 system for gene editing is a big revolution in gene editing as it uses single guide RNA (sgRNA) to target and edit a specific location on the DNA. However, the limitation is that the sgRNA can fit multiple DNA locations which can lead to off target effects. ML models can reliably predict the degree of both sgRNA – target interactions and off target effects for a given sgRNA. This helps to develop appropriate shRNA for all regions of human DNA with precision. 
 
@@ -107,7 +97,8 @@ In order for an AI solution to be successful, it requires a vast amount of patie
 Over the next few years, hybrid models will be adopted, where clinicians are supported in diagnosis, treatment planning, and identifying risk factors, but retain ultimate responsibility for the patient’s care.  This will result in faster adoption by healthcare providers by mitigating perceived risk and start to deliver measurable improvements in patient outcomes and operational efficiency at scale.  
 
 ## References
-- [Artificial Intelligence in Medicine | IBM](https://www.ibm.com/topics/artificial-intelligence-medicine)
+
+- [Artificial Intelligence in Medicine \| IBM](https://www.ibm.com/topics/artificial-intelligence-medicine)
 - [A Comprehensive Guide to Convolutional Neural Networks](https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53)
 - [AI IN DRUG DISCOVERY](https://www.merckgroup.com/en/research/science-space/envisioning-tomorrow/precision-medicine/generativeai.html)
 - [CRISPR.ML - Machine learning meets gene editing](https://www.youtube.com/watch?v=p5G5aMnExpI)
