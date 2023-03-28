@@ -2,7 +2,7 @@
 layout: post
 title: "Stock Prediction with Neural Networks"
 author_github: Palgun7
-date: 2023-03-15 00:00:00
+date: 2023-03-28 00:00:00
 description: "Stock market prediction is the act of trying to determine the future value of company stock or other financial assets that are traded. This can be achieved through deep learning models."
 tags:
   - IEEE NITK

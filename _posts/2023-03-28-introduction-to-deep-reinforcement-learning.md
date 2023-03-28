@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introduction to Deep Reinforcement Learning"
-date: 2023-03-15 00:00:00
+date: 2023-03-28 00:00:00
 image: '/assets/img/'
 description: 'Introduction to Deep Reinforcement Learning'
 tags:
