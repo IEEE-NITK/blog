@@ -1,0 +1,15 @@
+version: '2'
+services:
+    jekyll:
+        image: jekyll/jekyll:latest
+        volumes:
+            - '.:/srv/jekyll:cached'
+        # The :cached option for volumes is only relevant for Docker on macOS and Windows  
+        ports:
+            - 4000:4000
+        command: bash -c "cd /srv/jekyll && 
+                    gem install html-proofer jekyll-paginate jemoji webrick && 
+                    jekyll build --destination blog/  &&
+                    jekyll serve --watch --force_polling --verbose "
+    
+        
