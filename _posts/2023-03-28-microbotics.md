@@ -2,7 +2,7 @@
 layout: post
 title: "One Micro Bot, One Macro Revolution"
 author_github: SunainaSunil
-date: 20223-03-28 00:00:00
+date: 2023-03-28 00:00:00
 description: 'Let’s take it down a notch and discover what robotics has to offer when it comes to the field of microbotics.'
 
 tags:
