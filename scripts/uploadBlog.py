@@ -1,3 +1,4 @@
+import os
 import shutil
 import sys
 
@@ -25,7 +26,17 @@ def process_image_line(lineNumber, blogFileName, line):
 
     return line
 
-
+def writeUserInfo(githubUsername):
+    name = input('Enter ', githubUsername, ' name: ')
+    email = input('Enter ', githubUsername, ' email: ')
+    author_image = input('Enter ', githubUsername, ' image name (This is the name of the profile picture of the image of the author THAT MUST BE IN THE images/ folder in THIS CURRENT DIRECTORY) : ')
+    with open('auther_info.txt', 'a') as f:
+        f.write(githubUsername: + '\n')
+        f.write("  name: " + name + '\n')
+        f.write("  github: " + githubUsername + '\n')
+        f.write("  author_image: " + author_image + '\n')
+        f.write("  email: " + email + '\n')
+    
 
 def parse(markdownBlog):
     with open(markdownBlog, 'r') as f:
@@ -57,17 +68,37 @@ def parse(markdownBlog):
     if githubUsername2[0] != '':
         print('2 Author Blog')
         print('Author 1: ' + githubUsername1[0])
+        writeUserInfo(githubUsername1[0])
         print('Author 2: ' + githubUsername2[0])
+        writeUserInfo(githubUsername2[0])
     else :
         print('1 Author Blog')
         print('Author 1: ' + githubUsername1[0])
+        writeUserInfo(githubUsername1[0])
+
     
     # Write the lines back to the file 
 
     open(blogFileName, 'w').writelines(lines)
+    
+    finalSteps(blogFileName, markdownBlog)
 
-    writeUserInfo(githubUsername1[0], 
+def finalSteps(blogFileName, markdownBlog):
+    # Move the blog to the _posts folder
+    shutil.move(blogFileName, '_posts/' + blogFileName)
 
+    # Delete the markdown blog
+    os.remove(markdownBlog)
+
+    # Delete the images folder
+    shutil.rmtree('images')
+
+    # append auther_info.txt to _data/auther_info.yml
+    with open('auther_info.txt', 'r') as f:
+        lines = f.readlines()
+        with open('_data/auther_info.yml', 'a') as f2:
+            f2.writelines(lines)
+    os.remove('auther_info.txt')
 
 
 if __name__ == '__main__':
