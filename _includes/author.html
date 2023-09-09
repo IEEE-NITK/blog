@@ -1,14 +1,25 @@
 <div class="container">
     <div class="colorlib-bg-white animate-box">
-        <section class="author-big" itemprop="author">
+        <section class="author-big row" itemprop="author">
+            {% if site.data.authors[page.github_username_2].author_image %}
+                <p class="author-p">Authors</p>
+            {% endif %}
             <div class="details" itemscope itemtype="http://schema.org/Person">
+                
                 <div class="col-md-4 col-sm-4 author-img-center">
                     <img itemprop="image" class="author-img-big"
                         src="{{site.baseurl}}/assets/img/authors/{{ site.data.authors[page.github_username].author_image }}"
                         alt="{{site.data.authors[page.github_username].name}}">
                 </div>
                 <div class="col-md-8 sol-sm-8 author-details">
-                    <p>Author</p>
+                    
+                    <!-- if second user is not there -->
+                    {% if site.data.authors[page.github_username_2].author_image %}
+                    
+                    {% else %}
+                        <p> Author </p>
+                    {% endif %}
+
                     <h3>
                         <strong>
                             {{ site.data.authors[page.github_username].name }}
@@ -26,6 +37,43 @@
                         href="https://github.com/{{page.github_username}}">{{page.github_username}}</a>
                 </div>
             </div>
+
+            <!-- For second user -->
+            {% if site.data.authors[page.github_username_2].author_image %}
+            <div class="details" itemscope itemtype="http://schema.org/Person">
+                
+                <div class="col-md-4 col-sm-4 author-img-center">
+                    <img itemprop="image" class="author-img-big"
+                        src="{{site.baseurl}}/assets/img/authors/{{ site.data.authors[page.github_username_2].author_image }}"
+                        alt="{{site.data.authors[page.github_username_2].name}}">
+                </div>
+                <div class="col-md-8 sol-sm-8 author-details">
+                    
+                    <!-- if second user is not there -->
+                    {% if site.data.authors[page.github_username_2].author_image %}
+                    
+                    {% else %}
+                        <p> Author </p>
+                    {% endif %}
+
+                    <h3>
+                        <strong>
+                            {{ site.data.authors[page.github_username_2].name }}
+                        </strong>
+                    </h3>
+                    <p class="desc">{{site.data.authors[page.github_username_2].user_description}}</p>
+                    {% if site.data.authors[page.github_username_2].email != "" %}
+                    <i class="fa fa-envelope"></i>
+                    <a class="author-big-email" target="_blank"
+                        href="mailto:{{site.data.authors[page.github_username_2].email}}">{{site.data.authors[page.github_username_2].email}}</a>
+                    <br>
+                    {% endif %}
+                    <i class="fa fa-github"></i>
+                    <a class="author-big-email" target="_blank"
+                        href="https://github.com/{{page.github_username_2}}">{{page.github_username_2}}</a>
+                </div>
+            </div>
+            {% endif %}
         </section>
     </div>
 </div>
