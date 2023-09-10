@@ -75,7 +75,15 @@ use_math: true
                         </h2>
                         <p class="author-wrap">
                             <span class="author-img" style="background-image: url({{site.baseurl}}/assets/img/authors/{{site.data.authors[post.github_username].author_image}});"></span> 
+                            <!-- Optional Second Author -->
+                            {% if site.data.authors[post.github_username_2].author_image %}
+                                <span class="second-author-img" style="background-image: url({{site.baseurl}}/assets/img/authors/{{site.data.authors[post.github_username_2].author_image}});"></span> 
+                            {% endif %}
                             <span class="author">by {{site.data.authors[post.github_username].name}}</span>
+                            <!-- Optional Second Author -->
+                            {% if site.data.authors[post.github_username_2].author_image %}
+                                <span class="second-author">&MediumSpace; &amp; {{site.data.authors[post.github_username_2].name}}</span>
+                            {% endif %}
                             &nbsp;
                             |
                             &nbsp;

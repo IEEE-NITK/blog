@@ -4,9 +4,17 @@
         <div class="content">
             <h1 class="post-title">{{ page.title }}</h1>
             <p class="author-small">
-                <span class="author-img"
-                    style="background-image: url({{site.baseurl}}/assets/img/authors/{{site.data.authors[page.github_username].author_image}});"></span>
+                <span class="author-img" style="background-image: url({{site.baseurl}}/assets/img/authors/{{site.data.authors[page.github_username].author_image}});"></span>
+                {% if page.github_username_2 and site.data.authors[page.github_username_2].author_image %}
+                <span class="second-author-img"
+                    style="background-image: url({{site.baseurl}}/assets/img/authors/{{site.data.authors[page.github_username_2].author_image}});"></span>
+                {% endif %}
                 <span class="author">by {{site.data.authors[page.github_username].name}}</span>
+
+                {% if page.github_username_2 and site.data.authors[page.github_username_2].author_image %}
+                <span class="second-author">&MediumSpace; &amp; {{site.data.authors[page.github_username_2].name}}</span>
+                {% endif %}
+
                 {% if page.date %}
                 &nbsp;
                 |
