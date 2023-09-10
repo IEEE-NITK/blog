@@ -625,7 +625,7 @@ By running this section, you can obtain the accuracy of the network on the test 
 
 In this tutorial, you learned how to build a neural network from scratch using Python. You implemented the backpropagation algorithm to train the network and used it to classify handwritten digits from the MNIST dataset. You also learned how to preprocess the images and evaluate the performance of the network on the test dataset.
 
-Implementation on [Github]((https://github.com/Wolfram70/MNIST-Classifier)) by [Srinivasa R](https://www.linkedin.com/in/srinivasar-wolfram/)
+Implementation on [Github](https://github.com/Wolfram70/MNIST-Classifier) by [Srinivasa R](https://www.linkedin.com/in/srinivasar-wolfram/)
 
 You can use the same code to train a neural network on other datasets and perform classification tasks. You can also modify the code to build a neural network for regression tasks. You can experiment with different network architectures, hyperparameters, and optimization algorithms to improve the performance of the network.
 
