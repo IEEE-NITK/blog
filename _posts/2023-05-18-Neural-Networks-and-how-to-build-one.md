@@ -12,8 +12,8 @@ tags:
 categories:
 - CompSoc
 
-github_username: 'bleasey'
-github_username_2: 'Vignaraj-pai'
+github_username: bleasey
+github_username_2: Vignaraj-pai
 
 ---
 
@@ -25,7 +25,7 @@ Neural networks are powerful machine learning models inspired by the human brain
 ### Understanding Neural Networks
 Neural networks consist of interconnected nodes called neurons, organized in layers. These layers include an input layer, one or more hidden layers, and an output layer. Each neuron receives input, applies an activation function to it, and passes the output to the next layer.
 
-![Header Image](/blog/assets/img/nn_cal_vig/header_img.png) 
+![Header Image](/blog/assets/img/2023-05-18-Neural-Networks-and-how-to-build-one/2023-05-18-Neural-Networks-and-how-to-build-one-header_img.png) 
 
 
 
@@ -39,7 +39,7 @@ Hidden layers are the intermediate layers between the input and output layers. T
 
 In the context of recognizing handwritten digits, hidden layers help the network learn patterns and representations that are relevant to distinguishing between different digits. These layers enable the network to recognize important features such as curves, edges, and shapes.
 
-| ![Hidden Layers](/blog/assets/img/nn_cal_vig/hidden_layers.png) |
+| ![Hidden Layers](/blog/assets/img/2023-05-18-Neural-Networks-and-how-to-build-one/2023-05-18-Neural-Networks-and-how-to-build-one-hidden_layers.png) |
 | :--: |
 |from - [3B1B, Neural Networks](https://www.3blue1brown.com/lessons/neural-networks)|
 
@@ -48,7 +48,7 @@ The output layer provides the final prediction or output of the neural network. 
 
 The output layer applies an activation function that maps the inputs to a probability distribution. In other words, each neuron's output represents the probability that the input belongs to the corresponding digit class. The network's prediction is usually based on the neuron with the highest probability.
  
-| ![Ouput Layer](/blog/assets/img/nn_cal_vig/output_layer.png) |
+| ![Ouput Layer](/blog/assets/img/2023-05-18-Neural-Networks-and-how-to-build-one/2023-05-18-Neural-Networks-and-how-to-build-one-output_layer.png) |
 | :--: |
 |from - [3B1B, Neural Networks](https://www.3blue1brown.com/lessons/neural-networks)|
 
@@ -65,7 +65,7 @@ In our implementation, we use the sigmoid activation function, which maps the we
 #### Conclusion
 Neural networks, with their layered structure and activation functions, enable us to model complex relationships and make accurate predictions. By understanding the role of each layer and the process of adjusting weights, we can build powerful models that excel at recognizing patterns, including handwritten digits.
 
-| ![Conclusion](/blog/assets/img/nn_cal_vig/conclusion.png) |
+| ![Conclusion](/blog/assets/img/2023-05-18-Neural-Networks-and-how-to-build-one/2023-05-18-Neural-Networks-and-how-to-build-one-conclusion.png) |
 | :--: |
 |from - [3B1B, Neural Networks](https://www.3blue1brown.com/lessons/neural-networks)|
 
