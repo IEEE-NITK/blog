@@ -38,7 +38,7 @@ def writeUserInfo(githubUsername):
     email = input('Enter ' + githubUsername + ' email: ')
     author_image = input('Enter '+ githubUsername + ' image name (This is the name of the profile picture of the image of the author with extension THAT MUST BE IN THE images/ folder in THIS CURRENT DIRECTORY) : ')
     imageName = YEAR + name.replace(' ', '-') + '.jpg'
-    with open('author_info.txt', 'w', encoding='utf-8') as f:
+    with open('author_info.txt', 'a', encoding='utf-8') as f:
         f.write(githubUsername + ':\n')
         f.write("  name: " + name + '\n')
         f.write("  github: " + githubUsername + '\n')
